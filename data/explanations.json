@@ -141,10 +141,12 @@
     "summary": "연막 뒤에 숨었다가 표창으로 마무리하는 암살자예요.",
     "analogy": "연기 속에 숨었다가 튀어나와 베는 닌자를 떠올려 보세요.",
     "tip": "W 연막 안에 있으면 투명 상태가 되어 적이 대상으로 지정할 수 없어요. 위험할 때 들어가 보세요.",
-    "caution": "연막 안에서도 공격하거나 스킬을 쓰면 순간적으로 모습이 드러나요.",
-    "sourceType": "editorial",
+    "caution": "황혼의 장막(W)에 크게 의존해요. 시야를 밝히거나 강하게 묶는 상대에게 특히 약하고, 연막 안에서도 공격하면 모습이 드러나요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "아칼리 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%84%EC%B9%BC%EB%A6%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Akshan",
@@ -152,10 +154,12 @@
     "summary": "표식 남긴 악당을 처치해 아군을 살리는 명사수예요.",
     "analogy": "돌아오는 부메랑과 갈고리총을 쓰는 쾌활한 도적을 떠올려 보세요.",
     "tip": "W는 아군 챔피언을 처치한 적에게 악당 표식을 남겨요. 그 악당을 먼저 노려서 처치해보세요.",
-    "caution": "W의 위장 상태는 지형 근처나 수풀 안에 있지 않으면 금방 풀려요.",
-    "sourceType": "editorial",
+    "caution": "기절이나 둔화 같은 상대를 방해하는 스킬이 없어요. 위장 상태도 지형이나 수풀을 벗어나면 금방 풀려요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "챔피언 기획 해설: 아크샨 - League of Legends",
+    "explanationSourceUrl": "https://www.leagueoflegends.com/ko-kr/news/dev/champion-insights-akshan/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Alistar",
