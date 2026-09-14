@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "sync": "node scripts/sync.mjs",
+    "sync:recipes": "node scripts/sync-item-recipes.mjs",
     "build": "node scripts/build.mjs",
     "report:missing": "node scripts/report-missing.mjs",
     "start": "node scripts/serve.mjs",

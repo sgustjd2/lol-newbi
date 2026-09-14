@@ -12429,7 +12429,21 @@
       "original": "이동 속도 25",
       "gold": 300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1001.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3005",
+        "3047",
+        "3008",
+        "3006",
+        "3009",
+        "3010",
+        "3020",
+        "3111",
+        "3117",
+        "3158"
+      ],
+      "depth": null
     },
     {
       "id": "1004",
@@ -12443,7 +12457,14 @@
       "original": "기본 마나 재생 50%",
       "gold": 200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1004.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3114",
+        "3012",
+        "4642"
+      ],
+      "depth": null
     },
     {
       "id": "1006",
@@ -12457,7 +12478,15 @@
       "original": "기본 체력 재생 100%",
       "gold": 300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1006.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3109",
+        "3211",
+        "323109",
+        "3801"
+      ],
+      "depth": null
     },
     {
       "id": "1011",
@@ -12473,7 +12502,27 @@
       "original": "체력 350",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1011.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1028"
+      ],
+      "into": [
+        "4637",
+        "3084",
+        "2525",
+        "3039",
+        "3083",
+        "3116",
+        "3119",
+        "3143",
+        "323119",
+        "3748",
+        "6665",
+        "6609",
+        "6667",
+        "8001"
+      ],
+      "depth": 2
     },
     {
       "id": "1018",
@@ -12489,7 +12538,21 @@
       "original": "치명타 확률 15%",
       "gold": 600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1018.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "123430",
+        "667666",
+        "3031",
+        "3086",
+        "6670",
+        "3033",
+        "3039",
+        "3508",
+        "3095",
+        "6676"
+      ],
+      "depth": null
     },
     {
       "id": "1026",
@@ -12505,7 +12568,25 @@
       "original": "주문력 45",
       "gold": 850,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1026.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "2522",
+        "3100",
+        "326621",
+        "4637",
+        "3135",
+        "3165",
+        "3115",
+        "324005",
+        "2510",
+        "3116",
+        "3118",
+        "326657",
+        "6621",
+        "6657"
+      ],
+      "depth": null
     },
     {
       "id": "1027",
@@ -12521,7 +12602,14 @@
       "original": "마나 300",
       "gold": 300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1027.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3024",
+        "3802",
+        "3803"
+      ],
+      "depth": null
     },
     {
       "id": "1028",
@@ -12537,7 +12625,40 @@
       "original": "체력 150",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1028.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3742",
+        "1011",
+        "3068",
+        "2021",
+        "323222",
+        "323075",
+        "326617",
+        "323107",
+        "3012",
+        "3147",
+        "3067",
+        "3211",
+        "2502",
+        "322526",
+        "2526",
+        "3023",
+        "3044",
+        "3053",
+        "3066",
+        "3075",
+        "3152",
+        "3161",
+        "3801",
+        "3803",
+        "4401",
+        "4635",
+        "6035",
+        "6660",
+        "6662"
+      ],
+      "depth": null
     },
     {
       "id": "1029",
@@ -12553,7 +12674,27 @@
       "original": "방어력 15",
       "gold": 300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1029.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "2421",
+        "2420",
+        "1031",
+        "323050",
+        "323190",
+        "2019",
+        "3193",
+        "3047",
+        "3024",
+        "3050",
+        "2524",
+        "3023",
+        "3076",
+        "3082",
+        "3105",
+        "3190"
+      ],
+      "depth": null
     },
     {
       "id": "1031",
@@ -12569,7 +12710,24 @@
       "original": "방어력 40",
       "gold": 800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1031.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1029"
+      ],
+      "into": [
+        "3742",
+        "3068",
+        "323002",
+        "3109",
+        "323075",
+        "2502",
+        "3002",
+        "3075",
+        "323109",
+        "6665",
+        "6662"
+      ],
+      "depth": 2
     },
     {
       "id": "1033",
@@ -12585,7 +12743,25 @@
       "original": "마법 저항력 20",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1033.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "1057",
+        "3140",
+        "323050",
+        "323190",
+        "3193",
+        "3050",
+        "3001",
+        "3211",
+        "2524",
+        "3155",
+        "3105",
+        "3111",
+        "3190",
+        "4632"
+      ],
+      "depth": null
     },
     {
       "id": "1036",
@@ -12602,7 +12778,36 @@
       "original": "공격력 10",
       "gold": 350,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1036.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "1053",
+        "4003",
+        "6701",
+        "2015",
+        "2019",
+        "2021",
+        "3077",
+        "6670",
+        "3133",
+        "2517",
+        "323004",
+        "3142",
+        "3004",
+        "2523",
+        "3032",
+        "3035",
+        "3044",
+        "3051",
+        "3155",
+        "6690",
+        "3123",
+        "3134",
+        "6699",
+        "6671",
+        "6692"
+      ],
+      "depth": null
     },
     {
       "id": "1037",
@@ -12618,7 +12823,33 @@
       "original": "공격력 25",
       "gold": 875,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1037.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "667666",
+        "3071",
+        "6333",
+        "3031",
+        "3153",
+        "6701",
+        "2020",
+        "2517",
+        "3087",
+        "6695",
+        "2523",
+        "3053",
+        "3072",
+        "3124",
+        "3181",
+        "3139",
+        "3161",
+        "6029",
+        "6035",
+        "6673",
+        "6676",
+        "6692"
+      ],
+      "depth": null
     },
     {
       "id": "1038",
@@ -12634,7 +12865,18 @@
       "original": "공격력 40",
       "gold": 1300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1038.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3031",
+        "3026",
+        "3032",
+        "3072",
+        "3095",
+        "4403",
+        "6671"
+      ],
+      "depth": null
     },
     {
       "id": "1042",
@@ -12650,7 +12892,23 @@
       "original": "공격 속도 10%",
       "gold": 250,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1042.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "1043",
+        "3086",
+        "2510",
+        "3006",
+        "3046",
+        "3051",
+        "3073",
+        "3131",
+        "3144",
+        "6631",
+        "6675",
+        "6677"
+      ],
+      "depth": null
     },
     {
       "id": "1043",
@@ -12667,7 +12925,19 @@
       "original": "공격 속도 15% \n\n 독침 \n기본 공격 적중 시 15의 추가 물리 피해 를 입힙니다.",
       "gold": 700,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1043.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1042"
+      ],
+      "into": [
+        "3302",
+        "3153",
+        "3115",
+        "6672",
+        "3091",
+        "3124"
+      ],
+      "depth": 2
     },
     {
       "id": "1052",
@@ -12683,7 +12953,35 @@
       "original": "주문력 20",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1052.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3113",
+        "2421",
+        "2420",
+        "3145",
+        "124011",
+        "4637",
+        "3916",
+        "6656",
+        "3147",
+        "3146",
+        "3802",
+        "4005",
+        "2508",
+        "326616",
+        "3108",
+        "3116",
+        "3124",
+        "4630",
+        "323504",
+        "4628",
+        "4632",
+        "4635",
+        "4642",
+        "4644"
+      ],
+      "depth": null
     },
     {
       "id": "1053",
@@ -12701,7 +12999,19 @@
       "original": "공격력 15 \n생명력 흡수 7%",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1053.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036"
+      ],
+      "into": [
+        "3153",
+        "3146",
+        "3072",
+        "3074",
+        "3139",
+        "4403"
+      ],
+      "depth": 2
     },
     {
       "id": "1054",
@@ -12720,7 +13030,10 @@
       "original": "체력 110 \n\n 인내의 집중력 \n5초마다 체력을 4 회복합니다. \n챔피언에게 피해를 입으면 8초 동안 체력 을 회복합니다.\n\n 도움의 손길 \n미니언에게 기본 공격 시 5의 추가 물리 피해 를 입힙니다.",
       "gold": 450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1054.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1055",
@@ -12741,7 +13054,10 @@
       "original": "공격력 10 \n체력 80 \n모든 피해 흡혈 2.5%",
       "gold": 450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1055.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1056",
@@ -12761,7 +13077,10 @@
       "original": "주문력 18 \n체력 90 \n\n 흡수 \n매초 1의 마나 를 회복합니다. 이 수치는 적 챔피언에게 피해를 입힌 후 5초 동안 매초 2의 마나 까지 증가합니다. 마나를 회복할 수 없을 때는 대신 이 수치의 45%만큼 체력을 회복합니다 .\n\n 도움의 손길 \n기본 공격 시 미니언에게 5의 추가 물리 피해 를 입힙니다.",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1056.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1057",
@@ -12777,7 +13096,19 @@
       "original": "마법 저항력 45",
       "gold": 850,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1057.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1033"
+      ],
+      "into": [
+        "2504",
+        "8020",
+        "328020",
+        "3091",
+        "6665",
+        "4401"
+      ],
+      "depth": 2
     },
     {
       "id": "1058",
@@ -12793,7 +13124,17 @@
       "original": "주문력 65",
       "gold": 1200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1058.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3157",
+        "4645",
+        "3089",
+        "3102",
+        "3128",
+        "4403"
+      ],
+      "depth": null
     },
     {
       "id": "1082",
@@ -12812,7 +13153,12 @@
       "original": "주문력 15 \n체력 50 \n\n 영광 \n 처치 관여 시 영광 을 최대 10 중첩까지 얻습니다. 사망 시 영광 5 중첩을 잃습니다.\n 영광 당 4의 주문력 을 얻습니다.",
       "gold": 350,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1082.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3041"
+      ],
+      "depth": null
     },
     {
       "id": "1083",
@@ -12830,7 +13176,10 @@
       "original": "공격력 7 \n\n 수확 \n 적중 시 체력을 3 회복합니다.\n미니언 처치 시 1 골드를 얻습니다. (최대 100 골드) 한도에 도달하면 350골드 를 더 얻습니다.",
       "gold": 450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1083.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1086",
@@ -12850,7 +13199,10 @@
       "original": "공격력 8 \n공격 속도 15% \n모든 피해 흡혈 1.5%",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1086.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1101",
@@ -12864,7 +13216,10 @@
       "original": "정글 동료 \n몬스터를 상대할 때 도와주는 화염발톱 을 소환합니다.\n\n몬스터를 사냥할수록 동료가 성장하며 강타 를 강화합니다. 완전히 성장하면 정글 퀘스트가 완료되며 주기적으로 다음 기본 공격 또는 스킬을 강화해 적을 불태우고 둔화 시킵니다. 대형 몬스터 처치 시 이 효과가 즉시 준비됩니다.",
       "gold": 450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1101.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1102",
@@ -12878,7 +13233,10 @@
       "original": "정글 동료 \n몬스터를 상대할 때 도와주는 바람돌이 를 소환합니다.\n\n몬스터를 사냥할수록 동료가 성장하며 강타 를 강화합니다. 완전히 성장하면 정글 퀘스트가 완료되며 수풀에 들어갔을 때 이동 속도 를 높여주며 대형 몬스터를 처치하면 더 높여줍니다.",
       "gold": 450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1102.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1103",
@@ -12892,7 +13250,10 @@
       "original": "정글 동료 \n몬스터를 상대할 때 도와주는 이끼쿵쿵이 를 소환합니다.\n\n몬스터를 사냥할수록 동료가 성장하며 강타 를 강화합니다. 완전히 성장하면 정글 퀘스트가 완료되며 전투에서 벗어나 있을 때 및 대형 몬스터 처치 후 보호막을 부여합니다.",
       "gold": 450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1103.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1105",
@@ -12906,7 +13267,10 @@
       "original": "정글 동료 \n몬스터를 상대할 때 도와주는 이끼쿵쿵이 를 소환합니다.\n\n몬스터를 사냥할수록 동료가 성장하며 강타 를 강화합니다. 완전히 성장하면 정글 퀘스트가 완료되며 전투에서 벗어나 있을 때 및 대형 몬스터 처치 후 보호막을 부여합니다.",
       "gold": 450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1105.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1106",
@@ -12920,7 +13284,10 @@
       "original": "정글 동료 \n몬스터를 상대할 때 도와주는 바람돌이 를 소환합니다.\n\n몬스터를 사냥할수록 동료가 성장하며 강타 를 강화합니다. 완전히 성장하면 정글 퀘스트가 완료되며 수풀에 들어갔을 때 이동 속도 를 높여주며 대형 몬스터를 처치하면 더 높여줍니다.",
       "gold": 450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1106.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1107",
@@ -12934,7 +13301,10 @@
       "original": "정글 동료 \n몬스터를 상대할 때 도와주는 화염발톱 을 소환합니다.\n\n몬스터를 사냥할수록 동료가 성장하며 강타 를 강화합니다. 완전히 성장하면 정글 퀘스트가 완료되며 주기적으로 다음 기본 공격 또는 스킬을 강화해 적을 불태우고 둔화 시킵니다. 대형 몬스터 처치 시 이 효과가 즉시 준비됩니다.",
       "gold": 450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1107.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "1120",
@@ -12955,7 +13325,10 @@
       "original": "체력 150 \n방어력 8 \n마법 저항력 8 \n\n 도움의 손길 \n기본 공격 시 미니언에게 5의 추가 물리 피해 를 입힙니다.",
       "gold": 450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/1120.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "2003",
@@ -12972,7 +13345,10 @@
       "original": "사용 \n15초에 걸쳐 120의 체력 을 회복합니다.",
       "gold": 50,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2003.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "2019",
@@ -12990,7 +13366,18 @@
       "original": "공격력 15 \n방어력 30",
       "gold": 1100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2019.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1029",
+        "1036",
+        "1029"
+      ],
+      "into": [
+        "6333",
+        "6700",
+        "3026"
+      ],
+      "depth": 2
     },
     {
       "id": "2020",
@@ -13008,7 +13395,18 @@
       "original": "공격력 25 \n스킬 가속 10 \n물리 관통력 5",
       "gold": 1337,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2020.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2022",
+        "1037"
+      ],
+      "into": [
+        "6698",
+        "2520",
+        "6699",
+        "6696"
+      ],
+      "depth": 2
     },
     {
       "id": "2021",
@@ -13026,7 +13424,22 @@
       "original": "공격력 15 \n체력 250",
       "gold": 1150,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2021.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036",
+        "1028"
+      ],
+      "into": [
+        "2501",
+        "3053",
+        "3073",
+        "3814",
+        "3181",
+        "3161",
+        "3748",
+        "6610"
+      ],
+      "depth": 2
     },
     {
       "id": "2022",
@@ -13040,7 +13453,21 @@
       "original": "스킬 가속 5",
       "gold": 250,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2022.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "2020",
+        "3024",
+        "3133",
+        "3802",
+        "3067",
+        "3057",
+        "3108",
+        "3158",
+        "4642",
+        "6660"
+      ],
+      "depth": null
     },
     {
       "id": "2031",
@@ -13058,7 +13485,12 @@
       "original": "사용 시 (충전량 2회)\n12초에 걸쳐 100의 체력 을 회복합니다. \n상점을 이용할 때마다 새로 생성됩니다.",
       "gold": 150,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2031.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "2033"
+      ],
+      "depth": null
     },
     {
       "id": "2051",
@@ -13077,7 +13509,10 @@
       "original": "체력 150 \n\n\n 회복: 5초마다 체력을 20 회복합니다. 불굴의 의지: 적 챔피언의 기본 공격과 스킬 공격 피해량을 15만큼 막아줍니다. (지속 피해 스킬의 경우 25%의 효과)",
       "gold": 950,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2051.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "2055",
@@ -13094,7 +13529,10 @@
       "original": "사용 \n시야를 밝히고 적 투명 와드, 함정, 위장 한 적을 드러내는 제어 와드를 설치합니다.",
       "gold": 75,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2055.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "2065",
@@ -13116,7 +13554,13 @@
       "original": "주문력 50 \n스킬 가속 15 \n이동 속도 4% \n기본 마나 재생 125% \n\n 고무적인 연설 \n4초 동안 주변 아군의 이동 속도를 30% 상승시킵니다.",
       "gold": 2200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2065.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3113",
+        "4642"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2138",
@@ -13133,7 +13577,10 @@
       "original": "사용 \n3분 동안 체력이 300 , 강인함이 25% 증가하고, 크기가 거대해집니다. 이 효과가 활성화된 동안 길을 남기며 그 위의 아군 챔피언들은 이동 속도가 15% 상승합니다.",
       "gold": 500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2138.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "2139",
@@ -13149,7 +13596,10 @@
       "original": "사용 \n3분 동안 주문력이 50 , 마나 재생력이 15% 증가합니다. 활성화된 동안 챔피언이나 포탑에 피해를 입히면 25의 추가 고정 피해 를 입힙니다. (챔피언이 대상일 경우 5초)",
       "gold": 500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2139.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "2140",
@@ -13166,7 +13616,10 @@
       "original": "사용 \n3분 동안 공격력이 30 , 챔피언 대상 물리 피해 흡혈이 12% 증가합니다.",
       "gold": 500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2140.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "2141",
@@ -13181,7 +13634,10 @@
       "original": "머리에 무언가를 쓸 수 있습니다. 사용 시 - 소모: 이 주스에는 아무 효과가 없습니다.",
       "gold": 300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2141.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "2420",
@@ -13200,7 +13656,16 @@
       "original": "주문력 40 \n방어력 25 \n\n 시간 정지 (한 번만 사용가능)\n2.5초 동안 경직 상태가 됩니다.",
       "gold": 1600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2420.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052",
+        "1029",
+        "1052"
+      ],
+      "into": [
+        "3157"
+      ],
+      "depth": 2
     },
     {
       "id": "2421",
@@ -13215,7 +13680,16 @@
       "original": "주문력 40 \n방어력 25 \n\n 조각난 시간 \n팔목 보호대는 망가졌지만 업그레이드는 가능합니다.\n\n 팔목 보호대를 하나 망가뜨린 후에는 상점에서 부서진 팔목 보호대 만 살 수 있습니다.",
       "gold": 1600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2421.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052",
+        "1029",
+        "1052"
+      ],
+      "into": [
+        "3157"
+      ],
+      "depth": 2
     },
     {
       "id": "2501",
@@ -13233,7 +13707,13 @@
       "original": "공격력 30 \n체력 550 \n\n 폭정 \n 추가 체력 의 2.5%에 해당하는 공격력 을 얻습니다. \n\n 응징 \n잃은 체력에 비례해 공격력 이 12%까지 증가합니다.",
       "gold": 3300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2501.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2021",
+        "2021"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2502",
@@ -13253,7 +13733,14 @@
       "original": "체력 400 \n방어력 50 \n스킬 가속 15 \n\n 고뇌 \n챔피언과 전투 중일 때 4초마다 주변 적 챔피언에게 마법 피해 를 입히고 피해량의 250%만큼 체력을 회복 합니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2502.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1031",
+        "3067",
+        "1028"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2503",
@@ -13273,7 +13760,13 @@
       "original": "주문력 80 \n마나 600 \n스킬 가속 20 \n\n 악의의 불길 \n스킬로 적에게 피해를 입히면 3초 동안 추가 마법 피해 를 입힙니다.\n\n 어둠불꽃 \n 악의의 불길 에 영향을 받는 적 챔피언, 에픽 몬스터, 대형 몬스터 하나당 주문력이 4% 증가합니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2503.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3802",
+        "2508"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2504",
@@ -13292,7 +13785,13 @@
       "original": "체력 400 \n마법 저항력 80 \n기본 체력 재생 100% \n\n 마법사의 파멸 \n15초 동안 마법 피해를 받지 않으면 마법 보호막 을 얻습니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2504.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3211",
+        "1057"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2508",
@@ -13308,7 +13807,15 @@
       "original": "주문력 30 \n\n 발화 \n스킬 공격이 3초 동안 15의 추가 마법 피해 를 입힙니다.\n몬스터에게는 45의 마법 피해 를 추가로 입힙니다.",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2508.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052"
+      ],
+      "into": [
+        "2503",
+        "6653"
+      ],
+      "depth": 2
     },
     {
       "id": "2510",
@@ -13330,7 +13837,15 @@
       "original": "체력 300 \n주문력 60 \n스킬 가속 20 \n공격 속도 20% \n\n 주문 검 (0초)\n스킬을 사용하고 나면 다음 기본 공격 시 0의 추가 마법 피해 를 입히고 0의 체력을 회복 하며( 적중 시 ) 적중 시 효과를 추가로 1회 적용합니다.",
       "gold": 3100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2510.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3057",
+        "1026",
+        "3067",
+        "1042"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2512",
@@ -13351,7 +13866,13 @@
       "original": "공격 속도 45% \n치명타 확률 25% \n이동 속도 4% \n\n 한밤 경계 \n궁극기 가속이 30 증가합니다.\n\n 폭격 개시 \n궁극기를 사용하고 나면 8초 동안 다음 3회의 기본 공격 시 공격 속도가 50% 증가하고 치명타가 적용되어 일반적인 치명타 피해량의 80%만큼 피해를 입힙니다. 기본 공격에 이미 치명타가 적용된 경우, 대신 15%의 추가 고정 피해 를 입힙니다.",
       "gold": 2650,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2512.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3086",
+        "3144"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2517",
@@ -13371,7 +13892,14 @@
       "original": "공격력 65 \n모든 피해 흡혈 5% \n강인함 20% \n\n 기근 \n추가 공격력에 따라 스킬 가속이 증가합니다.\n\n 만찬 \n최근 피해를 입힌 챔피언이 죽으면 잠시 모든 피해 흡혈을 얻습니다.",
       "gold": 3100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2517.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3133",
+        "1037",
+        "1036"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2520",
@@ -13389,7 +13917,13 @@
       "original": "공격력 55 \n물리 관통력 22 \n스킬 가속 15 \n\n 성형작약 (0초)\n챔피언 또는 에픽 몬스터에게 스킬 피해를 입히면 추가로 0의 고정 피해 를 입힙니다.\n\n 파괴 공작 \n피해를 입힌 후 3초 안에 챔피언 처치에 관여하면 90초 동안 파괴 공작을 얻습니다. 파괴 공작을 보유한 상태에서 에픽 몬스터 또는 포탑을 상대로 다음 기본 공격 시 3초 동안 0의 고정 피해 를 입힙니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2520.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2020",
+        "3134"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2522",
@@ -13408,7 +13942,13 @@
       "original": "주문력 90 \n마나 300 \n스킬 가속 10 \n\n 마나 실현 (0초)\n8초 동안 마나가 강화됩니다. 강화된 동안 스킬이 마나를 100% 더 소모하지만 스킬 피해량, 보호막 흡수량, 체력 회복량이 0 증가하고 기본 스킬 재사용 대기시간이 30% 더 빠르게 흐릅니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2522.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3802",
+        "1026"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2523",
@@ -13426,7 +13966,14 @@
       "original": "공격력 55 \n치명타 확률 25% \n\n 확대 \n기본 공격 시 적과의 거리에 따라 최대 10% 증가한 피해를 입힙니다. (500 거리일 때 최대 피해)\n\n 비전 조준 \n피해를 입힌 챔피언이 3초 안에 사망하면 8초 동안 추가로 공격 사거리가 100 증가합니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2523.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1037",
+        "6670",
+        "1036"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2524",
@@ -13449,7 +13996,14 @@
       "original": "체력 200 \n스킬 가속 15 \n방어력 20 \n마법 저항력 20 \n\n 팡파르 \n적 챔피언을 둔화 시키거나 이동 불가 상태로 만들면 0초 동안 팡파르가 활성화됩니다. 팡파르는 이동 속도를 20 증가시킵니다. 팡파르가 활성화된 동안 자신을 포함한 주변 아군의 공격 속도가 0 증가합니다.",
       "gold": 2300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2524.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1029",
+        "1033"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2525",
@@ -13468,7 +14022,13 @@
       "original": "체력 600 \n스킬 가속 20 \n\n 생명선 (0초)\n체력이 30% 아래로 떨어질 만큼 피해를 받으면 5초 동안 최대 체력을 0 얻고 지속시간 동안 체력을 0 회복합니다. 체력을 회복하는 동안 크기가 15% 커지고 이동 속도가 10% 증가하며 강인함을 25% 얻습니다.",
       "gold": 2600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2525.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1011"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "2526",
@@ -13487,7 +14047,16 @@
       "original": "체력 200 \n체력 회복 및 보호막 8% \n기본 마나 재생 75% \n마나 300 \n\n 조화 \n체력 회복 및 보호막 효과가 0% 증가합니다.\n\n 마나순환 (8초, 최대 5회 충전)\n스킬 적중 시 최대 마나를 4 얻습니다. 챔피언 대상으로는 두 배로 적용됩니다.\n 최대 마나가 360 에 도달하면 악곡의 왕관 으로 변합니다.",
       "gold": 2250,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/2526.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3114",
+        "1028",
+        "3070"
+      ],
+      "into": [
+        "2530"
+      ],
+      "depth": 3
     },
     {
       "id": "3003",
@@ -13506,7 +14075,14 @@
       "original": "주문력 70 \n마나 600 \n스킬 가속 25 \n\n 경탄 \n 추가 마나의 1% 만큼 주문력을 얻습니다.\n\n 마나순환 (8초, 최대 충전량 5회)\n스킬 적중 시 5의 최대 마나 (챔피언 상대 시 두 배)를 얻습니다.\n 360의 최대 마나 에 도달하면 대천사의 포옹 으로 변합니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3003.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3070",
+        "3802",
+        "3108"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3004",
@@ -13527,7 +14103,14 @@
       "original": "공격력 35 \n마나 500 \n스킬 가속 15 \n\n 경탄 \n 0의 추가 공격력 을 얻습니다.\n\n 마나순환 (8초, 최대 충전량 4회)\n기본 공격과 스킬 적중 시 3의 최대 마나 (챔피언 상대 시 두 배)를 얻습니다.\n 360의 최대 마나 에 도달하면 무라마나 로 변합니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3004.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3070",
+        "3133",
+        "1036"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3006",
@@ -13545,7 +14128,16 @@
       "original": "공격 속도 30% \n이동 속도 45",
       "gold": 1100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3006.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1001",
+        "1042",
+        "1042"
+      ],
+      "into": [
+        "3172"
+      ],
+      "depth": 2
     },
     {
       "id": "3008",
@@ -13563,7 +14155,14 @@
       "original": "이동 속도 45 \n모든 피해 흡혈 4% \n\n 학살 \n챔피언 처치 관여 시 모든 피해 흡혈이 0.6% 증가합니다. (최대 10회 중첩)",
       "gold": 1000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3008.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1001"
+      ],
+      "into": [
+        "3168"
+      ],
+      "depth": 2
     },
     {
       "id": "3009",
@@ -13579,7 +14178,14 @@
       "original": "이동 속도 55 \n\n 날쌘 발걸음 \n 둔화 효과가 25% 감소합니다.",
       "gold": 1000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3009.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1001"
+      ],
+      "into": [
+        "3170"
+      ],
+      "depth": 2
     },
     {
       "id": "3020",
@@ -13596,7 +14202,14 @@
       "original": "마법 관통력 12 \n이동 속도 45",
       "gold": 1100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3020.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1001"
+      ],
+      "into": [
+        "3175"
+      ],
+      "depth": 2
     },
     {
       "id": "3024",
@@ -13616,7 +14229,17 @@
       "original": "방어력 25 \n마나 300 \n스킬 가속 10",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3024.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1029",
+        "1027",
+        "2022"
+      ],
+      "into": [
+        "323110",
+        "3110"
+      ],
+      "depth": 2
     },
     {
       "id": "3026",
@@ -13634,7 +14257,13 @@
       "original": "공격력 55 \n방어력 45 \n\n 환생 \n치명적인 피해를 입으면 4초 동안 경직 에 걸린 다음 기본 체력의 50% , 최대 마나의 100% 를 회복합니다.",
       "gold": 3200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3026.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2019",
+        "1038"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3031",
@@ -13652,7 +14281,14 @@
       "original": "공격력 75 \n치명타 확률 25% \n치명타 피해량 30%",
       "gold": 3500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3031.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1038",
+        "1037",
+        "1018"
+      ],
+      "into": [],
+      "depth": 2
     },
     {
       "id": "3032",
@@ -13671,7 +14307,14 @@
       "original": "공격력 50 \n공격 속도 45% \n치명타 확률 0% \n\n 연습이 치명타를 낳는다 \n공격 시 치명타 확률이 영구적으로 최대 25%까지 증가합니다.\n\n 광풍 \n적 챔피언 공격 시 6초 동안 공격 속도가 30% 증가합니다. (재사용 대기시간 30초) \n기본 공격 시 이 스킬의 재사용 대기시간이 1초 감소합니다. 치명타 적중 시 2초 감소합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3032.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1038",
+        "3144",
+        "1036"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3033",
@@ -13690,7 +14333,14 @@
       "original": "공격력 35 \n방어구 관통력 30% \n치명타 확률 25% \n\n 고통스러운 상처 \n적 챔피언에게 물리 피해를 입히면 3초 동안 40%의 상처 를 남깁니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3033.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3123",
+        "3035",
+        "1018"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3035",
@@ -13707,7 +14357,17 @@
       "original": "공격력 20 \n방어구 관통력 18%",
       "gold": 1450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3035.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036",
+        "1036"
+      ],
+      "into": [
+        "3033",
+        "3036",
+        "6694"
+      ],
+      "depth": 2
     },
     {
       "id": "3036",
@@ -13726,7 +14386,13 @@
       "original": "공격력 35 \n방어구 관통력 35% \n치명타 확률 25% \n\n 거인 학살자 \n대상의 추가 체력에 비례해 챔피언에게 최대 15%의 추가 피해를 입힙니다. 추가 피해량은 추가 체력이 1500일 때 최대가 됩니다.",
       "gold": 3300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3036.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3035",
+        "6670"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3041",
@@ -13745,7 +14411,12 @@
       "original": "주문력 20 \n체력 100 \n\n 영광 \n 처치 관여 시 영광 을 최대 25 중첩까지 얻습니다. 사망 시 영광 10중첩을 잃습니다.\n 영광 하나당 5의 주문력 을 얻으며, 영광 이 10중첩 이상이면 이동 속도가 10% 를 증가합니다.",
       "gold": 1500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3041.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1082"
+      ],
+      "into": [],
+      "depth": 2
     },
     {
       "id": "3044",
@@ -13764,7 +14435,19 @@
       "original": "공격력 15 \n체력 200 \n\n 분노 \n기본 공격을 가하면 2초 동안 이동 속도 가 상승합니다.",
       "gold": 1100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3044.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1028",
+        "1036"
+      ],
+      "into": [
+        "3071",
+        "3078",
+        "3073",
+        "6630",
+        "6631"
+      ],
+      "depth": 2
     },
     {
       "id": "3046",
@@ -13784,7 +14467,14 @@
       "original": "공격 속도 65% \n치명타 확률 25% \n이동 속도 10% \n\n 망령의 왈츠 \n 유체화 상태가 됩니다.",
       "gold": 2650,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3046.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1042",
+        "3086",
+        "1042"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3047",
@@ -13802,7 +14492,15 @@
       "original": "방어력 25 \n이동 속도 45 \n\n 장갑판 \n기본 공격으로 받는 피해량이 10% 감소합니다.",
       "gold": 1200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3047.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1001",
+        "1029"
+      ],
+      "into": [
+        "3174"
+      ],
+      "depth": 2
     },
     {
       "id": "3050",
@@ -13823,7 +14521,14 @@
       "original": "체력 300 \n방어력 25 \n마법 저항력 25 \n스킬 가속 10 \n\n 서리불꽃 폭풍 \n궁극기 사용 시 주변에 5초 동안 폭풍을 소환합니다. 폭풍은 적 챔피언에게 매초 30의 마법 피해 를 입히고 30% 둔화 시킵니다.",
       "gold": 2200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3050.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1029",
+        "1033"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3051",
@@ -13841,7 +14546,18 @@
       "original": "공격력 20 \n공격 속도 20%",
       "gold": 1200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3051.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036",
+        "1042",
+        "1036"
+      ],
+      "into": [
+        "3078",
+        "3302",
+        "6672"
+      ],
+      "depth": 2
     },
     {
       "id": "3053",
@@ -13859,7 +14575,14 @@
       "original": "체력 400 \n강인함 20% \n\n 잡아채는 발톱 \n 추가 공격력 을 얻습니다.\n\n 생명선 \n체력이 30% 밑으로 떨어질 만큼 피해를 입으면 4.5초 동안 피해를 흡수하며 점차 사라지는 보호막 을 얻습니다.",
       "gold": 3200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3053.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1037",
+        "2021",
+        "1028"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3057",
@@ -13874,7 +14597,19 @@
       "original": "스킬 가속 10 \n\n 주문 검 \n스킬을 사용하고 나면 다음 기본 공격 시 추가 물리 피해 ( 적중 시 )를 입힙니다.",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3057.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2022"
+      ],
+      "into": [
+        "3078",
+        "3100",
+        "2510",
+        "3508",
+        "6632",
+        "6662"
+      ],
+      "depth": 2
     },
     {
       "id": "3065",
@@ -13895,7 +14630,13 @@
       "original": "체력 400 \n마법 저항력 50 \n스킬 가속 10 \n기본 체력 재생 100% \n\n 무한한 활력 \n자신이 받는 회복 효과와 보호막 효과가 25% 증가합니다.",
       "gold": 2700,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3065.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3211",
+        "3067"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3066",
@@ -13913,7 +14654,18 @@
       "original": "체력 200 \n이동 속도 4%",
       "gold": 800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3066.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1028"
+      ],
+      "into": [
+        "3742",
+        "323002",
+        "3002",
+        "3181",
+        "4401"
+      ],
+      "depth": 2
     },
     {
       "id": "3067",
@@ -13931,7 +14683,47 @@
       "original": "체력 200 \n스킬 가속 10",
       "gold": 800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3067.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1028",
+        "2022"
+      ],
+      "into": [
+        "3071",
+        "8020",
+        "323050",
+        "328020",
+        "124011",
+        "323190",
+        "323222",
+        "3165",
+        "6620",
+        "3050",
+        "3109",
+        "6656",
+        "326617",
+        "323107",
+        "2502",
+        "2510",
+        "2524",
+        "2525",
+        "6617",
+        "3065",
+        "3152",
+        "3119",
+        "326620",
+        "3190",
+        "3222",
+        "323109",
+        "323119",
+        "4403",
+        "4629",
+        "4644",
+        "6630",
+        "6632",
+        "8001"
+      ],
+      "depth": 2
     },
     {
       "id": "3068",
@@ -13951,7 +14743,14 @@
       "original": "체력 350 \n방어력 50 \n스킬 가속 10 \n\n 불사르기 \n피해를 받거나 입히면 주변 적들에게 3초 동안 매초 마법 피해 를 입힙니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3068.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "6660",
+        "1031",
+        "1028"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3070",
@@ -13968,7 +14767,15 @@
       "original": "마나 240 \n\n 마나순환 (8초, 최대 충전량 4회)\n스킬 적중 시 3의 최대 마나 (챔피언 상대 시 두 배, 최대 360 )를 얻습니다.\n\n 도움의 손길 \n미니언에게 기본 공격 시 5의 물리 피해 를 추가로 입힙니다.",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3070.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3003",
+        "3004",
+        "2526",
+        "3119"
+      ],
+      "depth": null
     },
     {
       "id": "3071",
@@ -13991,7 +14798,14 @@
       "original": "공격력 45 \n체력 400 \n스킬 가속 20 \n\n 깎아내기 \n챔피언에게 물리 피해 를 입히면 6초 동안 대상의 방어력을 6% 감소시킵니다. (5회 중첩)\n\n 열정 \n 물리 피해 를 입히면 2초 동안 이동 속도가 0 증가합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3071.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3044",
+        "3067",
+        "1037"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3072",
@@ -14009,7 +14823,14 @@
       "original": "공격력 80 \n생명력 흡수 15% \n\n 영액의 보호막 \n생명력 흡수 효과로 체력 회복 시 초과분을 보호막 으로 전환합니다.",
       "gold": 3400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3072.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1038",
+        "1037",
+        "1053"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3073",
@@ -14032,7 +14853,14 @@
       "original": "공격력 40 \n공격 속도 20% \n체력 450 \n\n 마공학 충전 \n궁극기 가속이 30 증가합니다.\n\n 폭주 \n궁극기를 사용한 후 8초 동안 공격 속도가 0% , 이동 속도가 0% 증가합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3073.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2021",
+        "1042",
+        "3044"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3074",
@@ -14053,7 +14881,14 @@
       "original": "공격력 65 \n스킬 가속 15 \n생명력 흡수 12% \n\n 쪼개기 \n기본 공격 시 주변 적들에게 물리 피해 를 입힙니다.\n\n 굶주린 초승달 \n주변 적에게 물리 피해 를 입힙니다. \n이 피해에는 생명력 흡수가 적용됩니다.",
       "gold": 3300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3074.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3077",
+        "1053",
+        "3133"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3075",
@@ -14071,7 +14906,14 @@
       "original": "체력 150 \n방어력 75 \n\n 가시 \n기본 공격에 맞으면 공격한 적에게 마법 피해 를 입히고, 대상이 챔피언일 경우 3초 동안 40%의 상처 를 남깁니다.",
       "gold": 2450,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3075.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3076",
+        "1031",
+        "1028"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3076",
@@ -14087,7 +14929,16 @@
       "original": "방어력 30 \n\n 가시 \n기본 공격에 맞으면 공격한 적에게 0의 마법 피해 를 입히고, 대상이 챔피언일 경우 3초 동안 40%의 상처 를 남깁니다.",
       "gold": 800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3076.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1029",
+        "1029"
+      ],
+      "into": [
+        "323075",
+        "3075"
+      ],
+      "depth": 2
     },
     {
       "id": "3077",
@@ -14104,7 +14955,18 @@
       "original": "공격력 25 \n\n 쪼개기 \n기본 공격 시 주변 적들에게 물리 피해 를 입힙니다.\n 초승달 \n주변 적에게 물리 피해 를 입힙니다.",
       "gold": 1200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3077.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036",
+        "1036"
+      ],
+      "into": [
+        "3074",
+        "3748",
+        "6698",
+        "6631"
+      ],
+      "depth": 2
     },
     {
       "id": "3078",
@@ -14128,7 +14990,14 @@
       "original": "공격력 36 \n공격 속도 30% \n체력 333 \n스킬 가속 15 \n\n 주문 검 \n스킬을 사용하고 나면 다음 기본 공격 시 추가 물리 피해 ( 적중 시 )를 입힙니다.\n \n 가속 \n기본 공격을 가하면 2초 동안 이동 속도가 20 상승합니다.",
       "gold": 3333,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3078.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3057",
+        "3044",
+        "3051"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3082",
@@ -14144,7 +15013,17 @@
       "original": "방어력 40 \n\n 견고 \n기본 공격으로 받는 피해량이 감소합니다.",
       "gold": 1000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3082.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1029",
+        "1029"
+      ],
+      "into": [
+        "323110",
+        "3110",
+        "3143"
+      ],
+      "depth": 2
     },
     {
       "id": "3083",
@@ -14161,7 +15040,14 @@
       "original": "체력 1000 \n기본 체력 재생 100% \n\n 워모그의 심장 \n추가 체력이 2000일 때 8초 동안 피해를 입지 않으면 초당 0 의 체력을 회복합니다.\n\n 워모그의 활력 \n아이템 체력( 0 )의 12%에 해당하는 추가 체력을 얻습니다.",
       "gold": 3100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3083.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1011",
+        "1011",
+        "3801"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3084",
@@ -14178,7 +15064,14 @@
       "original": "체력 900 \n기본 체력 재생 100% \n\n 거인의 흡수 대상별 (0초)\n적 챔피언이 몇 초 동안 근처에 있으면 해당 대상에게 다음 기본 공격 시 70+최대 체력의 6% 에 해당하는 추가 물리 피해 를 입히고 피해의 10% 만큼 최대 체력 이 증가합니다.\n\n 거인 \n 최대 체력 1000 당 크기가 3% 증가합니다. (최대 30%)",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3084.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1011",
+        "3801",
+        "1011"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3085",
@@ -14199,7 +15092,13 @@
       "original": "공격 속도 40% \n치명타 확률 25% \n이동 속도 5% \n\n 바람의 분노 \n기본 공격 시 대상 근처에 있는 적 2명에게 추가로 탄환을 발사합니다.\n각 탄환은 물리 피해 를 입히고 적중 시 효과를 적용합니다.",
       "gold": 2650,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3085.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3086",
+        "3144"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3086",
@@ -14219,7 +15118,21 @@
       "original": "공격 속도 15% \n치명타 확률 15% \n이동 속도 4%",
       "gold": 1200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3086.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1018",
+        "1042"
+      ],
+      "into": [
+        "2512",
+        "3094",
+        "3046",
+        "3085",
+        "4403",
+        "6671",
+        "6675"
+      ],
+      "depth": 2
     },
     {
       "id": "3087",
@@ -14242,7 +15155,14 @@
       "original": "공격력 45 \n주문력 45 \n공격 속도 30% \n이동 속도 4% \n\n 전기불꽃 \n 충전 상태로 공격 시 연쇄 번개를 발사해 주변 대상에게 적중 시 효과 를 적용하고 마법 피해 를 입힙니다.\n\n 전기충격 \n기본 공격 시 추가 충전 상태 중첩을 얻습니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3087.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3144",
+        "3113",
+        "1037"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3089",
@@ -14258,7 +15178,13 @@
       "original": "주문력 130 \n\n 신비한 작품 \n총 주문력이 30% 증가합니다.",
       "gold": 3500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3089.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1058",
+        "1058"
+      ],
+      "into": [],
+      "depth": 2
     },
     {
       "id": "3091",
@@ -14278,7 +15204,14 @@
       "original": "공격 속도 50% \n마법 저항력 45 \n강인함 20% \n\n 난투 \n기본 공격이 추가 마법 피해 ( 적중 시 )를 입힙니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3091.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1043",
+        "1057",
+        "1043"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3094",
@@ -14298,7 +15231,13 @@
       "original": "공격 속도 35% \n치명타 확률 25% \n이동 속도 4% \n\n 저격수 \n 충전 상태로 기본 공격 시 40의 추가 마법 피해 를 입히고 공격 사거리가 35% 증가합니다.",
       "gold": 2650,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3094.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3086",
+        "3144"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3095",
@@ -14319,7 +15258,14 @@
       "original": "공격력 50 \n공격 속도 25% \n치명타 확률 25% \n\n 충전 상태 \n이동하거나 공격하면 충전 상태로 공격 할 수 있습니다.\n\n 번개 \n 충전 상태로 공격 시 0의 추가 마법 피해 를 입히고 1.5초 동안 이동 속도가 45% 증가합니다.",
       "gold": 3200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3095.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1038",
+        "1018",
+        "3144"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3100",
@@ -14339,7 +15285,14 @@
       "original": "주문력 100 \n이동 속도 6% \n스킬 가속 10 \n\n 주문 검 \n스킬을 사용하고 나면 다음 기본 공격 시 추가 마법 피해 ( 적중 시 )를 입힙니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3100.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3057",
+        "3113",
+        "1026"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3102",
@@ -14357,7 +15310,13 @@
       "original": "주문력 105 \n마법 저항력 40 \n\n 무효화 \n적의 다음 스킬을 막아 주는 주문 방어막을 생성합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3102.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1058",
+        "4632"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3107",
@@ -14376,7 +15335,13 @@
       "original": "주문력 30 \n스킬 가속 15 \n기본 마나 재생 100% \n체력 회복 및 보호막 10% \n\n 중재 \n2.5초 후 아군 유닛의 체력을 150~350 만큼 회복시키고 적 챔피언에게 최대 체력의 10%에 해당하는 고정 피해 를 입힙니다.",
       "gold": 2300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3107.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3108",
+        "3114"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3108",
@@ -14394,7 +15359,28 @@
       "original": "주문력 25 \n스킬 가속 10",
       "gold": 850,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3108.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052",
+        "2022"
+      ],
+      "into": [
+        "123430",
+        "4636",
+        "323003",
+        "3115",
+        "3003",
+        "326616",
+        "3107",
+        "3128",
+        "3137",
+        "8010",
+        "6616",
+        "4628",
+        "4629",
+        "4633"
+      ],
+      "depth": 2
     },
     {
       "id": "3109",
@@ -14417,7 +15403,14 @@
       "original": "체력 200 \n방어력 40 \n스킬 가속 10 \n기본 체력 재생 100% \n\n 희생 \n 보호 중인 아군 근처에 있으면 해당 아군이 입는 피해량의 14%를 대신 입고 해당 아군이 챔피언에게 입히는 피해량의 12%만큼 체력을 회복 합니다. 맹세 (0초)\n 보호 할 아군을 대상으로 지정합니다.",
       "gold": 2300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3109.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1031",
+        "1006"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3110",
@@ -14438,7 +15431,13 @@
       "original": "방어력 75 \n마나 400 \n스킬 가속 20 \n\n 혹한의 포옹 \n주변 챔피언의 공격 속도 를 20% 만큼 감소시킵니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3110.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3082",
+        "3024"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3111",
@@ -14457,7 +15456,15 @@
       "original": "마법 저항력 20 \n이동 속도 45 \n강인함 30%",
       "gold": 1250,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3111.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1001",
+        "1033"
+      ],
+      "into": [
+        "3173"
+      ],
+      "depth": 2
     },
     {
       "id": "3112",
@@ -14477,7 +15484,10 @@
       "original": "주문력 50 \n체력 150 \n\n\n 회복: 5초마다 10의 마나 를 회복합니다. 마나를 획득할 수 없으면 15의 체력 을 회복합니다.",
       "gold": 950,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3112.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "3113",
@@ -14495,7 +15505,22 @@
       "original": "주문력 30 \n이동 속도 4%",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3113.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052"
+      ],
+      "into": [
+        "123430",
+        "3100",
+        "2065",
+        "322065",
+        "3087",
+        "323504",
+        "3504",
+        "4629",
+        "4646"
+      ],
+      "depth": 2
     },
     {
       "id": "3114",
@@ -14509,7 +15534,28 @@
       "original": "기본 마나 재생 50% \n체력 회복 및 보호막 8%",
       "gold": 600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3114.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1004"
+      ],
+      "into": [
+        "124011",
+        "326621",
+        "223011",
+        "323222",
+        "323107",
+        "322526",
+        "2526",
+        "3011",
+        "326616",
+        "3107",
+        "3222",
+        "323504",
+        "3504",
+        "6616",
+        "6621"
+      ],
+      "depth": 2
     },
     {
       "id": "3115",
@@ -14529,7 +15575,14 @@
       "original": "주문력 80 \n공격 속도 50% \n스킬 가속 15 \n\n 이케시아의 이빨 \n기본 공격이 추가 마법 피해 ( 적중 시 )를 입힙니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3115.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1043",
+        "1026",
+        "3108"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3116",
@@ -14548,7 +15601,14 @@
       "original": "주문력 65 \n체력 400 \n\n 서리 \n스킬로 적에게 피해를 입히면 1초 동안 30% 둔화 시킵니다.",
       "gold": 2600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3116.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1026",
+        "1011",
+        "1052"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3118",
@@ -14567,7 +15627,13 @@
       "original": "주문력 90 \n마나 600 \n스킬 가속 15 \n\n 경멸 \n궁극기 가속이 20 증가합니다.\n\n 증오안개 \n궁극기로 챔피언에게 피해를 입히면 3초 동안 대상 발밑의 지면을 불태워 매초 마법 피해 를 입히고 마법 저항력 을 감소시킵니다.",
       "gold": 2700,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3118.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3802",
+        "1026"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3119",
@@ -14586,7 +15652,14 @@
       "original": "체력 550 \n마나 500 \n스킬 가속 15 \n\n 경탄 \n 0의 체력 을 얻습니다.\n\n 마나순환 (8초, 최대 충전량 4회)\n기본 공격과 스킬 적중 시 3의 최대 마나 (챔피언 상대 시 두 배)를 얻습니다.\n 360의 최대 마나 에 도달하면 종말의 겨울 로 변합니다.",
       "gold": 2400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3119.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3070",
+        "1011",
+        "3067"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3123",
@@ -14602,7 +15675,15 @@
       "original": "공격력 15 \n\n 고통스러운 상처 \n챔피언에게 물리 피해를 입히면 3초 동안 40%의 상처 를 남깁니다.",
       "gold": 800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3123.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036"
+      ],
+      "into": [
+        "3033",
+        "6609"
+      ],
+      "depth": 2
     },
     {
       "id": "3124",
@@ -14623,7 +15704,14 @@
       "original": "공격력 30 \n주문력 30 \n공격 속도 25% \n\n 분노 \n공격 시 30의 추가 마법 피해( 적중 시 ) 를 입힙니다.\n\n 들끓는 일격 \n기본 공격 시 4초 동안 공격 속도가 8% 증가합니다. (4회 중첩) \n최대 중첩 시 세 번째 기본 공격을 가할 때마다 적중 시 효과를 두 번씩 적용합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3124.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052",
+        "1043",
+        "1037"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3133",
@@ -14641,7 +15729,34 @@
       "original": "공격력 20 \n스킬 가속 10",
       "gold": 1050,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3133.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036",
+        "2022",
+        "1036"
+      ],
+      "into": [
+        "6333",
+        "126697",
+        "6697",
+        "4402",
+        "3156",
+        "2517",
+        "323004",
+        "6693",
+        "3004",
+        "3508",
+        "3074",
+        "3179",
+        "6691",
+        "6609",
+        "6610",
+        "6632",
+        "6692",
+        "6694",
+        "6696"
+      ],
+      "depth": 2
     },
     {
       "id": "3134",
@@ -14658,7 +15773,28 @@
       "original": "공격력 20 \n물리 관통력 10",
       "gold": 1000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3134.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036",
+        "1036"
+      ],
+      "into": [
+        "3142",
+        "667666",
+        "126697",
+        "6697",
+        "6701",
+        "6693",
+        "2520",
+        "4004",
+        "6695",
+        "3814",
+        "3131",
+        "3179",
+        "6691",
+        "6676"
+      ],
+      "depth": 2
     },
     {
       "id": "3135",
@@ -14675,7 +15811,13 @@
       "original": "주문력 95 \n마법 관통력 40%",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3135.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "4630",
+        "1026"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3137",
@@ -14693,7 +15835,14 @@
       "original": "주문력 75 \n마법 관통력 30% \n스킬 가속 20 \n\n 죽음에서 피어난 생명 \n자신이 피해를 입힌 챔피언이 3초 안에 죽으면 시체에서 치유의 힘이 퍼져 체력을 회복 시킵니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3137.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "4630",
+        "3108",
+        "3108"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3139",
@@ -14716,7 +15865,14 @@
       "original": "공격력 50 \n마법 저항력 35 \n생명력 흡수 10% \n\n\n\n 활성화 \n 수은 \n모든 군중 제어 효과( 공중에 뜸 제외)를 제거하고 이동 속도가 증가합니다.",
       "gold": 3200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3139.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3140",
+        "1037",
+        "1053"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3140",
@@ -14733,7 +15889,15 @@
       "original": "마법 저항력 30 \n\n 수은 \n모든 군중 제어 효과( 공중에 뜸 제외)를 제거합니다.",
       "gold": 1300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3140.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1033"
+      ],
+      "into": [
+        "3139",
+        "6035"
+      ],
+      "depth": 2
     },
     {
       "id": "3142",
@@ -14753,7 +15917,14 @@
       "original": "공격력 55 \n물리 관통력 18 \n이동 속도 4% \n\n 출몰 \n전투에서 벗어나 있으면 이동 속도가 0 상승합니다.\n\n 망령의 발걸음 \n0초 동안 이동 속도 가 상승하고 유체화 효과를 얻습니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3142.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3134",
+        "6690",
+        "1036"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3143",
@@ -14773,7 +15944,13 @@
       "original": "체력 350 \n방어력 75 \n\n 저항 \n치명타로 받는 피해량이 30% 감소합니다.\n 억제 \n주변 적을 2초 동안 70% 둔화 시킵니다.",
       "gold": 2700,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3143.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3082",
+        "1011"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3144",
@@ -14789,7 +15966,20 @@
       "original": "공격 속도 20% \n\n 명중 \n챔피언에게 피해를 입히면 추가 마법 피해 를 입힙니다. \n기본 공격 시 재사용 대기시간이 1초 감소합니다.",
       "gold": 600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3144.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1042",
+        "1042"
+      ],
+      "into": [
+        "2512",
+        "3094",
+        "3087",
+        "3032",
+        "3085",
+        "3095"
+      ],
+      "depth": 2
     },
     {
       "id": "3145",
@@ -14805,7 +15995,20 @@
       "original": "주문력 45 \n\n 자극 \n챔피언에게 피해를 입히면 추가 마법 피해 를 입힙니다.",
       "gold": 1100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3145.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052",
+        "1052"
+      ],
+      "into": [
+        "4645",
+        "4636",
+        "3146",
+        "6655",
+        "3152",
+        "4646"
+      ],
+      "depth": 2
     },
     {
       "id": "3146",
@@ -14826,7 +16029,14 @@
       "original": "주문력 80 \n공격력 40 \n모든 피해 흡혈 10% \n\n\n\n 활성화 (0초)\n 번개 화살 \n적 챔피언에게 충격을 줘 0의 마법 피해를 입히고 1.5초 동안 25% 둔화시킵니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3146.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1053",
+        "3145",
+        "1052"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3147",
@@ -14844,7 +16054,17 @@
       "original": "주문력 30 \n체력 200 \n\n 광기 \n적 챔피언과 전투 중 매초 2%의 추가 피해를 입힙니다. (최대 6%)",
       "gold": 1300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3147.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052",
+        "1028"
+      ],
+      "into": [
+        "8010",
+        "4633",
+        "6653"
+      ],
+      "depth": 2
     },
     {
       "id": "3152",
@@ -14866,7 +16086,14 @@
       "original": "주문력 60 \n체력 350 \n스킬 가속 20 \n\n 초음속 \n지정 방향으로 돌진하며 마법 피해 를 입히는 탄환을 발사합니다.",
       "gold": 2650,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3152.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3145",
+        "3067",
+        "1028"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3153",
@@ -14888,7 +16115,14 @@
       "original": "공격력 40 \n공격 속도 25% \n생명력 흡수 10% \n\n 안개의 검 \n기본 공격 시 적의 현재 체력의 일정 비율 만큼 추가 물리 피해 ( 적중 시 )를 입힙니다.\n\n 할퀴는 그림자 \n챔피언에게 3회 기본 공격을 가하면 1초 동안 30% 둔화 시킵니다.",
       "gold": 3200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3153.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1053",
+        "1043",
+        "1037"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3155",
@@ -14906,7 +16140,16 @@
       "original": "공격력 25 \n마법 저항력 25 \n\n 생명선 \n체력이 30% 밑으로 떨어질 만큼 마법 피해를 입으면 2.5초 동안 마법 피해를 흡수하는 보호막 을 얻습니다.",
       "gold": 1300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3155.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036",
+        "1033",
+        "1036"
+      ],
+      "into": [
+        "3156"
+      ],
+      "depth": 2
     },
     {
       "id": "3156",
@@ -14927,7 +16170,13 @@
       "original": "공격력 60 \n스킬 가속 15 \n마법 저항력 40 \n\n 생명선 \n체력이 30% 밑으로 떨어질 만큼 마법 피해를 입으면 3초 동안 마법 피해를 흡수하는 보호막 을 얻고 전투가 끝날 때까지 10%의 모든 피해 흡혈 을 얻습니다.",
       "gold": 3100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3156.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3155",
+        "3133"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3157",
@@ -14946,7 +16195,13 @@
       "original": "주문력 105 \n방어력 50 \n\n\n\n 시간 정지 \n2.5초 동안 경직 상태가 됩니다.",
       "gold": 3250,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3157.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1058",
+        "2420"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3158",
@@ -14963,7 +16218,15 @@
       "original": "스킬 가속 10 \n이동 속도 45 \n\n 아이오니아의 통찰 \n소환사 주문 가속이 10 증가합니다.",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3158.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1001",
+        "2022"
+      ],
+      "into": [
+        "3171"
+      ],
+      "depth": 2
     },
     {
       "id": "3161",
@@ -14982,7 +16245,14 @@
       "original": "공격력 45 \n체력 450 \n\n 드래곤의 힘 \n기본 스킬 가속이 25 증가합니다.\n\n 집중된 의지 \n스킬로 피해를 입히면 챔피언 스킬과 기본 지속 효과 피해량이 6초 동안 3% 증가합니다. (4회 중첩)",
       "gold": 3100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3161.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1037",
+        "2021",
+        "1028"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3165",
@@ -15002,7 +16272,14 @@
       "original": "주문력 75 \n체력 350 \n스킬 가속 15 \n\n 고통스러운 상처 \n챔피언에게 마법 피해 를 입히면 3초 동안 40%의 상처 를 남깁니다.",
       "gold": 2850,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3165.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3916",
+        "1026",
+        "3067"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3168",
@@ -15020,7 +16297,12 @@
       "original": "이동 속도 45 \n모든 피해 흡혈 4% \n\n 학살 \n챔피언 처치 관여 시 모든 피해 흡혈을 0.6% 획득합니다. (최대 10회 중첩)\n\n 지금부터 영원까지 \n체력이 절반 이상일 때 입히는 피해량이 4% 증가합니다. \n\n체력이 절반 아래일 때 체력 회복, 보호막, 체력 재생 효과가 12% 증가합니다.",
       "gold": 1000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3168.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3008"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3170",
@@ -15036,7 +16318,12 @@
       "original": "이동 속도 65 \n\n 날쌘 발걸음 \n 둔화 효과가 25% 감소합니다.\n\n 녹서스의 열광 \n 이동 속도 의 5%만큼 적응형 능력치가 증가합니다.",
       "gold": 1000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3170.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3009"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3171",
@@ -15053,7 +16340,12 @@
       "original": "스킬 가속 20 \n이동 속도 45 \n\n 아이오니아의 통찰 \n소환사 주문 가속이 20 증가합니다.\n\n 녹서스의 가속 \n아군에게 스킬로 강화 효과 또는 보호막을 적용하거나, 적 챔피언에게 스킬로 피해를 입히거나, 소환사 주문을 사용하면 4초 동안 이동 속도가 0 증가합니다.\n\n 녹서스의 가속은 스킬을 사용할 때마다 한 번만 발동할 수 있습니다.",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3171.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3158"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3172",
@@ -15073,7 +16365,12 @@
       "original": "공격 속도 45% \n이동 속도 45 \n생명력 흡수 5%",
       "gold": 1100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3172.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3006"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3173",
@@ -15093,7 +16390,12 @@
       "original": "마법 저항력 25 \n이동 속도 45 \n강인함 30% \n\n 녹서스의 끈기 (0초)\n챔피언에게 마법 피해를 입은 후 5초 동안 0 의 마법 피해를 흡수하는 보호막 을 얻습니다.",
       "gold": 1250,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3173.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3111"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3174",
@@ -15111,7 +16413,12 @@
       "original": "방어력 35 \n이동 속도 45 \n\n 장갑판 \n기본 공격으로 받는 피해량이 10% 감소합니다.\n\n 녹서스의 인내 (0초)\n챔피언에게 물리 피해를 입은 후 5초 동안 0 의 물리 피해를 흡수하는 보호막 을 얻습니다.",
       "gold": 1200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3174.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3047"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3175",
@@ -15128,7 +16435,12 @@
       "original": "마법 관통력 20 \n마법 관통력 8% \n이동 속도 45",
       "gold": 1100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3175.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3020"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3177",
@@ -15148,7 +16460,10 @@
       "original": "공격력 30 \n체력 150 \n스킬 가속 15",
       "gold": 950,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3177.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "3179",
@@ -15168,7 +16483,13 @@
       "original": "공격력 60 \n물리 관통력 18 \n스킬 가속 15 \n\n 밤의 추적자 \n잠시 적에게 보이지 않으면 챔피언 대상 다음 기본 공격 시 추가 고정 피해 를 입힙니다.\n\n 암전 \n주변에 있는 적 투명 와드와 함정을 잠시 드러냅니다. 지속시간 동안 와드를 기본 공격하면 추가 피해를 입힙니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3179.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3134",
+        "3133"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3181",
@@ -15188,7 +16509,14 @@
       "original": "공격력 40 \n체력 500 \n이동 속도 4% \n\n 선장 \n챔피언과 에픽 몬스터에게 다섯 번째 기본 공격을 가할 때마다 추가 물리 피해 를 입힙니다. 대상이 구조물일 경우 피해량이 증가합니다.\n\n 승선 부대 \n주변 공성 미니언과 슈퍼 미니언이 방어력 및 마법 저항력 을 얻습니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3181.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2021",
+        "3066",
+        "1037"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3184",
@@ -15209,7 +16537,10 @@
       "original": "공격력 25 \n체력 150 \n생명력 흡수 5%",
       "gold": 950,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3184.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "3190",
@@ -15233,7 +16564,14 @@
       "original": "체력 200 \n방어력 30 \n마법 저항력 30 \n스킬 가속 10 \n\n 헌신 \n주변 아군들에게 290~360의 피해를 흡수하는 보호막 을 부여합니다. 보호막 피해 흡수량은 2.5초에 걸쳐 점차 감소합니다.",
       "gold": 2200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3190.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1029",
+        "1033"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3211",
@@ -15252,7 +16590,18 @@
       "original": "체력 200 \n마법 저항력 35 \n기본 체력 재생 100%",
       "gold": 1250,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3211.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1028",
+        "1033",
+        "1006"
+      ],
+      "into": [
+        "2504",
+        "3065",
+        "6664"
+      ],
+      "depth": 2
     },
     {
       "id": "3222",
@@ -15273,7 +16622,13 @@
       "original": "체력 250 \n기본 마나 재생 100% \n체력 회복 및 보호막 12% \n스킬 가속 15 \n\n 정화 \n아군 챔피언에게 걸린 모든 군중 제어 효과( 공중에 뜸 및 제압 제외)를 제거하고 체력을 100~250 회복합니다.",
       "gold": 2300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3222.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "3114"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3302",
@@ -15294,7 +16649,13 @@
       "original": "공격력 30 \n공격 속도 35% \n\n 그림자 \n기본 공격 시 0의 추가 마법 피해 ( 적중 시 )를 입힙니다.\n\n 빛과 어둠 \n챔피언에게 기본 공격 시 빛 과 어둠 기본 공격을 번갈아 가며 적용합니다. 빛 기본 공격 시 5초 동안 방어력 과 마법 저항력 이 증가합니다. 어둠 기본 공격 시 5초 동안 방어구 관통력 과 마법 관통력 이 10% 증가합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3302.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3051",
+        "1043"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3340",
@@ -15312,7 +16673,10 @@
       "original": "활성 ( 210~90 초, 최대 충전량 2회)\n 90~120 초 동안 시야를 밝혀 주는 보이지 않는 투명 와드를 설치합니다.",
       "gold": 0,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3340.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "3363",
@@ -15328,7 +16692,10 @@
       "original": "사용 시 ( 198~99 초)\n2초 동안 멀리 떨어진 영역을 드러내고 적 챔피언을 발견하면 파괴되는 와드를 설치합니다.",
       "gold": 0,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3363.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "3364",
@@ -15344,7 +16711,10 @@
       "original": "사용 시 ( 160~100 초, 최대 충전량 2회)\n주변에 있는 적의 투명 와드와 함정의 위치를 8초 동안 드러냅니다.",
       "gold": 0,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3364.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "3504",
@@ -15364,7 +16734,13 @@
       "original": "주문력 45 \n체력 회복 및 보호막 10% \n기본 마나 재생 125% \n이동 속도 4% \n\n 축성 \n아군을 치유하거나 보호막을 씌워주면 6초 동안 자신과 대상 아군의 공격 속도가 25% 상승하고 공격 시 20의 마법 피해 ( 적중 시 )를 입힙니다.",
       "gold": 2200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3504.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3113",
+        "3114"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3508",
@@ -15386,7 +16762,14 @@
       "original": "공격력 50 \n스킬 가속 20 \n치명타 확률 25% \n\n 주문 검 \n스킬을 사용하고 나면 다음 기본 공격 시 추가 물리 피해 를 입히고 마나 를 얻습니다. ( 적중 시 )",
       "gold": 3050,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3508.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3057",
+        "3133",
+        "1018"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3742",
@@ -15407,7 +16790,14 @@
       "original": "체력 350 \n방어력 55 \n이동 속도 4% \n\n 침몰시키는 자 \n이동 시 최대 20의 추가 이동 속도 를 얻습니다. 다음 기본 공격 시 추가 물리 피해 를 입히고 추가 이동 속도를 잃습니다.\n\n 굴하지 않는 자 \n 둔화 효과가 15% 감소합니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3742.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3066",
+        "1028",
+        "1031"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3748",
@@ -15427,7 +16817,14 @@
       "original": "공격력 40 \n체력 600 \n\n 쪼개기 \n기본 공격 적중 시 대상 뒤의 적들에게 물리 피해 를 입힙니다.\n 거대한 초승달 \n다음 쪼개기 를 강화하여 추가 물리 피해 ( 적중 시 )를 입히고 대상 뒤의 적들에게 추가 물리 피해 를 입힙니다.",
       "gold": 3300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3748.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3077",
+        "2021",
+        "1011"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3801",
@@ -15444,7 +16841,16 @@
       "original": "체력 200 \n기본 체력 재생 100%",
       "gold": 800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3801.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1028",
+        "1006"
+      ],
+      "into": [
+        "3084",
+        "3083"
+      ],
+      "depth": 2
     },
     {
       "id": "3802",
@@ -15465,7 +16871,23 @@
       "original": "주문력 40 \n마나 300 \n스킬 가속 10 \n\n 깨우치기 \n레벨 업하면 3초 동안 최대 마나의 20% 를 회복합니다.",
       "gold": 1200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3802.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052",
+        "1027",
+        "2022"
+      ],
+      "into": [
+        "2522",
+        "323003",
+        "6656",
+        "3003",
+        "6655",
+        "2503",
+        "3118",
+        "4644"
+      ],
+      "depth": 2
     },
     {
       "id": "3803",
@@ -15485,7 +16907,18 @@
       "original": "체력 300 \n마나 375 \n\n 영원 \n챔피언에게 입은 피해의 10% 를 마나 로 회복합니다. \n스킬 사용 시 사용한 마나의 25%만큼 체력을 회복 합니다.",
       "gold": 1300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3803.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1028",
+        "1028",
+        "1027"
+      ],
+      "into": [
+        "4402",
+        "326657",
+        "6657"
+      ],
+      "depth": 2
     },
     {
       "id": "3814",
@@ -15504,7 +16937,13 @@
       "original": "공격력 50 \n물리 관통력 15 \n체력 250 \n\n 무효화 \n적의 다음 스킬을 막아 주는 주문 방어막을 생성합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3814.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3134",
+        "2021"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "3865",
@@ -15524,7 +16963,10 @@
       "original": "",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3865.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "3869",
@@ -15545,7 +16987,12 @@
       "original": "체력 200 \n기본 체력 재생 75% \n기본 마나 재생 75% \n10초당 골드 9 \n\n 산의 축복 \n챔피언에게 피해를 받은 후 2초 동안 챔피언으로부터 받는 피해가 감소합니다. 효과가 끝나면 1.5초 동안 주변 적을 50% 둔화시킵니다.\n 사용 시 (충전량 4회)\n시야를 밝혀 주는 보이지 않는 투명 와드를 설치합니다.",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3869.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3867"
+      ],
+      "into": [],
+      "depth": 2
     },
     {
       "id": "3870",
@@ -15566,7 +17013,12 @@
       "original": "체력 200 \n기본 체력 재생 75% \n기본 마나 재생 75% \n10초당 골드 9 \n\n 꿈 생성기 \n다른 아군에게 체력을 회복시키거나 보호막을 씌우면 대상에게 3초 동안 꿈방울을 붑니다. 해당 아군이 다음 기본 공격 시 추가 마법 피해 ( 적중 시 )를 입히며, 다음에 받는 피해는 감소합니다. 사용 시 (충전량 4회)\n시야를 밝혀 주는 보이지 않는 투명 와드를 설치합니다.",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3870.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3867"
+      ],
+      "into": [],
+      "depth": 2
     },
     {
       "id": "3871",
@@ -15587,7 +17039,12 @@
       "original": "체력 200 \n기본 체력 재생 75% \n기본 마나 재생 75% \n10초당 골드 9 \n\n 공허 폭발 \n챔피언에게 스킬로 피해를 입히면 폭발이 일어나 마법 피해 를 입힙니다.\n\n 사용 시 (충전량 4회)\n시야를 밝혀 주는 보이지 않는 투명 와드를 설치합니다.",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3871.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3867"
+      ],
+      "into": [],
+      "depth": 2
     },
     {
       "id": "3876",
@@ -15608,7 +17065,12 @@
       "original": "체력 200 \n기본 체력 재생 75% \n기본 마나 재생 75% \n10초당 골드 9 \n\n 썰매 질주 \n아군 주변의 적 챔피언을 둔화 또는 이동 불가 상태로 만들면 체력 을 회복하고 2.5초 동안 자신과 주변 아군의 이동 속도가 20% 증가했다가 점차 감소 합니다. 사용 시 (충전량 4회)\n시야를 밝혀 주는 보이지 않는 투명 와드를 설치합니다.",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3876.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3867"
+      ],
+      "into": [],
+      "depth": 2
     },
     {
       "id": "3877",
@@ -15629,7 +17091,12 @@
       "original": "체력 200 \n기본 체력 재생 75% \n기본 마나 재생 75% \n10초당 골드 9 \n\n 주문 검 \n스킬을 사용하고 나면 다음 기본 공격 시 추가 물리 피해 ( 적중 시 )를 입힙니다. 대상이 챔피언일 경우 4초 동안 입히는 피해량이 증가합니다. 사용 시 (충전량 4회)\n시야를 밝혀 주는 보이지 않는 투명 와드를 설치합니다.",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3877.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3867"
+      ],
+      "into": [],
+      "depth": 2
     },
     {
       "id": "3916",
@@ -15645,7 +17112,16 @@
       "original": "주문력 25 \n\n 고통스러운 상처 \n챔피언에게 마법 피해 를 입히면 3초 동안 40%의 상처 를 남깁니다.",
       "gold": 800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/3916.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052"
+      ],
+      "into": [
+        "223011",
+        "3165",
+        "3011"
+      ],
+      "depth": 2
     },
     {
       "id": "4005",
@@ -15664,7 +17140,14 @@
       "original": "주문력 60 \n스킬 가속 15 \n기본 마나 재생 150% \n\n 통제 \n 이동 불가 효과를 지닌 스킬의 스킬 가속이 20 증가합니다.\n\n 명령 \n적 챔피언에게 이동 불가 효과를 적용하면 4초 동안 해당 챔피언에게 7% 취약 표식을 남깁니다.",
       "gold": 2400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/4005.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052",
+        "4642",
+        "1052"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "4401",
@@ -15684,7 +17167,14 @@
       "original": "체력 400 \n마법 저항력 55 \n이동 속도 4% \n\n 굳건함 \n챔피언에게 마법 피해를 8회 받으면 70의 마법 저항력 및 6%의 추가 이동 속도 를 얻습니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/4401.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1057",
+        "1028",
+        "3066"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "4628",
@@ -15701,7 +17191,14 @@
       "original": "주문력 75 \n스킬 가속 25 \n\n 초강력 사격 \n600 거리 이상에서 스킬로 챔피언에게 피해를 입히면 6초 동안 대상의 위치를 드러냅니다 .\n\n 집중 \n 초강력 사격 발동 시 3초 동안 대상으로부터 1400의 사거리 내에 있는 다른 모든 적 챔피언의 위치를 드러냅니다 .",
       "gold": 2700,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/4628.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3108",
+        "3108",
+        "1052"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "4629",
@@ -15722,7 +17219,14 @@
       "original": "주문력 70 \n체력 350 \n스킬 가속 25 \n이동 속도 4% \n\n 마법의 춤 \n챔피언에게 마법 피해 또는 고정 피해 를 입히면 4초 동안 이동 속도 가 증가합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/4629.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "3113",
+        "3108"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "4630",
@@ -15739,7 +17243,15 @@
       "original": "주문력 25 \n마법 관통력 13%",
       "gold": 1100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/4630.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052"
+      ],
+      "into": [
+        "3135",
+        "3137"
+      ],
+      "depth": 2
     },
     {
       "id": "4632",
@@ -15757,7 +17269,16 @@
       "original": "주문력 40 \n마법 저항력 25 \n\n 무효화 \n적의 다음 스킬을 막아 주는 주문 방어막을 생성합니다.",
       "gold": 1600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/4632.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1052",
+        "1033",
+        "1052"
+      ],
+      "into": [
+        "3102"
+      ],
+      "depth": 2
     },
     {
       "id": "4633",
@@ -15777,7 +17298,13 @@
       "original": "주문력 70 \n체력 350 \n스킬 가속 15 \n\n 공허의 부패 \n적 챔피언과 전투 중 매초 2%의 추가 피해(최대 8%)를 입힙니다. 피해량이 최대가 되면 모든 피해 흡혈 을 얻습니다.\n\n 공허의 마력 \n 추가 체력 의 2%만큼 주문력 이 상승합니다.",
       "gold": 3100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/4633.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3147",
+        "3108"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "4642",
@@ -15796,7 +17323,23 @@
       "original": "주문력 20 \n기본 마나 재생 100% \n스킬 가속 10",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/4642.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1004",
+        "1052",
+        "2022"
+      ],
+      "into": [
+        "2065",
+        "322065",
+        "6620",
+        "326617",
+        "324005",
+        "4005",
+        "6617",
+        "326620"
+      ],
+      "depth": 2
     },
     {
       "id": "4645",
@@ -15813,7 +17356,13 @@
       "original": "주문력 110 \n마법 관통력 15 \n\n 잿덩이꽃 \n 마법 및 고정 피해 가 체력이 40% 아래인 적에게 치명타 로 적중해 20% 증가한 피해를 입힙니다.",
       "gold": 3200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/4645.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3145",
+        "1058"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "4646",
@@ -15833,7 +17382,13 @@
       "original": "주문력 90 \n마법 관통력 15 \n이동 속도 6% \n\n 폭풍 약탈자 \n2.5초 내로 챔피언 최대 체력의 25%에 해당하는 피해를 입히면 질풍 을 적용합니다.\n\n 질풍 \n2초 후에 마법 피해 를 입힙니다. 질풍 이 발동하기 전에 대상이 사망할 경우 주변 적에게 피해를 입힙니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/4646.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3145",
+        "3113"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6333",
@@ -15852,7 +17407,14 @@
       "original": "공격력 60 \n방어력 50 \n스킬 가속 15 \n\n 고통 무시 \n자신이 받은 피해의 일정 비율만큼을 3초에 걸쳐서 입습니다.\n\n 반항 \n자신이 피해를 입힌 챔피언이 3초 안에 죽으면 고통 무시 의 지속 피해 효과가 사라지고 2초에 걸쳐 체력 을 회복합니다.",
       "gold": 3300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6333.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2019",
+        "1037",
+        "3133"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6609",
@@ -15872,7 +17434,14 @@
       "original": "공격력 45 \n체력 450 \n스킬 가속 15 \n\n 광란의 뿔 \n적 챔피언에게 물리 피해를 입히면 3초 동안 40%의 상처 를 남깁니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6609.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3123",
+        "1011",
+        "3133"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6610",
@@ -15892,7 +17461,13 @@
       "original": "공격력 40 \n체력 400 \n스킬 가속 10 \n\n 라이트실드 타격 \n챔피언에게 처음 기본 공격을 가할 때 치명타 로 적용되고 체력을 회복 합니다.",
       "gold": 3100,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6610.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2021",
+        "3133"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6616",
@@ -15911,7 +17486,13 @@
       "original": "주문력 35 \n체력 회복 및 보호막 10% \n기본 마나 재생 125% \n스킬 가속 10 \n\n 급류 \n아군의 체력을 회복시키거나 보호막을 씌우면 6초 동안 자신과 아군의 주문력이 40 , 스킬 가속이 15 증가합니다.",
       "gold": 2250,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6616.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3108",
+        "3114"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6617",
@@ -15932,7 +17513,13 @@
       "original": "주문력 25 \n체력 200 \n스킬 가속 20 \n기본 마나 재생 125% \n\n 별빛 은총 \n아군을 상대로 체력을 회복시키거나 보호막을 씌우면 (자신을 제외하고) 다른 아군에게 연쇄 효과가 적용되며 기존 수치의 30%만큼 체력을 회복 시키거나 35%만큼 피해를 흡수하는 보호막 을 부여합니다.",
       "gold": 2200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6617.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "4642"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6620",
@@ -15953,7 +17540,13 @@
       "original": "주문력 35 \n체력 200 \n스킬 가속 20 \n기본 마나 재생 125% \n\n 영혼 흡수 \n챔피언에게 입힌 감소 전 피해량의 30%만큼 영혼 충전을 얻습니다. 아군을 상대로 체력을 회복시키거나 보호막을 씌우면 모든 영혼 충전 을 소모해 체력 을 회복합니다.",
       "gold": 2200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6620.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "4642"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6621",
@@ -15970,7 +17563,14 @@
       "original": "주문력 45 \n체력 회복 및 보호막 16% \n기본 마나 재생 100% \n\n 태초의 빛 \n기본 마나 재생 100%당 체력 회복 및 보호막 효과가 2% , 주문력이 10 증가합니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6621.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1026",
+        "3114",
+        "3114"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6631",
@@ -15991,7 +17591,14 @@
       "original": "공격력 40 \n공격 속도 25% \n체력 450 \n\n 쪼개기 \n기본 공격 시 주변 적들에게 물리 피해 를 입힙니다.\n 파괴의 충격파 \n 물리 피해 를 입히고 주변 적을 35% 둔화 시킵니다.\n적중한 챔피언 하나당 3초 동안 이동 속도가 35% 증가했다가 점차 감소 합니다.",
       "gold": 3300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6631.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3077",
+        "3044",
+        "1042"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6653",
@@ -16009,7 +17616,13 @@
       "original": "주문력 60 \n체력 300 \n\n 고통 \n스킬 공격이 적을 불태워 3초 동안 매초 최대 체력의 2%에 해당하는 마법 피해 를 입힙니다.\n\n 고난 \n적 챔피언과 전투 중 매초 2%의 추가 피해를 입힙니다. (최대 6%)",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6653.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3147",
+        "2508"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6655",
@@ -16029,7 +17642,13 @@
       "original": "주문력 100 \n마나 600 \n스킬 가속 10 \n\n 메아리 \n스킬로 적에게 피해를 입히면 메아리를 6개 발사하여 대상과 주변 적에게 추가 마법 피해 를 입힙니다. 남은 메아리는 주 대상에게 발사하여 20%의 피해를 입힙니다.",
       "gold": 2750,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6655.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3802",
+        "3145"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6657",
@@ -16051,7 +17670,13 @@
       "original": "주문력 45 \n체력 350 \n마나 500 \n\n 불멸의 시간 \n60초마다 체력 10 , 마나 30 , 주문력 3 씩 상승합니다. 최대 10회까지 중첩됩니다. 최대 중첩에 도달하면 레벨이 오릅니다.\n\n 영원 \n챔피언에게 피해를 입으면 피해량의 10% 를 마나 로 회복합니다. \n스킬 사용 시 사용한 마나의 25%만큼 체력을 회복 합니다.",
       "gold": 2600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6657.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1026",
+        "3803"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6660",
@@ -16068,7 +17693,16 @@
       "original": "체력 150 \n스킬 가속 5 \n\n 불사르기 \n피해를 받거나 입으면 주변 적들에게 3초 동안 마법 피해 를 입힙니다.",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6660.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1028",
+        "2022"
+      ],
+      "into": [
+        "3068",
+        "6664"
+      ],
+      "depth": 2
     },
     {
       "id": "6662",
@@ -16090,7 +17724,14 @@
       "original": "체력 300 \n방어력 50 \n스킬 가속 15 \n\n 주문 검 \n스킬을 사용하고 나면 다음 기본 공격 시 추가 물리 피해 ( 적중 시 )를 입힙니다. 또한 둔화 시키는 서리 영역을 2초 동안 생성합니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6662.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3057",
+        "1028",
+        "1031"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6664",
@@ -16112,7 +17753,13 @@
       "original": "체력 400 \n마법 저항력 40 \n스킬 가속 10 \n기본 체력 재생 100% \n\n 불사르기 \n피해를 받거나 입히면 주변 적들에게 3초 동안 매초 마법 피해 를 입힙니다. \n\n 황폐 \n적을 처치하면 주변에 마법 피해 를 입힙니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6664.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "6660",
+        "3211"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6665",
@@ -16133,7 +17780,14 @@
       "original": "체력 350 \n방어력 45 \n마법 저항력 45 \n\n 공허 태생의 저항력 \n챔피언과 5초 이상 전투를 벌이면 전투가 끝날 때까지 추가 방어력 및 마법 저항력 이 30% 증가합니다.",
       "gold": 3200,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6665.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1011",
+        "1031",
+        "1057"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6670",
@@ -16151,7 +17805,17 @@
       "original": "공격력 15 \n치명타 확률 20%",
       "gold": 1300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6670.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036",
+        "1018"
+      ],
+      "into": [
+        "2523",
+        "3036",
+        "6673"
+      ],
+      "depth": 2
     },
     {
       "id": "6672",
@@ -16172,7 +17836,14 @@
       "original": "공격력 45 \n공격 속도 40% \n이동 속도 4% \n\n 벼락 \n세 번째 기본 공격마다 추가 물리 피해 ( 적중 시 )를 입힙니다. 잃은 체력에 따라 피해량이 증가합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6672.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "6690",
+        "3051",
+        "1043"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6673",
@@ -16190,7 +17861,13 @@
       "original": "공격력 55 \n치명타 확률 25% \n\n 생명선 \n체력이 30% 밑으로 떨어질 만큼 피해를 입으면 3초 동안 보호막 을 얻습니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6673.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1037",
+        "6670"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6675",
@@ -16210,7 +17887,14 @@
       "original": "공격 속도 40% \n치명타 확률 25% \n이동 속도 4% \n\n 깨달음 \n기본 공격 시 기본 스킬의 남은 재사용 대기시간이 15% 감소합니다.",
       "gold": 2650,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6675.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1042",
+        "3086",
+        "1042"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6676",
@@ -16229,7 +17913,14 @@
       "original": "공격력 50 \n물리 관통력 10 \n치명타 확률 25% \n\n 죽음 \n체력이 5% 미만인 챔피언에게 피해를 입힐 경우 처형합니다.\n\n 세금 \n챔피언 처치 시 추가로 25골드 를 획득합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6676.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1037",
+        "3134",
+        "1018"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6690",
@@ -16247,7 +17938,17 @@
       "original": "공격력 15 \n이동 속도 4%",
       "gold": 775,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6690.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1036"
+      ],
+      "into": [
+        "4003",
+        "6700",
+        "6672",
+        "3142"
+      ],
+      "depth": 2
     },
     {
       "id": "6692",
@@ -16265,7 +17966,14 @@
       "original": "공격력 60 \n스킬 가속 15 \n\n 늘 떠오르는 달 \n2초 내에 한 챔피언에게 별개의 기본 공격이나 스킬로 2회 공격하면 2초 동안 일정 피해를 흡수하는 보호막 을 얻습니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6692.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3133",
+        "1037",
+        "1036"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6694",
@@ -16284,7 +17992,13 @@
       "original": "공격력 45 \n방어구 관통력 35% \n스킬 가속 15 \n\n 매서운 추위 \n스킬로 체력이 50% 아래인 적에게 피해를 입히면 1초 동안 30% 둔화 시킵니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6694.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3133",
+        "3035"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6695",
@@ -16301,7 +18015,13 @@
       "original": "공격력 55 \n물리 관통력 15 \n\n 보호막 파괴자 \n적 챔피언에게 피해를 입히면 3초 동안 대상이 받는 보호막의 효과를 0% 감소시킵니다. \n 보호막 파괴자 에 영향을 받지 않은 대상에게 피해를 입히면 보호막의 효과를 0% 감소시킵니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6695.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3134",
+        "1037"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6696",
@@ -16319,7 +18039,13 @@
       "original": "공격력 55 \n물리 관통력 18 \n스킬 가속 20 \n\n 전이 표식 \n자신이 피해를 입힌 챔피언이 3초 안에 죽으면 궁극기 총 재사용 대기시간의 일부를 돌려받습니다.",
       "gold": 2750,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6696.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2020",
+        "3133"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6697",
@@ -16339,7 +18065,13 @@
       "original": "공격력 55 \n물리 관통력 18 \n스킬 가속 10 \n\n 명성 \n자신이 피해를 입힌 챔피언이 3초 안에 죽으면 90초 동안 12+처치한 챔피언 하나당 3의 공격력 이 증가합니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6697.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3134",
+        "3133"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6698",
@@ -16359,7 +18091,13 @@
       "original": "공격력 55 \n물리 관통력 18 \n스킬 가속 10 \n\n 쪼개기 \n기본 공격 시 주변 적들에게 물리 피해 를 입힙니다.\n 이단의 가르기 \n주변에 물리 피해 를 입힙니다.",
       "gold": 2850,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6698.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3077",
+        "2020"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "6699",
@@ -16379,7 +18117,14 @@
       "original": "공격력 55 \n물리 관통력 10 \n스킬 가속 10 \n\n 전류 자극 \n적 챔피언에게 스킬로 피해를 입히면 준비된 충전 상태 가 발동합니다.\n\n 창공 \n 충전 상태로 공격 시 대상 현재 체력에 비례하는 추가 물리 피해 를 입히고 4초 동안 추가 물리 관통력 을 획득합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/6699.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "2020",
+        "1036",
+        "1036"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "8010",
@@ -16399,7 +18144,13 @@
       "original": "주문력 65 \n체력 400 \n스킬 가속 15 \n\n 썩은 부식 \n챔피언에게 스킬 또는 기본 지속 효과로 마법 피해 를 입히면 6초 동안 대상의 마법 저항력이 7.5% 감소합니다. (4회 중첩)",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/8010.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3147",
+        "3108"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "8020",
@@ -16420,7 +18171,13 @@
       "original": "체력 350 \n마법 저항력 45 \n스킬 가속 15 \n\n 파괴 \n주변 적 챔피언이 입는 마법 피해 가 12% 증가합니다.",
       "gold": 2650,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/8020.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1057"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "322065",
@@ -16442,7 +18199,13 @@
       "original": "주문력 65 \n스킬 가속 15 \n이동 속도 6% \n기본 마나 재생 150% \n\n 고무적인 연설 \n4초 동안 주변 아군의 이동 속도를 30% 상승시킵니다.",
       "gold": 2600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/322065.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3113",
+        "4642"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "322526",
@@ -16461,7 +18224,16 @@
       "original": "체력 200 \n체력 회복 및 보호막 8% \n기본 마나 재생 75% \n마나 300 \n\n 조화 \n체력 회복 및 보호막 효과가 0% 증가합니다.\n\n 마나순환 (8초, 최대 5회 충전)\n스킬 적중 시 최대 마나를 4 얻습니다. 챔피언 대상으로는 두 배로 적용됩니다.\n 최대 마나가 360 에 도달하면 악곡의 왕관 으로 변합니다.",
       "gold": 2250,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/322526.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3114",
+        "1028",
+        "323070"
+      ],
+      "into": [
+        "322530"
+      ],
+      "depth": 3
     },
     {
       "id": "323003",
@@ -16480,7 +18252,14 @@
       "original": "주문력 70 \n마나 600 \n스킬 가속 25 \n\n 경탄 \n 추가 마나의 1% 만큼 주문력을 얻습니다.\n\n 마나순환 (8초, 최대 충전량 5회)\n스킬 적중 시 9.5의 최대 마나 (챔피언 상대 시 두 배)를 얻습니다.\n 360의 최대 마나 에 도달하면 대천사의 포옹 으로 변합니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323003.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "323070",
+        "3802",
+        "3108"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "323004",
@@ -16501,7 +18280,14 @@
       "original": "공격력 35 \n마나 500 \n스킬 가속 15 \n\n 경탄 \n 0의 추가 공격력 을 얻습니다.\n\n 마나순환 (8초, 최대 충전량 4회)\n기본 공격과 스킬 적중 시 6.5의 최대 마나 (챔피언 상대 시 두 배)를 얻습니다.\n 360의 최대 마나 에 도달하면 무라마나 로 변합니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323004.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "323070",
+        "3133",
+        "1036"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "323050",
@@ -16522,7 +18308,14 @@
       "original": "체력 350 \n방어력 30 \n마법 저항력 30 \n스킬 가속 10 \n\n 서리불꽃 폭풍 \n궁극기 사용 시 주변에 5초 동안 폭풍을 소환합니다. 폭풍은 적 챔피언에게 매초 30의 마법 피해 를 입히고 30% 둔화 시킵니다.",
       "gold": 2300,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323050.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1029",
+        "3067",
+        "1033"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "323070",
@@ -16539,7 +18332,17 @@
       "original": "마나 240 \n\n 마나순환 (8초, 최대 충전량 4회)\n스킬 적중 시 6.5의 최대 마나 (챔피언 상대 시 두 배, 최대 360 )를 얻습니다.\n\n 도움의 손길 \n미니언에게 기본 공격 시 5의 물리 피해 를 추가로 입힙니다.",
       "gold": 400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323070.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [
+        "3003",
+        "3004",
+        "323003",
+        "323004",
+        "322526",
+        "323119"
+      ],
+      "depth": null
     },
     {
       "id": "323075",
@@ -16557,7 +18360,14 @@
       "original": "체력 200 \n방어력 85 \n\n 가시 \n기본 공격에 맞으면 공격한 적에게 마법 피해 를 입히고, 대상이 챔피언일 경우 3초 동안 40%의 상처 를 남깁니다.",
       "gold": 2650,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323075.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3076",
+        "1031",
+        "1028"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "323107",
@@ -16577,7 +18387,14 @@
       "original": "주문력 30 \n스킬 가속 15 \n기본 마나 재생 100% \n체력 회복 및 보호막 10% \n\n 중재 \n2.5초 후 아군 유닛의 체력을 150~350 만큼 회복시키고 적 챔피언에게 최대 체력의 10%에 해당하는 고정 피해 를 입힙니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323107.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1028",
+        "3114"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "323109",
@@ -16600,7 +18417,14 @@
       "original": "체력 300 \n방어력 50 \n스킬 가속 10 \n기본 체력 재생 150% \n\n 희생 \n 보호 중인 아군 근처에 있으면 해당 아군이 입는 피해량의 14%를 대신 입고 해당 아군이 챔피언에게 입히는 피해량의 12%만큼 체력을 회복 합니다. 맹세 (0초)\n 보호 할 아군을 대상으로 지정합니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323109.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1031",
+        "1006"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "323110",
@@ -16621,7 +18445,13 @@
       "original": "방어력 75 \n마나 500 \n스킬 가속 25 \n\n 혹한의 포옹 \n주변 챔피언의 공격 속도 를 20% 만큼 감소시킵니다.",
       "gold": 2700,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323110.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3082",
+        "3024"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "323119",
@@ -16640,7 +18470,14 @@
       "original": "체력 550 \n마나 500 \n스킬 가속 15 \n\n 경탄 \n 0의 체력 을 얻습니다.\n\n 마나순환 (8초, 최대 충전량 4회)\n기본 공격과 스킬 적중 시 6.5의 최대 마나 (챔피언 상대 시 두 배)를 얻습니다.\n 360의 최대 마나 에 도달하면 종말의 겨울 로 변합니다.",
       "gold": 2400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323119.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "323070",
+        "1011",
+        "3067"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "323190",
@@ -16664,7 +18501,14 @@
       "original": "체력 250 \n방어력 30 \n마법 저항력 30 \n스킬 가속 10 \n\n 헌신 \n주변 아군들에게 290~360의 피해를 흡수하는 보호막 을 부여합니다. 보호막 피해 흡수량은 2.5초에 걸쳐 점차 감소합니다.",
       "gold": 2600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323190.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1029",
+        "1033"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "323222",
@@ -16685,7 +18529,14 @@
       "original": "체력 400 \n기본 마나 재생 100% \n체력 회복 및 보호막 15% \n스킬 가속 15 \n\n 정화 \n아군 챔피언에게 걸린 모든 군중 제어 효과( 공중에 뜸 및 제압 제외)를 제거하고 체력을 100~250 회복합니다.",
       "gold": 2800,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323222.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1028",
+        "3114"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "323504",
@@ -16705,7 +18556,14 @@
       "original": "주문력 55 \n체력 회복 및 보호막 10% \n기본 마나 재생 150% \n이동 속도 6% \n\n 축성 \n아군을 치유하거나 보호막을 씌워주면 6초 동안 자신과 대상 아군의 공격 속도가 25% 상승하고 공격 시 20의 마법 피해 ( 적중 시 )를 입힙니다.",
       "gold": 2600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/323504.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3113",
+        "1052",
+        "3114"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "324005",
@@ -16724,7 +18582,13 @@
       "original": "주문력 65 \n스킬 가속 15 \n기본 마나 재생 150% \n\n 통제 \n 이동 불가 효과를 지닌 스킬의 스킬 가속이 20 증가합니다.\n\n 명령 \n적 챔피언에게 이동 불가 효과를 적용하면 4초 동안 해당 챔피언에게 7% 취약 표식을 남깁니다.",
       "gold": 2400,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/324005.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1026",
+        "4642"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "326616",
@@ -16743,7 +18607,14 @@
       "original": "주문력 45 \n체력 회복 및 보호막 10% \n기본 마나 재생 150% \n스킬 가속 10 \n\n 급류 \n아군의 체력을 회복시키거나 보호막을 씌우면 6초 동안 자신과 아군의 주문력이 40 , 스킬 가속이 15 증가합니다.",
       "gold": 2600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/326616.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3108",
+        "1052",
+        "3114"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "326617",
@@ -16764,7 +18635,14 @@
       "original": "주문력 35 \n체력 400 \n스킬 가속 20 \n기본 마나 재생 150% \n\n 별빛 은총 \n아군을 상대로 체력을 회복시키거나 보호막을 씌우면 (자신을 제외하고) 다른 아군에게 연쇄 효과가 적용되며 기존 수치의 30%만큼 체력을 회복 시키거나 35%만큼 피해를 흡수하는 보호막 을 부여합니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/326617.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1028",
+        "4642"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "326620",
@@ -16785,7 +18663,13 @@
       "original": "주문력 35 \n체력 250 \n스킬 가속 20 \n기본 마나 재생 150% \n\n 영혼 흡수 \n챔피언에게 입힌 감소 전 피해량의 30%만큼 영혼 충전을 얻습니다. 아군을 상대로 체력을 회복시키거나 보호막을 씌우면 모든 영혼 충전 을 소모해 체력 을 회복합니다.",
       "gold": 2600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/326620.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "4642"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "326621",
@@ -16802,7 +18686,14 @@
       "original": "주문력 50 \n체력 회복 및 보호막 20% \n기본 마나 재생 150% \n\n 태초의 빛 \n기본 마나 재생 100%당 체력 회복 및 보호막 효과가 2% , 주문력이 10 증가합니다.",
       "gold": 2900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/326621.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1026",
+        "3114",
+        "3114"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "326657",
@@ -16824,7 +18715,13 @@
       "original": "주문력 45 \n체력 350 \n마나 500 \n\n 불멸의 시간 \n60초마다 체력 10 , 마나 30 , 주문력 3 씩 상승합니다. 최대 10회까지 중첩됩니다. 최대 중첩에 도달하면 레벨이 오릅니다.\n\n 영원 \n챔피언에게 피해를 입으면 피해량의 10% 를 마나 로 회복합니다. \n스킬 사용 시 사용한 마나의 25%만큼 체력을 회복 합니다.",
       "gold": 2600,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/326657.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1026",
+        "3803"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "328020",
@@ -16845,7 +18742,13 @@
       "original": "체력 350 \n마법 저항력 50 \n스킬 가속 15 \n\n 파괴 \n주변 적 챔피언이 입는 마법 피해 가 12% 증가합니다.",
       "gold": 2850,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/328020.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "3067",
+        "1057"
+      ],
+      "into": [],
+      "depth": 3
     },
     {
       "id": "663039",
@@ -16864,7 +18767,10 @@
       "original": "체력 500 \n치명타 확률 20% \n\n 큰손 \n 추가 체력 에 비례해 치명타 확률이 0~30% 증가합니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/663039.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "663056",
@@ -16884,7 +18790,10 @@
       "original": "패권 \n체력, 방어력, 마법 저항력, 공격력, 주문력, 공격 속도, 스킬 가속이 20% 증가합니다. 증가 비율은 이 아이템을 획득한 후 처치 관여마다 0%, 사망당 -3%씩 증가합니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/663056.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "663058",
@@ -16902,7 +18811,10 @@
       "original": "체력 250 \n방어력 80 \n\n 대지 같은 굳건함 \n방어력이 20% 증가하고 방어력에 비례해 방어 확률이 증가합니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/663058.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "663059",
@@ -16920,7 +18832,10 @@
       "original": "체력 250 \n마법 저항력 60 \n\n 별과 같은 무한함 \n 마법 저항력 이 10% 증가합니다. 기본 공격이 아닌 공격으로 받는 피해가 모두 마법 저항력 에 비례해 최대 25%까지 일정 비율 감소합니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/663059.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "663060",
@@ -16938,7 +18853,10 @@
       "original": "적응형 능력치 90 \n치명타 확률 50% \n\n 찰과상 \n각 치명타가 치명타 확률에 비례해 (최대 50%까지) 무작위 추가 치명타 피해 를 입힙니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/663060.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "663064",
@@ -16950,7 +18868,10 @@
       "original": "경험치 100% 추가 획득\n\n아무런 능력치도 없으며, 판매할 수 없습니다...\n\n...하지만 30레벨에 도달하면 그 가치가 드러납니다.",
       "gold": 900,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/663064.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "663146",
@@ -16971,7 +18892,10 @@
       "original": "주문력 90 \n공격력 45 \n모든 피해 흡혈 15% \n\n\n\n 활성화 (0초)\n 번개 화살 \n대상 적 챔피언에게 충격을 줘 0의 마법 피해 를 입히고 2초 동안 40% 둔화 시킵니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/663146.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "663172",
@@ -16992,7 +18916,10 @@
       "original": "공격 속도 40% \n이동 속도 8% \n스킬 가속 25 \n강인함 20% \n\n 바람처럼 \n6초 동안 이동 속도( 적중 시 )가 5% 증가해 최대 25%까지 증가합니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/663172.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "663193",
@@ -17014,7 +18941,10 @@
       "original": "방어력 55 \n마법 저항력 55 \n스킬 가속 10 \n이동 속도 8% \n\n 사용 시 - 불굴: 크기가 커지며 피해를 흡수하는 보호막을 얻습니다. 보호막은 점차 사라집니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/663193.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "664011",
@@ -17035,7 +18965,10 @@
       "original": "주문력 35 \n체력 150 \n체력 회복 및 보호막 10% \n스킬 가속 10 \n\n 활기 \n 체력 회복 및 보호막 효과 1% 당 공격 속도가 1% 증가합니다. \n\n 페퍼민트 \n 적중 시 , 주변에서 체력이 가장 낮은 아군 챔피언의 체력을 0 회복 시킵니다. 체력이 낮은 아군을 우선으로 합니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/664011.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "664644",
@@ -17056,7 +18989,10 @@
       "original": "주문력 65 \n체력 250 \n마나 600 \n스킬 가속 15 \n\n 방호 \n 보호 를 받아 챔피언으로부터 받는 피해가 40% 감소합니다. 보호 효과는 챔피언에게 피해를 받은 후 3초 동안 지속됩니다. (0초) \n\n 챔피언에게 피해를 입으면 아이템 재사용 대기시간이 초기화됩니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/664644.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "667101",
@@ -17076,7 +19012,10 @@
       "original": "적응형 능력치 55 \n스킬 가속 10 \n물리 관통력 15 \n마법 관통력 15 \n이동 속도 15% \n\n 시간 벌기 \n도박꾼의 칼날을 이용해 챔피언 처치 관여 시 초토화보스 베이가의 등장이 추가로 10초 지연됩니다. 도박꾼의 칼날을 장착한 상태로 사망하면 등장이 10초 빨라집니다. (게임 시작 후 14분 30초부터는 등장 시간이 줄어들지 않습니다.)\n\n 묻고 두 배로 \n챔피언 처치 관여 시 중첩을 1회 획득합니다. 중첩마다 처치 시 추가 10골드 를 획득하지만, 받는 피해량이 5% 증가합니다. 사망 시 모든 중첩을 잃습니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/667101.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "667109",
@@ -17096,7 +19035,10 @@
       "original": "주문력 60 \n방어력 25 \n마법 저항력 25 \n\n 추락을 목도하라 \n적 챔피언에게 이동 불가 또는 속박 효과를 적용하면 대상 위로 혜성을 소환합니다. 혜성은 1초 후 떨어지며 해당 지역에 0의 마법 피해 를 추가로 입힙니다. 이 효과는 스킬 사용 1회당 대상별 재사용 대기시간이 6초입니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/667109.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "667112",
@@ -17115,7 +19057,10 @@
       "original": "적응형 능력치 55 \n체력 500 \n\n 난도질 \n피해를 입히면 5초 동안 방어력 과 마법 저항력 을 3 감소시킵니다. 이 효과는 10회까지 중첩됩니다. 중첩 적용 시 스킬당 1초의 재사용 대기시간이 적용됩니다.\n\n 포식 \n챔피언 처치 관여 시 남은 라운드 동안 대상의 능력치와 크기를 10% 훔칩니다.",
       "gold": 2500,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/667112.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [],
+      "into": [],
+      "depth": null
     },
     {
       "id": "667666",
@@ -17134,7 +19079,14 @@
       "original": "공격력 50 \n물리 관통력 10 \n치명타 확률 25% \n\n 죽음 \n체력이 5% 미만인 챔피언에게 피해를 입힐 경우 처형합니다.\n\n 세금 \n챔피언 처치 시 추가로 25골드 를 획득합니다.",
       "gold": 3000,
       "image": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/item/667666.png",
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.18.1/data/ko_KR/item.json",
+      "from": [
+        "1037",
+        "3134",
+        "1018"
+      ],
+      "into": [],
+      "depth": 3
     }
   ]
 }

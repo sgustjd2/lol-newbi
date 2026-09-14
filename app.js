@@ -87,6 +87,43 @@ function portrait(e) {
   );
   return img;
 }
+function itemById(id) {
+  return entries.find((entry) => entry.kind === "item" && entry.id === String(id));
+}
+function recipeCard(item, current = false) {
+  const card = text(
+    current ? "div" : "button",
+    "",
+    current ? "recipe-item recipe-current" : "recipe-item",
+  );
+  if (!current) {
+    card.type = "button";
+    card.setAttribute("aria-label", `${item.name} 상세 보기`);
+    card.title = `${item.name} 상세 보기`;
+    card.onclick = () => {
+      lastFocus = card;
+      location.hash = `item/${item.id}`;
+    };
+  }
+  const icon = portrait(item);
+  icon.className = "recipe-icon";
+  icon.alt = item.name;
+  card.append(icon, text("span", item.name));
+  return card;
+}
+function recipeFlow(item, target, direction = "forward") {
+  const flow = text("div", "", "recipe-flow");
+  if (direction === "backward") {
+    flow.append(recipeCard(item, true), text("span", "→", "recipe-arrow"), recipeCard(target));
+    return flow;
+  }
+  target.forEach((component, index) => {
+    if (index) flow.append(text("span", "＋", "recipe-join"));
+    flow.append(recipeCard(component));
+  });
+  flow.append(text("span", "→", "recipe-arrow"), recipeCard(item, true));
+  return flow;
+}
 const norm = (s) => s.normalize("NFKC").replace(/\s+/g, "").toLowerCase();
 function render() {
   roleFilters();
@@ -311,6 +348,51 @@ function openDetail() {
       ),
     );
     content.append(usage);
+  }
+  if (e.kind === "item") {
+    const components = (e.from || []).map(itemById).filter(Boolean);
+    const upgrades = [...new Set((e.into || []).map(String))]
+      .map(itemById)
+      .filter(Boolean);
+    const section = text("section", "", "detail-block recipes");
+    section.append(text("h3", "아이템 조합"));
+    section.append(
+      text(
+        "p",
+        "재료를 모아 이 아이템을 만들거나, 이 아이템으로 더 좋은 아이템을 만들 수 있어요.",
+        "cc-condition",
+      ),
+    );
+    const fromGroup = text("div", "", "recipe-group");
+    fromGroup.append(text("h4", "이 아이템을 만들려면"));
+    if (components.length) {
+      fromGroup.append(recipeFlow(e, components));
+    } else {
+      fromGroup.append(
+        text(
+          "p",
+          e.depth && e.depth > 1
+            ? "현재 확인된 하위 재료가 없어요. 상점에서 바로 살 수 있는 아이템일 수 있어요."
+            : "더 작은 재료 없이 상점에서 바로 살 수 있는 기본 아이템이에요.",
+          "recipe-empty",
+        ),
+      );
+    }
+    section.append(fromGroup);
+    const intoGroup = text("div", "", "recipe-group");
+    intoGroup.append(text("h4", "이 아이템으로 만들 수 있는 상위 아이템"));
+    if (upgrades.length) {
+      const branches = text("div", "", "recipe-branches");
+      for (const upgrade of upgrades) branches.append(recipeFlow(e, upgrade, "backward"));
+      intoGroup.append(branches);
+    } else {
+      intoGroup.append(
+        text("p", "이 아이템으로 더 만들 수 있는 상위 아이템이 없어요.", "recipe-empty"),
+      );
+    }
+    section.append(intoGroup);
+    section.append(text("small", "아이콘을 누르면 해당 아이템 상세 설명으로 이동해요. 조합 정보는 Data Dragon 공식 데이터 기준이에요.", "recipe-note"));
+    content.append(section);
   }
   if (e.skills?.length) {
     const section = text("section", "", "skills");
