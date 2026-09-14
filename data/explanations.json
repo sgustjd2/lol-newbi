@@ -1002,13 +1002,15 @@
   {
     "id": "Malzahar",
     "kind": "champion",
-    "summary": "환상과 공허충으로 적을 묶는 마법사예요.",
-    "analogy": "공허의 힘을 부리는 소환사를 떠올려 보세요.",
-    "tip": "E를 건 뒤 다른 스킬을 쓰면 효과가 다시 시작돼요.",
-    "caution": "R은 적 챔피언 한 명만 제압할 수 있어요.",
-    "sourceType": "editorial",
+    "summary": "소환수와 지속 피해로 상대를 압박하는 뚜벅이 마법사예요.",
+    "analogy": "제자리에서 공허충과 저주를 부려 상대를 서서히 갉아먹는 마법사예요.",
+    "tip": "초반 구간을 버틴 뒤 양피지로 마나 걱정을 해결하고, 지속적인 라인 푸시와 견제로 상대를 압박하는 플레이가 효과적이에요.",
+    "caution": "말자하는 이동기가 없는 '뚜벅이' 챔피언이라 적의 스킬을 피하기 어렵고, 지속 피해 위주라 폭딜을 완전히 넣기까지 걸리는 시간이 긴 편이니 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "멜(리그 오브 레전드) - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A9%9C(%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C)",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Maokai",
