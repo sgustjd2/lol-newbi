@@ -638,13 +638,15 @@
   {
     "id": "Irelia",
     "kind": "champion",
-    "summary": "칼날 표식으로 적을 처형하는 검사예요.",
-    "analogy": "표식이 남은 적을 끝까지 쫓아가 마무리 짓는 검객을 떠올려 보세요.",
-    "tip": "Q는 표식 있는 적이나 막 처치한 적에게 쓰면 바로 다시 쓸 수 있어요.",
-    "caution": "R은 적 챔피언에게 처음 맞아야 칼날이 넓게 펼쳐져요.",
-    "sourceType": "editorial",
+    "summary": "표식 있는 적을 처치하면 돌진기가 초기화되는 칼날 무희예요.",
+    "analogy": "표식 남긴 적을 계속 베며 쫓아가는 검무 전사예요.",
+    "tip": "라인전 초반엔 패시브(스킬 적중 시 공격 속도 증가)로 주도권을 잡고, 다리우스처럼 힘든 상대를 만나면 아이템이 완성될 때까지 무리하지 말고 기다리세요.",
+    "caution": "이렐리아는 갱 회피 수단이 부족하고, 궁극기(선봉진격검)는 투사체라 야스오의 바람 장막 같은 스킬에 막힐 수 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "The Fundamentals of Laning: A Very, Very Summarized Guide on Learning The Laning Phase Step-by-Step - r/summonerschool",
+    "explanationSourceUrl": "https://www.reddit.com/r/summonerschool/comments/wvspxz/the_fundamentals_of_laning_a_very_very_summarized/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Ivern",
