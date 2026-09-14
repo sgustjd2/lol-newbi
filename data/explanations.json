@@ -1087,13 +1087,15 @@
   {
     "id": "Mordekaiser",
     "kind": "champion",
-    "summary": "철퇴를 휘두르는 힘센 전사예요.",
-    "analogy": "적을 다른 세계로 데려가 싸우는 저승사자예요.",
-    "tip": "E로 적을 끌어모은 뒤 Q로 한꺼번에 때려보세요.",
-    "caution": "R은 적을 처치해야만 빼앗은 힘이 계속 남아요.",
-    "sourceType": "editorial",
+    "summary": "적 하나를 다른 차원으로 끌고 가 1대1 결투를 벌이는 죽음의 군주예요.",
+    "analogy": "궁극기로 상대를 다른 세계로 끌고 가 오직 둘만의 결투를 벌이는 저거넛이에요.",
+    "tip": "6레벨 이후에는 궁극기 R(죽음의 세계)로 적을 추방해 능력치를 빼앗으며 1대1 교전을 유도하거나, E(죽음의 손아귀)로 적을 끌어당겨 단독 전투를 만드세요.",
+    "caution": "모데카이저는 이동기가 없는 '뚜벅이'라 6레벨 전 초반이 약하고, 궁극기 R도 저지 불가(언스토퍼블) 효과에는 무시당할 수 있으니 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력/군중제어기 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5/%EA%B5%B0%EC%A4%91%EC%A0%9C%EC%96%B4%EA%B8%B0",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Morgana",
