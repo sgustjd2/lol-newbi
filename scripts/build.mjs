@@ -8,6 +8,17 @@ const skillNotes = JSON.parse(
 const skillDetails = JSON.parse(
   await readFile("data/skill-details.json", "utf8"),
 );
+const builds = await readFile("data/builds.json", "utf8")
+  .then(JSON.parse)
+  .catch(() => ({ patch: null, champions: {} }));
+const itemById = new Map(
+  catalog.entries.filter((e) => e.kind === "item").map((e) => [e.id, e]),
+);
+const resolveItems = (ids) =>
+  (ids || [])
+    .map((id) => itemById.get(id))
+    .filter(Boolean)
+    .map((it) => ({ id: it.id, name: it.name, image: it.image }));
 const allowed = [
   "summary",
   "analogy",
@@ -37,6 +48,22 @@ const entries = catalog.entries.map((e) => {
       easy: skillNotes.champions[e.id][i],
       edited: true,
     }));
+  }
+  if (e.kind === "champion" && builds.patch === catalog.patch) {
+    const b = builds.champions[e.id];
+    if (b) {
+      enhanced.builds = Object.fromEntries(
+        Object.entries(b).map(([mode, m]) => [
+          mode,
+          {
+            start: resolveItems(m.start),
+            boots: resolveItems(m.boots),
+            core: resolveItems(m.core),
+            situational: resolveItems(m.situational),
+          },
+        ]),
+      );
+    }
   }
   const n = notes.find(
     (n) =>

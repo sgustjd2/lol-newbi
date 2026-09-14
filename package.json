@@ -10,6 +10,8 @@
     "start": "node scripts/serve.mjs",
     "import": "node scripts/import.mjs",
     "merge:editorial": "node scripts/merge-editorial.mjs",
+    "merge:simplify": "node scripts/merge-simplify.mjs",
+    "merge:builds": "node scripts/merge-builds.mjs",
     "test": "node --test"
   },
   "engines": {

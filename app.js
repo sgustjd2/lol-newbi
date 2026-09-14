@@ -371,6 +371,45 @@ function openDetail() {
     }
     content.append(section);
   }
+  if (e.builds) {
+    const modeLabels = { rift: "소환사의 협곡", aram: "칼바람 나락" };
+    const rowLabels = {
+      start: "시작 아이템",
+      boots: "신발",
+      core: "핵심 아이템",
+      situational: "상황에 따라",
+    };
+    const section = text("section", "", "detail-block builds");
+    section.append(text("h3", "추천 아이템 빌드"));
+    section.append(
+      text(
+        "p",
+        "다른 사람들이 많이 쓰는 아이템이에요. op.gg 기록을 바탕으로 해요.",
+        "cc-condition",
+      ),
+    );
+    for (const [mode, rows] of Object.entries(e.builds)) {
+      const modeBlock = text("div", "", "build-mode");
+      modeBlock.append(text("h4", modeLabels[mode] || mode));
+      for (const [key, list] of Object.entries(rows)) {
+        if (!list.length) continue;
+        const row = text("div", "", "build-row");
+        row.append(text("span", rowLabels[key] || key, "build-row-label"));
+        const icons = text("div", "", "build-icons");
+        for (const it of list) {
+          const icon = portrait(it);
+          icon.className = "build-icon";
+          icon.title = it.name;
+          icon.alt = it.name;
+          icons.append(icon);
+        }
+        row.append(icons);
+        modeBlock.append(row);
+      }
+      section.append(modeBlock);
+    }
+    content.append(section);
+  }
   const source = text("div", "", "source");
   source.append(
     text(

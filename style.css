@@ -754,6 +754,39 @@ dialog::backdrop {
   vertical-align: middle;
   margin-right: 10px;
 }
+.build-mode {
+  margin-top: 14px;
+}
+.build-mode h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  color: var(--brand);
+}
+.build-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+.build-row-label {
+  flex-shrink: 0;
+  width: 78px;
+  font-size: 13px;
+  color: #667085;
+}
+.build-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.build-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f2f4f7;
+  border: 1px solid var(--line);
+}
 .term-card {
   cursor: default;
 }
