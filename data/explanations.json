@@ -337,10 +337,12 @@
     "summary": "함정과 저격으로 먼 거리에서 싸우는 명사수예요.",
     "analogy": "먼 곳에서 저격하고 덫도 놓는 사냥꾼을 떠올려 보세요.",
     "tip": "W로 함정을 미리 설치해 두면 적이 걸렸을 때 헤드샷을 더 강하게 쓸 수 있어요.",
-    "caution": "R은 다른 적 챔피언이 아군을 대신해 총알을 막아낼 수 있어요.",
-    "sourceType": "editorial",
+    "caution": "E(90구경 투망)는 얇은 벽만 넘을 수 있어요. R(비장의 한 발)은 다른 챔피언이 대신 맞거나, 멜의 W에 튕겨 나갈 수도 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/스킬 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%EC%8A%A4%ED%82%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Camille",
