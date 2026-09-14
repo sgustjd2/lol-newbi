@@ -605,6 +605,57 @@ dialog::backdrop {
 .lore p:last-of-type {
   margin-bottom: 12px;
 }
+.lore-relations {
+  border-top: 1px solid #e4e7ec;
+  margin: 17px 0 22px;
+  padding-top: 15px;
+}
+.lore-relations h4 {
+  margin: 0 0 11px;
+  color: #795e2d;
+  font-size: 14px;
+}
+.relation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(106px, 1fr));
+  gap: 8px;
+}
+.relation-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  width: 100%;
+  padding: 7px 9px;
+  border: 1px solid #d6dde5;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0b1c2e;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  transition: border-color 0.18s, background 0.18s, transform 0.18s;
+}
+.relation-card:hover {
+  border-color: #c8aa6e;
+  background: #fffaf0;
+  transform: translateY(-1px);
+}
+.relation-card:focus-visible {
+  outline: 3px solid #c8aa6e;
+  outline-offset: 3px;
+}
+.relation-card .portrait {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 9px;
+}
+.relation-card span {
+  min-width: 0;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
 .lore > a {
   font-size: 14px;
   color: #0b1c2e;
@@ -797,6 +848,20 @@ dialog::backdrop {
   }
   .summary {
     font-size: 22px;
+  }
+  .relation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+  .relation-card {
+    gap: 6px;
+    padding: 6px 7px;
+    font-size: 12px;
+  }
+  .relation-card .portrait {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
   }
   footer {
     gap: 5px;

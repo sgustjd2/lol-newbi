@@ -141,6 +141,44 @@ function recipeFlow(item, target, direction = "forward") {
   return flow;
 }
 const norm = (s) => s.normalize("NFKC").replace(/\s+/g, "").toLowerCase();
+function loreRelations(loreText, currentId) {
+  const blocks = String(loreText || "")
+    .split(/\n\s*\n/)
+    .map((block) => block.trim())
+    .filter(Boolean);
+  const marker = blocks.findIndex((block) => /^2\.1\.\s*챔피언 관계/.test(block));
+  if (marker < 0) return { related: [], paragraphs: blocks };
+
+  const champions = new Map(
+    entries
+      .filter((entry) => entry.kind === "champion")
+      .map((entry) => [norm(entry.name), entry]),
+  );
+  const related = [];
+  const seen = new Set();
+  let proseStart = blocks.length;
+  for (let index = marker + 1; index < blocks.length; index += 1) {
+    const block = blocks[index];
+    const champion = champions.get(norm(block));
+    if (champion) {
+      if (champion.id !== currentId && !seen.has(champion.id)) {
+        related.push(champion);
+        seen.add(champion.id);
+      }
+      continue;
+    }
+    // Some lore pages put relationship labels between the names. Keep
+    // scanning those short labels, then stop when the actual prose begins.
+    if (block.length <= 40 && !/[.!?。！？]$/.test(block)) continue;
+    proseStart = index;
+    break;
+  }
+
+  return {
+    related,
+    paragraphs: blocks.slice(0, marker).concat(blocks.slice(proseStart)),
+  };
+}
 function cardEl(e) {
   const card = text("button", "", "card");
   card.type = "button";
@@ -673,7 +711,29 @@ function openDetail() {
   if (e.kind === "champion" && e.lore) {
     const section = text("section", "", "detail-block lore");
     section.append(text("h3", "이 친구의 이야기"));
-    for (const para of e.lore.text.split("\n\n"))
+    const lore = loreRelations(e.lore.text, e.id);
+    if (lore.related.length) {
+      const relations = text("div", "", "lore-relations");
+      relations.append(text("h4", "챔피언 관계"));
+      const relationGrid = text("div", "", "relation-grid");
+      for (const related of lore.related) {
+        const relation = text("button", "", "relation-card");
+        relation.type = "button";
+        relation.title = `${related.name} 상세 설명 보기`;
+        relation.setAttribute("aria-label", `${related.name} 상세 설명 보기`);
+        const icon = portrait(related);
+        icon.alt = related.name;
+        relation.append(icon, text("span", related.name));
+        relation.onclick = () => {
+          lastFocus = relation;
+          location.hash = `champion/${related.id}`;
+        };
+        relationGrid.append(relation);
+      }
+      relations.append(relationGrid);
+      section.append(relations);
+    }
+    for (const para of lore.paragraphs)
       section.append(text("p", para));
     const link = text("a", "나무위키에서 전체 보기 ↗");
     link.href = e.lore.sourceUrl;
