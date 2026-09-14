@@ -747,13 +747,15 @@
   {
     "id": "Kalista",
     "kind": "champion",
-    "summary": "창을 던지고 친구와 함께 싸우는 전사예요.",
-    "analogy": "친구와 손잡고 함께 싸우는 창잡이를 떠올려 보세요.",
-    "tip": "적에게 창을 꽂은 뒤 다시 쓰면 더 세게 맞고 느려져요.",
-    "caution": "R은 약속한 친구만 옆으로 데려올 수 있어요.",
-    "sourceType": "editorial",
+    "summary": "적에게 창을 박아 모아뒀다 한번에 뽑아 터뜨리는 고난도 원거리 딜러예요.",
+    "analogy": "평타로 적에게 창을 계속 박아두다가, 재사용으로 한꺼번에 뽑아 찢어 터뜨리는 사냥꾼이에요.",
+    "tip": "평타-이동 명령으로 짧게 도약하는 '전투 태세'를 활용해 계속 움직이면서 공격하고, E(뽑아 찢기)로 창을 박아둔 뒤 재사용해 터뜨리는 타이밍을 노리세요.",
+    "caution": "패시브 구조상 숙련도에 따른 기량 차이가 매우 큰 고난도 챔피언이라 처음에는 손에 익히는 데 시간이 걸릴 수 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "암베사 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%94%EB%B2%A0%EC%82%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Karma",
