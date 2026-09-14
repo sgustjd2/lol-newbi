@@ -242,11 +242,13 @@
     "kind": "champion",
     "summary": "적에게 저주를 걸고 영혼 세계를 넘나드는 마법사예요.",
     "analogy": "저주를 걸었다가 다시 낚싯줄처럼 불러들이는 모습을 떠올려 보세요.",
-    "tip": "Q로 저주를 건 다음 다시 사용하면 그 경로에 있는 적에게 추가 피해를 줄 수 있어요.",
-    "caution": "R로 생긴 문은 그 자리에서만 쓸 수 있어요.",
-    "sourceType": "editorial",
+    "tip": "Q로 적을 맞힌 뒤 바로 평타나 다른 스킬을 섞어 쓰면 콤보가 훨씬 세져요.",
+    "caution": "오로라는 마법사 중에서도 스킬 재사용 대기시간이 길고, 상대를 확실히 묶어두는 기술이 없어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "오로라(리그 오브 레전드) - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%98%A4%EB%A1%9C%EB%9D%BC(%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C)",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Azir",
