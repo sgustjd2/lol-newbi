@@ -939,13 +939,15 @@
   {
     "id": "Lillia",
     "kind": "champion",
-    "summary": "꿈가루로 적을 잠재우는 마법 전사예요.",
-    "analogy": "숲속에서 졸음 가루를 뿌리는 아기 사슴 같아요.",
-    "tip": "Q를 멀리서 맞히면 피해가 더 세져요.",
-    "caution": "잠든 적을 때려서 깨우면 피해를 더 줘요.",
-    "sourceType": "editorial",
+    "summary": "적에게 꿈가루를 묻혀 재우는 부끄럼쟁이 숲의 정령이에요.",
+    "analogy": "적에게 살짝 꿈가루를 묻히고 다니다가, 궁극기로 한꺼번에 재워버리는 정령이에요.",
+    "tip": "스킬로 적에게 꿈가루를 묻힌 뒤 궁극기 R(감미로운 자장가)로 재우면 릴리아의 주문력에 비례한 추가 피해를 넣을 수 있어요.",
+    "caution": "시야가 없는 곳에서 적을 재우면, 다른 CC와 달리 릴리아에게는 그 적의 위치가 보이지 않으니 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력/군중제어기 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5/%EA%B5%B0%EC%A4%91%EC%A0%9C%EC%96%B4%EA%B8%B0",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Lissandra",
