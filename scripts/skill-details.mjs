@@ -1,4 +1,10 @@
 const round = (n) => Number(n.toFixed(4));
+export function labelForCalcKey(key) {
+  if (/shield/i.test(key)) return "보호막";
+  if (/damage/i.test(key)) return "피해";
+  if (/heal/i.test(key)) return "회복";
+  return null;
+}
 export function parseFormula(calc, spell, ranks) {
   if (
     calc.__type !== "GameCalculation" ||
@@ -55,10 +61,10 @@ const ccDefinitions = [
     "걷는 속도를 느리게 해요.",
   ],
   ["공중에 띄우기", /공중으로|공중에 띄/, "공중으로 띄워 잠깐 행동을 막아요."],
-  ["밀어내기", /밀쳐|밀어내/, "상대의 위치를 뒤로 밀어요."],
+  ["밀어내기", /밀쳐|밀어내|밀어냅/, "상대의 위치를 뒤로 밀어요."],
   ["끌어오기", /끌어당|끌어옵|끌어오/, "상대의 위치를 강제로 당겨요."],
   ["공포", /공포/, "겁에 질려 잠깐 도망가게 해요."],
-  ["매혹", /매혹/, "잠깐 나를 향해 다가오게 해요."],
+  ["매혹", /매혹|홀리|홀린|홀려/, "잠깐 나를 향해 다가오게 해요."],
   ["도발", /도발/, "잠깐 나를 공격하게 만들어요."],
   ["제압", /제압/, "이동과 여러 행동을 강하게 막아요."],
   [

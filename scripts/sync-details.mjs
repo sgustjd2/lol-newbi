@@ -1,5 +1,5 @@
 import { readFile, writeFile, mkdir, rename } from "node:fs/promises";
-import { parseFormula, extractCC } from "./skill-details.mjs";
+import { parseFormula, extractCC, labelForCalcKey } from "./skill-details.mjs";
 const catalog = JSON.parse(await readFile("data/catalog.json", "utf8"));
 const version = catalog.patch.split(".").slice(0, 2).join(".");
 const champions = catalog.entries.filter((e) => e.kind === "champion");
@@ -56,13 +56,7 @@ await Promise.all(
             continue;
           const parts = parseFormula(calc, spell, skill.maxrank || 5);
           if (parts) {
-            const label = /shield/i.test(key)
-              ? "보호막"
-              : /heal/i.test(key)
-                ? "회복"
-                : /damage/i.test(key)
-                  ? "피해"
-                  : null;
+            const label = labelForCalcKey(key);
             if (label) formulas.push({ label, parts });
           } else unresolved.push(key);
         }

@@ -1,7 +1,11 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { parseFormula, extractCC } from "../scripts/skill-details.mjs";
+import {
+  parseFormula,
+  extractCC,
+  labelForCalcKey,
+} from "../scripts/skill-details.mjs";
 import { enrich } from "../scripts/enrich.mjs";
 test("AP 계수와 레벨별 기본값을 구분", () => {
   assert.deepEqual(
@@ -59,6 +63,29 @@ test("본인 둔화 해제는 상대에게 거는 CC 아님", () => {
       { id: "Garen" },
     ).map((e) => e.name),
     ["침묵"],
+  );
+});
+test("계산식 키에 'Health'가 있어도 'Heal'로 오인하지 않음 (TotalHealthDamage → 피해)", () => {
+  assert.equal(labelForCalcKey("TotalHealthDamage"), "피해");
+  assert.equal(labelForCalcKey("SelfHeal"), "회복");
+  assert.equal(labelForCalcKey("ShieldAmount"), "보호막");
+});
+test("'밀어냅니다'처럼 활용된 형태도 밀어내기 CC로 인식", () => {
+  assert.deepEqual(
+    extractCC(
+      { original: "적에게 박치기를 하여 피해를 입히고 적을 밀어냅니다.", key: "W" },
+      { id: "Alistar" },
+    ).map((e) => e.name),
+    ["밀어내기"],
+  );
+});
+test("'매혹'이라는 단어 없이 '홀리다'로만 써도 매혹 CC로 인식", () => {
+  assert.deepEqual(
+    extractCC(
+      { original: "맞은 적을 홀립니다. 홀린 적은 아리 쪽으로 다가갑니다.", key: "E" },
+      { id: "Ahri" },
+    ).map((e) => e.name),
+    ["매혹"],
   );
 });
 test("애니 기절에는 방화광 조건을 명시", () => {
