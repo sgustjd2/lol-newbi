@@ -363,10 +363,12 @@
     "summary": "독을 뿌리고 눈빛으로 적을 꼼짝 못 하게 하는 마법사예요.",
     "analogy": "뱀 몸을 가진 마법사가 독안개를 두르고 다니는 모습을 떠올려 보세요.",
     "tip": "R은 적이 나를 정면으로 바라볼 때만 기절시켜요. 마주보고 있을 때 써보세요.",
-    "caution": "R은 정면 적만 기절시키고, 등진 적은 느려지기만 해요.",
-    "sourceType": "editorial",
+    "caution": "카시오페아는 이동기가 없고, 마나 소모도 마법사 중에서 가장 심한 편이에요. 마나 관리에 신경 써야 해요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드 26.13 패치 노트 - League of Legends",
+    "explanationSourceUrl": "https://www.leagueoflegends.com/ko-kr/news/game-updates/league-of-legends-patch-26-13-notes/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Chogath",
