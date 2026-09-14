@@ -22,7 +22,9 @@
 - 검색, 탭 전환, 역할 필터, 초성 필터, 쉬운 설명 필터, 상세 대화상자, Escape 닫기, 뒤로 가기, 빈 결과, 390px 모바일을 브라우저에서 확인했다.
 - `npm test`는 현재 16개 테스트를 통과한다.
 - NotebookLM에서 실제 추출한 데이터는 아직 0건이다. `data/explanations.json`의 쉬운 설명 10건은 편집 예시이고, NotebookLM 검수 완료가 아니다.
-- Git 저장소, 원격 저장소, GitHub Pages 배포는 아직 설정하지 않았다. 현재 폴더에는 `.git`이 없다.
+- Git 저장소를 초기화하고 `https://github.com/sgustjd2/lol-newbi`에 연결했다. `main` 브랜치에 push했고, GitHub Pages를 Actions 소스로 활성화해 `.github/workflows/pages.yml`이 배포한다. 배포 주소는 `https://sgustjd2.github.io/lol-newbi/`다.
+- 이름에 " / "가 있는 스킬(변신·조건부 스킬, 예: 니달리·제이스·럭스식 스탠스 전환 등 24개)은 `data/skill-details.json`에서 `formVariant: true`로 표시한다. 계수 파서는 여전히 한 조건의 스펠만 매칭하므로(`scripts/sync-details.mjs`), 화면에서는 표시된 계수가 두 형태 중 하나일 수 있다는 안내 문구를 보여준다. 두 번째 형태의 실제 계수를 CommunityDragon에서 추가로 매칭해 보여주는 것은 아직 하지 않았다 — 챔피언마다 내부 스펠 키 이름이 달라 추측 매칭이 위험하기 때문이다.
+- "오늘의 작은 지식" 카드(홈 상단 고정 팁)는 제거했다. 브랜드 아이콘과 파비콘은 Fable 5.1로 디자인한 방패+한입 모티프(`favicon.svg`, 헤더의 `.brand-icon` 인라인 SVG)로 교체했다.
 
 ## 반드시 지킬 데이터 원칙
 
@@ -127,11 +129,10 @@ rg -n "notebook.google.com|notebooklm.google.com|cd627cb8|evidence|private/" --g
 ## 이어서 해야 할 일
 
 1. NotebookLM 로그인 후 챔피언·아이템 실제 설명을 수집하고 사람 검수로 `reviewed`를 관리한다.
-2. 변신 챔피언, 조건부 스킬, 재시전·반환·다중 적중·대상별 보정의 계수와 CC를 추가 검수한다. 현재 파서는 단순 합계 중심이다.
+2. `formVariant: true`인 24개 스킬(니달리·제이스·레넥사이·엘리스 등)의 두 번째 형태 계수를 CommunityDragon 원본에서 사람이 직접 대조해 채운다. 재시전·반환·다중 적중·대상별 보정도 함께 검수한다. 현재 파서는 첫 번째로 매칭되는 스펠 하나만 계산한다.
 3. 패치에서 CommunityDragon 경로가 바뀔 때 매칭 성공률을 확인한다.
 4. 아이템 역할 분류를 표본 검수한다. 태그만으로 실제 빌드 의도를 완벽히 알 수 없다.
-5. GitHub 저장소를 연결하고 Pages를 실제 배포한다.
-6. 초보자 5명에게 대표 챔피언·아이템을 보여주고 이해 여부를 확인한다.
+5. 초보자 5명에게 대표 챔피언·아이템을 보여주고 이해 여부를 확인한다.
 
 ## 현재 알려진 제한
 
