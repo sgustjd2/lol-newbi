@@ -1548,6 +1548,10 @@ dialog::backdrop {
 .duo-source-note p {
   margin: 0 0 5px;
 }
+.duo-tier-summary {
+  color: #8b682d;
+  font-weight: 700;
+}
 .duo-card {
   grid-column: span 2;
   display: flex;

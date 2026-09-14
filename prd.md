@@ -66,7 +66,7 @@ Node.js 22 이상. 정적 HTML/CSS/JavaScript를 유지하고, 간격·모서리
 - 검색, 종류 전환, 상세, Escape 닫기, 뒤로 가기, 빈 결과, 쉬운 설명 필터 브라우저 확인.
 - 390px 뷰포트에서 목록/상세 확인, 가로 넘침 없음.
 - 입력 검증 테스트 3개 통과, 정적 빌드 완료.
-- 봇 듀오 탭에 16.18 공개 시너지 통계를 참고한 8개 추천 조합과 조합별 카운터 2개를 제공한다. 원격 저장소와 GitHub Pages Actions 배포가 설정되어 있다.
+- 봇 듀오 탭에 2026 시즌 공개 프로 대회 경기 2,057건에서 집계한 411개 조합(전체 관측 조합)을 S+·S·A·B·C 티어순으로 제공한다. 원격 저장소와 GitHub Pages Actions 배포가 설정되어 있다.
 
 참고: https://developer.riotgames.com/docs/lol#data-dragon
 

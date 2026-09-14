@@ -372,8 +372,10 @@ function duoChampionButton(id, role, compact = false) {
 }
 function duoPair(adc, support, compact = false) {
   const pair = text("div", "", `duo-pair${compact ? " compact" : ""}`);
+  const adcEntry = championById(adc);
+  const adcRole = adcEntry?.roles?.includes("원거리 딜러") ? "원거리 딜러" : "봇 챔피언";
   pair.append(
-    duoChampionButton(adc, "원거리 딜러", compact),
+    duoChampionButton(adc, adcRole, compact),
     text("span", "＋", "duo-plus"),
     duoChampionButton(support, "서포터", compact),
   );
@@ -414,37 +416,68 @@ function botDuoCard(duo) {
 }
 function renderBotDuos(q) {
   const list = (botDuoData.duos || []).filter((duo) =>
-    norm(
-      [
-        duo.id,
-        duo.adc,
-        championById(duo.adc)?.name,
-        duo.support,
-        championById(duo.support)?.name,
-        ...(duo.tags || []),
-        duo.summary,
-        duo.plan,
-        ...(duo.why || []),
-        ...(duo.counters || []).flatMap((counter) => [
-          counter.adc,
-          championById(counter.adc)?.name,
-          counter.support,
-          championById(counter.support)?.name,
-          counter.reason,
-        ]),
-      ].join(" "),
-    ).includes(q),
+    q
+      .split(/\s+/)
+      .filter(Boolean)
+      .map(norm)
+      .every((term) =>
+        norm(
+          [
+            duo.id,
+            duo.adc,
+            championById(duo.adc)?.name,
+            duo.support,
+            championById(duo.support)?.name,
+            ...(duo.tags || []),
+            duo.summary,
+            duo.plan,
+            ...(duo.why || []),
+            ...(duo.counters || []).flatMap((counter) => [
+              counter.adc,
+              championById(counter.adc)?.name,
+              counter.support,
+              championById(counter.support)?.name,
+              counter.reason,
+            ]),
+          ].join(" "),
+        ).includes(term),
+      ),
   );
-  $("#count").textContent = `${list.length}개 추천 조합 · ${botDuoData.patch || patch} 기준`;
+  list.sort((a, b) => {
+    const tierRank = { "S+": 0, S: 1, A: 2, B: 3, C: 4 };
+    return (
+      (tierRank[a.tier] ?? 9) - (tierRank[b.tier] ?? 9) ||
+      (b.score ?? 0) - (a.score ?? 0) ||
+      (b.games ?? 0) - (a.games ?? 0) ||
+      String(a.id).localeCompare(String(b.id))
+    );
+  });
+  const gameLabel = botDuoData.proGames
+    ? `${botDuoData.proGames.toLocaleString("ko-KR")}경기 프로 기록`
+    : "공개 통계";
+  $("#count").textContent = `${list.length}개 프로 조합 · ${gameLabel} · ${botDuoData.proPatchRange || botDuoData.patch || patch} 기준`;
   $("#grid").replaceChildren();
   const intro = text("div", "", "duo-intro");
   intro.append(
-    text("p", "친구와 봇 라인을 갈 때 고르기 쉬운 조합을 모았어요."),
+    text("p", "2026 시즌 공개 프로 대회에서 실제로 나온 봇·서포터 조합을 모았어요."),
     text(
       "p",
       botDuoData.methodology || "통계와 스킬 궁합을 함께 살펴 초보자용으로 정리했어요.",
     ),
   );
+  if (botDuoData.tierCounts) {
+    const tierText = ["S+", "S", "A", "B", "C"]
+      .filter((tier) => botDuoData.tierCounts[tier] != null)
+      .map((tier) => `${tier} ${botDuoData.tierCounts[tier]}개`)
+      .join(" · ");
+    intro.append(
+      text(
+        "p",
+        `티어 분포 · ${tierText} · 경기 수가 적은 조합은 상위 티어로 올라가지 않도록 보정했어요.`,
+        "duo-tier-summary",
+      ),
+    );
+  }
   $("#grid").append(intro);
   for (const duo of list) $("#grid").append(botDuoCard(duo));
   if (!list.length)
@@ -469,7 +502,10 @@ function renderBotDuos(q) {
 }
 function render() {
   roleFilters();
-  const q = norm($("#search").value);
+  const q =
+    kind === "botduos"
+      ? $("#search").value.normalize("NFKC").toLowerCase()
+      : norm($("#search").value);
   $("#initials").hidden = kind !== "champion";
   $("#glossary-help").hidden = kind !== "glossary";
   document
@@ -1104,7 +1140,7 @@ const KIND_TITLE = {
   item: "아이템 둘러보기",
   glossary: "게임 속 말, 쉽게 알아보기",
   regions: "지역별 이야기",
-  botduos: "봇 듀오 조합 추천",
+  botduos: "프로 봇 듀오 전체 목록",
 };
 const KIND_PLACEHOLDER = {
   favorite: "즐겨찾기한 이름을 찾아보세요",
@@ -1112,7 +1148,7 @@ const KIND_PLACEHOLDER = {
   item: "궁금한 아이템 이름을 찾아보세요",
   glossary: "예: 갱, CS, 노플, 프리징",
   regions: "지역을 선택해 이야기를 읽어보세요",
-  botduos: "예: 징크스 쓰레쉬, 후반 성장, 포킹",
+  botduos: "예: 자야 라칸, S+, 포킹",
 };
 document.querySelectorAll("[data-kind]").forEach((button) =>
   button.addEventListener("click", () => {
