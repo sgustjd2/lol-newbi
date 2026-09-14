@@ -734,13 +734,15 @@
   {
     "id": "Kaisa",
     "kind": "champion",
-    "summary": "미사일과 광선으로 표식을 쌓는 원거리 딜러예요.",
-    "analogy": "적에게 표식을 하나씩 쌓아가는 사냥꾼을 떠올려 보세요.",
-    "tip": "W는 멀리 쏘는 광선이라 안전하게 표식을 쌓기 좋아요.",
-    "caution": "R은 적 챔피언이 있어야 돌진할 수 있어요.",
-    "sourceType": "editorial",
+    "summary": "표식을 쌓아 궁극기로 후방에 파고드는 원거리 암살자예요.",
+    "analogy": "표식 남긴 먼 적에게 순간이동하듯 파고드는 사냥꾼 같아요.",
+    "tip": "초반 라인전은 버티는 데 집중하고, 장거리 W(공허 추적자)로 표식을 쌓은 뒤 궁극기 R(사냥 본능)로 후방 적에게 파고들어 활약하세요.",
+    "caution": "카이사는 적을 묶거나 방해할 CC기가 전혀 없고 초반 라인전이 약하니 무리한 교전은 피하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드 26.13 패치 노트 - League of Legends",
+    "explanationSourceUrl": "https://www.leagueoflegends.com/ko-kr/news/game-updates/league-of-legends-patch-26-13-notes/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Kalista",
