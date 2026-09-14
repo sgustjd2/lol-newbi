@@ -11,7 +11,7 @@
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./seed.css" />
     <link rel="stylesheet" href="./style.css?v=4col" />
-    <script src="./app.js?v=relation-map" type="module"></script>
+    <script src="./app.js?v=tabs-next" type="module"></script>
   </head>
   <body>
     <a class="skip" href="#search">검색으로 건너뛰기</a>
@@ -38,20 +38,30 @@
       </section>
       <section class="dictionary" aria-label="롤 사전">
         <div class="toolbar">
-          <div class="tabs" aria-label="종류 선택">
-            <button class="active" data-kind="champion" aria-pressed="true">
-              챔피언 <span>함께할 친구</span></button
-            ><button data-kind="favorite" aria-pressed="false">
-              ⭐ 즐겨찾기 <span>내가 모은 것</span></button
-            ><button data-kind="item" aria-pressed="false">
-              아이템 <span>든든한 준비물</span>
-            </button>
-            <button data-kind="glossary" aria-pressed="false">
-              용어정리 <span>게임 속 말 사전</span>
-            </button>
-            <button data-kind="regions" aria-pressed="false">
-              지역 이야기 <span>세계관 속으로</span>
-            </button>
+          <div class="tabs-shell">
+            <div id="kind-tabs" class="tabs" aria-label="종류 선택">
+              <button class="active" data-kind="champion" aria-pressed="true">
+                챔피언 <span>함께할 친구</span></button
+              ><button data-kind="favorite" aria-pressed="false">
+                ⭐ 즐겨찾기 <span>내가 모은 것</span></button
+              ><button data-kind="item" aria-pressed="false">
+                아이템 <span>든든한 준비물</span>
+              </button>
+              <button data-kind="glossary" aria-pressed="false">
+                용어정리 <span>게임 속 말 사전</span>
+              </button>
+              <button data-kind="regions" aria-pressed="false">
+                지역 이야기 <span>세계관 속으로</span>
+              </button>
+            </div>
+            <button
+              id="tabs-next"
+              class="tabs-next"
+              type="button"
+              aria-label="다음 메뉴 보기"
+              title="다음 메뉴 보기"
+              hidden
+            >다음&nbsp;›</button>
           </div>
           <span id="patch" class="patch">자료 불러오는 중</span>
         </div>

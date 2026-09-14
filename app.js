@@ -1008,6 +1008,25 @@ document.querySelectorAll("[data-kind]").forEach((button) =>
     render();
   }),
 );
+const kindTabs = $("#kind-tabs");
+const tabsNext = $("#tabs-next");
+const updateTabsNext = () => {
+  if (!kindTabs || !tabsNext) return;
+  const canScroll = kindTabs.scrollWidth > kindTabs.clientWidth + 2;
+  const atEnd = kindTabs.scrollLeft + kindTabs.clientWidth >= kindTabs.scrollWidth - 2;
+  tabsNext.hidden = !canScroll || atEnd;
+  tabsNext.setAttribute("aria-hidden", String(!canScroll || atEnd));
+};
+kindTabs?.addEventListener("scroll", updateTabsNext, { passive: true });
+tabsNext?.addEventListener("click", () => {
+  kindTabs?.scrollBy({
+    left: Math.max(kindTabs.clientWidth * 0.72, 150),
+    behavior: "smooth",
+  });
+});
+window.addEventListener("resize", updateTabsNext);
+requestAnimationFrame(updateTabsNext);
+document.fonts?.ready.then(updateTabsNext);
 document.addEventListener("keydown", (e) => {
   if (
     e.key === "/" &&
