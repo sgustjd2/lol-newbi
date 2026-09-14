@@ -368,7 +368,33 @@ function openDetail() {
   const h = text("h2", e.name);
   h.id = "detail-name";
   title.append(h, text("span", e.subtitle));
-  head.append(portrait(e), title);
+  const profile = text("div", "", "detail-profile");
+  profile.append(portrait(e));
+  if (e.kind === "champion" && e.skills?.length) {
+    const shortcuts = text("div", "", "skill-shortcuts");
+    for (const skill of e.skills) {
+      const shortcut = text("button", "", "skill-shortcut");
+      shortcut.type = "button";
+      shortcut.title = `${skill.key} · ${skill.name} 설명으로 이동`;
+      shortcut.setAttribute("aria-label", `${skill.key} ${skill.name} 설명으로 이동`);
+      shortcut.setAttribute("aria-controls", `detail-skill-${skill.key.toLowerCase()}`);
+      const icon = portrait(skill);
+      icon.className = "skill-shortcut-icon";
+      icon.alt = `${skill.key} ${skill.name}`;
+      shortcut.append(icon, text("span", skill.key, "skill-shortcut-key"));
+      shortcut.onclick = () => {
+        const target = document.getElementById(
+          `detail-skill-${skill.key.toLowerCase()}`,
+        );
+        if (!target) return;
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        target.focus({ preventScroll: true });
+      };
+      shortcuts.append(shortcut);
+    }
+    profile.append(shortcuts);
+  }
+  head.append(profile, title);
   content.append(
     head,
     text("p", e.summary || "쉬운 설명을 준비하고 있어요.", "summary"),
@@ -470,6 +496,8 @@ function openDetail() {
     );
     for (const skill of e.skills) {
       const block = text("article", "", "skill");
+      block.id = `detail-skill-${skill.key.toLowerCase()}`;
+      block.tabIndex = -1;
       const heading = text("h4", "");
       const icon = portrait(skill);
       icon.className = "skill-icon";
