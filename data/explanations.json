@@ -854,13 +854,15 @@
   {
     "id": "Kindred",
     "kind": "champion",
-    "summary": "양과 늑대가 함께 싸우는 원거리 전사예요.",
-    "analogy": "순한 양과 사나운 늑대가 한 몸처럼 움직여요.",
-    "tip": "Q는 구르면서 화살을 최대 세 번 쏠 수 있어요.",
-    "caution": "R은 우리 편과 상대 편 모두 못 죽게 지켜줘요.",
-    "sourceType": "editorial",
+    "summary": "양과 늑대가 짝을 이뤄 사냥감에게 표식을 남기는 원거리 사냥꾼이에요.",
+    "analogy": "평온한 죽음을 주는 양과 강렬한 죽음을 주는 늑대가 함께 다니는 죽음의 사자 같아요.",
+    "tip": "Q로 화살을 뿌려 견제하고, E로 표식 대상을 두 번 더 맞히면 늑대가 덮쳐 큰 피해를 주니 표식 대상을 우선 공격하세요.",
+    "caution": "궁극기 R(양의 안식)은 범위 안에서 죽지만 않게 막아줄 뿐, 효과가 끝나야 체력이 회복되니 지속시간이 끝나는 순간에도 방심하지 마세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "암베사 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%94%EB%B2%A0%EC%82%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Kled",
