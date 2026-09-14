@@ -362,14 +362,21 @@ footer small {
   line-height: 1.6;
 }
 dialog {
-  padding: 36px;
+  --dialog-padding: 36px;
+  padding: var(--dialog-padding);
   border: 1px solid #e4e7ec;
   border-radius: 22px;
   background: #ffffff;
   color: inherit;
   width: min(620px, calc(100% - 28px));
   max-height: 88vh;
-  overflow: auto;
+  /* Keep the native scrollbar inside a clipped, rounded shell. */
+  overflow: hidden;
+}
+#detail-content {
+  max-height: calc(88vh - (var(--dialog-padding) * 2));
+  overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 dialog::backdrop {
   background: #0b1c2ea6;
@@ -556,7 +563,8 @@ dialog::backdrop {
     margin-top: 7px;
   }
   dialog {
-    padding: 25px;
+    --dialog-padding: 25px;
+    padding: var(--dialog-padding);
   }
   .summary {
     font-size: 22px;
