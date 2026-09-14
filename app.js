@@ -17,6 +17,7 @@ function toggleFav(e) {
   } catch {}
 }
 let glossaryEntries = [],
+  regionStories = {},
   selectedInitial = "전체";
 let selectedRole = "전체";
 let selectedRegion = null;
@@ -30,9 +31,9 @@ const REGIONS = [
   "슈리마",
   "타곤",
   "빌지워터",
-  "이시탈",
+  "이쉬탈",
   "그림자 군도",
-  "반도 시티",
+  "밴들 시티",
   "공허",
   "룬테라",
 ];
@@ -390,7 +391,10 @@ function render() {
         (e) => e.kind === "champion" && e.regions?.includes(selectedRegion),
       )
       .sort(byName);
-    $("#count").textContent = `${champs.length}명의 이야기`;
+    const chapter = regionStories[selectedRegion];
+    $("#count").textContent = chapter
+      ? `${champs.length}명이 등장하는 이야기`
+      : `${champs.length}명의 이야기`;
     const story = text("div", "", "region-story");
     const back = text("button", "← 지역 목록으로", "region-back");
     back.type = "button";
@@ -398,19 +402,45 @@ function render() {
       selectedRegion = null;
       render();
     };
-    story.append(back, text("h2", selectedRegion + " 이야기", "region-title"));
-    for (const e of champs) {
-      if (!e.lore) continue;
-      const chapter = text("article", "", "region-chapter");
-      const head = text("div", "", "region-chapter-head");
-      head.append(portrait(e), text("h3", e.name));
-      chapter.append(head);
-      for (const para of e.lore.text.split("\n\n"))
-        chapter.append(text("p", para));
-      story.append(chapter);
+    story.append(back);
+    if (chapter) {
+      story.append(
+        text("p", selectedRegion, "region-eyebrow"),
+        text("h2", chapter.title, "region-title"),
+      );
+      const novel = text("div", "", "region-novel");
+      for (const para of chapter.text.split("\n\n")) novel.append(text("p", para));
+      story.append(novel);
+      if (champs.length) {
+        const castHead = text("h3", "이 이야기에 등장한 챔피언", "region-cast-head");
+        const cast = text("div", "", "region-cast");
+        for (const e of champs) {
+          const b = text("button", "", "region-cast-card");
+          b.type = "button";
+          b.title = e.name;
+          b.append(portrait(e), text("span", e.name));
+          b.onclick = () => {
+            lastFocus = b;
+            location.hash = `champion/${e.id}`;
+          };
+          cast.append(b);
+        }
+        story.append(castHead, cast);
+      }
+    } else {
+      story.append(text("h2", selectedRegion + " 이야기", "region-title"));
+      for (const e of champs) {
+        if (!e.lore) continue;
+        const ch = text("article", "", "region-chapter");
+        const head = text("div", "", "region-chapter-head");
+        head.append(portrait(e), text("h3", e.name));
+        ch.append(head);
+        for (const para of e.lore.text.split("\n\n")) ch.append(text("p", para));
+        story.append(ch);
+      }
+      if (!champs.some((e) => e.lore))
+        story.append(text("p", "아직 이 지역의 이야기가 준비되지 않았어요.", "empty"));
     }
-    if (!champs.some((e) => e.lore))
-      story.append(text("p", "아직 이 지역의 이야기가 준비되지 않았어요.", "empty"));
     $("#grid").append(story);
     return;
   }
@@ -1015,6 +1045,10 @@ try {
   const glossaryResponse = await fetch("./data/glossary.json");
   if (!glossaryResponse.ok) throw Error("glossary load");
   glossaryEntries = await glossaryResponse.json();
+  regionStories = await fetch("./data/region-stories.json")
+    .then((r) => (r.ok ? r.json() : { regions: {} }))
+    .then((d) => d.regions || {})
+    .catch(() => ({}));
   entries = data.entries;
   patch = data.patch;
   $("#patch").textContent = `자료 버전 ${patch}`;

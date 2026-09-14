@@ -107,6 +107,10 @@ await writeFile(
 );
 await writeFile("dist/.nojekyll", "");
 await copyFile("data/glossary.json", "dist/data/glossary.json");
+await copyFile(
+  "data/region-stories.json",
+  "dist/data/region-stories.json",
+).catch(() => {});
 await copyFile("node_modules/@seed-design/css/base.css", "dist/seed.css");
 await copyFile(
   "node_modules/@seed-design/css/LICENSE",

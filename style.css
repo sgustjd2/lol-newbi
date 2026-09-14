@@ -369,9 +369,62 @@ header {
   padding: 0;
   margin-bottom: 14px;
 }
+.region-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #c8aa6e;
+  margin: 0 0 6px;
+}
 .region-title {
   font-size: 26px;
   margin: 0 0 26px;
+}
+.region-novel {
+  margin-bottom: 40px;
+}
+.region-novel p {
+  font-size: 17px;
+  line-height: 1.9;
+  margin: 0 0 20px;
+  word-break: keep-all;
+}
+.region-cast-head {
+  font-size: 15px;
+  color: #667085;
+  margin: 0 0 14px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.region-cast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.region-cast-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 14px 6px 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition:
+    border-color 0.18s,
+    transform 0.18s;
+}
+.region-cast-card:hover {
+  border-color: #c8aa6e;
+  transform: translateY(-2px);
+}
+.region-cast-card .portrait {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .region-chapter {
   margin-bottom: 40px;
