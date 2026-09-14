@@ -15,13 +15,15 @@
   {
     "id": "Lux",
     "kind": "champion",
-    "summary": "빛으로 적을 묶고, 우리 편을 지켜줘요.",
-    "analogy": "빛으로 만든 끈과 방패를 쓰는 마법사예요.",
-    "tip": "Q를 맞히면 최대 두 명의 발을 잠깐 묶어요. W는 우리 편을 보호해요.",
-    "caution": "발을 묶어도 상대가 공격을 못 하는 건 아니에요.",
-    "sourceType": "editorial",
+    "summary": "빛으로 적을 묶고 터뜨리는 원거리 포킹 마법사예요.",
+    "analogy": "멀리서 빛의 구슬을 던지고 터뜨려 견제하는 포킹형 마법사예요.",
+    "tip": "Q(빛의 속박)로 적을 묶은 뒤 W(프리즘 보호막)로 아군을 지키고, E(광휘의 특이점)를 미리 던져뒀다가 터뜨려 궁극기 R(최후의 섬광)과 함께 큰 피해를 노리세요.",
+    "caution": "럭스는 1레벨 마나가 480으로 전체 챔피언 중 가장 많지만, 스킬 의존도가 높아 마나 소모가 빠르니 관리에 신경 쓰세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/능력치 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%EB%8A%A5%EB%A0%A5%EC%B9%98",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Malphite",
