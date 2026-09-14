@@ -686,13 +686,15 @@
   {
     "id": "Jax",
     "kind": "champion",
-    "summary": "무기를 든 근접 싸움의 달인이에요.",
-    "analogy": "공격을 피했다가 반격하는 싸움꾼을 떠올려 보세요.",
-    "tip": "E로 공격을 피했다가 반격하면 주변 적을 기절시켜요.",
-    "caution": "E는 효과가 짧아서 타이밍 맞춰 써야 해요.",
-    "sourceType": "editorial",
+    "summary": "전투가 길어질수록 강해지는 근접 결투가예요.",
+    "analogy": "싸울수록 몸이 풀리는 단련된 격투가처럼, 전투가 이어지면 공격 속도가 오르고 3타마다 추가 피해까지 터지는 챔피언이에요.",
+    "tip": "Q로 적에게 뛰어들어 거리를 좁히고, E로 잠깐 상대 공격을 피한 뒤 반격해 주변 적을 기절시키며 전투를 이어가세요.",
+    "caution": "3~5레벨 구간엔 스킬셋을 갖춘 상대에게 유지력이 부실해 밀릴 수 있으니 무리한 교전은 피하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "STOP caring about tier lists! : r/summonerschool - Reddit",
+    "explanationSourceUrl": "https://www.reddit.com/r/summonerschool/comments/enwg04/stop_caring_about_tier_lists/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Jayce",
