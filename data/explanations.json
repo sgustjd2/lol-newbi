@@ -1100,13 +1100,15 @@
   {
     "id": "Morgana",
     "kind": "champion",
-    "summary": "적을 묶고 아군을 지키는 마법사예요.",
-    "analogy": "적을 사슬로 묶는 저주받은 천사를 떠올려 보세요.",
-    "tip": "Q로 적을 묶은 뒤 다른 스킬로 이어서 공격해보세요.",
-    "caution": "R은 적이 사슬을 계속 못 벗어나야 기절시켜요.",
-    "sourceType": "editorial",
+    "summary": "적을 묶고 아군에게 CC 면역 보호막을 씌워주는 서포터 마법사예요.",
+    "analogy": "적을 속박으로 묶어두고, 아군에게는 CC를 막아주는 보호막을 씌우는 수호자예요.",
+    "tip": "Q(어둠의 속박)로 적을 묶어 견제하고, E(칠흑의 방패)로 위험한 아군에게 CC 면역 보호막을 씌워주세요.",
+    "caution": "궁극기 R(영혼의 족쇄)은 사슬이 연결된 상태라면 상대가 존야의 모래시계 같은 스킬로 경직 상태가 되었다 풀려도 기절 효과가 그대로 적용되니 활용해보세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Naafiri",
