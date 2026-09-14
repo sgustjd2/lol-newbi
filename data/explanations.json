@@ -1137,13 +1137,15 @@
   {
     "id": "Nasus",
     "kind": "champion",
-    "summary": "적을 처치할수록 강해지는 전사예요.",
-    "analogy": "벨수록 낫이 강해지는 사막의 지킴이예요.",
-    "tip": "Q로 적을 처치하면 Q가 영원히 세져요. 미니언도 잡아보세요.",
-    "caution": "W는 시간이 지날수록 적이 점점 더 느려져요.",
-    "sourceType": "editorial",
+    "summary": "초반은 약하지만 스택을 쌓을수록 후반에 최강급이 되는 탑 챔피언이에요.",
+    "analogy": "초반엔 얌전히 버티다가, Q 스택이 쌓일수록 무시무시해지는 사막의 관리자예요.",
+    "tip": "Q(흡수의 일격)로 미니언을 처치해 스택을 꾸준히 쌓고, 교전에서는 즉발 타겟팅 스킬인 W(쇠약)로 적을 포커싱하세요.",
+    "caution": "나서스는 초반 라인전이 약하니, 상대에게 크게 성장할 기회를 한 번이라도 주면 후반 1:1과 교전에서 상대하기 매우 어려워지니 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "야스오 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%BC%EC%8A%A4%EC%98%A4",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Nautilus",
