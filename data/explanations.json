@@ -1063,13 +1063,15 @@
   {
     "id": "MissFortune",
     "kind": "champion",
-    "summary": "총알을 쏘는 강한 원거리 사수예요.",
-    "analogy": "쌍권총을 든 해적 선장을 떠올려 보세요.",
-    "tip": "안 맞고 있을 때 W를 쓰면 점점 빨라져요.",
-    "caution": "R은 앞쪽에 있는 적에게만 맞아요.",
-    "sourceType": "editorial",
+    "summary": "대포처럼 강력한 공격으로 적을 압도하는 현상금 사냥꾼이에요.",
+    "analogy": "총을 한 발씩 쏠 수도 있지만, 난사해서 팀 전투를 승리로 이끄는 현상금 사냥꾼이에요.",
+    "tip": "라인전에서는 새 대상 공격 시 추가 피해를 주는 패시브와 적을 관통하는 Q(한 발에 두 놈)를 활용하고, 팀 전투에서는 광역으로 총탄을 난사하는 궁극기 R(쌍권총 난사)을 중심으로 플레이하세요.",
+    "caution": "궁극기 R(쌍권총 난사)을 시전하는 동안 미스 포츈은 제자리에 고정되니, 적이 옆으로 피하거나 돌진해오면 무방비하게 위험에 노출될 수 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "League of Legends How to Play - Riot Games (공식)",
+    "explanationSourceUrl": "https://www.leagueoflegends.com/ko-kr/how-to-play/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "MonkeyKing",
