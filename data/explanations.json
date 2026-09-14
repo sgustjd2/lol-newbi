@@ -985,13 +985,15 @@
   {
     "id": "Lulu",
     "kind": "champion",
-    "summary": "픽스와 함께 편을 돕는 요정이에요.",
-    "analogy": "친구를 지켜주는 요정 같은 존재를 떠올려 보세요.",
-    "tip": "위험한 친구에게 R을 쓰면 크게 지켜줄 수 있어요.",
-    "caution": "W는 적에게 쓰면 꼼짝 못 하게, 편에게 쓰면 빠르게 해줘요.",
-    "sourceType": "editorial",
+    "summary": "아군은 지켜주고 적은 귀여운 동물로 만들어버리는 요정 마법사예요.",
+    "analogy": "아군에겐 보호막과 힘을 주고, 적은 변신시켜 무력화하는 요정 서포터예요.",
+    "tip": "W(변덕쟁이)로 아군의 공격·이동 속도를 올리거나 적을 귀여운 생물로 변신시켜 무력화하고, 궁극기 R(급성장)로 진입하는 아군을 키워 생존력을 더해주세요.",
+    "caution": "W(변덕쟁이)는 아군 대상과 적 대상일 때 효과가 완전히 다르니 타겟을 항상 확인하고, 변신시킨 적이라도 이동은 가능하니 방향을 바꿔 피할 수 있다는 점을 기억하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력/군중제어기 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5/%EA%B5%B0%EC%A4%91%EC%A0%9C%EC%96%B4%EA%B8%B0",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Malzahar",
