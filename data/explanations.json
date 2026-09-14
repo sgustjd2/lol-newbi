@@ -350,10 +350,12 @@
     "summary": "갈고리와 사슬 다리로 적을 몰아붙이는 전사예요.",
     "analogy": "갈고리를 걸어 벽을 타고 다니며 몰아붙이는 사냥꾼을 떠올려 보세요.",
     "tip": "Q는 바로 쓰기보다 잠깐 기다렸다가 재사용하면 추가 피해가 더 커져요.",
-    "caution": "R은 가둔 곳 안의 적에게만 효과가 있어요.",
-    "sourceType": "editorial",
+    "caution": "E(갈고리 발사)는 속박에 걸려도 벽까지 붙는 첫 번째 이동은 되지만, 그다음 적에게 날아가는 두 번째 이동은 속박이 풀려야만 할 수 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력/군중제어기 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5/%EA%B5%B0%EC%A4%91%EC%A0%9C%EC%96%B4%EA%B8%B0",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Cassiopeia",
