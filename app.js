@@ -94,7 +94,7 @@ function recipeCard(item, current = false) {
   const card = text(
     current ? "div" : "button",
     "",
-    current ? "recipe-item recipe-current" : "recipe-item",
+    current ? "recipe-current" : "recipe-item",
   );
   if (!current) {
     card.type = "button";
