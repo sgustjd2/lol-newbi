@@ -44,7 +44,7 @@ JSON 계약: id, kind(champion/item), name, summary, analogy, tip, caution, sour
 ## 6. 기술 및 배포
 Node.js 22 이상. 정적 HTML/CSS/JavaScript를 유지하고, 간격·모서리 토큰은 `@seed-design/css` 2.8.1에서 제공한다. 브라우저에서는 같은 사이트의 정적 JSON을 읽는다. 모든 경로는 상대 경로로 작성하여 github.io/repository/에서 동작한다. URL hash로 상세 항목을 공유하고 새로고침을 지원한다. 패치는 수동 동기화하며 실패하면 기존 데이터를 유지한다.
 
-저장소와 공개 배포 대상은 아직 생성/설정하지 않았다. 실제 NotebookLM 자료가 들어오기 전에는 초안으로 취급한다. 공개 전 Riot 제품 등록 절차와 출처 사용 범위를 확인한다.
+저장소는 `https://github.com/sgustjd2/lol-newbi`에 연결되어 있고 GitHub Pages Actions로 공개 배포한다. 공개 주소는 `https://sgustjd2.github.io/lol-newbi/`다. 실제 NotebookLM 자료가 들어오기 전에는 초안으로 취급한다. 공개 전 Riot 제품 등록 절차와 출처 사용 범위를 확인한다.
 
 ## 7. 완료 기준
 - 검색한 이름의 올바른 상세 내용을 확인할 수 있다.

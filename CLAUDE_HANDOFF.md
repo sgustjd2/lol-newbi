@@ -1,6 +1,6 @@
 # 롤 한입 — Claude 세션 인수인계 문서
 
-이 문서는 새 Claude 세션이 현재 작업을 이어받기 위한 실행 문서다. 먼저 이 파일을 읽고, 이어서 `prd.md`, `README.md`, `docs/notebooklm-import.md`를 읽는다. 현재 작업 폴더는 `E:\\workspace\\lol-guide`다.
+이 문서는 새 Claude 세션이 현재 작업을 이어받기 위한 실행 문서다. 먼저 이 파일을 읽고, 이어서 `prd.md`, `README.md`, `docs/notebooklm-import.md`를 읽는다. 쉬운 설명 누락 조사는 `docs/claude-easy-explanations.md`와 `docs/claude-easy-explanations-prompt.md`를 사용한다. 현재 작업 폴더는 `E:\\workspace\\lol-guide`다.
 
 ## 사용자 목표
 
@@ -58,6 +58,7 @@ NotebookLM 링크는 공개 문서에 넣지 않았다. 작업 폴더의 `privat
 | `scripts/enrich.mjs` | 쉬운 표현, 챔피언 역할, 아이템 용도 분류 |
 | `scripts/import.mjs` | 검수 완료 NotebookLM JSON 병합 |
 | `scripts/validate.mjs` | 입력 필드·길이·중복·패치·URL·검수 검사 |
+| `scripts/report-missing.mjs` | 현재 패치 기준 쉬운 설명·스킬 설명 누락 보고서 생성 |
 | `docs/notebooklm-import.md` | NotebookLM 수집 프롬프트와 JSON 형식 |
 | `tests/*.mjs` | 데이터, 검색, 역할, 계수, CC, 이미지 테스트 |
 | `.github/workflows/pages.yml` | main push 시 테스트·빌드·GitHub Pages 배포 |
@@ -92,6 +93,8 @@ npm test
 
 검증 실패 시 `scripts/validate.mjs`의 오류를 수정한다. 검증기는 `evidence`, 임의 필드, 비공개 NotebookLM URL을 공개 데이터에 복사하지 않는다.
 
+쉬운 설명이 빠진 전체 목록과 Claude용 묶음 처리 순서는 `docs/claude-easy-explanations.md`에 있다. 새 세션에서 `npm run report:missing`을 실행하면 현재 패치 기준으로 `private/missing-easy-explanations.md`와 JSON이 생성된다. 복사·붙여넣기용 지시는 `docs/claude-easy-explanations-prompt.md`에 있다.
+
 ## 패치 데이터 갱신
 
 ```powershell
@@ -105,18 +108,15 @@ npm test
 
 ## GitHub Pages 배포
 
-현재 원격 저장소가 없다. 새 세션에서 저장소 소유 계정과 이름을 확인한 뒤 진행한다.
+원격 저장소는 `https://github.com/sgustjd2/lol-newbi`이고 기본 브랜치는 `main`이다. GitHub Pages Actions가 활성화되어 있으며 공개 주소는 `https://sgustjd2.github.io/lol-newbi/`다. 새 설명을 반영한 뒤 배포가 필요하면 사용자의 요청에 따라 아래처럼 push한다.
 
 ```powershell
-git init
 git add .
-git commit -m "Build beginner League glossary"
-git branch -M main
-git remote add origin https://github.com/<owner>/<repo>.git
-git push -u origin main
+git commit -m "Add easy explanations"
+git push origin main
 ```
 
-GitHub Settings → Pages에서 GitHub Actions를 소스로 선택한다. `.github/workflows/pages.yml`이 테스트·빌드 후 `dist`를 배포한다. Actions 성공 후 `https://<owner>.github.io/<repo>/`에서 검색, 상세, 아이콘, 모바일을 확인한다.
+`.github/workflows/pages.yml`이 테스트·빌드 후 `dist`를 배포한다. Actions 성공 후 공개 주소에서 검색, 상세, 아이콘, 모바일을 확인한다.
 
 공개 전 노트북 주소·인용·로그인 정보가 없는지 확인한다.
 
@@ -140,7 +140,7 @@ rg -n "notebook.google.com|notebooklm.google.com|cd627cb8|evidence|private/" --g
 - 전체 챔피언·아이템에 사람 검수된 쉬운 설명이 들어간 상태가 아니다.
 - 이미지와 글꼴은 외부 CDN을 사용하므로 오프라인에서는 보이지 않을 수 있다.
 - Data Dragon·CommunityDragon 패치와 실제 라이브 게임 패치가 다를 수 있다. 화면에 데이터 버전을 표시한다.
-- 현재 폴더는 Git 저장소가 아니다. `git status`가 실패하는 것은 정상이며 배포를 시작할 때 `git init`한다.
+- 현재 폴더는 `origin/main`에 연결된 Git 저장소다. 변경 전에 `git status --short --branch`로 다른 세션의 작업을 확인한다.
 - SEED CSS 토큰과 기본 CSS는 사용하지만 React 컴포넌트 라이브러리로 마이그레이션한 상태는 아니다. 정적 HTML 구조를 유지한다.
 
 ## 새 Claude의 작업 원칙

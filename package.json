@@ -6,6 +6,7 @@
   "scripts": {
     "sync": "node scripts/sync.mjs",
     "build": "node scripts/build.mjs",
+    "report:missing": "node scripts/report-missing.mjs",
     "start": "node scripts/serve.mjs",
     "import": "node scripts/import.mjs",
     "test": "node --test"

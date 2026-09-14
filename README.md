@@ -2,6 +2,8 @@
 
 초보자를 위한 한국어 리그 오브 레전드 사전. [요구사항](prd.md), [Claude 인수인계 문서](CLAUDE_HANDOFF.md), [NotebookLM 수집 안내](docs/notebooklm-import.md).
 
+쉬운 설명이 빠진 챔피언·아이템을 조사하려면 [Claude 누락 조사 작업](docs/claude-easy-explanations.md)과 [세션 시작 프롬프트](docs/claude-easy-explanations-prompt.md)를 사용합니다. `npm run report:missing` 명령으로 현재 패치의 누락 목록을 만듭니다.
+
 ## 실행
 Node.js 22 이상에서 실행합니다. SEED CSS 패키지를 사용합니다.
 
@@ -26,11 +28,10 @@ npm start
 - 버전이 다른 설명은 빌드 시 숨깁니다. 최신 자료 버전과 실제 라이브 패치는 다를 수 있습니다.
 
 ## GitHub Pages
-1. 이 폴더를 GitHub 저장소에 올립니다.
-2. 저장소 Settings → Pages → Source에서 GitHub Actions를 선택합니다.
-3. 기본 브랜치를 main으로 사용하고 push하거나 Deploy Pages를 수동 실행합니다.
-4. Actions의 배포 URL을 확인합니다. 저장소 하위 경로도 지원합니다.
+1. 원격 저장소는 `https://github.com/sgustjd2/lol-newbi`입니다.
+2. `main`에 push하면 `.github/workflows/pages.yml`이 테스트·빌드 후 자동 배포합니다.
+3. 공개 주소는 `https://sgustjd2.github.io/lol-newbi/`입니다.
 
-공개 산출물은 `dist`뿐입니다. `private`는 git에서 제외되며 빌드에 복사되지 않습니다. 노트북 자체를 공개할 필요가 없습니다. 현재 원격 저장소와 Pages 배포는 설정하지 않았습니다.
+공개 산출물은 `dist`뿐입니다. `private`는 git에서 제외되며 빌드에 복사되지 않습니다. 노트북 자체를 공개할 필요가 없습니다. 현재 원격 저장소와 Pages 배포가 설정되어 있습니다.
 
 공개 서비스 출시 전에 [Riot 개발자 정책](https://developer.riotgames.com/docs/lol)을 확인하고 제품 등록 절차를 진행합니다.
