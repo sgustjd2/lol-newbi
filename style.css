@@ -365,6 +365,7 @@ dialog {
   --dialog-padding: 36px;
   --dialog-scroll-gap: 10px;
   --dialog-scroll-side-gap: 20px;
+  --dialog-scroll-content-gap: 14px;
   padding: var(--dialog-padding);
   border: 1px solid #e4e7ec;
   border-radius: 22px;
@@ -381,6 +382,7 @@ dialog {
   );
   margin: var(--dialog-scroll-gap) var(--dialog-scroll-side-gap)
     var(--dialog-scroll-gap) 8px;
+  padding-right: var(--dialog-scroll-content-gap);
   overflow-y: auto;
   scrollbar-gutter: stable;
   scrollbar-width: thin;
@@ -591,6 +593,7 @@ dialog::backdrop {
     --dialog-padding: 25px;
     --dialog-scroll-gap: 8px;
     --dialog-scroll-side-gap: 14px;
+    --dialog-scroll-content-gap: 8px;
     padding: var(--dialog-padding);
   }
   .summary {
