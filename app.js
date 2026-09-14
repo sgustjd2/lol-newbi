@@ -303,13 +303,27 @@ function openDetail() {
         block.append(cc);
         const more = document.createElement("details");
         more.className = "advanced";
-        more.append(text("summary", "자세히 보기 · AD/AP 계수"));
+        more.append(text("summary", "자세히 보기 · 계수·사거리·재사용 대기시간"));
         more.append(
           text(
             "p",
             "AD는 공격력, AP는 주문력이에요. 60% AP는 주문력 100당 해당 효과가 60 늘어난다는 뜻이에요. 피해 종류(물리·마법)와 계수는 별개예요.",
           ),
         );
+        if (skill.rangeBurn || skill.cooldownBurn) {
+          const specs = text("p", "", "skill-specs");
+          if (skill.rangeBurn)
+            specs.append(text("span", `사거리 ${skill.rangeBurn}`, "spec"));
+          if (skill.cooldownBurn)
+            specs.append(
+              text("span", `재사용 대기시간 ${skill.cooldownBurn}초`, "spec"),
+            );
+          if (skill.costBurn && skill.costType && skill.costType !== "소모값 없음")
+            specs.append(
+              text("span", `${skill.costType} ${skill.costBurn}`, "spec"),
+            );
+          more.append(specs);
+        }
         if (advanced.formVariant) {
           more.append(
             text(

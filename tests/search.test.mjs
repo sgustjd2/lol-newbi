@@ -31,3 +31,9 @@ test("모든 스킬과 패시브의 공식 이미지 주소 존재", async () =>
         /^https:\/\/ddragon\.leagueoflegends\.com\/cdn\/[^/]+\/img\/(spell|passive)\/[^/]+\.png$/,
       );
 });
+test("스킬 소모값 종류에 풀리지 않은 템플릿({{ }})이 없음", async () => {
+  const d = JSON.parse(await readFile("data/catalog.json", "utf8"));
+  for (const c of d.entries.filter((e) => e.kind === "champion"))
+    for (const s of c.skills)
+      if (s.costType) assert.doesNotMatch(s.costType, /\{\{/, `${c.id} ${s.key}`);
+});

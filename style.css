@@ -633,6 +633,19 @@ dialog::backdrop {
     transition: none !important;
   }
 }
+.skill-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+.spec {
+  font-size: 12px;
+  color: #344054;
+  background: #f2f4f7;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
 .price {
   display: inline-block;
   background: #fbf3e3;
