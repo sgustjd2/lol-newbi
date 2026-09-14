@@ -205,9 +205,11 @@
     "analogy": "얼음 구체를 던지고 벽을 세우는 겨울 새예요.",
     "tip": "W로 벽을 세워 길을 막고, Q로 갇힌 적을 맞혀보세요.",
     "caution": "E는 방금 Q에 맞은 적에게 두 배로 아파요.",
-    "sourceType": "editorial",
+    "sourceType": "notebooklm",
+    "sourceTitle": "STOP caring about tier lists! - r/summonerschool",
+    "explanationSourceUrl": "https://www.reddit.com/r/summonerschool/comments/enwg04/stop_caring_about_tier_lists/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Aphelios",
