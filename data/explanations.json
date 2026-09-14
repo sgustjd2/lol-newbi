@@ -721,13 +721,15 @@
   {
     "id": "Jinx",
     "kind": "champion",
-    "summary": "미니건과 로켓을 바꿔 쓰는 원거리 딜러예요.",
-    "analogy": "무기 두 개를 바꿔가며 싸우는 모습을 떠올려 보세요.",
-    "tip": "E는 지뢰를 던져요. 적이 밟으면 물어서 묶어요.",
-    "caution": "R은 챔피언에 부딪혀야 터져요. 멀리 날아갈수록 세져요.",
-    "sourceType": "editorial",
+    "summary": "처치할수록 더 빨라지는 폭주 기관차 같은 원거리 딜러예요.",
+    "analogy": "다양한 화기를 바꿔 쏘며 적을 처치할수록 걷잡을 수 없이 빨라지는 폭주 기관차 같아요.",
+    "tip": "단일 대상엔 미니건, 여러 적이나 먼 거리엔 로켓포로 무기를 바꿔가며 공격하고, 처치에 관여할 때마다 터지는 '신난다!' 패시브의 가속 효과로 연쇄 격파를 노리세요.",
+    "caution": "상대에게 계속 잡히거나 게임에서 뒤처진 상황이라면 딜 아이템만 고집하지 말고 불멸의 철갑궁이나 수호 천사 같은 생존 아이템을 상황에 맞게 갖추세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "Jinx (Character) - League of Legends Wiki (Fandom)",
+    "explanationSourceUrl": "https://leagueoflegends.fandom.com/wiki/Jinx",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Kaisa",
