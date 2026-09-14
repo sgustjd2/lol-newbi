@@ -662,13 +662,15 @@
   {
     "id": "Janna",
     "kind": "champion",
-    "summary": "바람으로 아군을 지키는 서포터예요.",
-    "analogy": "바람으로 방패를 만들고 적을 밀어내는 수호자예요.",
-    "tip": "R을 쓰면 적을 밀어내고, 남은 바람이 아군 체력을 채워줘요.",
-    "caution": "Q는 다시 눌러야 날아가요. 미리 키운 다음 쏘세요.",
-    "sourceType": "editorial",
+    "summary": "아군을 지키고 적을 밀어내는 바람의 정령 서포터예요.",
+    "analogy": "위험할 때 보호막과 가속을 주는 수호천사 같은 존재예요.",
+    "tip": "위험한 아군이나 포탑엔 E(폭풍의 눈)로 보호막을 주고, 다가오는 적은 Q(울부짖는 돌풍)의 에어본이나 궁극기 R(계절풍)의 밀쳐내기로 막아주세요.",
+    "caution": "궁극기 R(계절풍)은 최대 3초간 채널링하며 아군을 치유하는데, 이동·공격·스킬 사용이나 CC를 받으면 바로 취소되니 안전한 곳에서 시전하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "Janna (League of Legends) - League of Legends Wiki (Fandom)",
+    "explanationSourceUrl": "https://leagueoflegends.fandom.com/wiki/Janna/LoL",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "JarvanIV",
