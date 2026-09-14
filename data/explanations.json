@@ -387,10 +387,12 @@
     "summary": "비행기를 타고 총과 미사일을 쏴요.",
     "analogy": "작은 전투기를 몰고 다니는 조종사를 떠올려 보세요.",
     "tip": "R을 세 번째 쏘면 제일 세요. 모아뒀다 써보세요.",
-    "caution": "E는 앞에 있는 적만 맞고, 적을 약하게 만들어요.",
-    "sourceType": "editorial",
+    "caution": "코르키는 상대를 묶거나 느리게 하는 군중 제어기가 전혀 없어요. 대신 피해와 기동력으로 싸워야 해요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력/군중제어기 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5/%EA%B5%B0%EC%A4%91%EC%A0%9C%EC%96%B4%EA%B8%B0",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Darius",
