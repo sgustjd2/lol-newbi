@@ -289,10 +289,12 @@
     "summary": "로켓 손으로 적을 끌어오는 강철 로봇이에요.",
     "analogy": "쇠사슬 달린 손으로 낚아채는 로봇 팔을 떠올려 보세요.",
     "tip": "Q로 앞에 있는 적을 잡아서 끌고 와요.",
-    "caution": "Q는 앞에 있는 적만 잡을 수 있고, 못 맞히면 소용없어요.",
-    "sourceType": "editorial",
+    "caution": "Q(로켓 손)를 쓰는 동안은 움직이거나 공격할 수 없어요. W(폭주)를 다 쓰고 나면 잠깐 느려져요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "Blitzcrank (League of Legends) - League of Legends Wiki (Fandom)",
+    "explanationSourceUrl": "https://leagueoflegends.fandom.com/wiki/Blitzcrank/LoL",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Brand",
