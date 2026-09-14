@@ -467,6 +467,15 @@ document.addEventListener("keydown", (e) => {
     $("#search").focus();
   }
 });
+const toTop = $("#to-top");
+const updateToTop = () => {
+  toTop.hidden = window.scrollY < 360;
+};
+window.addEventListener("scroll", updateToTop, { passive: true });
+toTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+updateToTop();
 try {
   for (const value of ["전체", ...initials]) {
     const b = text("button", value);
