@@ -459,6 +459,7 @@ function openDetail() {
   }
   content.append(source);
   if (!$("#detail").open) $("#detail").showModal();
+  content.scrollTop = 0;
 }
 function close() {
   history.replaceState(null, "", location.pathname + location.search);
