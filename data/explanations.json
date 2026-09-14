@@ -581,13 +581,15 @@
   {
     "id": "Gwen",
     "kind": "champion",
-    "summary": "가위로 싹둑싹둑 베어내는 작은 재봉 전사예요.",
-    "analogy": "커다란 가위를 든 인형이 전장을 누비는 모습을 떠올려보세요.",
-    "tip": "W를 쓰면 안개 밖 적에게 안 맞아요. 위험할 때 써보세요.",
-    "caution": "R은 최대 2번까지 더 쓸 수 있고, 쓸 때마다 바늘이 늘어나요.",
-    "sourceType": "editorial",
+    "summary": "가위와 바늘을 쓰는 공격 사거리 150의 근접 전사예요.",
+    "analogy": "재봉 도구를 무기로 휘두르는 인형 검사예요.",
+    "tip": "패시브(가위 난도질)가 붙어서 기본 공격에 체력 비례 피해가 추가돼요. Q는 가운데에 맞은 적에게 고정 피해를 줘요.",
+    "caution": "초반 라인전이 약하고 궁극기의 둔화 말고는 CC와 기동성이 부족해요. 궁극기는 투사체라 상대의 투사체 차단 스킬에 막힐 수 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/능력치 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%EB%8A%A5%EB%A0%A5%EC%B9%98",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Hecarim",
