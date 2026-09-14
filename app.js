@@ -3,6 +3,23 @@ const $ = (s) => document.querySelector(s);
 let glossaryEntries = [],
   selectedInitial = "전체";
 let selectedRole = "전체";
+let selectedRegion = null;
+const REGIONS = [
+  "데마시아",
+  "녹서스",
+  "아이오니아",
+  "프렐요드",
+  "필트오버",
+  "자운",
+  "슈리마",
+  "타곤",
+  "빌지워터",
+  "이시탈",
+  "그림자 군도",
+  "반도 시티",
+  "공허",
+  "룬테라",
+];
 const roleOptions = {
   champion: [
     "전체",
@@ -37,8 +54,8 @@ function roleFilters() {
     };
     $("#role-filters").append(b);
   }
-  $("#role-filters").hidden = kind === "glossary";
-  $("#role-help").hidden = kind === "glossary";
+  $("#role-filters").hidden = kind === "glossary" || kind === "regions";
+  $("#role-help").hidden = kind === "glossary" || kind === "regions";
   $("#role-help").textContent =
     kind === "champion"
       ? "챔피언의 전투 역할이에요. 탑·미드 같은 포지션과는 달라요. 여러 역할에 함께 표시될 수 있어요."
@@ -76,10 +93,65 @@ function render() {
   const q = norm($("#search").value);
   $("#initials").hidden = kind !== "champion";
   $("#glossary-help").hidden = kind !== "glossary";
-  $(".easy-filter").hidden = kind === "glossary";
+  $(".easy-filter").hidden = kind === "glossary" || kind === "regions";
+  $(".search-row").hidden = kind === "regions";
   document.querySelectorAll("[data-initial]").forEach((b) => {
     b.setAttribute("aria-pressed", b.dataset.initial === selectedInitial);
   });
+  if (kind === "regions") {
+    $("#grid").replaceChildren();
+    if (!selectedRegion) {
+      $("#count").textContent = `${REGIONS.length}개 지역`;
+      const picker = text("div", "", "region-picker");
+      for (const region of REGIONS) {
+        const count = entries.filter(
+          (e) => e.kind === "champion" && e.regions?.includes(region),
+        ).length;
+        if (!count) continue;
+        const b = text("button", "", "region-card");
+        b.type = "button";
+        b.append(
+          text("h3", region),
+          text("span", `챔피언 ${count}명`, "subtitle"),
+        );
+        b.onclick = () => {
+          selectedRegion = region;
+          render();
+        };
+        picker.append(b);
+      }
+      $("#grid").append(picker);
+      return;
+    }
+    const champs = entries
+      .filter(
+        (e) => e.kind === "champion" && e.regions?.includes(selectedRegion),
+      )
+      .sort(byName);
+    $("#count").textContent = `${champs.length}명의 이야기`;
+    const story = text("div", "", "region-story");
+    const back = text("button", "← 지역 목록으로", "region-back");
+    back.type = "button";
+    back.onclick = () => {
+      selectedRegion = null;
+      render();
+    };
+    story.append(back, text("h2", selectedRegion + " 이야기", "region-title"));
+    for (const e of champs) {
+      if (!e.lore) continue;
+      const chapter = text("article", "", "region-chapter");
+      const head = text("div", "", "region-chapter-head");
+      head.append(portrait(e), text("h3", e.name));
+      chapter.append(head);
+      for (const para of e.lore.text.split("\n\n"))
+        chapter.append(text("p", para));
+      story.append(chapter);
+    }
+    if (!champs.some((e) => e.lore))
+      story.append(text("p", "아직 이 지역의 이야기가 준비되지 않았어요.", "empty"));
+    $("#grid").append(story);
+    return;
+  }
   if (kind === "glossary") {
     const list = glossaryEntries
       .filter((e) =>
@@ -424,6 +496,22 @@ function openDetail() {
     }
     content.append(section);
   }
+  if (e.kind === "champion" && e.lore) {
+    const section = text("section", "", "detail-block lore");
+    section.append(text("h3", "이 친구의 이야기"));
+    for (const para of e.lore.text.split("\n\n"))
+      section.append(text("p", para));
+    const link = text("a", "나무위키에서 전체 보기 ↗");
+    link.href = e.lore.sourceUrl;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    section.append(link);
+    if (e.regions?.length)
+      section.append(
+        text("p", "소속 지역 · " + e.regions.join(", "), "lore-regions"),
+      );
+    content.append(section);
+  }
   const source = text("div", "", "source");
   source.append(
     text(
@@ -497,6 +585,7 @@ document.querySelectorAll("[data-kind]").forEach((button) =>
     $("#search").value = "";
     selectedInitial = "전체";
     selectedRole = "전체";
+    selectedRegion = null;
     $("#easy-only").checked = false;
     $("#search").placeholder =
       kind === "glossary"
@@ -505,7 +594,9 @@ document.querySelectorAll("[data-kind]").forEach((button) =>
     $("#list-title").textContent =
       kind === "glossary"
         ? "게임 속 말, 쉽게 알아보기"
-        : `${kind === "champion" ? "챔피언" : "아이템"} 둘러보기`;
+        : kind === "regions"
+          ? "지역별 이야기"
+          : `${kind === "champion" ? "챔피언" : "아이템"} 둘러보기`;
     render();
   }),
 );

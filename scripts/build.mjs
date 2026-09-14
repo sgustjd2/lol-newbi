@@ -11,6 +11,12 @@ const skillDetails = JSON.parse(
 const builds = await readFile("data/builds.json", "utf8")
   .then(JSON.parse)
   .catch(() => ({ patch: null, champions: {} }));
+const lore = await readFile("data/lore.json", "utf8")
+  .then(JSON.parse)
+  .catch(() => ({ champions: {} }));
+const regions = await readFile("data/regions.json", "utf8")
+  .then(JSON.parse)
+  .catch(() => ({ champions: {} }));
 const itemById = new Map(
   catalog.entries.filter((e) => e.kind === "item").map((e) => [e.id, e]),
 );
@@ -64,6 +70,12 @@ const entries = catalog.entries.map((e) => {
         ]),
       );
     }
+  }
+  if (e.kind === "champion" && lore.champions[e.id]) {
+    enhanced.lore = lore.champions[e.id];
+  }
+  if (e.kind === "champion" && regions.champions[e.id]?.length) {
+    enhanced.regions = regions.champions[e.id];
   }
   const n = notes.find(
     (n) =>

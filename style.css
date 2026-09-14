@@ -302,6 +302,75 @@ header {
   font-size: 20px;
   color: #006c87;
 }
+.region-picker {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.region-card {
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--seed-radius-r4, 16px);
+  padding: 22px;
+  cursor: pointer;
+  transition:
+    transform 0.18s,
+    border-color 0.18s,
+    box-shadow 0.18s;
+}
+.region-card:hover {
+  transform: translateY(-3px);
+  border-color: #c8aa6e;
+  box-shadow: 0 6px 18px #0b1c2e0d;
+}
+.region-card h3 {
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+.region-story {
+  grid-column: 1/-1;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.region-back {
+  background: none;
+  border: none;
+  color: #006c87;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 14px;
+}
+.region-title {
+  font-size: 26px;
+  margin: 0 0 26px;
+}
+.region-chapter {
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+}
+.region-chapter:last-child {
+  border-bottom: none;
+}
+.region-chapter-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.region-chapter-head h3 {
+  font-size: 18px;
+  margin: 0;
+}
+.region-chapter p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0 0 14px;
+  word-break: keep-all;
+}
 .empty {
   grid-column: 1/-1;
   padding: 60px 20px;
@@ -452,6 +521,21 @@ dialog::backdrop {
   margin: 0;
   word-break: keep-all;
 }
+.lore p {
+  margin: 0 0 14px;
+}
+.lore p:last-of-type {
+  margin-bottom: 12px;
+}
+.lore > a {
+  font-size: 14px;
+  color: #0b1c2e;
+}
+.lore-regions {
+  font-size: 13px !important;
+  color: #667085;
+  margin-top: 10px !important;
+}
 .source {
   border-top: 1px solid var(--line);
   padding-top: 18px;
@@ -530,7 +614,8 @@ dialog::backdrop {
   .intro h1 {
     font-size: 46px;
   }
-  .grid {
+  .grid,
+  .region-picker {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .tabs span {
@@ -587,8 +672,12 @@ dialog::backdrop {
   .results-header p {
     font-size: 12px;
   }
-  .grid {
+  .grid,
+  .region-picker {
     grid-template-columns: 1fr;
+  }
+  .region-title {
+    font-size: 22px;
   }
   .card {
     padding: 20px;
