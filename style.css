@@ -118,40 +118,6 @@ header {
   margin: 20px 0 0;
   font-size: 16px;
 }
-.note {
-  width: 330px;
-  padding: 23px 27px;
-  background: #f7f4ec;
-  transform: rotate(2deg);
-  border-radius: 3px 28px 3px 3px;
-  border: 1px solid #dfcfac;
-  box-shadow: 4px 6px 0 #dfcfac;
-}
-.note-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 13px;
-  color: #795e2d;
-}
-.note-top span {
-  font-size: 30px;
-}
-.note p {
-  font-size: 15px;
-  margin: 19px 0 9px;
-}
-.note strong {
-  font-size: 23px;
-  letter-spacing: -1px;
-  line-height: 1.55;
-}
-.note-bottom {
-  display: block;
-  margin-top: 25px;
-  font-size: 13px;
-  color: #795e2d;
-}
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -511,13 +477,6 @@ dialog::backdrop {
   .intro h1 {
     font-size: 46px;
   }
-  .note {
-    width: 270px;
-    padding: 20px;
-  }
-  .note strong {
-    font-size: 20px;
-  }
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -541,9 +500,6 @@ dialog::backdrop {
   }
   .intro-copy {
     font-size: 14px;
-  }
-  .note {
-    display: none;
   }
   .tabs {
     gap: 25px;
@@ -784,12 +740,6 @@ dialog::backdrop {
 }
 .intro h1 em {
   color: #a17832;
-}
-.note {
-  transform: none;
-  border-radius: var(--seed-radius-r4);
-  box-shadow: none;
-  border-left: 4px solid var(--gold);
 }
 .card {
   padding: var(--seed-dimension-x6);
