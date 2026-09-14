@@ -39,7 +39,9 @@
       <section class="dictionary" aria-label="롤 사전">
         <div class="toolbar">
           <div class="tabs" aria-label="종류 선택">
-            <button class="active" data-kind="champion" aria-pressed="true">
+            <button class="active" data-kind="favorite" aria-pressed="true">
+              ⭐ 즐겨찾기 <span>내가 모은 것</span></button
+            ><button data-kind="champion" aria-pressed="false">
               챔피언 <span>함께할 친구</span></button
             ><button data-kind="item" aria-pressed="false">
               아이템 <span>든든한 준비물</span>
@@ -59,7 +61,7 @@
             ><input
               id="search"
               type="search"
-              placeholder="궁금한 챔피언 이름을 찾아보세요"
+              placeholder="즐겨찾기한 이름을 찾아보세요"
               autocomplete="off"
               aria-label="이름 검색"
             /><kbd>/</kbd></label
@@ -85,7 +87,7 @@
           있어요. 상황에 따라 뜻이 조금 달라질 수 있어요.
         </p>
         <div class="results-header">
-          <h2 id="list-title">챔피언 둘러보기</h2>
+          <h2 id="list-title">내 즐겨찾기</h2>
           <p id="count" role="status" aria-live="polite"></p>
         </div>
         <div id="grid" class="grid" aria-label="검색 결과">

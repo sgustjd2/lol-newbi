@@ -231,8 +231,13 @@ header {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 16px;
+}
+.card-wrap {
+  position: relative;
+  min-width: 0;
+  display: flex;
 }
 .card {
   text-align: left;
@@ -246,6 +251,27 @@ header {
     box-shadow 0.18s;
   color: inherit;
   min-width: 0;
+  width: 100%;
+}
+.fav {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  color: #c9ced6;
+  border-radius: 9px;
+}
+.fav:hover {
+  background: #f7f2e6;
+  color: #c8aa6e;
+}
+.fav.on {
+  color: #f0b429;
 }
 .card:hover {
   transform: translateY(-3px);
@@ -598,6 +624,29 @@ dialog::backdrop {
   .intro {
     padding-top: 65px;
     padding-bottom: 54px;
+  }
+}
+@media (min-width: 1101px) {
+  /* 5칸일 때 카드가 가장 좁아 이름 줄바꿈을 막으려 살짝 축소 */
+  .card-top {
+    gap: 10px;
+  }
+  .card .portrait {
+    width: 48px;
+    height: 48px;
+  }
+  .card h3 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 @media (max-width: 800px) {
@@ -1000,8 +1049,19 @@ dialog::backdrop {
   }
   .tabs {
     width: 100%;
-    justify-content: space-between;
-    gap: 12px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .tabs button {
+    flex: 0 0 auto;
+    white-space: nowrap;
   }
   .initials {
     gap: 6px;
@@ -1040,6 +1100,7 @@ dialog::backdrop {
 }
 .card {
   padding: var(--seed-dimension-x6);
+  padding-right: 48px; /* ⭐ 즐겨찾기 버튼 자리 확보 */
   box-shadow: 0 1px 3px #0b1c2e06;
 }
 .search-box {
