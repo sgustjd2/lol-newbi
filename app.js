@@ -1,5 +1,21 @@
 import { initial, initials, byName } from "./search.js";
 const $ = (s) => document.querySelector(s);
+const FAV_KEY = "lolhanip:favs";
+let favs;
+try {
+  favs = new Set(JSON.parse(localStorage.getItem(FAV_KEY)) || []);
+} catch {
+  favs = new Set();
+}
+const favId = (e) => `${e.kind}:${e.id}`;
+const isFav = (e) => favs.has(favId(e));
+function toggleFav(e) {
+  const k = favId(e);
+  favs.has(k) ? favs.delete(k) : favs.add(k);
+  try {
+    localStorage.setItem(FAV_KEY, JSON.stringify([...favs]));
+  } catch {}
+}
 let glossaryEntries = [],
   selectedInitial = "전체";
 let selectedRole = "전체";
@@ -54,8 +70,8 @@ function roleFilters() {
     };
     $("#role-filters").append(b);
   }
-  $("#role-filters").hidden = kind === "glossary" || kind === "regions";
-  $("#role-help").hidden = kind === "glossary" || kind === "regions";
+  $("#role-filters").hidden = !roleOptions[kind];
+  $("#role-help").hidden = !roleOptions[kind];
   $("#role-help").textContent =
     kind === "champion"
       ? "챔피언의 전투 역할이에요. 탑·미드 같은 포지션과는 달라요. 여러 역할에 함께 표시될 수 있어요."
@@ -63,7 +79,7 @@ function roleFilters() {
 }
 let entries = [],
   patch = "",
-  kind = "champion",
+  kind = "favorite",
   lastFocus = null;
 const text = (tag, value, cls) => {
   const n = document.createElement(tag);
@@ -88,12 +104,62 @@ function portrait(e) {
   return img;
 }
 const norm = (s) => s.normalize("NFKC").replace(/\s+/g, "").toLowerCase();
+function cardEl(e) {
+  const card = text("button", "", "card");
+  card.type = "button";
+  card.setAttribute("aria-label", `${e.name} 설명 보기`);
+  const top = text("div", "", "card-top");
+  const names = text("div", "");
+  names.append(text("h3", e.name), text("span", e.subtitle, "subtitle"));
+  top.append(portrait(e), names);
+  if (e.roles) names.append(text("span", e.roles.join(" · "), "role-label"));
+  const bottom = text("div", "", "card-bottom");
+  bottom.append(
+    text(
+      "span",
+      e.summary
+        ? e.sourceType === "notebooklm"
+          ? "NotebookLM · 검수 완료"
+          : "쉬운 설명 · 편집 예시"
+        : "쉬운 설명 준비 중",
+      `badge ${e.summary ? "" : "pending"}`,
+    ),
+    text("span", "↗", "arrow"),
+  );
+  card.append(
+    top,
+    text("p", e.summary || "아직 쉽게 풀고 있어요. 공식 설명을 먼저 볼 수 있어요."),
+    bottom,
+  );
+  card.addEventListener("click", () => {
+    lastFocus = card;
+    location.hash = `${e.kind}/${e.id}`;
+  });
+  const wrap = text("div", "", "card-wrap");
+  const fav = text("button", isFav(e) ? "★" : "☆", `fav${isFav(e) ? " on" : ""}`);
+  fav.type = "button";
+  fav.title = "즐겨찾기";
+  fav.setAttribute("aria-label", `${e.name} 즐겨찾기`);
+  fav.setAttribute("aria-pressed", isFav(e));
+  fav.onclick = () => {
+    toggleFav(e);
+    const on = isFav(e);
+    fav.textContent = on ? "★" : "☆";
+    fav.classList.toggle("on", on);
+    fav.setAttribute("aria-pressed", on);
+    if (kind === "favorite") render();
+  };
+  wrap.append(card, fav);
+  return wrap;
+}
 function render() {
   roleFilters();
   const q = norm($("#search").value);
   $("#initials").hidden = kind !== "champion";
   $("#glossary-help").hidden = kind !== "glossary";
-  $(".easy-filter").hidden = kind === "glossary" || kind === "regions";
+  document
+    .querySelectorAll(".easy-filter")
+    .forEach((el) => (el.hidden = kind !== "champion" && kind !== "item"));
   $(".search-row").hidden = kind === "regions";
   document.querySelectorAll("[data-initial]").forEach((b) => {
     b.setAttribute("aria-pressed", b.dataset.initial === selectedInitial);
@@ -181,6 +247,39 @@ function render() {
       );
     return;
   }
+  if (kind === "favorite") {
+    const list = entries
+      .filter(
+        (e) =>
+          (e.kind === "champion" || e.kind === "item") &&
+          isFav(e) &&
+          norm(e.name + e.id).includes(q),
+      )
+      .sort(
+        (a, b) =>
+          (a.kind === b.kind ? 0 : a.kind === "champion" ? -1 : 1) ||
+          a.name.localeCompare(b.name, "ko"),
+      );
+    $("#count").textContent = `즐겨찾기 ${list.length}개`;
+    $("#grid").replaceChildren();
+    for (const e of list) $("#grid").append(cardEl(e));
+    if (!list.length) {
+      const empty = text("div", "", "empty");
+      empty.append(
+        text(
+          "p",
+          q
+            ? "즐겨찾기 중에는 찾는 이름이 없어요."
+            : "아직 즐겨찾기한 게 없어요. 카드의 ☆를 눌러 내가 쓰는 챔피언·아이템을 모아보세요.",
+        ),
+      );
+      const go = text("button", "챔피언 보러 가기");
+      go.onclick = () => $('[data-kind="champion"]').click();
+      empty.append(go);
+      $("#grid").append(empty);
+    }
+    return;
+  }
   const list = entries.filter(
     (e) =>
       e.kind === kind &&
@@ -198,42 +297,7 @@ function render() {
   $("#count").textContent =
     `${list.length}개 · 쉬운 설명 ${list.filter((e) => e.summary).length}개`;
   $("#grid").replaceChildren();
-  for (const e of list) {
-    const card = text("button", "", "card");
-    card.type = "button";
-    card.setAttribute("aria-label", `${e.name} 설명 보기`);
-    const top = text("div", "", "card-top");
-    const names = text("div", "");
-    names.append(text("h3", e.name), text("span", e.subtitle, "subtitle"));
-    top.append(portrait(e), names);
-    if (e.roles) names.append(text("span", e.roles.join(" · "), "role-label"));
-    const bottom = text("div", "", "card-bottom");
-    bottom.append(
-      text(
-        "span",
-        e.summary
-          ? e.sourceType === "notebooklm"
-            ? "NotebookLM · 검수 완료"
-            : "쉬운 설명 · 편집 예시"
-          : "쉬운 설명 준비 중",
-        `badge ${e.summary ? "" : "pending"}`,
-      ),
-      text("span", "↗", "arrow"),
-    );
-    card.append(
-      top,
-      text(
-        "p",
-        e.summary || "아직 쉽게 풀고 있어요. 공식 설명을 먼저 볼 수 있어요.",
-      ),
-      bottom,
-    );
-    card.addEventListener("click", () => {
-      lastFocus = card;
-      location.hash = `${e.kind}/${e.id}`;
-    });
-    $("#grid").append(card);
-  }
+  for (const e of list) $("#grid").append(cardEl(e));
   if (!list.length) {
     const empty = text("div", "", "empty");
     empty.append(text("p", "찾는 이름이 없어요. 다른 이름으로 찾아볼까요?"));
@@ -574,6 +638,20 @@ $("#detail").addEventListener("click", (e) => {
 window.addEventListener("hashchange", openDetail);
 $("#search").addEventListener("input", render);
 $("#easy-only").addEventListener("change", render);
+const KIND_TITLE = {
+  favorite: "내 즐겨찾기",
+  champion: "챔피언 둘러보기",
+  item: "아이템 둘러보기",
+  glossary: "게임 속 말, 쉽게 알아보기",
+  regions: "지역별 이야기",
+};
+const KIND_PLACEHOLDER = {
+  favorite: "즐겨찾기한 이름을 찾아보세요",
+  champion: "궁금한 챔피언 이름을 찾아보세요",
+  item: "궁금한 아이템 이름을 찾아보세요",
+  glossary: "예: 갱, CS, 노플, 프리징",
+  regions: "지역을 선택해 이야기를 읽어보세요",
+};
 document.querySelectorAll("[data-kind]").forEach((button) =>
   button.addEventListener("click", () => {
     kind = button.dataset.kind;
@@ -587,16 +665,8 @@ document.querySelectorAll("[data-kind]").forEach((button) =>
     selectedRole = "전체";
     selectedRegion = null;
     $("#easy-only").checked = false;
-    $("#search").placeholder =
-      kind === "glossary"
-        ? "예: 갱, CS, 노플, 프리징"
-        : `궁금한 ${kind === "champion" ? "챔피언" : "아이템"} 이름을 찾아보세요`;
-    $("#list-title").textContent =
-      kind === "glossary"
-        ? "게임 속 말, 쉽게 알아보기"
-        : kind === "regions"
-          ? "지역별 이야기"
-          : `${kind === "champion" ? "챔피언" : "아이템"} 둘러보기`;
+    $("#search").placeholder = KIND_PLACEHOLDER[kind];
+    $("#list-title").textContent = KIND_TITLE[kind];
     render();
   }),
 );
