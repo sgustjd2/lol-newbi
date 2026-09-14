@@ -926,13 +926,15 @@
   {
     "id": "Leona",
     "kind": "champion",
-    "summary": "방패로 적을 막고 붙잡는 서포터예요.",
-    "analogy": "태양 방패로 적을 막고 아군을 지키는 수호자예요.",
-    "tip": "Q는 다음 공격에 붙어 나가요. 적에게 가까이 가서 때려보세요.",
-    "caution": "R은 가운데 맞은 적은 기절하고, 바깥쪽은 느려져요.",
-    "sourceType": "editorial",
+    "summary": "적을 붙잡아 기절시키는 든든한 탱커 서포터예요.",
+    "analogy": "햇빛처럼 적을 비추고, 다가가서 확실하게 기절시키는 방패 든 수호자예요.",
+    "tip": "Q(여명의 방패)는 평타를 취소하고 즉시 기절을 걸 수 있으니 선제 개시에 활용하고, 궁극기 R(흑점 폭발)은 중앙 범위에 적을 적중시켜야 기절이 걸린다는 점을 기억하세요.",
+    "caution": "E(천공의 검)는 투사체라 야스오의 바람 장막 같은 스킬에 막히면 돌진까지 함께 차단되고, 레오나는 공중에 띄우는 CC기는 없으니 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "야스오 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%BC%EC%8A%A4%EC%98%A4",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Lillia",
