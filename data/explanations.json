@@ -784,13 +784,15 @@
   {
     "id": "Kassadin",
     "kind": "champion",
-    "summary": "순간이동하며 싸우는 마법사 암살자예요.",
-    "analogy": "여러 번 순간이동하며 파고드는 자객을 떠올려 보세요.",
-    "tip": "W를 켜두면 공격에 마법 피해가 더 붙어요. 다시 누르면 한 번 더 세게 때려요.",
-    "caution": "R을 짧게 여러 번 쓰면 더 아프지만 마나가 많이 들어요.",
-    "sourceType": "editorial",
+    "summary": "초반을 버티고 후반에 균열이동으로 파고드는 근접 암살자예요.",
+    "analogy": "초반엔 숨어 버티다가, 성장하면 균열이동(R)으로 순간이동해 덮치는 암살자예요.",
+    "tip": "라인전에서는 CS를 먹는 척 상대 스킬을 유도하거나, Q로 견제와 CS를 번갈아 노리고 W 평타의 늘어난 사거리로 타워 밑 CS를 안정적으로 챙기며 성장하세요.",
+    "caution": "카사딘은 기본적으로 AD 챔피언에게 불리하고, '왕귀챔'이라는 인식과 달리 근접 챔피언이라는 한계 때문에 극후반으로 가면 오히려 힘이 빠질 수 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "High elo players: what is the best way to rapidly improve at this game? - Reddit",
+    "explanationSourceUrl": "https://www.reddit.com/r/summonerschool/comments/e60j39/high_elo_players_what_is_the_best_way_to_rapidly/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Katarina",
