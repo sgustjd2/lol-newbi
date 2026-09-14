@@ -422,10 +422,12 @@
     "summary": "도끼를 던지고 받으며 싸우는 챔피언이에요.",
     "analogy": "도끼 두 개를 계속 돌리는 저글러예요.",
     "tip": "날아온 도끼를 받으면 Q를 또 쓸 수 있어요.",
-    "caution": "도끼는 두 개까지만 들 수 있어요. 놓치면 사라져요.",
-    "sourceType": "editorial",
+    "caution": "드레이븐은 죽으면 모아둔 골드 스택의 절반을 잃어요. 멜처럼 처형 스킬이 있는 챔피언에게 킬을 빼앗기면 스택을 모으기 더 어려워요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "멜(리그 오브 레전드) - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A9%9C(%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C)",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "DrMundo",
