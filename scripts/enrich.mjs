@@ -72,6 +72,8 @@ export function classifyItem(e) {
     roles.push("서포터");
   if (!roles.length || t.has("Boots") || t.has("Consumable"))
     roles.push("공용");
+  // AD와 탱커 특성을 함께 지니면 근접 전투에 강한 브루저형 아이템이에요.
+  if (roles.includes("AD") && roles.includes("탱커")) roles.push("브루저");
   const uses = [];
   if (roles.includes("AD"))
     uses.push("기본 공격이나 공격력을 사용하는 스킬을 강화할 때 살펴보세요.");
@@ -84,6 +86,8 @@ export function classifyItem(e) {
     uses.push("최대 체력을 늘려 더 오래 버티는 데 도움이 돼요.");
   if (roles.includes("서포터"))
     uses.push("우리 편을 돕거나 주변을 확인하는 용도를 살펴보세요.");
+  if (roles.includes("브루저"))
+    uses.push("공격력과 맷집을 같이 챙겨 근접 싸움을 오래 버틸 때 살펴보세요.");
   if (t.has("Boots")) uses.push("이동을 빠르게 하는 신발이에요.");
   if (t.has("Consumable"))
     uses.push(

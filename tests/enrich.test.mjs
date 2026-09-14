@@ -9,6 +9,13 @@ test("공격·마법 혼합 아이템은 복수 역할로 분류", () => {
     ["AD", "AP"],
   );
 });
+test("공격력과 방어 특성을 함께 지니면 브루저로도 분류", () => {
+  assert.deepEqual(
+    classifyItem({ tags: ["Damage", "Health"], stats: {}, original: "" })
+      .roles,
+    ["AD", "탱커", "브루저"],
+  );
+});
 test("마나 재생만으로 서포터로 분류하지 않음", () => {
   assert.deepEqual(
     classifyItem({ tags: ["ManaRegen"], stats: {}, original: "" }).roles,

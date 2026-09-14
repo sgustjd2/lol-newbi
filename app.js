@@ -13,7 +13,7 @@ const roleOptions = {
     "원거리 딜러",
     "서포터",
   ],
-  item: ["전체", "AD", "AP", "탱커", "서포터", "공용"],
+  item: ["전체", "AD", "AP", "브루저", "탱커", "서포터", "공용"],
 };
 function roleFilters() {
   if ($("#role-filters").dataset.kind === kind) {
@@ -227,6 +227,7 @@ function openDetail() {
     const meanings = {
       AD: "AD · 기본 공격과 일부 스킬에 쓰는 공격력",
       AP: "AP · 일부 스킬을 키우는 주문력",
+      브루저: "브루저 · 공격력과 맷집을 함께 갖춘 근접 전투형",
       탱커: "탱커 · 공격을 버티는 데 도움",
       서포터: "서포터 · 우리 편을 돕거나 주변을 확인",
       공용: "공용 · 여러 역할이 함께 사용",
