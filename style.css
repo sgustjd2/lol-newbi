@@ -633,6 +633,16 @@ dialog::backdrop {
     transition: none !important;
   }
 }
+.price {
+  display: inline-block;
+  background: #fbf3e3;
+  border: 1px solid #e6cf9d;
+  color: #7a5c1e;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
 .role-label {
   display: block;
   color: #0b1c2e;

@@ -213,7 +213,7 @@ function openDetail() {
   }
   if (e.gold !== undefined)
     content.append(
-      text("p", `상점 가격 · ${e.gold.toLocaleString("ko-KR")} 골드`),
+      text("p", `상점 가격 · ${e.gold.toLocaleString("ko-KR")} 골드`, "price"),
     );
   if (e.kind === "item" && e.roles) {
     const usage = text("section", "", "detail-block item-usage");
