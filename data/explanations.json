@@ -902,13 +902,15 @@
   {
     "id": "Leblanc",
     "kind": "champion",
-    "summary": "표식과 가짜 모습으로 적을 속이는 마법사예요.",
-    "analogy": "가짜 모습으로 상대를 속이는 도깨비 마법사예요.",
-    "tip": "W로 이동한 뒤 4초 안에 다시 쓰면 원래 자리로 와요.",
-    "caution": "R은 Q, W, E 중 하나만 흉내 낼 수 있어요.",
-    "sourceType": "editorial",
+    "summary": "순간이동으로 파고들어 빠르게 처치하고 빠져나오는 마법 암살자예요.",
+    "analogy": "환영을 남기고 사라졌다 나타나며 적을 순식간에 처치하는 마법사 암살자예요.",
+    "tip": "W(왜곡)로 적에게 파고들어 Q(악의의 인장)로 표식을 남긴 뒤 다른 스킬로 터뜨려 폭딜을 넣고, 4초 안에 W를 다시 써서 원래 위치로 빠져나오세요.",
+    "caution": "르블랑은 유지력이 최악 수준이라 회복 수단이 거의 없으니, 라인전과 교전에서 체력이 깎이지 않도록 신경 써서 관리하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "아칼리 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%84%EC%B9%BC%EB%A6%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "LeeSin",
