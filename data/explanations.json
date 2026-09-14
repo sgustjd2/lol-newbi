@@ -46,13 +46,15 @@
   {
     "id": "Ashe",
     "kind": "champion",
-    "summary": "얼음 화살을 쏴서 적의 발걸음을 느리게 해요.",
-    "analogy": "맞은 적이 천천히 걷게 만드는 얼음 궁수예요.",
-    "tip": "우리 편 뒤에서 화살을 쏴보세요. R의 큰 화살은 맞은 적 챔피언을 잠깐 멈춰요.",
-    "caution": "큰 화살은 적 챔피언에게 맞아야 멈추게 할 수 있어요.",
-    "sourceType": "editorial",
+    "summary": "얼음 화살로 적을 느리게 하는 원거리 궁수예요.",
+    "analogy": "맞은 적을 천천히 걷게 만드는 얼음 활잡이예요.",
+    "tip": "매(E)로 먼 곳을 미리 살펴보고, 궁극기(R)는 멀리서 쏠수록 적이 기절하는 시간이 길어져요.",
+    "caution": "애쉬는 몸을 피할 이동기가 없어서, 적이 가까이 다가오면 크게 위험해요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "암베사 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%94%EB%B2%A0%EC%82%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Annie",
@@ -228,10 +230,12 @@
     "summary": "별가루를 모아 강해지는 용 형상의 마법사예요.",
     "analogy": "숨결과 블랙홀로 별가루를 모으는 작은 용을 떠올려 보세요.",
     "tip": "E 블랙홀 안에 적 챔피언을 가두면 매초 별가루를 얻을 수 있어요.",
-    "caution": "R은 별가루가 충분히 모여야 유성이 천상 강림으로 바뀌어요. 그 전까지는 기절만 걸려요.",
-    "sourceType": "editorial",
+    "caution": "Q(빛의 숨결)를 쓰다가 처음 0.25초 안에 취소하면, 1초 동안 다시 쓸 수 없어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "Aurelion Sol/LoL - League of Legends Wiki (Fandom)",
+    "explanationSourceUrl": "https://leagueoflegends.fandom.com/wiki/Aurelion_Sol/LoL",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Aurora",
