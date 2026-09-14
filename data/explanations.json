@@ -1028,13 +1028,15 @@
   {
     "id": "MasterYi",
     "kind": "champion",
-    "summary": "빠르게 움직이며 검으로 베는 전사예요.",
-    "analogy": "눈 깜짝할 새에 적진을 가르는 검객이에요.",
-    "tip": "위험할 때 W를 쓰면 체력이 차고 덜 아파요.",
-    "caution": "Q로 움직이는 동안엔 마스터 이를 때릴 수 없어요.",
-    "sourceType": "editorial",
+    "summary": "혼자서 타워와 오브젝트를 빠르게 밀어붙이는 단순하고 강력한 검사예요.",
+    "analogy": "궁극기로 초고속 이동을 하며 홀로 적진과 오브젝트를 빠르게 정리하는 검사예요.",
+    "tip": "조작 메커니즘이 단순한 만큼 게임 흐름 자체에 집중하기 좋고, 혼자서 타워와 오브젝트를 빠르게 파괴하며 승리를 이끌어내기 좋은 챔피언이에요.",
+    "caution": "궁극기 R(최후의 전사)은 둔화 무시 효과가 있어, 시전 중 공포나 매혹 같은 CC에 걸리면 의도치 않게 초고속으로 도주하거나 적 방향으로 끌려갈 수 있으니 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력/군중제어기 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5/%EA%B5%B0%EC%A4%91%EC%A0%9C%EC%96%B4%EA%B8%B0",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Mel",
