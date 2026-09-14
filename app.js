@@ -79,7 +79,7 @@ function roleFilters() {
 }
 let entries = [],
   patch = "",
-  kind = "favorite",
+  kind = "champion",
   lastFocus = null;
 const text = (tag, value, cls) => {
   const n = document.createElement(tag);
