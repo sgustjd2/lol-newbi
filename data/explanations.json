@@ -797,13 +797,15 @@
   {
     "id": "Katarina",
     "kind": "champion",
-    "summary": "단검을 던지고 순간이동하는 암살자예요.",
-    "analogy": "칼날 사이를 순간이동으로 오가는 검술사를 떠올려 보세요.",
-    "tip": "W를 쓰면 훨씬 빨라져요. 쫓아가거나 도망칠 때 좋아요.",
-    "caution": "E는 적을 노리면 그 적에게, 아니면 가까운 적에게 날아가요.",
-    "sourceType": "editorial",
+    "summary": "마나 없이 순간이동으로 파고들어 광역 폭딜을 퍼붓는 암살자예요.",
+    "analogy": "적진 한가운데로 번개처럼 침투해 넓은 범위의 적들을 한 번에 쓸어담는 광역 암살자예요.",
+    "tip": "라인전에서 주도권을 잡거나 다른 라인으로 적극적으로 로밍을 다니며 킬을 챙기고 성장 차이를 벌리는 스노우볼 플레이를 노리세요.",
+    "caution": "궁극기 R(죽음의 연꽃)은 정신 집중 스킬이라, 멜의 반박(W) 같은 반사 스킬에 걸리면 오히려 아군이 반사된 피해를 입을 수 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "멜(리그 오브 레전드) - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A9%9C(%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C)",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Kayle",
