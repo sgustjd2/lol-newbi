@@ -1015,13 +1015,15 @@
   {
     "id": "Maokai",
     "kind": "champion",
-    "summary": "뿌리로 적을 막는 튼튼한 나무 정령이에요.",
-    "analogy": "숲을 지키는 커다란 나무 정령을 떠올려 보세요.",
-    "tip": "E로 수풀에 씨앗을 던져두면 그쪽을 더 잘 볼 수 있어요.",
-    "caution": "W로 뛰어오르는 동안엔 마오카이를 때릴 수 없어요.",
-    "sourceType": "editorial",
+    "summary": "적을 확실하게 묶어 아군의 집중 공격을 이끄는 탱커예요.",
+    "analogy": "확정 CC기인 W로 적을 붙잡아 끌고 와 아군이 몰아치게 만드는 든든한 나무 탱커예요.",
+    "tip": "확정 타게팅 CC기인 W(뒤틀린 전진)로 적을 묶어 아군의 집중 공격을 유도하고, 상대 스킬에 맞춰 패시브(마법 흡수)를 자주 충전하며 Q의 최대 체력 비례 피해와 E의 공격 속도 감소로 지속 싸움을 이어가세요.",
+    "caution": "한타의 핵심인 궁극기 R(대자연의 마수)은 투사체 판정이라 야스오의 바람 장막 같은 기술에 막힐 수 있으니 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "멜(리그 오브 레전드) - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A9%9C(%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C)",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "MasterYi",
