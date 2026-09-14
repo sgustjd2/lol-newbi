@@ -121,10 +121,7 @@ function render() {
   );
   list.sort(
     (a, b) =>
-      (kind === "champion"
-        ? 0
-        : Number(Boolean(b.summary)) - Number(Boolean(a.summary))) ||
-      a.name.localeCompare(b.name, "ko"),
+      (kind === "item" ? a.gold - b.gold : 0) || a.name.localeCompare(b.name, "ko"),
   );
   $("#count").textContent =
     `${list.length}개 · 쉬운 설명 ${list.filter((e) => e.summary).length}개`;
