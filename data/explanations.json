@@ -468,10 +468,12 @@
     "summary": "그림자에 숨어 있다 기습하는 암살자예요.",
     "analogy": "어둠 속에 숨어 있다 튀어나오는 사냥꾼이에요.",
     "tip": "W로 저주를 걸고 공격하면 효과가 터져요.",
-    "caution": "R을 쓰는 동안엔 잠깐 공격받지 않아요.",
-    "sourceType": "editorial",
+    "caution": "이블린의 위장(투명) 효과는 6레벨부터 생겨요. 그 전에는 전투 밖에 있어도 몸이 보여요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "Evelynn - League of Legends Wiki (Fandom)",
+    "explanationSourceUrl": "https://leagueoflegends.fandom.com/wiki/Evelynn/LoL",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Ezreal",
