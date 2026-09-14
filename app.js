@@ -687,9 +687,9 @@ function openDetail() {
       block.append(raw);
       const advanced = skill.advanced;
       if (advanced) {
-        const cc = text("div", "", "cc-effects");
-        cc.append(text("h5", "맞히면 생기는 방해 효과 · CC"));
         if (advanced.cc.length) {
+          const cc = text("div", "", "cc-effects");
+          cc.append(text("h5", "맞히면 생기는 방해 효과 · CC"));
           for (const effect of advanced.cc) {
             cc.append(
               text("span", effect.name, "cc-badge"),
@@ -697,15 +697,8 @@ function openDetail() {
               text("p", effect.condition, "cc-condition"),
             );
           }
-        } else
-          cc.append(
-            text(
-              "p",
-              "현재 원문에서 적용되는 CC를 확인하지 못했어요. 조건부·다른 형태의 효과는 추가 확인이 필요해요.",
-              "cc-condition",
-            ),
-          );
-        block.append(cc);
+          block.append(cc);
+        }
         const more = document.createElement("details");
         more.className = "advanced";
         more.append(text("summary", "자세히 보기 · 계수·사거리·재사용 대기시간"));
