@@ -867,13 +867,15 @@
   {
     "id": "Kled",
     "kind": "champion",
-    "summary": "말을 타고 덫과 돌진으로 싸우는 전사예요.",
-    "analogy": "말을 타고 밧줄 덫을 던지는 카우보이 같아요.",
-    "tip": "Q로 잡은 적과 가까이 있으면 끌어당기며 더 세게 때려요.",
-    "caution": "말에서 내리면 Q가 멀리서 쏘는 빵야로 바뀌어요.",
-    "sourceType": "editorial",
+    "summary": "겁쟁이 도마뱀 스칼을 타고 다니는, 전체 챔피언 중 체력이 가장 높은 전사예요.",
+    "analogy": "튼튼한 도마뱀 친구를 타고 다니다가, 다치면 내려서도 계속 싸우는 저돌적인 기사예요.",
+    "tip": "Q(덫날리기)와 E(이랴!)는 모두 상대를 계속 보이게 하는 효과가 있어 놓치기 어려우니, 적을 물고 늘어지며 W(버럭버럭)의 평타 강화로 폭딜을 넣으세요.",
+    "caution": "스칼에서 내려 미탑승 상태가 되면 이동 속도가 크게 느려지고 스킬도 약해지니, 내린 뒤엔 무리한 교전을 피하고 스칼의 용기를 회복시키는 데 집중하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "아칼리 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%84%EC%B9%BC%EB%A6%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "KogMaw",
