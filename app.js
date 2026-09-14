@@ -141,6 +141,109 @@ function recipeFlow(item, target, direction = "forward") {
   return flow;
 }
 const norm = (s) => s.normalize("NFKC").replace(/\s+/g, "").toLowerCase();
+const relationMeta = {
+  hostile: { label: "적대", description: "서로 맞서거나 경계하는 관계" },
+  friendly: { label: "친화", description: "서로 돕거나 가까운 관계" },
+  neutral: { label: "중립", description: "같은 세계에 있지만 특별한 감정은 확인되지 않은 관계" },
+};
+const relationWords = {
+  hostile: [
+    "적대",
+    "원수",
+    "라이벌",
+    "호적수",
+    "숙적",
+    "적수",
+    "혐오",
+    "증오",
+    "대립",
+    "맞서",
+    "싸우",
+    "죽였",
+    "죽이",
+    "몰살",
+    "복수",
+    "사냥",
+    "위협",
+    "싫어",
+    "배신",
+    "경멸",
+    "추격",
+    "쫓아",
+  ],
+  friendly: [
+    "친구",
+    "친한",
+    "가까운",
+    "가까워",
+    "동료",
+    "동맹",
+    "연인",
+    "사랑",
+    "우호",
+    "협력",
+    "함께",
+    "도와",
+    "사제",
+    "스승",
+    "제자",
+    "가족",
+    "자매",
+    "형제",
+    "아버지",
+    "아들",
+    "딸",
+    "남편",
+    "아내",
+    "파트너",
+    "동반자",
+    "신뢰",
+    "호감",
+    "손을잡",
+    "지켜",
+    "보호",
+    "존경",
+    "의남매",
+    "부녀",
+    "부부",
+    "사이가좋",
+  ],
+};
+function relationTypeForLabel(label) {
+  const value = norm(label);
+  if (!value || value === "-") return "neutral";
+  for (const [type, words] of Object.entries(relationWords))
+    if (words.some((word) => value.includes(word))) return type;
+  return "neutral";
+}
+function relationTypeForContext(name, paragraphs, labelHint) {
+  const hinted = relationTypeForLabel(labelHint);
+  const nameValue = norm(name);
+  const scores = { hostile: 0, friendly: 0 };
+  const sentences = paragraphs.flatMap((paragraph) =>
+    paragraph.split(/(?<=[.!?。！？])\s+/),
+  );
+  for (const sentence of sentences) {
+    const sentenceValue = norm(sentence);
+    const at = sentenceValue.indexOf(nameValue);
+    if (at < 0) continue;
+    const context = sentenceValue.slice(Math.max(0, at - 58), at + nameValue.length + 58);
+    for (const type of ["hostile", "friendly"])
+      scores[type] += relationWords[type].filter((word) => context.includes(word)).length;
+  }
+  const allText = norm(paragraphs.join(" "));
+  if (/그외의모든챔피언.*적대관계|모든챔피언.*적대관계/.test(allText))
+    scores.hostile += 1;
+  if (/모두우호|전부우호|모든챔피언.*우호/.test(allText)) scores.friendly += 1;
+  if (hinted !== "neutral") {
+    const other = hinted === "hostile" ? "friendly" : "hostile";
+    if (scores[other] > scores[hinted] + 1) return other;
+    return hinted;
+  }
+  if (scores.hostile > scores.friendly) return "hostile";
+  if (scores.friendly > scores.hostile) return "friendly";
+  return "neutral";
+}
 function loreRelations(loreText, currentId) {
   const blocks = String(loreText || "")
     .split(/\n\s*\n/)
@@ -156,22 +259,40 @@ function loreRelations(loreText, currentId) {
   );
   const related = [];
   const seen = new Set();
+  const rawNames = [];
+  const labels = [];
   let proseStart = blocks.length;
   for (let index = marker + 1; index < blocks.length; index += 1) {
     const block = blocks[index];
     const champion = champions.get(norm(block));
     if (champion) {
-      if (champion.id !== currentId && !seen.has(champion.id)) {
-        related.push(champion);
-        seen.add(champion.id);
-      }
+      rawNames.push(champion);
       continue;
     }
     // Some lore pages put relationship labels between the names. Keep
     // scanning those short labels, then stop when the actual prose begins.
-    if (block.length <= 40 && !/[.!?。！？]$/.test(block)) continue;
+    if (block.length <= 40 && !/[.!?。！？]$/.test(block)) {
+      labels.push(block);
+      continue;
+    }
     proseStart = index;
     break;
+  }
+
+  const labelById = new Map();
+  labels.slice(0, rawNames.length).forEach((label, index) => {
+    const champion = rawNames[index];
+    if (champion && !labelById.has(champion.id)) labelById.set(champion.id, label);
+  });
+  for (const champion of rawNames) {
+    if (champion.id === currentId || seen.has(champion.id)) continue;
+    seen.add(champion.id);
+    const type = relationTypeForContext(
+      champion.name,
+      blocks.slice(proseStart),
+      labelById.get(champion.id),
+    );
+    related.push({ entry: champion, type, ...relationMeta[type] });
   }
 
   return {
@@ -715,22 +836,46 @@ function openDetail() {
     if (lore.related.length) {
       const relations = text("div", "", "lore-relations");
       relations.append(text("h4", "챔피언 관계"));
+      const legend = text("div", "", "relation-legend");
+      for (const [type, meta] of Object.entries(relationMeta)) {
+        const item = text("span", "", `relation-legend-item relation-${type}`);
+        item.append(text("b", meta.label), text("span", meta.description));
+        legend.append(item);
+      }
+      relations.append(legend);
+      const diagram = text("div", "", "relation-diagram");
+      const center = text("div", "", "relation-diagram-center");
+      const centerCard = text("div", "", "relation-center-card");
+      const centerIcon = portrait(e);
+      centerIcon.alt = e.name;
+      centerCard.append(centerIcon, text("span", e.name));
+      center.append(centerCard);
+      diagram.append(center, text("div", "", "relation-connector"));
       const relationGrid = text("div", "", "relation-grid");
       for (const related of lore.related) {
-        const relation = text("button", "", "relation-card");
+        const relation = text("button", "", `relation-card relation-${related.type}`);
         relation.type = "button";
-        relation.title = `${related.name} 상세 설명 보기`;
-        relation.setAttribute("aria-label", `${related.name} 상세 설명 보기`);
-        const icon = portrait(related);
-        icon.alt = related.name;
-        relation.append(icon, text("span", related.name));
+        relation.title = `${related.entry.name} · ${related.label} 관계 · 상세 설명 보기`;
+        relation.setAttribute(
+          "aria-label",
+          `${related.entry.name} · ${related.label} 관계 · 상세 설명 보기`,
+        );
+        const icon = portrait(related.entry);
+        icon.alt = related.entry.name;
+        const copy = text("span", "", "relation-card-copy");
+        copy.append(
+          text("span", related.entry.name, "relation-name"),
+          text("span", related.label, "relation-kind"),
+        );
+        relation.append(icon, copy);
         relation.onclick = () => {
           lastFocus = relation;
-          location.hash = `champion/${related.id}`;
+          location.hash = `champion/${related.entry.id}`;
         };
         relationGrid.append(relation);
       }
-      relations.append(relationGrid);
+      diagram.append(relationGrid);
+      relations.append(diagram);
       section.append(relations);
     }
     for (const para of lore.paragraphs)

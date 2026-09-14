@@ -615,12 +615,96 @@ dialog::backdrop {
   color: #795e2d;
   font-size: 14px;
 }
+.relation-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 12px;
+}
+.relation-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  line-height: 1.35;
+}
+.relation-legend-item b {
+  font-size: 12px;
+}
+.relation-legend-item span {
+  color: #667085;
+}
+.relation-legend-item.relation-hostile {
+  background: #fff0f0;
+  color: #a33a3a;
+}
+.relation-legend-item.relation-friendly {
+  background: #edf8f2;
+  color: #24734c;
+}
+.relation-legend-item.relation-neutral {
+  background: #f2f4f7;
+  color: #475467;
+}
+.relation-diagram {
+  padding: 15px 12px 13px;
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  background: #ffffff;
+}
+.relation-diagram-center {
+  display: flex;
+  justify-content: center;
+}
+.relation-center-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 14px 6px 7px;
+  border: 2px solid #c8aa6e;
+  border-radius: 12px;
+  background: #fffaf0;
+  font-size: 14px;
+  font-weight: 800;
+}
+.relation-center-card .portrait {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+}
+.relation-connector {
+  position: relative;
+  height: 20px;
+}
+.relation-connector::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #c8aa6e;
+  content: "";
+}
 .relation-grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(106px, 1fr));
   gap: 8px;
+  padding-top: 10px;
+}
+.relation-grid::before {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  left: 10%;
+  height: 2px;
+  background: #d6dde5;
+  content: "";
 }
 .relation-card {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -635,6 +719,27 @@ dialog::backdrop {
   font-size: 13px;
   font-weight: 700;
   transition: border-color 0.18s, background 0.18s, transform 0.18s;
+}
+.relation-card::before {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 2px;
+  height: 10px;
+  background: #d6dde5;
+  content: "";
+}
+.relation-card.relation-hostile {
+  border-color: #e7b9b9;
+  background: #fff8f8;
+}
+.relation-card.relation-friendly {
+  border-color: #b7dec9;
+  background: #f8fcfa;
+}
+.relation-card.relation-neutral {
+  border-color: #d6dde5;
+  background: #ffffff;
 }
 .relation-card:hover {
   border-color: #c8aa6e;
@@ -651,10 +756,37 @@ dialog::backdrop {
   flex-shrink: 0;
   border-radius: 9px;
 }
-.relation-card span {
+.relation-card-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 2px;
+}
+.relation-name {
   min-width: 0;
   line-height: 1.3;
   overflow-wrap: anywhere;
+}
+.relation-kind {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.relation-card.relation-hostile .relation-kind {
+  background: #ffe4e4;
+  color: #a33a3a;
+}
+.relation-card.relation-friendly .relation-kind {
+  background: #dff3e7;
+  color: #24734c;
+}
+.relation-card.relation-neutral .relation-kind {
+  background: #eef1f4;
+  color: #475467;
 }
 .lore > a {
   font-size: 14px;
@@ -852,6 +984,10 @@ dialog::backdrop {
   .relation-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 7px;
+  }
+  .relation-grid::before {
+    right: 25%;
+    left: 25%;
   }
   .relation-card {
     gap: 6px;
