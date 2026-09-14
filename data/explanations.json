@@ -324,10 +324,12 @@
     "summary": "피 냄새를 맡으면 끝까지 쫓아가는 전사예요.",
     "analogy": "사슬에서 풀려나면 멈추지 않고 쫓아오는 짐승을 떠올려 보세요.",
     "tip": "W를 다시 쓰면 적을 물어서 체력을 채워요.",
-    "caution": "R은 처음 맞은 적 한 명만 끝까지 쫓아가요.",
-    "sourceType": "editorial",
+    "caution": "레나타 글라스크의 궁극기에 맞으면 광란 상태에서 우리 편을 공격하게 돼요. 야스오의 바람 장막은 브라이어의 E와 R을 막아낼 수 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력/군중제어기 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5/%EA%B5%B0%EC%A4%91%EC%A0%9C%EC%96%B4%EA%B8%B0",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Caitlyn",
