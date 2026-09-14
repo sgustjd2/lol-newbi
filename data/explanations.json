@@ -1124,13 +1124,15 @@
   {
     "id": "Nami",
     "kind": "champion",
-    "summary": "물의 힘으로 아군을 도와주는 인어예요.",
-    "analogy": "아군은 낫게 하고 적은 밀어내는 인어예요.",
-    "tip": "Q는 맞으면 바로 적을 꼼짝 못하게 해요.",
-    "caution": "R은 넓게 맞아서 적을 띄우고 느리게 만들어요.",
-    "sourceType": "editorial",
+    "summary": "아군에게 이동 속도와 치유를 주는 파도의 인챈터 서포터예요.",
+    "analogy": "파도로 아군은 감싸 안고 적은 밀어내는 바다의 수호자예요.",
+    "tip": "E(파도 소환사의 축복)로 아군 평타를 강화해 추가 마법 피해와 둔화를 주고, W(밀물 썰물)는 아군과 적을 번갈아 맞혀야 치유와 피해가 함께 발동하니 각도를 잘 잡으세요.",
+    "caution": "Q(물의 감옥)는 사거리가 길지만 물방울이 날아가는 데 시간이 걸리는 스킬샷이라 예측샷 연습이 필요해요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "멜(리그 오브 레전드) - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A9%9C(%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C)",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Nasus",
