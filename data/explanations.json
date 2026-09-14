@@ -2,13 +2,15 @@
   {
     "id": "Garen",
     "kind": "champion",
-    "summary": "큰 칼을 들고 빙글빙글! 가까운 적과 싸워요.",
-    "analogy": "팽이처럼 돌면서 주변의 적을 칼로 때리는 튼튼한 전사예요.",
-    "tip": "E를 누르면 돌면서 주변 적을 공격해요. 적이 가까이 있을 때 써보세요.",
-    "caution": "멀리 있는 적에게는 회전 공격이 닿지 않아요.",
-    "sourceType": "editorial",
+    "summary": "마나 없이 단순한 스킬만 쓰는 초보자 추천 전사예요.",
+    "analogy": "체력을 채우며 버티다가 마무리 일격을 날리는 검사예요.",
+    "tip": "피해를 안 입고 있으면 패시브로 체력이 저절로 차요. 적 체력이 낮으면 궁극기로 마무리해요.",
+    "caution": "가렌은 돌진기가 없는 뚜벅이라 앞에서 바로 다가가면 스킬을 맞히기 어려워요. 수풀에 숨었다가 기습하거나 점멸을 써보세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "롤 챔피언 기초 #1. 가렌 / 롤 초보 입문자를 위한 영상",
+    "explanationSourceUrl": "https://www.youtube.com/watch?v=X2gksPpqBGs",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Lux",
