@@ -9,6 +9,7 @@
     "report:missing": "node scripts/report-missing.mjs",
     "start": "node scripts/serve.mjs",
     "import": "node scripts/import.mjs",
+    "merge:editorial": "node scripts/merge-editorial.mjs",
     "test": "node --test"
   },
   "engines": {
