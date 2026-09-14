@@ -1003,6 +1003,11 @@ dialog::backdrop {
   font-size: 14px;
   margin: 0 0 10px;
 }
+.recipe-branches {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
 .recipe-flow {
   align-items: center;
   display: flex;
