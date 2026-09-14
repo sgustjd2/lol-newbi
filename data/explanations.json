@@ -546,13 +546,15 @@
   {
     "id": "Gnar",
     "kind": "champion",
-    "summary": "작을 땐 재빠르고 커지면 힘이 세지는 전사예요.",
-    "analogy": "화나면 몸집이 커지는 씨름 선수를 떠올려보세요.",
-    "tip": "Q 부메랑을 다시 받으면 더 빨리 또 쓸 수 있어요.",
-    "caution": "W, E, R은 작을 때랑 커졌을 때 효과가 달라요.",
-    "sourceType": "editorial",
+    "summary": "부메랑과 폴짝 뛰기로 근접 챔피언을 괴롭히는 원거리 전사예요.",
+    "analogy": "멀리서 찌르고 빠지는 장난꾸러기 요들이에요.",
+    "tip": "평타 3번째 타격마다 W 효과로 추가 피해와 이동 속도를 얻어요. 유리할 땐 평타로 견제하고, 불리할 땐 Q로 안전하게 막타만 챙기세요.",
+    "caution": "이렐리아처럼 돌진기가 있는 챔피언에게는 나르의 견제 스킬셋이 무력화되니 함부로 거리를 좁히면 안 돼요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "The Fundamentals of Laning: A Very, Very Summarized Guide on Learning The Laning Phase Step-by-Step - r/summonerschool",
+    "explanationSourceUrl": "https://www.reddit.com/r/summonerschool/comments/wvspxz/the_fundamentals_of_laning_a_very_very_summarized/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Gragas",
