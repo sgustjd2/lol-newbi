@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="처음 만나는 리그 오브 레전드. 챔피언과 아이템을 한입 크기의 쉬운 설명으로 알아보세요."
+    />
+    <title>롤 한입 — 처음 배우는 롤 사전</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./seed.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip" href="#search">검색으로 건너뛰기</a>
+    <header>
+      <a class="brand" href="./"
+        ><span class="brand-icon">ㅎ</span>롤 한입<span class="brand-note"
+          >처음 배우는 롤 사전</span
+        ></a
+      ><span class="edition">BEGINNER’S GUIDE <span>01</span></span>
+    </header>
+    <main>
+      <section class="intro">
+        <div>
+          <p class="eyebrow">몰라도 괜찮아, 한입씩 알아가면 돼.</p>
+          <h1>어려운 롤,<br /><em>쉽게 한입.</em></h1>
+          <p class="intro-copy">
+            이 친구는 뭘 할까? 이 아이템은 왜 살까?<br />긴 설명 대신, 딱
+            알아듣는 말로 만나보세요.
+          </p>
+        </div>
+        <aside class="note">
+          <span class="note-top">오늘의 작은 지식 <span>✦</span></span>
+          <p>‘탱커’가 뭐야?</p>
+          <strong>친구들 앞에서<br />대신 맞아주는 방패예요.</strong
+          ><span class="note-bottom">튼튼한 몸으로 우리 편을 지켜요.</span>
+        </aside>
+      </section>
+      <section class="dictionary" aria-label="롤 사전">
+        <div class="toolbar">
+          <div class="tabs" aria-label="종류 선택">
+            <button class="active" data-kind="champion" aria-pressed="true">
+              챔피언 <span>함께할 친구</span></button
+            ><button data-kind="item" aria-pressed="false">
+              아이템 <span>든든한 준비물</span>
+            </button>
+            <button data-kind="glossary" aria-pressed="false">
+              용어정리 <span>게임 속 말 사전</span>
+            </button>
+          </div>
+          <span id="patch" class="patch">자료 불러오는 중</span>
+        </div>
+        <div class="search-row">
+          <label class="search-box"
+            ><span aria-hidden="true">⌕</span
+            ><input
+              id="search"
+              type="search"
+              placeholder="궁금한 챔피언 이름을 찾아보세요"
+              autocomplete="off"
+              aria-label="이름 검색"
+            /><kbd>/</kbd></label
+          ><label class="easy-filter"
+            ><input id="easy-only" type="checkbox" /> 쉬운 설명만</label
+          >
+        </div>
+        <div
+          id="initials"
+          class="initials"
+          role="group"
+          aria-label="챔피언 초성 필터"
+        ></div>
+        <div
+          id="role-filters"
+          class="role-filters"
+          role="group"
+          aria-label="역할군 필터"
+        ></div>
+        <p id="role-help" class="filter-help"></p>
+        <p id="glossary-help" class="skills-help" hidden>
+          채팅에서 들었던 말도 찾아보세요. 줄임말과 영어 이름으로도 검색할 수
+          있어요. 상황에 따라 뜻이 조금 달라질 수 있어요.
+        </p>
+        <div class="results-header">
+          <h2 id="list-title">챔피언 둘러보기</h2>
+          <p id="count" role="status" aria-live="polite"></p>
+        </div>
+        <div id="grid" class="grid" aria-label="검색 결과">
+          <p>사전을 펼치는 중이에요…</p>
+        </div>
+      </section>
+      <div class="data-note">
+        <span>알아두세요</span>
+        <p>
+          현재 쉬운 설명은 <b>편집 예시</b>입니다. NotebookLM 자료 수집과 검수
+          후 채워갈 예정이에요. 준비 중인 항목에서는 공식 원문을 볼 수 있어요.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <a class="brand" href="./">롤 한입<span class="footer-dot">●</span></a>
+      <p>한 번에 잘할 필요 없어요. 오늘은 하나만 알아가요.</p>
+      <small
+        >롤 한입 is not endorsed by Riot Games and does not reflect the views or
+        opinions of Riot Games or anyone officially involved in producing or
+        managing Riot Games properties. Riot Games and all associated properties
+        are trademarks or registered trademarks of Riot Games, Inc.</small
+      >
+    </footer>
+    <dialog id="detail" aria-labelledby="detail-name">
+      <button id="close" class="close" aria-label="상세 설명 닫기">×</button>
+      <div id="detail-content"></div>
+    </dialog>
+  </body>
+</html>
