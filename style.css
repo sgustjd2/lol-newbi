@@ -363,6 +363,8 @@ footer small {
 }
 dialog {
   --dialog-padding: 36px;
+  --dialog-scroll-gap: 10px;
+  --dialog-scroll-side-gap: 20px;
   padding: var(--dialog-padding);
   border: 1px solid #e4e7ec;
   border-radius: 22px;
@@ -374,9 +376,32 @@ dialog {
   overflow: hidden;
 }
 #detail-content {
-  max-height: calc(88vh - (var(--dialog-padding) * 2));
+  max-height: calc(
+    88vh - (var(--dialog-padding) * 2) - (var(--dialog-scroll-gap) * 2)
+  );
+  margin: var(--dialog-scroll-gap) var(--dialog-scroll-side-gap)
+    var(--dialog-scroll-gap) 8px;
   overflow-y: auto;
   scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: #98a2b3 transparent;
+}
+#detail-content::-webkit-scrollbar {
+  width: 8px;
+}
+#detail-content::-webkit-scrollbar-track {
+  margin: 8px 0;
+  background: transparent;
+}
+#detail-content::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: #98a2b3;
+  background-clip: content-box;
+}
+#detail-content::-webkit-scrollbar-thumb:hover {
+  background: #667085;
+  background-clip: content-box;
 }
 dialog::backdrop {
   background: #0b1c2ea6;
@@ -564,6 +589,8 @@ dialog::backdrop {
   }
   dialog {
     --dialog-padding: 25px;
+    --dialog-scroll-gap: 8px;
+    --dialog-scroll-side-gap: 14px;
     padding: var(--dialog-padding);
   }
   .summary {
