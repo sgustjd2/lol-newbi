@@ -178,10 +178,12 @@
     "summary": "쌍검으로 베어 적을 제압하는 전사예요.",
     "analogy": "두 자루 검을 휘두르는 힘센 전사예요.",
     "tip": "Q가 적을 맞히면 다음 Q가 잠깐 바뀌어요. 맞힌 직후 바로 이어서 써보세요.",
-    "caution": "R은 고른 방향에서 가장 멀리 있는 적에게만 날아가요.",
-    "sourceType": "editorial",
+    "caution": "스킬만 계속 쓰면 기력이 금방 바닥나요. 평타를 섞어야 기력이 다시 차요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "암베사 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%94%EB%B2%A0%EC%82%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Amumu",
@@ -190,9 +192,11 @@
     "analogy": "붕대를 휘감아 적을 꽁꽁 묶는 미라예요.",
     "tip": "Q로 먼저 기절시키고 가까이 간 뒤 R을 쓰면 확실히 잡아요.",
     "caution": "Q는 붕대가 맞아야 기절하고 끌려와요.",
-    "sourceType": "editorial",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Anivia",
