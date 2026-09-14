@@ -18,6 +18,7 @@ function toggleFav(e) {
 }
 let glossaryEntries = [],
   regionStories = {},
+  botDuoData = { patch: "", notice: "", sources: [], duos: [] },
   selectedInitial = "전체";
 let selectedRole = "전체";
 let selectedRegion = null;
@@ -349,6 +350,123 @@ function cardEl(e) {
   wrap.append(card, fav);
   return wrap;
 }
+function championById(id) {
+  return entries.find((entry) => entry.kind === "champion" && entry.id === id);
+}
+function duoChampionButton(id, role, compact = false) {
+  const champion = championById(id);
+  if (!champion) return text("span", id, "duo-missing-champion");
+  const button = text("button", "", `duo-champion${compact ? " compact" : ""}`);
+  button.type = "button";
+  button.title = `${champion.name} 챔피언 설명 보기`;
+  button.setAttribute("aria-label", `${role} ${champion.name} 챔피언 설명 보기`);
+  const icon = portrait(champion);
+  icon.alt = champion.name;
+  button.append(icon, text("span", champion.name, "duo-champion-name"));
+  if (!compact) button.append(text("small", role, "duo-champion-role"));
+  button.onclick = () => {
+    lastFocus = button;
+    location.hash = `champion/${champion.id}`;
+  };
+  return button;
+}
+function duoPair(adc, support, compact = false) {
+  const pair = text("div", "", `duo-pair${compact ? " compact" : ""}`);
+  pair.append(
+    duoChampionButton(adc, "원거리 딜러", compact),
+    text("span", "＋", "duo-plus"),
+    duoChampionButton(support, "서포터", compact),
+  );
+  return pair;
+}
+function botDuoCard(duo) {
+  const card = text("article", "", "duo-card");
+  const head = text("div", "", "duo-card-head");
+  const title = text("div", "", "duo-card-title");
+  const adc = championById(duo.adc);
+  const support = championById(duo.support);
+  title.append(
+    text("span", duo.tier, "duo-tier"),
+    text("h3", `${adc?.name || duo.adc} ＋ ${support?.name || duo.support}`),
+  );
+  head.append(title, duoPair(duo.adc, duo.support));
+  card.append(head, text("p", duo.summary, "duo-summary"));
+  const tags = text("div", "", "duo-tags");
+  for (const tag of duo.tags || []) tags.append(text("span", tag));
+  card.append(tags);
+  const why = text("section", "", "duo-reasons");
+  why.append(text("h4", "왜 잘 맞을까요?"));
+  for (const point of duo.why || []) why.append(text("p", point));
+  card.append(why, text("p", duo.plan, "duo-plan"));
+  if (duo.stat) card.append(text("p", duo.stat, "duo-stat"));
+  const counters = text("section", "", "duo-counters");
+  counters.append(text("h4", "카운터 픽 · 이렇게 상대해요"));
+  for (const counter of duo.counters || []) {
+    const counterRow = text("div", "", "duo-counter-row");
+    counterRow.append(
+      duoPair(counter.adc, counter.support, true),
+      text("p", counter.reason),
+    );
+    counters.append(counterRow);
+  }
+  card.append(counters);
+  return card;
+}
+function renderBotDuos(q) {
+  const list = (botDuoData.duos || []).filter((duo) =>
+    norm(
+      [
+        duo.id,
+        duo.adc,
+        championById(duo.adc)?.name,
+        duo.support,
+        championById(duo.support)?.name,
+        ...(duo.tags || []),
+        duo.summary,
+        duo.plan,
+        ...(duo.why || []),
+        ...(duo.counters || []).flatMap((counter) => [
+          counter.adc,
+          championById(counter.adc)?.name,
+          counter.support,
+          championById(counter.support)?.name,
+          counter.reason,
+        ]),
+      ].join(" "),
+    ).includes(q),
+  );
+  $("#count").textContent = `${list.length}개 추천 조합 · ${botDuoData.patch || patch} 기준`;
+  $("#grid").replaceChildren();
+  const intro = text("div", "", "duo-intro");
+  intro.append(
+    text("p", "친구와 봇 라인을 갈 때 고르기 쉬운 조합을 모았어요."),
+    text(
+      "p",
+      botDuoData.methodology || "통계와 스킬 궁합을 함께 살펴 초보자용으로 정리했어요.",
+    ),
+  );
+  $("#grid").append(intro);
+  for (const duo of list) $("#grid").append(botDuoCard(duo));
+  if (!list.length)
+    $("#grid").append(
+      text("p", "찾는 조합이 없어요. 챔피언 이름이나 역할을 다시 검색해 보세요.", "empty"),
+    );
+  const note = text("div", "", "duo-source-note");
+  note.append(
+    text("p", botDuoData.notice || "조합 통계는 패치와 티어에 따라 달라질 수 있어요."),
+  );
+  const sources = text("p", "자료 출처 · ");
+  for (const [index, source] of (botDuoData.sources || []).entries()) {
+    if (index) sources.append(document.createTextNode(" · "));
+    const link = text("a", source.label + " ↗");
+    link.href = source.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    sources.append(link);
+  }
+  note.append(sources);
+  $("#grid").append(note);
+}
 function render() {
   roleFilters();
   const q = norm($("#search").value);
@@ -361,6 +479,10 @@ function render() {
   document.querySelectorAll("[data-initial]").forEach((b) => {
     b.setAttribute("aria-pressed", b.dataset.initial === selectedInitial);
   });
+  if (kind === "botduos") {
+    renderBotDuos(q);
+    return;
+  }
   if (kind === "regions") {
     $("#grid").replaceChildren();
     if (!selectedRegion) {
@@ -982,6 +1104,7 @@ const KIND_TITLE = {
   item: "아이템 둘러보기",
   glossary: "게임 속 말, 쉽게 알아보기",
   regions: "지역별 이야기",
+  botduos: "봇 듀오 조합 추천",
 };
 const KIND_PLACEHOLDER = {
   favorite: "즐겨찾기한 이름을 찾아보세요",
@@ -989,6 +1112,7 @@ const KIND_PLACEHOLDER = {
   item: "궁금한 아이템 이름을 찾아보세요",
   glossary: "예: 갱, CS, 노플, 프리징",
   regions: "지역을 선택해 이야기를 읽어보세요",
+  botduos: "예: 징크스 쓰레쉬, 후반 성장, 포킹",
 };
 document.querySelectorAll("[data-kind]").forEach((button) =>
   button.addEventListener("click", () => {
@@ -1068,6 +1192,9 @@ try {
     .then((r) => (r.ok ? r.json() : { regions: {} }))
     .then((d) => d.regions || {})
     .catch(() => ({}));
+  botDuoData = await fetch("./data/bot-duos.json")
+    .then((r) => (r.ok ? r.json() : { duos: [] }))
+    .catch(() => ({ duos: [] }));
   entries = data.entries;
   patch = data.patch;
   $("#patch").textContent = `자료 버전 ${patch}`;

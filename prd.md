@@ -39,7 +39,7 @@ JSON 계약: id, kind(champion/item), name, summary, analogy, tip, caution, sour
 - NotebookLM JSON 입력 검사 및 병합 도구.
 - 빌드 시 dist에 공개 파일만 복사. GitHub Actions로 GitHub Pages 배포.
 
-계정, 결제, 실시간 AI, 승률/티어 추천, 방문자 데이터 수집은 제외한다.
+계정, 결제, 실시간 AI, 실시간 승률/티어 자동 추천, 방문자 데이터 수집은 제외한다. 다만 공개 패치 통계를 참고한 편집형 봇 듀오 추천과 카운터 설명은 제공한다.
 
 ## 6. 기술 및 배포
 Node.js 22 이상. 정적 HTML/CSS/JavaScript를 유지하고, 간격·모서리 토큰은 `@seed-design/css` 2.8.1에서 제공한다. 브라우저에서는 같은 사이트의 정적 JSON을 읽는다. 모든 경로는 상대 경로로 작성하여 github.io/repository/에서 동작한다. URL hash로 상세 항목을 공유하고 새로고침을 지원한다. 패치는 수동 동기화하며 실패하면 기존 데이터를 유지한다.
@@ -66,7 +66,7 @@ Node.js 22 이상. 정적 HTML/CSS/JavaScript를 유지하고, 간격·모서리
 - 검색, 종류 전환, 상세, Escape 닫기, 뒤로 가기, 빈 결과, 쉬운 설명 필터 브라우저 확인.
 - 390px 뷰포트에서 목록/상세 확인, 가로 넘침 없음.
 - 입력 검증 테스트 3개 통과, 정적 빌드 완료.
-- 원격 저장소 생성과 실제 배포는 미진행. 로그인과 데이터 수집이 다음 단계.
+- 봇 듀오 탭에 16.18 공개 시너지 통계를 참고한 8개 추천 조합과 조합별 카운터 2개를 제공한다. 원격 저장소와 GitHub Pages Actions 배포가 설정되어 있다.
 
 참고: https://developer.riotgames.com/docs/lol#data-dragon
 
