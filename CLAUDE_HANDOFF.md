@@ -19,10 +19,10 @@
 - 챔피언은 가나다순이고, 전체/ㄱ~ㅎ 초성 필터를 검색과 조합할 수 있다. 쌍자음은 기본 자음에 포함한다.
 - 용어정리 탭에 36개 용어와 별칭, 영어 이름, 쉬운 뜻, 채팅 예문이 있다.
 - `봇 듀오` 탭에 `data/bot-duos.json`의 2026 시즌 공개 프로 대회 경기 2,057건에서 1경기 이상 나온 411개 조합이 있다. `등급별 보기`, `원딜 챔피언 기준`, `서폿 챔피언 기준` 버튼으로 조합을 묶어 보고, 조합별 카운터 2개와 초보자용 궁합·운영 설명을 보여준다. 현재 수집 범위는 16.01–16.17이며 통계는 패치·지역·티어·표본에 따라 달라지는 참고 자료다.
-- 챔피언 상세 팝업의 `대표 카운터 픽` 영역은 `data/champion-counters.json`의 16.18 LoLalytics 카운터 상위 3명을 아이콘으로 표시한다. 아이콘 버튼을 누르면 카운터 이유 한 줄이 펼쳐지며, 모든 173개 챔피언에 데이터가 있다.
+- 챔피언 상세 팝업의 `대표 카운터 픽` 영역은 `data/champion-counters.json`의 16.18 LoLalytics 카운터 상위 3명을 아이콘으로 표시한다. 아이콘 버튼을 누르면 카운터 챔피언의 실제 스킬 상호작용을 바탕으로 한 이유 한 줄이 펼쳐지며, 모든 173개 챔피언에 데이터가 있다. 이유 문구를 다시 생성할 때는 `npm run enrich:counters`를 사용한다.
 - 흰색 배경, 리그 오브 레전드에서 착안한 남색·금색·청색 테마를 사용한다. 당근 SEED CSS 2.8.1의 토큰을 `seed.css`로 포함해 간격·모서리 규칙에 활용한다.
 - 검색, 탭 전환, 역할 필터, 초성 필터, 쉬운 설명 필터, 상세 대화상자, Escape 닫기, 뒤로 가기, 빈 결과, 390px 모바일을 브라우저에서 확인했다.
-- `npm test`는 현재 24개 테스트를 통과한다.
+- `npm test`는 현재 25개 테스트를 통과한다.
 - NotebookLM에서 실제 추출한 데이터는 아직 0건이다. `data/explanations.json`의 쉬운 설명 10건은 편집 예시이고, NotebookLM 검수 완료가 아니다.
 - Git 저장소를 초기화하고 `https://github.com/sgustjd2/lol-newbi`에 연결했다. `main` 브랜치에 push했고, GitHub Pages를 Actions 소스로 활성화해 `.github/workflows/pages.yml`이 배포한다. 배포 주소는 `https://sgustjd2.github.io/lol-newbi/`다.
 - 이름에 " / "가 있는 스킬(변신·조건부 스킬, 예: 니달리·제이스·럭스식 스탠스 전환 등 24개)은 `data/skill-details.json`에서 `formVariant: true`로 표시한다. 계수 파서는 여전히 한 조건의 스펠만 매칭하므로(`scripts/sync-details.mjs`), 화면에서는 표시된 계수가 두 형태 중 하나일 수 있다는 안내 문구를 보여준다. 두 번째 형태의 실제 계수를 CommunityDragon에서 추가로 매칭해 보여주는 것은 아직 하지 않았다 — 챔피언마다 내부 스펠 키 이름이 달라 추측 매칭이 위험하기 때문이다.
@@ -55,10 +55,11 @@ NotebookLM 링크는 공개 문서에 넣지 않았다. 작업 폴더의 `privat
 | `data/skill-details.json` | CommunityDragon 계수·CC 상세 |
 | `data/glossary.json` | 초보자용 게임 용어 36건 |
 | `data/bot-duos.json` | 봇 듀오 추천·카운터 조합과 운영 설명, 공개 출처 링크 |
-| `data/champion-counters.json` | 챔피언별 대표 카운터 3개와 초보자용 한 줄 이유, LoLalytics 출처 |
+| `data/champion-counters.json` | 챔피언별 대표 카운터 3개와 챔피언별 스킬 상호작용을 반영한 초보자용 한 줄 이유, LoLalytics 출처 |
 | `scripts/sync.mjs` | Data Dragon 최신 버전과 챔피언/아이템/아이콘 갱신 |
 | `scripts/sync-details.mjs` | CommunityDragon에서 계수·CC 상세 생성; 캐시는 `private/` |
 | `scripts/skill-details.mjs` | 계산식 파서, CC 패턴, 안전한 미확인 처리 |
+| `scripts/enrich-counter-reasons.mjs` | 카운터 챔피언별 스킬 상호작용 문구 생성 |
 | `scripts/enrich.mjs` | 쉬운 표현, 챔피언 역할, 아이템 용도 분류 |
 | `scripts/import.mjs` | 검수 완료 NotebookLM JSON 병합 |
 | `scripts/validate.mjs` | 입력 필드·길이·중복·패치·URL·검수 검사 |

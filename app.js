@@ -372,7 +372,7 @@ function championCounterSection(champion) {
   section.append(
     text(
       "p",
-      "상대할 때 자주 선택하는 챔피언이에요. 아이콘을 누르면 왜 카운터인지 한 줄로 볼 수 있어요.",
+      "상대할 때 자주 선택하는 챔피언이에요. 아이콘을 누르면 각 챔피언의 스킬 상호작용을 한 줄로 볼 수 있어요.",
       "counter-help",
     ),
   );

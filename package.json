@@ -13,6 +13,7 @@
     "merge:editorial": "node scripts/merge-editorial.mjs",
     "merge:simplify": "node scripts/merge-simplify.mjs",
     "merge:builds": "node scripts/merge-builds.mjs",
+    "enrich:counters": "node scripts/enrich-counter-reasons.mjs",
     "test": "node --test"
   },
   "engines": {

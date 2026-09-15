@@ -27,3 +27,29 @@ test("모든 챔피언에 대표 카운터 3개와 쉬운 이유가 있다", asy
     }
   }
 });
+
+test("카운터 이유가 반복 문구 대신 챔피언 고유 스킬을 설명한다", async () => {
+  const counters = JSON.parse(
+    await readFile("data/champion-counters.json", "utf8"),
+  );
+  const reasons = Object.values(counters.champions).flatMap((entry) =>
+    entry.counters.map((counter) => counter.reason),
+  );
+  assert.equal(counters.reasonVersion, "champion-mechanics-v2");
+  assert.ok(
+    reasons.every(
+      (reason) =>
+        !reason.includes("멀리서 계속 때려") &&
+        !reason.includes("속박·기절 같은 방해 기술"),
+    ),
+  );
+  const garenReasons = counters.champions.Garen.counters.map(
+    (counter) => counter.reason,
+  );
+  assert.match(garenReasons.find((reason) => reason.startsWith("케일")), /사거리가 길어지고.*무적/);
+  assert.match(garenReasons.find((reason) => reason.startsWith("트위스티드 페이트")), /골드 카드.*다른 라인/);
+  assert.notEqual(
+    garenReasons.find((reason) => reason.startsWith("케일")),
+    garenReasons.find((reason) => reason.startsWith("트위스티드 페이트")),
+  );
+});
