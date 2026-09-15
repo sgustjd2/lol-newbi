@@ -261,6 +261,46 @@ header {
   min-width: 0;
   width: 100%;
 }
+.card-toggle {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  right: 52px;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px solid #dfe4ea;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #006c87;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: border-color 0.18s, background 0.18s, color 0.18s;
+}
+.card-toggle:hover,
+.card-toggle:focus-visible,
+.card-wrap.is-open .card-toggle {
+  border-color: var(--gold);
+  background: #fffaf0;
+  color: #8b682d;
+}
+.card-wrap:not(.is-open) .card-top {
+  margin-bottom: 0;
+}
+.card-wrap:not(.is-open) .card-top .subtitle {
+  display: none;
+}
+.card-wrap:not(.is-open) .card-top .role-label {
+  display: block;
+  overflow: hidden;
+  margin-top: 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-wrap:not(.is-open) .card > p,
+.card-wrap:not(.is-open) .card > .card-bottom {
+  display: none;
+}
 .fav {
   position: absolute;
   top: 12px;
@@ -291,6 +331,10 @@ header {
   align-items: center;
   gap: 13px;
   margin-bottom: 18px;
+}
+.card-top > div {
+  min-width: 0;
+  padding-right: 78px;
 }
 .portrait {
   width: 58px;
@@ -1516,7 +1560,7 @@ dialog::backdrop {
 }
 .card {
   padding: var(--seed-dimension-x6);
-  padding-right: 48px; /* ⭐ 즐겨찾기 버튼 자리 확보 */
+  padding-right: var(--seed-dimension-x6);
   box-shadow: 0 1px 3px #0b1c2e06;
 }
 .search-box {
@@ -1698,6 +1742,41 @@ dialog::backdrop {
   justify-content: space-between;
   gap: 16px;
 }
+.duo-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.duo-card-toggle {
+  flex: 0 0 auto;
+  min-height: 36px;
+  padding: 7px 12px;
+  border: 1px solid #dfe4ea;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #006c87;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: border-color 0.18s, background 0.18s, color 0.18s;
+}
+.duo-card-toggle:hover,
+.duo-card-toggle:focus-visible,
+.duo-card.is-open .duo-card-toggle {
+  border-color: var(--gold);
+  background: #fffaf0;
+  color: #8b682d;
+}
+.duo-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.duo-card-body[hidden] {
+  display: none;
+}
 .duo-card-title {
   min-width: 0;
 }
@@ -1721,7 +1800,7 @@ dialog::backdrop {
   flex-wrap: wrap;
   gap: 8px;
 }
-.duo-card-head > .duo-pair {
+.duo-card-actions > .duo-pair {
   flex-shrink: 0;
   justify-content: flex-end;
 }
@@ -1904,7 +1983,16 @@ dialog::backdrop {
   .duo-card-head {
     flex-direction: column;
   }
-  .duo-card-head > .duo-pair {
+  .duo-card-actions {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .duo-card-toggle {
+    margin-left: auto;
+  }
+  .duo-card-actions > .duo-pair {
     justify-content: flex-start;
   }
   .duo-counter-row {

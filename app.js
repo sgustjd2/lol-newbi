@@ -308,6 +308,8 @@ function cardEl(e) {
   const card = text("button", "", "card");
   card.type = "button";
   card.setAttribute("aria-label", `${e.name} 설명 보기`);
+  const cardId = `entry-card-${e.kind}-${String(e.id).replace(/[^a-z0-9_-]/gi, "-")}`;
+  card.id = cardId;
   const top = text("div", "", "card-top");
   const names = text("div", "");
   names.append(text("h3", e.name), text("span", e.subtitle, "subtitle"));
@@ -336,6 +338,20 @@ function cardEl(e) {
     location.hash = `${e.kind}/${e.id}`;
   });
   const wrap = text("div", "", "card-wrap");
+  const toggle = text("button", "＋ 펼치기", "card-toggle");
+  toggle.type = "button";
+  toggle.title = `${e.name} 설명 펼치기`;
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-controls", cardId);
+  toggle.setAttribute("aria-label", `${e.name} 설명 펼치기`);
+  toggle.onclick = (event) => {
+    event.stopPropagation();
+    const open = wrap.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "− 접기" : "＋ 펼치기";
+    toggle.title = `${e.name} 설명 ${open ? "접기" : "펼치기"}`;
+    toggle.setAttribute("aria-label", `${e.name} 설명 ${open ? "접기" : "펼치기"}`);
+  };
   const fav = text("button", isFav(e) ? "★" : "☆", `fav${isFav(e) ? " on" : ""}`);
   fav.type = "button";
   fav.title = "즐겨찾기";
@@ -349,7 +365,7 @@ function cardEl(e) {
     fav.setAttribute("aria-pressed", on);
     if (kind === "favorite") render();
   };
-  wrap.append(card, fav);
+  wrap.append(card, toggle, fav);
   return wrap;
 }
 function championById(id) {
@@ -454,20 +470,33 @@ function botDuoCard(duo) {
   const title = text("div", "", "duo-card-title");
   const adc = championById(duo.adc);
   const support = championById(duo.support);
+  const pairName = `${adc?.name || duo.adc} ＋ ${support?.name || duo.support}`;
   title.append(
     text("span", duo.tier, "duo-tier"),
-    text("h3", `${adc?.name || duo.adc} ＋ ${support?.name || duo.support}`),
+    text("h3", pairName),
   );
-  head.append(title, duoPair(duo.adc, duo.support));
-  card.append(head, text("p", duo.summary, "duo-summary"));
+  const actions = text("div", "", "duo-card-actions");
+  actions.append(duoPair(duo.adc, duo.support));
+  const bodyId = `duo-details-${String(duo.id).replace(/[^a-z0-9_-]/gi, "-")}`;
+  const toggle = text("button", "＋ 설명 펼치기", "duo-card-toggle");
+  toggle.type = "button";
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-controls", bodyId);
+  toggle.setAttribute("aria-label", `${pairName} 상세 설명 펼치기`);
+  actions.append(toggle);
+  head.append(title, actions);
+  const body = text("div", "", "duo-card-body");
+  body.id = bodyId;
+  body.hidden = true;
+  body.append(text("p", duo.summary, "duo-summary"));
   const tags = text("div", "", "duo-tags");
   for (const tag of duo.tags || []) tags.append(text("span", tag));
-  card.append(tags);
+  body.append(tags);
   const why = text("section", "", "duo-reasons");
   why.append(text("h4", "왜 잘 맞을까요?"));
   for (const point of duo.why || []) why.append(text("p", point));
-  card.append(why, text("p", duo.plan, "duo-plan"));
-  if (duo.stat) card.append(text("p", duo.stat, "duo-stat"));
+  body.append(why, text("p", duo.plan, "duo-plan"));
+  if (duo.stat) body.append(text("p", duo.stat, "duo-stat"));
   const counters = text("section", "", "duo-counters");
   counters.append(text("h4", "카운터 픽 · 이렇게 상대해요"));
   for (const counter of duo.counters || []) {
@@ -478,7 +507,16 @@ function botDuoCard(duo) {
     );
     counters.append(counterRow);
   }
-  card.append(counters);
+  body.append(counters);
+  toggle.onclick = () => {
+    const open = !body.hidden;
+    body.hidden = open;
+    toggle.setAttribute("aria-expanded", String(!open));
+    toggle.setAttribute("aria-label", `${pairName} 상세 설명 ${open ? "펼치기" : "접기"}`);
+    toggle.textContent = open ? "＋ 설명 펼치기" : "− 설명 접기";
+    card.classList.toggle("is-open", !open);
+  };
+  card.append(head, body);
   return card;
 }
 const botDuoViews = [
