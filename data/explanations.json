@@ -1239,13 +1239,15 @@
   {
     "id": "Orianna",
     "kind": "champion",
-    "summary": "구체를 조종해 마법 피해를 주는 마법사예요.",
-    "analogy": "명령을 내리면 스스로 움직이는 로봇 공을 떠올려 보세요.",
-    "tip": "R 전에 E로 공을 아군 쪽에 둬요. 그러면 R로 적을 그쪽으로 끌어올 수 있어요.",
-    "caution": "Q는 여러 명을 맞히면 뒤에 맞는 적일수록 덜 아파요.",
-    "sourceType": "editorial",
+    "summary": "구체를 조종해 원거리에서 광역 피해와 CC를 주는 마법사예요.",
+    "analogy": "자신의 분신 같은 구체를 이리저리 보내 공격, 보호, 방해를 대신 시키는 원격조종 마법사 같아요.",
+    "tip": "구체가 있는 위치가 모든 스킬의 시전 기준점이니, 미리 구체를 적진 근처에 놓아두면 기습적인 궁극기 콤보가 가능해요.",
+    "caution": "궁극기(명령: 충격파)는 적을 띄우는 게 아니라 구체 쪽으로 끌어당기는 효과라, 쓰기 전에 구체 위치를 꼭 확인하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력/군중제어기 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5/%EA%B5%B0%EC%A4%91%EC%A0%9C%EC%96%B4%EA%B8%B0",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Ornn",
