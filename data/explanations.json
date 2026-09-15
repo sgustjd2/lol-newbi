@@ -1200,13 +1200,15 @@
   {
     "id": "Nocturne",
     "kind": "champion",
-    "summary": "그림자 속에서 나타나 적을 덮치는 암살자예요.",
-    "analogy": "어둠 속에 숨어 있다가 순식간에 튀어나오는 괴물을 떠올려 보세요.",
-    "tip": "R을 쓰면 적 모두가 잘 안 보이게 돼요. 그때 다가가보세요.",
-    "caution": "E는 끝까지 가까이 있어야 적이 무서워해요.",
-    "sourceType": "editorial",
+    "summary": "궁극기로 상대 팀 전체의 시야를 가리는 암살자예요.",
+    "analogy": "온 지도를 어둠으로 덮어 상대의 눈을 가리고, 그 틈에 사냥감에게 달려드는 그림자 암살자 같아요.",
+    "tip": "궁극기(피해망상)를 미리 켜두면 트위스티드 페이트 운명이나 렉사이 사냥의 전율 같은 적의 시야 확보기를 무력화할 수 있어요.",
+    "caution": "궁극기 시전 당시 상대에게 주문 보호막이 있으면 시야 차단 효과가 아예 적용되지 않고 보호막만 없어지니 타이밍에 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력/군중제어기 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5/%EA%B5%B0%EC%A4%91%EC%A0%9C%EC%96%B4%EA%B8%B0",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Nunu",
