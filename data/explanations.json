@@ -1428,13 +1428,15 @@
   {
     "id": "Rumble",
     "kind": "champion",
-    "summary": "불을 뿜는 로봇 마법사예요.",
-    "analogy": "뜨거워질수록 불을 더 세게 뿜는 로봇이에요.",
-    "tip": "몸이 뜨거워지면 스킬이 더 세져요.",
-    "caution": "작살은 두 개까지만 모을 수 있어요.",
-    "sourceType": "editorial",
+    "summary": "열기를 채워 화염방사기로 태우는 탑 딜러예요.",
+    "analogy": "화염방사기와 미사일로 상대를 몰아붙이다가, 열기가 위험 수준에 이르면 모든 스킬이 강화되는 로봇 조종사 같아요.",
+    "tip": "궁극기(이퀄라이저 미사일)로 상대의 도주로나 합류 경로를 막으면, 상대는 소극적으로 플레이할 수밖에 없어요.",
+    "caution": "후반으로 갈수록 사거리 짧은 근접 딜러에게 밀리니, 초중반 우위를 살려 오브젝트를 챙기고 게임을 빨리 끝내야 해요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "멜(리그 오브 레전드) - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A9%9C(%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C)",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Ryze",
