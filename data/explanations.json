@@ -1278,13 +1278,15 @@
   {
     "id": "Poppy",
     "kind": "champion",
-    "summary": "작지만 강한 망치로 적을 날려버리는 탱커예요.",
-    "analogy": "작은 몸집으로 거인을 날려버리는 망치의 요정을 떠올려 보세요.",
-    "tip": "W를 켜두면 달려오는 적을 막을 수 있어요. 미리 켜두고 기다려보세요.",
-    "caution": "E는 적이 벽에 부딪혀야 못 움직이게 돼요. 벽이 없으면 밀리기만 해요.",
-    "sourceType": "editorial",
+    "summary": "망치로 적을 벽에 처박아 기절시키는 데마시아의 수호자예요.",
+    "analogy": "돌진해오는 적을 몸으로 막아서고, 망치로 벽까지 밀쳐 기절시키는 수문장 같아요.",
+    "tip": "E(용감한 돌진)로 적을 벽 쪽으로 밀치면 충돌 시 추가 피해와 함께 기절을 걸 수 있어요.",
+    "caution": "W(굳건한 태세)는 우디르, 트런들처럼 툴팁에 안 보이는 일부 돌진기에는 반응하지 않으니 과신하지 마세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/스킬 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%EC%8A%A4%ED%82%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Pyke",
