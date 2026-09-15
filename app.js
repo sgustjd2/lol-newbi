@@ -847,6 +847,7 @@ function scheduleCharacterCardFit() {
     fitCharacterCardViewport();
     requestAnimationFrame(fitCharacterCardViewport);
   });
+  window.setTimeout(fitCharacterCardViewport, 250);
 }
 function renderCharacterCard(champion) {
   const mount = $("#character-card");
@@ -2299,7 +2300,9 @@ requestAnimationFrame(updateTabsNext);
 document.fonts?.ready.then(() => {
   updateTabsNext();
   scheduleCardAlignment();
+  scheduleCharacterCardFit();
 });
+window.addEventListener("load", scheduleCharacterCardFit, { once: true });
 document.addEventListener("keydown", (e) => {
   if (
     e.key === "/" &&
