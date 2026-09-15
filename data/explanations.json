@@ -1252,13 +1252,15 @@
   {
     "id": "Ornn",
     "kind": "champion",
-    "summary": "화염과 대장간의 힘을 쓰는 든든한 탱커예요.",
-    "analogy": "커다란 망치를 든 대장장이가 용암을 다루는 모습을 떠올려 보세요.",
-    "tip": "R로 부른 불의 정령에 E로 부딪히면 적을 하늘로 띄울 수 있어요.",
-    "caution": "E는 벽 같은 곳에 부딪혀야 효과가 생겨요. 빈 곳에선 안 생겨요.",
-    "sourceType": "editorial",
+    "summary": "아이템을 만들고 아군 장비까지 강화해주는 대장장이 탱커예요.",
+    "analogy": "전장에서 직접 아이템을 제작하고, 아군의 장비까지 걸작으로 업그레이드해주는 대장장이 신 같아요.",
+    "tip": "패시브 덕분에 상점 밖에서도 골드로 아이템을 만들 수 있으니, 귀환 없이도 타이밍 맞춰 템을 맞출 수 있어요.",
+    "caution": "불안정 상태 적에게 넣는 평타는 CC가 붙은 공격 판정이라, 상대가 스킬 차단 효과를 쓰면 막힐 수 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Pantheon",
