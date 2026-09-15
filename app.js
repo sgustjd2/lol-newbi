@@ -1767,7 +1767,7 @@ try {
     };
     $("#initials").append(b);
   }
-  const r = await fetch("./data/catalog.json?v=champion-review-v2");
+  const r = await fetch("./data/catalog.json?v=champion-review-v3");
   if (!r.ok) throw Error("load");
   const data = await r.json();
   const glossaryResponse = await fetch("./data/glossary.json");
@@ -1790,7 +1790,7 @@ try {
       r.ok ? r.json() : { updatedAt: "", notice: "", sources: [], eggs: [] },
     )
     .catch(() => ({ updatedAt: "", notice: "", sources: [], eggs: [] }));
-  championCounterData = await fetch("./data/champion-counters.json?v=counter-reasons")
+  championCounterData = await fetch("./data/champion-counters.json?v=counter-reasons-v3")
     .then((r) => (r.ok ? r.json() : { champions: {} }))
     .catch(() => ({ champions: {} }));
   entries = data.entries;
