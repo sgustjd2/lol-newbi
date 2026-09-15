@@ -1,0 +1,236 @@
+{
+  "updatedAt": "2026-09-15",
+  "notice": "룬테라의 연도는 모든 사건에 정확히 공개되어 있지 않아요. 공식 이야기의 큰 흐름을 먼저 두고, 논쟁이 있거나 시간이 겹치는 사건은 ‘대략’으로 표시했어요.",
+  "sources": [
+    {
+      "label": "Riot Games · Universe",
+      "url": "https://universe.leagueoflegends.com/en_US/"
+    },
+    {
+      "label": "Riot Games · TL;DW: 챔피언과 세계관",
+      "url": "https://www.leagueoflegends.com/en-us/news/dev/tl-dw-champs-lore-more-dev-update/"
+    },
+    {
+      "label": "League Wiki · Runeterra 연대표(참고)",
+      "url": "https://wiki.leagueoflegends.com/en-us/Universe:Runeterra_Prime"
+    }
+  ],
+  "events": [
+    {
+      "id": "runeterra-origin",
+      "order": 10,
+      "era": "태초",
+      "period": "기록 이전",
+      "regions": ["룬테라", "공허"],
+      "title": "룬테라가 생기고 공허가 틈을 노리다",
+      "summary": "별과 세계가 생겨날 때부터, 세계 바깥의 공허는 룬테라를 집어삼킬 기회를 엿보고 있었어요.",
+      "detail": "공허는 나라가 아니라 세계 밖의 빈 공간에 가까워요. 그래서 어느 지역의 국경도 공허를 완전히 막지는 못해요.",
+      "confidence": "큰 줄기",
+      "champions": ["AurelionSol", "Belveth"]
+    },
+    {
+      "id": "targon-aspects",
+      "order": 20,
+      "era": "아주 오래 전",
+      "period": "성위의 시대",
+      "regions": ["타곤", "룬테라"],
+      "title": "타곤 산과 성위의 힘",
+      "summary": "타곤 산을 오르는 사람들은 하늘의 존재인 성위와 이어져 특별한 힘을 얻기도 했어요.",
+      "detail": "레오나·다이애나·판테온처럼 성위의 힘을 받은 사람들의 선택은 다른 지역의 전쟁에도 영향을 주었어요. 성위의 힘이 언제 시작됐는지는 정확한 연도가 남아 있지 않아요.",
+      "confidence": "대략 순서",
+      "champions": ["Leona", "Diana", "Pantheon", "Zoe"]
+    },
+    {
+      "id": "freljord-three-sisters",
+      "order": 30,
+      "era": "아주 오래 전",
+      "period": "세 자매의 시대",
+      "regions": ["프렐요드"],
+      "title": "세 자매가 프렐요드를 이끌다",
+      "summary": "아바로사·세릴다·리산드라 세 자매가 얼음 땅을 이끌고, 리산드라는 감시자와 위험한 약속을 맺었어요.",
+      "detail": "감시자는 세계 아래에서 올라온 공허의 존재예요. 리산드라는 감시자를 얼음 아래에 가두었지만, 그 비밀을 숨기는 대가로 프렐요드가 갈라졌어요.",
+      "confidence": "큰 줄기",
+      "champions": ["Lissandra", "Ashe", "Sejuani", "Ornn", "Volibear"]
+    },
+    {
+      "id": "void-war-shurima",
+      "order": 40,
+      "era": "고대",
+      "period": "공허 전쟁",
+      "regions": ["슈리마", "공허"],
+      "title": "이케시아가 공허를 열어 버리다",
+      "summary": "고대 이케시아가 공허를 불러내면서 세계 전체가 위험해졌고, 슈리마의 초월체들이 맞서 싸웠어요.",
+      "detail": "이 싸움에서 살아남은 전사들은 세계를 지켰지만, 공허와 오래 싸운 힘은 나중에 다르킨이라는 새로운 위협으로 뒤틀렸어요.",
+      "confidence": "큰 줄기",
+      "champions": ["Kassadin", "Kaisa", "Aatrox", "Nasus", "Renekton"]
+    },
+    {
+      "id": "ixtal-isolation",
+      "order": 45,
+      "era": "고대",
+      "period": "대재앙 뒤",
+      "regions": ["이쉬탈"],
+      "title": "이쉬탈이 숲 뒤에 숨다",
+      "summary": "이쉬탈은 원소 마법으로 살아남은 뒤, 바깥 세상과 거리를 두고 자신들의 지식을 지켰어요.",
+      "detail": "이쉬탈 사람들은 다른 제국과 전쟁이 벌어지는 동안에도 자신들의 도시를 숨겼어요. 니달리와 키아나는 이 닫힌 세계와 바깥 세계를 이어 주는 인물이에요.",
+      "confidence": "대략 순서",
+      "champions": ["Qiyana", "Nidalee", "Milio"]
+    },
+    {
+      "id": "shurima-fall",
+      "order": 50,
+      "era": "고대",
+      "period": "슈리마의 몰락",
+      "regions": ["슈리마"],
+      "title": "아지르의 승천이 실패하고 제국이 모래에 묻히다",
+      "summary": "아지르가 태양 원판의 힘으로 승천하려던 순간, 제국이 무너지고 슈리마는 오랫동안 사라졌어요.",
+      "detail": "사막에 남은 사람들은 여러 부족으로 흩어졌어요. 나서스·레넥톤·제라스의 운명도 이 사건에서 갈라졌어요.",
+      "confidence": "큰 줄기",
+      "champions": ["Azir", "Xerath", "Nasus", "Renekton", "Sivir"]
+    },
+    {
+      "id": "great-darkin-war",
+      "order": 60,
+      "era": "고대",
+      "period": "다르킨 전쟁",
+      "regions": ["슈리마", "룬테라"],
+      "title": "세상을 지키던 초월체가 다르킨이 되다",
+      "summary": "공허 전쟁 뒤 힘과 목적을 잃은 초월체들이 서로 싸우며 다르킨으로 변했고, 결국 무기 안에 봉인됐어요.",
+      "detail": "아트록스와 라아스트 같은 다르킨 무기는 그때의 흔적이에요. 지금도 누군가 무기를 들면 봉인이 다시 흔들릴 수 있어요.",
+      "confidence": "큰 줄기",
+      "champions": ["Aatrox", "Kayn", "Varus"]
+    },
+    {
+      "id": "mordekaiser-rise",
+      "order": 70,
+      "era": "옛 시대",
+      "period": "죽음의 제국",
+      "regions": ["녹서스"],
+      "title": "모데카이저가 죽음의 제국을 세우다",
+      "summary": "죽음을 거부한 정복자 모데카이저가 거대한 제국을 만들었고, 쓰러진 뒤에도 다시 돌아올 길을 준비했어요.",
+      "detail": "현재의 녹서스와 모데카이저의 제국은 같은 나라가 아니지만, 녹서스의 땅 아래에는 그가 남긴 흔적이 아직 남아 있어요.",
+      "confidence": "대략 순서",
+      "champions": ["Mordekaiser", "Leblanc", "Rell"]
+    },
+    {
+      "id": "rune-wars-demacia",
+      "order": 80,
+      "era": "수백 년 전",
+      "period": "룬 전쟁 이후",
+      "regions": ["데마시아", "룬테라"],
+      "title": "룬 전쟁의 피난민이 데마시아를 세우다",
+      "summary": "마법의 재앙을 피해 도망친 사람들이 페트리사이트가 있는 땅에 모여 데마시아를 만들었어요.",
+      "detail": "마법을 무서워하는 데마시아의 법과 하얀 성벽은 이때의 기억에서 시작됐어요. 케일과 모르가나의 이야기도 이 왕국의 초창기와 이어져요.",
+      "confidence": "큰 줄기",
+      "champions": ["Garen", "Lux", "Kayle", "Morgana", "JarvanIV"]
+    },
+    {
+      "id": "noxus-founding",
+      "order": 90,
+      "era": "수백 년 전",
+      "period": "제국의 시작",
+      "regions": ["녹서스"],
+      "title": "녹서스가 요새에서 제국으로 커지다",
+      "summary": "작은 항구 요새였던 녹서스가 정복과 동맹을 거듭하며 여러 민족이 모인 제국으로 변했어요.",
+      "detail": "녹서스는 태어난 곳보다 지금 무엇을 할 수 있는지를 더 중요하게 여겨요. 그래서 다리우스·사미라·리븐처럼 서로 다른 출신의 사람이 함께 있어요.",
+      "confidence": "대략 순서",
+      "champions": ["Darius", "Katarina", "Samira", "Riven", "Swain"]
+    },
+    {
+      "id": "piltover-zaun-rise",
+      "order": 100,
+      "era": "최근 수백 년",
+      "period": "두 도시의 성장",
+      "regions": ["필트오버", "자운"],
+      "title": "필트오버와 자운이 갈라져 성장하다",
+      "summary": "바다를 잇는 운하와 헥스테크가 두 도시를 번영시켰지만, 위쪽의 필트오버와 아래쪽의 자운 사이에는 큰 격차가 생겼어요.",
+      "detail": "케이틀린·바이·제이스가 도시의 질서를 지키려는 동안, 빅토르·에코·징크스는 각자의 방식으로 자운의 미래를 바꾸려 해요.",
+      "confidence": "큰 줄기",
+      "champions": ["Caitlyn", "Vi", "Jayce", "Viktor", "Ekko", "Jinx"]
+    },
+    {
+      "id": "bilgewater-growth",
+      "order": 105,
+      "era": "최근 수백 년",
+      "period": "해적 항구의 시대",
+      "regions": ["빌지워터"],
+      "title": "빌지워터가 바다의 항구가 되다",
+      "summary": "빌지워터는 바다 괴물을 잡고 물건을 사고파는 사람들이 모인 항구 도시로 커졌어요.",
+      "detail": "미스 포츈과 갱플랭크의 싸움, 일라오이의 신앙, 트위스티드 페이트와 그레이브즈의 모험이 이 도시의 현재를 만들었어요.",
+      "confidence": "큰 줄기",
+      "champions": ["MissFortune", "Gangplank", "Illaoi", "TwistedFate", "Graves"]
+    },
+    {
+      "id": "ruination-shadow-isles",
+      "order": 110,
+      "era": "최근 수백 년",
+      "period": "대몰락",
+      "regions": ["그림자 군도"],
+      "title": "비에고의 집착이 그림자 군도를 만들다",
+      "summary": "왕 비에고가 죽은 사랑하는 사람을 되살리려다 검은 안개를 퍼뜨렸고, 축복의 섬은 그림자 군도로 바뀌었어요.",
+      "detail": "칼리스타·헤카림·쓰레쉬는 몰락을 막거나 이용하려다 저주에 묶였어요. 이후 검은 안개는 바다를 건너 다른 지역도 위협했어요.",
+      "confidence": "큰 줄기",
+      "champions": ["Viego", "Kalista", "Hecarim", "Thresh", "Yorick"]
+    },
+    {
+      "id": "noxus-ionia-war",
+      "order": 120,
+      "era": "현재에 가까운 과거",
+      "period": "아이오니아 침공",
+      "regions": ["아이오니아", "녹서스"],
+      "title": "녹서스가 아이오니아를 침공하다",
+      "summary": "녹서스의 군대가 평화로운 섬 아이오니아를 공격하면서, 아이오니아 사람들도 각자의 방식으로 싸우기 시작했어요.",
+      "detail": "이 전쟁은 리븐에게 믿음을 잃게 했고, 이렐리아·아칼리·야스오·신 짜오의 삶을 크게 바꿨어요. 전쟁 뒤에도 두 지역의 긴장은 남아 있어요.",
+      "confidence": "큰 줄기",
+      "champions": ["Irelia", "Riven", "Akali", "Yasuo", "Swain", "Kennen"]
+    },
+    {
+      "id": "shurima-return",
+      "order": 130,
+      "era": "현재에 가까운 과거",
+      "period": "태양 원판의 귀환",
+      "regions": ["슈리마"],
+      "title": "아지르가 돌아와 슈리마를 일으키다",
+      "summary": "수천 년 뒤 아지르가 다시 승천하고, 사라졌던 슈리마 제국이 사막에서 되살아나기 시작했어요.",
+      "detail": "시비르의 피와 아지르의 힘이 이어지며 태양 원판이 다시 빛났어요. 제라스는 이 부활을 막으려 하고, 카시오페아와 탈리야도 슈리마의 운명에 얽혀 있어요.",
+      "confidence": "큰 줄기",
+      "champions": ["Azir", "Sivir", "Xerath", "Taliyah", "Cassiopeia"]
+    },
+    {
+      "id": "harrowing-sentinels",
+      "order": 140,
+      "era": "최근 이야기",
+      "period": "검은 안개의 확산",
+      "regions": ["그림자 군도", "빌지워터", "데마시아"],
+      "title": "검은 안개가 다시 룬테라를 덮다",
+      "summary": "비에고가 돌아오면서 검은 안개가 여러 지역으로 번졌고, 세나와 빛의 감시자들이 이를 막으려 했어요.",
+      "detail": "이 사건은 한 지역의 문제가 아니라 모두가 함께 맞서야 하는 위협이었어요. 그래서 빌지워터·데마시아·슈리마의 인물들이 한 전선에 모였어요.",
+      "confidence": "큰 줄기",
+      "champions": ["Viego", "Senna", "Lucian", "Gwen", "Vayne"]
+    },
+    {
+      "id": "demacia-mage-rebellion",
+      "order": 150,
+      "era": "현재",
+      "period": "마법사 반란",
+      "regions": ["데마시아"],
+      "title": "데마시아가 마법을 다시 바라보기 시작하다",
+      "summary": "마법을 금지하던 데마시아에서 사일러스가 탈출하고, 왕국은 법과 사람 중 무엇을 지킬지 선택해야 했어요.",
+      "detail": "럭스는 자신의 힘을 숨기지 않기로 고민하고, 가렌은 왕국을 지키는 일과 가족을 지키는 일 사이에서 흔들려요. 데마시아의 이야기는 아직 끝나지 않았어요.",
+      "confidence": "현재 진행",
+      "champions": ["Sylas", "Lux", "Garen", "JarvanIV"]
+    },
+    {
+      "id": "void-awakening",
+      "order": 160,
+      "era": "현재",
+      "period": "새로운 공허의 위협",
+      "regions": ["공허", "슈리마", "룬테라"],
+      "title": "공허가 다시 움직이다",
+      "summary": "벨베스와 공허 생명체가 새로운 방식으로 세계를 바꾸려 하면서, 카이사와 여러 지역의 영웅들이 다시 맞서고 있어요.",
+      "detail": "이 사건의 정확한 끝은 아직 공개되지 않았어요. 그래서 이 항목은 ‘현재 진행 중’으로 두고, 새로운 공식 이야기가 나오면 순서를 갱신할 예정이에요.",
+      "confidence": "현재 진행",
+      "champions": ["Belveth", "Kaisa", "Kassadin", "Malzahar"]
+    }
+  ]
+}

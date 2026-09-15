@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-09-15",
-  "notice": "이스터 에그는 패치·게임 모드·스킨에 따라 사라지거나 바뀔 수 있어요. 발동 조건과 현재 확인 상태를 함께 적었어요.",
+  "notice": "현재 확인되는 상호작용과 기간 한정 모드를 구분해 적었어요. 패치·모드가 바뀌면 사라지거나 달라질 수 있어요.",
   "sources": [
     {
       "label": "League of Legends Wiki · Easter egg",
@@ -13,6 +13,14 @@
     {
       "label": "League of Legends Wiki · Zilean",
       "url": "https://wiki.leagueoflegends.com/Zilean"
+    },
+    {
+      "label": "Riot Games · 26.7 패치 노트 (ARAM Mayhem)",
+      "url": "https://www.leagueoflegends.com/en-au/news/game-updates/league-of-legends-patch-26-7-notes/"
+    },
+    {
+      "label": "Riot Games · 9.24 패치 노트 (포로 왕)",
+      "url": "https://www.leagueoflegends.com/ko-kr/news/game-updates/patch-9-24-notes/"
     }
   ],
   "eggs": [
@@ -26,8 +34,15 @@
       "trigger": "렝가가 뼈 이빨 목걸이 5스택을 모으고, 카직스가 16레벨에 스킬 3개를 진화한 뒤 둘 다 살아 있으면 조건이 갖춰져요.",
       "effect": "렝가가 카직스를 먼저 잡으면 목걸이 6번째 스택을 얻고, 카직스가 렝가를 먼저 잡으면 네 번째 스킬 진화 기회를 얻어요.",
       "tip": "아주 늦은 시간에만 가능한 보너스예요. 일반 게임에서 우연히 보면 특별한 장면이라고 생각하면 돼요.",
-      "tags": ["사냥", "퀘스트", "라이벌"],
-      "relatedChampions": ["Rengar", "Khazix"],
+      "tags": [
+        "사냥",
+        "퀘스트",
+        "라이벌"
+      ],
+      "relatedChampions": [
+        "Rengar",
+        "Khazix"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -41,8 +56,16 @@
       "trigger": "적 팀의 볼리베어와 질리언이 800 거리 안에 있으면 발동해요. 서로를 보고 있지 않아도 돼요.",
       "effect": "질리언은 주문력 1을, 볼리베어는 방어력 1을 얻어요. 전투를 뒤집을 만큼 큰 수치는 아니지만 둘의 관계를 보여주는 장난이에요.",
       "tip": "아이템을 사서 얻는 능력치가 아니라, 두 챔피언이 함께 있을 때만 보이는 숨은 규칙이에요.",
-      "tags": ["패시브", "주문력", "방어력", "상호작용"],
-      "relatedChampions": ["Zilean", "Volibear"],
+      "tags": [
+        "패시브",
+        "주문력",
+        "방어력",
+        "상호작용"
+      ],
+      "relatedChampions": [
+        "Zilean",
+        "Volibear"
+      ],
       "sourceLabel": "LoL Wiki · Zilean",
       "sourceUrl": "https://wiki.leagueoflegends.com/Zilean"
     },
@@ -56,8 +79,15 @@
       "trigger": "두 챔피언이 같은 팀이든 상대 팀이든 가까이에서 춤 감정 표현을 사용해 보세요.",
       "effect": "두 챔피언의 춤 동작이 잠시 맞춰져요. 공격력이나 이동 속도 같은 전투 효과는 없어요.",
       "tip": "한 명이 먼저 춤추고 다른 한 명이 따라 하면 보기 쉬워요.",
-      "tags": ["춤", "감정 표현", "형제"],
-      "relatedChampions": ["Yasuo", "Yone"],
+      "tags": [
+        "춤",
+        "감정 표현",
+        "형제"
+      ],
+      "relatedChampions": [
+        "Yasuo",
+        "Yone"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -71,8 +101,14 @@
       "trigger": "탐 켄치로 협곡 바위게 가까이 가서 춤 감정 표현을 사용해 보세요.",
       "effect": "바위게가 춤추는 모션을 잠깐 보여줘요. 바위게의 이동이나 보상은 달라지지 않아요.",
       "tip": "전투 중에는 놓치기 쉬우니 게임 시작 전이나 한가한 순간에 실험해 보세요.",
-      "tags": ["바위게", "춤", "강"],
-      "relatedChampions": ["TahmKench"],
+      "tags": [
+        "바위게",
+        "춤",
+        "강"
+      ],
+      "relatedChampions": [
+        "TahmKench"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -86,8 +122,14 @@
       "trigger": "피즈의 궁극기 ‘미끼 뿌리기’를 작은 체구의 챔피언에게 맞혀 보세요.",
       "effect": "상어가 나타난 뒤 대상의 몸이 잠깐 보이지 않는 전용 연출이 나와요. 피해량 규칙은 그대로예요.",
       "tip": "크기가 작은 챔피언에게만 보이는 시각 효과라서 모든 상대에게 같은 모습으로 나오지는 않아요.",
-      "tags": ["피즈", "궁극기", "상어"],
-      "relatedChampions": ["Fizz"],
+      "tags": [
+        "피즈",
+        "궁극기",
+        "상어"
+      ],
+      "relatedChampions": [
+        "Fizz"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -101,8 +143,15 @@
       "trigger": "브라움으로 포로 가까이 가서 포로 간식을 먹이세요. 스킨에 따라 콧수염 색이 달라질 수 있어요.",
       "effect": "간식을 먹은 포로의 얼굴에 콧수염이 생겨요. 포로가 더 세지거나 보상을 주지는 않아요.",
       "tip": "포로를 공격하지 말고 간식 아이템을 사용해야 해요. 칼바람 나락에서만 볼 수 있어요.",
-      "tags": ["포로", "브라움", "칼바람", "스킨"],
-      "relatedChampions": ["Braum"],
+      "tags": [
+        "포로",
+        "브라움",
+        "칼바람",
+        "스킨"
+      ],
+      "relatedChampions": [
+        "Braum"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -116,7 +165,11 @@
       "trigger": "아군 다섯 명을 애쉬·브라움·리산드라처럼 프렐요드 지역 챔피언으로 구성해 보세요.",
       "effect": "아군 우물 밖에 포로가 한 마리 더 보여요. 전투 능력이나 골드에는 영향을 주지 않아요.",
       "tip": "팀 전원이 같은 지역이어야 해서 친구들과 일반 게임에서 실험하기 좋아요.",
-      "tags": ["포로", "프렐요드", "소환사의 협곡"],
+      "tags": [
+        "포로",
+        "프렐요드",
+        "소환사의 협곡"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -130,7 +183,11 @@
       "trigger": "아군 다섯 명 이상이 수영장 파티 스킨을 장착하거나 럼블의 정글 스킨 조건을 맞춰 보세요.",
       "effect": "맵에 작은 오리가 생기고 누군가 밟으면 터지면서 사라져요. 장식일 뿐이에요.",
       "tip": "스킨 보유 여부와 게임 모드에 따라 보이지 않을 수 있어요. 친구들과 스킨을 맞춰 입을 때 찾아보세요.",
-      "tags": ["수영장 파티", "오리", "스킨"],
+      "tags": [
+        "수영장 파티",
+        "오리",
+        "스킨"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -144,7 +201,11 @@
       "trigger": "같은 팀에 빌지워터 출신 챔피언 또는 관련 스킨을 다섯 명 이상 모아 보세요.",
       "effect": "맵 오른쪽 아래 물가에 상어가 잠깐 보여요. 게임 진행에는 아무 영향이 없어요.",
       "tip": "장식의 위치가 작아서 카메라를 움직여야 찾기 쉬워요.",
-      "tags": ["빌지워터", "상어", "스킨"],
+      "tags": [
+        "빌지워터",
+        "상어",
+        "스킨"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -158,8 +219,16 @@
       "trigger": "애니비아의 부활 패시브가 발동해 알 상태가 되거나, 나르가 분노를 채워 메가 나르로 변신하세요.",
       "effect": "애니비아는 ‘에그니비아’, 나르는 ‘메가 나르’처럼 상태를 알려주는 이름으로 잠시 표시돼요.",
       "tip": "새로운 챔피언으로 바뀐 것이 아니라 현재 변신 상태를 재미있게 보여주는 표시예요.",
-      "tags": ["애니비아", "나르", "변신", "점수판"],
-      "relatedChampions": ["Anivia", "Gnar"],
+      "tags": [
+        "애니비아",
+        "나르",
+        "변신",
+        "점수판"
+      ],
+      "relatedChampions": [
+        "Anivia",
+        "Gnar"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -173,8 +242,15 @@
       "trigger": "킨드레드가 선택된 뒤 게임이 시작되는 순간이나 킨드레드가 죽는 장면을 자세히 보세요.",
       "effect": "양 또는 늑대의 가면이 잠깐 보이며 킨드레드의 두 영혼을 표현해요.",
       "tip": "전투 중에는 짧게 지나가니 리플레이나 연습 도구에서 천천히 보면 좋아요.",
-      "tags": ["킨드레드", "양", "늑대", "가면"],
-      "relatedChampions": ["Kindred"],
+      "tags": [
+        "킨드레드",
+        "양",
+        "늑대",
+        "가면"
+      ],
+      "relatedChampions": [
+        "Kindred"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -188,8 +264,14 @@
       "trigger": "바드가 없어도 맵의 바위벽과 장식물을 가까이 살펴보세요.",
       "effect": "바드의 얼굴처럼 보이는 무늬가 맵 장식으로 나타나요. 클릭하거나 공격할 수는 없어요.",
       "tip": "게임 카메라를 확대하면 더 잘 보여요. 맵을 산책하듯 둘러보는 재미로 찾아보세요.",
-      "tags": ["바드", "소환사의 협곡", "벽"],
-      "relatedChampions": ["Bard"],
+      "tags": [
+        "바드",
+        "소환사의 협곡",
+        "벽"
+      ],
+      "relatedChampions": [
+        "Bard"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -203,8 +285,14 @@
       "trigger": "아이번으로 정글 캠프를 만들거나 몬스터를 풀어주는 행동을 해 보세요.",
       "effect": "아이번의 대사가 몬스터를 친구처럼 대하는 내용으로 바뀌어 그의 성격을 보여줘요.",
       "tip": "대사는 상황과 언어 설정에 따라 다르게 들릴 수 있어요. 소리를 켜고 플레이해 보세요.",
-      "tags": ["아이번", "정글", "대사"],
-      "relatedChampions": ["Ivern"],
+      "tags": [
+        "아이번",
+        "정글",
+        "대사"
+      ],
+      "relatedChampions": [
+        "Ivern"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -218,8 +306,14 @@
       "trigger": "트위스티드 페이트가 ‘운명’을 켠 동안 시야를 가리는 효과를 맞혀 보세요.",
       "effect": "궁극기가 방해받았다는 뜻의 ‘Destiny Interrupted’ 장식 효과가 잠깐 표시돼요.",
       "tip": "이 표시는 스킬을 취소시키는 새로운 피해가 아니라, 궁극기와 방해 효과가 만났다는 알림이에요.",
-      "tags": ["트위스티드 페이트", "운명", "시야"],
-      "relatedChampions": ["TwistedFate"],
+      "tags": [
+        "트위스티드 페이트",
+        "운명",
+        "시야"
+      ],
+      "relatedChampions": [
+        "TwistedFate"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -233,7 +327,11 @@
       "trigger": "연습 도구 메뉴에서 ‘게임 승리’를 선택하세요.",
       "effect": "승리 화면을 빠르게 보는 연습 도구의 특성을 웃으며 표현한 메시지가 표시돼요.",
       "tip": "실제 대전 기록이나 보상에는 영향을 주지 않아요. 연습을 끝낼 때만 사용하세요.",
-      "tags": ["연습 도구", "승리", "메시지"],
+      "tags": [
+        "연습 도구",
+        "승리",
+        "메시지"
+      ],
       "sourceLabel": "LoL Wiki · Easter egg",
       "sourceUrl": "https://leagueoflegends.fandom.com/wiki/Easter_egg"
     },
@@ -247,10 +345,206 @@
       "trigger": "세 챔피언이 같은 게임에 들어와 서로를 처치하거나 마주치는 상황을 만들어 보세요.",
       "effect": "‘사건을 해결 중’, ‘잡아 봐’, ‘짜증남’처럼 관계를 표현하는 장식 버프가 잠깐 나타나요.",
       "tip": "스킨과 패치에 따라 표시 방식이 달라질 수 있고, 전투 능력을 크게 바꾸는 효과는 아니에요.",
-      "tags": ["케이틀린", "바이", "징크스", "필트오버"],
-      "relatedChampions": ["Caitlyn", "Vi", "Jinx"],
+      "tags": [
+        "케이틀린",
+        "바이",
+        "징크스",
+        "필트오버"
+      ],
+      "relatedChampions": [
+        "Caitlyn",
+        "Vi",
+        "Jinx"
+      ],
       "sourceLabel": "Riot Games · Giving Champions Context",
       "sourceUrl": "https://nexus.leagueoflegends.com/en-us/2017/08/tech-giving-champions-context/"
+    },
+    {
+      "id": "aram-mayhem-vengeful-poros",
+      "category": "칼바람·기간 한정",
+      "title": "간식을 숨기면 포로가 화를 내요",
+      "status": "26.7 ARAM Mayhem 한정",
+      "difficulty": "포로 간식을 아껴 보세요",
+      "summary": "포로에게 줄 간식을 계속 숨기면, 화난 포로들이 다리 위를 쫓아와요.",
+      "trigger": "칼바람 나락 ARAM Mayhem에서 포로 간식(Poro-Snax)을 여러 번 모아 두세요.",
+      "effect": "화난 포로가 나타나 플레이어에게 1 고정 피해를 반복해서 줘요. 포로 한 마리에게 간식을 주면 화가 풀려요.",
+      "tip": "일반 칼바람의 상시 규칙이 아니라 해당 모드의 기간 한정 연출이에요.",
+      "tags": [
+        "칼바람 나락",
+        "포로",
+        "ARAM Mayhem"
+      ],
+      "sourceLabel": "Riot Games · 26.7 패치 노트",
+      "sourceUrl": "https://www.leagueoflegends.com/en-au/news/game-updates/league-of-legends-patch-26-7-notes/"
+    },
+    {
+      "id": "aram-mayhem-welcome-chat",
+      "category": "칼바람·기간 한정",
+      "title": "게임 시작에 포로가 인사해요",
+      "status": "26.7 ARAM Mayhem 한정",
+      "difficulty": "게임을 시작해 보세요",
+      "summary": "칼바람 다리에 들어가면 포로나 부두 쥐가 채팅으로 먼저 인사할 때가 있어요.",
+      "trigger": "ARAM Mayhem에서 게임이 시작될 때까지 잠시 기다리세요.",
+      "effect": "포로 또는 부두 쥐의 짧은 환영 메시지가 팀 채팅에 나타나요.",
+      "tip": "매 판 반드시 나오는 것은 아니며, 전투 능력과는 관계없는 장난스러운 대사예요.",
+      "tags": [
+        "칼바람 나락",
+        "포로",
+        "채팅"
+      ],
+      "sourceLabel": "Riot Games · 26.7 패치 노트",
+      "sourceUrl": "https://www.leagueoflegends.com/en-au/news/game-updates/league-of-legends-patch-26-7-notes/"
+    },
+    {
+      "id": "aram-mayhem-burger-snax",
+      "category": "칼바람·기간 한정",
+      "title": "포로 간식이 햄버거처럼 보여요",
+      "status": "26.7 ARAM Mayhem 한정",
+      "difficulty": "간식을 자세히 보세요",
+      "summary": "포로 간식 아이콘이 평소 과자 대신 작은 치즈버거 모양으로 보이는 날이 있어요.",
+      "trigger": "ARAM Mayhem에서 포로 간식을 획득하세요.",
+      "effect": "포로 간식의 겉모습이 햄버거처럼 바뀌어요. 실제 회복 효과는 간식과 같아요.",
+      "tip": "아이콘을 바꾼 시각적 이스터 에그라서 공격력이나 체력 보너스는 없어요.",
+      "tags": [
+        "칼바람 나락",
+        "포로",
+        "아이콘"
+      ],
+      "sourceLabel": "Riot Games · 26.7 패치 노트",
+      "sourceUrl": "https://www.leagueoflegends.com/en-au/news/game-updates/league-of-legends-patch-26-7-notes/"
+    },
+    {
+      "id": "aram-mayhem-flash-afterimage",
+      "category": "칼바람·기간 한정",
+      "title": "점멸 뒤에 이모티콘 잔상이 남아요",
+      "status": "26.7 ARAM Mayhem 한정",
+      "difficulty": "점멸을 써 보세요",
+      "summary": "점멸로 순간 이동하면 출발한 자리에 잠깐 이모티콘 잔상이 남을 수 있어요.",
+      "trigger": "ARAM Mayhem에서 소환사 주문 점멸을 사용하세요.",
+      "effect": "점멸 직전 위치에 짧은 이모티콘 연출이 남아 이동 경로를 재미있게 보여줘요.",
+      "tip": "잔상은 장식 효과이며 점멸 거리나 재사용 대기시간을 바꾸지 않아요.",
+      "tags": [
+        "칼바람 나락",
+        "점멸",
+        "이모티콘"
+      ],
+      "sourceLabel": "Riot Games · 26.7 패치 노트",
+      "sourceUrl": "https://www.leagueoflegends.com/en-au/news/game-updates/league-of-legends-patch-26-7-notes/"
+    },
+    {
+      "id": "aram-mayhem-size-healthbars",
+      "category": "칼바람·기간 한정",
+      "title": "몸집이 커지면 체력바도 커져요",
+      "status": "26.7 ARAM Mayhem 한정",
+      "difficulty": "크기 변화를 지켜보세요",
+      "summary": "챔피언의 몸집이 커지거나 작아지면 머리 위 체력바 크기도 함께 달라져요.",
+      "trigger": "ARAM Mayhem에서 챔피언 크기를 바꾸는 효과를 받아 보세요.",
+      "effect": "커진 챔피언은 체력바도 크게, 작아진 챔피언은 작게 표시돼요.",
+      "tip": "체력의 양이 바뀌는 것이 아니라 화면에 보이는 막대 크기만 바뀌어요.",
+      "tags": [
+        "칼바람 나락",
+        "체력바",
+        "크기"
+      ],
+      "sourceLabel": "Riot Games · 26.7 패치 노트",
+      "sourceUrl": "https://www.leagueoflegends.com/en-au/news/game-updates/league-of-legends-patch-26-7-notes/"
+    },
+    {
+      "id": "aram-mayhem-turret-emote",
+      "category": "칼바람·기간 한정",
+      "title": "포탑도 마스터리와 이모티콘을 써요",
+      "status": "26.7 ARAM Mayhem 한정",
+      "difficulty": "포탑을 무너뜨려 보세요",
+      "summary": "포탑을 부수거나 포탑에 처치되면 포탑이 장난스러운 반응을 보여요.",
+      "trigger": "ARAM Mayhem에서 포탑을 처치하거나 포탑에게 쓰러지세요.",
+      "effect": "포탑이 공격자를 향해 마스터리 표시를 띄우고, 파괴될 때 이모티콘을 보여줘요. 포탑에게 죽으면 ‘적 실종’ 핑을 찍을 때도 있어요.",
+      "tip": "포탑의 공격력·방어력과는 무관한 시각 효과예요.",
+      "tags": [
+        "칼바람 나락",
+        "포탑",
+        "마스터리"
+      ],
+      "sourceLabel": "Riot Games · 26.7 패치 노트",
+      "sourceUrl": "https://www.leagueoflegends.com/en-au/news/game-updates/league-of-legends-patch-26-7-notes/"
+    },
+    {
+      "id": "aram-mayhem-karthus-message",
+      "category": "칼바람·기간 한정",
+      "title": "카서스가 6레벨이 되면 채팅이 와요",
+      "status": "26.7 ARAM Mayhem 한정",
+      "difficulty": "카서스의 레벨을 지켜보세요",
+      "summary": "카서스가 궁극기를 배울 레벨이 되면 특별한 자동 채팅이 나타날 수 있어요.",
+      "trigger": "ARAM Mayhem에서 카서스가 6레벨에 도달하도록 기다리세요.",
+      "effect": "카서스에게 보내는 짧은 자동 채팅 메시지가 표시돼요.",
+      "tip": "게임의 알림을 꾸미는 장면이며 카서스의 궁극기 효과는 그대로예요.",
+      "tags": [
+        "칼바람 나락",
+        "카서스",
+        "채팅"
+      ],
+      "relatedChampions": [
+        "Karthus"
+      ],
+      "sourceLabel": "Riot Games · 26.7 패치 노트",
+      "sourceUrl": "https://www.leagueoflegends.com/en-au/news/game-updates/league-of-legends-patch-26-7-notes/"
+    },
+    {
+      "id": "aram-mayhem-lissandra-message",
+      "category": "칼바람·기간 한정",
+      "title": "게임이 끝나면 리산드라가 말을 걸어요",
+      "status": "26.7 ARAM Mayhem 한정",
+      "difficulty": "게임을 끝까지 플레이하세요",
+      "summary": "칼바람 나락 경기가 끝날 때 리산드라의 메시지가 나올 때가 있어요.",
+      "trigger": "ARAM Mayhem에서 경기를 끝까지 마치세요.",
+      "effect": "게임 결과 화면으로 넘어가기 전에 리산드라의 짧은 대사가 나타날 수 있어요.",
+      "tip": "매번 발생하지 않으며 칼바람 나락의 얼음 세계관 분위기를 위한 연출이에요.",
+      "tags": [
+        "칼바람 나락",
+        "리산드라",
+        "메시지"
+      ],
+      "relatedChampions": [
+        "Lissandra"
+      ],
+      "sourceLabel": "Riot Games · 26.7 패치 노트",
+      "sourceUrl": "https://www.leagueoflegends.com/en-au/news/game-updates/league-of-legends-patch-26-7-notes/"
+    },
+    {
+      "id": "aram-mayhem-party-favor",
+      "category": "칼바람·기간 한정",
+      "title": "상점 아이템이 춤 파티를 열어요",
+      "status": "26.7 ARAM Mayhem 한정",
+      "difficulty": "Party Favor를 사 보세요",
+      "summary": "상점의 Party Favor를 사용하면 주변 챔피언과 함께 춤추는 시간이 시작돼요.",
+      "trigger": "ARAM Mayhem 상점에서 Party Favor를 구매해 사용하세요.",
+      "effect": "사용자 주변에 춤 파티가 시작되고, 이미 열려 있는 파티에 합류할 수도 있어요.",
+      "tip": "춤추는 동안에도 전투는 계속되니 안전한 곳에서 사용하세요.",
+      "tags": [
+        "칼바람 나락",
+        "상점",
+        "춤"
+      ],
+      "sourceLabel": "Riot Games · 26.7 패치 노트",
+      "sourceUrl": "https://www.leagueoflegends.com/en-au/news/game-updates/league-of-legends-patch-26-7-notes/"
+    },
+    {
+      "id": "poro-king-return",
+      "category": "기간 한정 모드",
+      "title": "포로를 열 번 맞히면 포로 왕이 와요",
+      "status": "역대 이벤트·현재 상시 아님",
+      "difficulty": "눈덩이를 열 번 맞혀 보세요",
+      "summary": "예전 포로 왕 모드에서는 팀이 적을 포로 또는 눈덩이로 열 번 맞히면 거대한 포로 왕을 불렀어요.",
+      "trigger": "포로 왕 모드에서 우리 팀이 적 챔피언에게 포로·눈덩이 공격을 10번 적중하세요.",
+      "effect": "포로 왕이 전장에 나타나 포탑을 공격하고 아군을 회복해 줘요. 포로 왕에게 순간이동할 수도 있어요.",
+      "tip": "포로 왕은 현재 일반 칼바람에서 항상 만날 수 있는 기능이 아니에요. 다시 열리는 기간 한정 모드에서 확인하세요.",
+      "tags": [
+        "포로 왕",
+        "칼바람 나락",
+        "눈덩이",
+        "기간 한정"
+      ],
+      "sourceLabel": "Riot Games · 9.24 패치 노트",
+      "sourceUrl": "https://www.leagueoflegends.com/ko-kr/news/game-updates/patch-9-24-notes/"
     }
   ]
 }

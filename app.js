@@ -18,12 +18,15 @@ function toggleFav(e) {
 }
 let glossaryEntries = [],
   regionStories = {},
+  regionTimeline = { updatedAt: "", notice: "", sources: [], events: [] },
   botDuoData = { patch: "", notice: "", sources: [], duos: [] },
   championCounterData = { patch: "", notice: "", champions: {} },
   easterEggData = { updatedAt: "", notice: "", sources: [], eggs: [] },
   selectedInitial = "전체";
 let selectedRole = "전체";
 let selectedRegion = null;
+let showTimeline = false;
+let timelineRegion = "전체";
 let botDuoView = "tier";
 const REGIONS = [
   "데마시아",
@@ -872,6 +875,105 @@ function renderEasterEggs(q) {
   note.append(sources);
   $("#grid").append(note);
 }
+function timelineChampionButton(id) {
+  const champion = championById(id);
+  if (!champion) return null;
+  const button = text("button", "", "timeline-champion");
+  button.type = "button";
+  button.title = `${champion.name} 챔피언 설명 보기`;
+  button.setAttribute("aria-label", `${champion.name} 챔피언 설명 보기`);
+  const icon = portrait(champion);
+  icon.alt = champion.name;
+  button.append(icon, text("span", champion.name));
+  button.onclick = () => {
+    lastFocus = button;
+    location.hash = `champion/${champion.id}`;
+  };
+  return button;
+}
+function renderRegionTimeline() {
+  const allEvents = [...(regionTimeline.events || [])].sort(
+    (a, b) => Number(a.order || 0) - Number(b.order || 0),
+  );
+  const events = allEvents.filter(
+    (event) => timelineRegion === "전체" || event.regions?.includes(timelineRegion),
+  );
+  $("#count").textContent = `${events.length}개 사건 · 시간순`;
+  $("#grid").replaceChildren();
+  const wrap = text("div", "", "region-timeline");
+  const back = text("button", "← 지역 목록으로", "region-back");
+  back.type = "button";
+  back.onclick = () => {
+    showTimeline = false;
+    timelineRegion = "전체";
+    selectedRegion = null;
+    render();
+  };
+  const head = text("div", "", "region-timeline-head");
+  head.append(
+    text("p", "룬테라 전체 이야기", "region-eyebrow"),
+    text("h2", "룬테라 연대기", "region-title"),
+    text(
+      "p",
+      regionTimeline.notice || "공개된 설정을 바탕으로 큰 사건을 시간순으로 정리했어요.",
+      "region-timeline-notice",
+    ),
+  );
+  const filterLabel = text("p", "지역으로 좁혀 보기", "timeline-filter-label");
+  const filters = text("div", "", "timeline-filter");
+  const availableRegions = REGIONS.filter((region) =>
+    allEvents.some((event) => event.regions?.includes(region)),
+  );
+  for (const region of ["전체", ...availableRegions]) {
+    const button = text("button", region, "timeline-filter-button");
+    button.type = "button";
+    button.setAttribute("aria-pressed", String(region === timelineRegion));
+    button.onclick = () => {
+      timelineRegion = region;
+      renderRegionTimeline();
+    };
+    filters.append(button);
+  }
+  const list = text("div", "", "timeline-list");
+  for (const event of events) {
+    const article = text("article", "", "timeline-event");
+    const meta = text("div", "", "timeline-event-meta");
+    meta.append(text("span", event.period || event.era || "이야기", "timeline-period"));
+    if (event.confidence) meta.append(text("span", event.confidence, "timeline-confidence"));
+    const title = text("h3", event.title || "이름 없는 사건");
+    const summary = text("p", event.summary || "");
+    article.append(meta, title, summary);
+    if (event.detail) article.append(text("p", event.detail, "timeline-detail"));
+    if (event.regions?.length) {
+      const regions = text("div", "", "timeline-regions");
+      for (const region of event.regions) regions.append(text("span", region, "timeline-region-chip"));
+      article.append(regions);
+    }
+    const champions = (event.champions || [])
+      .map((id) => timelineChampionButton(id))
+      .filter(Boolean);
+    if (champions.length) {
+      const cast = text("div", "", "timeline-champions");
+      cast.append(text("span", "관련 챔피언", "timeline-cast-label"), ...champions);
+      article.append(cast);
+    }
+    list.append(article);
+  }
+  if (!events.length)
+    list.append(text("p", "이 지역의 연대기 자료를 준비 중이에요.", "empty"));
+  const sourceNote = text("div", "", "timeline-source-note");
+  sourceNote.append(text("p", "연대기 출처 · "));
+  for (const [index, source] of (regionTimeline.sources || []).entries()) {
+    if (index) sourceNote.lastChild.append(document.createTextNode(" · "));
+    const link = text("a", `${source.label} ↗`);
+    link.href = source.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    sourceNote.lastChild.append(link);
+  }
+  wrap.append(back, head, filterLabel, filters, list, sourceNote);
+  $("#grid").append(wrap);
+}
 function render() {
   roleFilters();
   const q =
@@ -897,9 +999,26 @@ function render() {
   }
   if (kind === "regions") {
     $("#grid").replaceChildren();
+    if (showTimeline) {
+      renderRegionTimeline();
+      return;
+    }
     if (!selectedRegion) {
       $("#count").textContent = `${REGIONS.length}개 지역`;
       const picker = text("div", "", "region-picker");
+      const timelineLaunch = text("button", "", "region-timeline-launch");
+      timelineLaunch.type = "button";
+      timelineLaunch.append(
+        text("span", "시간순으로 읽기", "timeline-launch-kicker"),
+        text("strong", "룬테라 연대기"),
+        text("span", "지역별 이야기를 하나의 흐름으로 이어 봐요 →", "subtitle"),
+      );
+      timelineLaunch.onclick = () => {
+        showTimeline = true;
+        timelineRegion = "전체";
+        render();
+      };
+      picker.append(timelineLaunch);
       for (const region of REGIONS) {
         const count = entries.filter(
           (e) => e.kind === "champion" && e.regions?.includes(region),
@@ -912,6 +1031,7 @@ function render() {
           text("span", `챔피언 ${count}명`, "subtitle"),
         );
         b.onclick = () => {
+          showTimeline = false;
           selectedRegion = region;
           render();
         };
@@ -933,6 +1053,7 @@ function render() {
     const back = text("button", "← 지역 목록으로", "region-back");
     back.type = "button";
     back.onclick = () => {
+      showTimeline = false;
       selectedRegion = null;
       render();
     };
@@ -1545,6 +1666,8 @@ document.querySelectorAll("[data-kind]").forEach((button) =>
     selectedInitial = "전체";
     selectedRole = "전체";
     selectedRegion = null;
+    showTimeline = false;
+    timelineRegion = "전체";
     $("#easy-only").checked = false;
     $("#search").placeholder = KIND_PLACEHOLDER[kind];
     $("#list-title").textContent = KIND_TITLE[kind];
@@ -1617,6 +1740,11 @@ try {
     .then((r) => (r.ok ? r.json() : { regions: {} }))
     .then((d) => d.regions || {})
     .catch(() => ({}));
+  regionTimeline = await fetch("./data/region-timeline.json")
+    .then((r) =>
+      r.ok ? r.json() : { updatedAt: "", notice: "", sources: [], events: [] },
+    )
+    .catch(() => ({ updatedAt: "", notice: "", sources: [], events: [] }));
   botDuoData = await fetch("./data/bot-duos.json")
     .then((r) => (r.ok ? r.json() : { duos: [] }))
     .catch(() => ({ duos: [] }));

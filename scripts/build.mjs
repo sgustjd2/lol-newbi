@@ -114,6 +114,10 @@ await copyFile(
   "data/region-stories.json",
   "dist/data/region-stories.json",
 ).catch(() => {});
+await copyFile(
+  "data/region-timeline.json",
+  "dist/data/region-timeline.json",
+).catch(() => {});
 await copyFile("node_modules/@seed-design/css/base.css", "dist/seed.css");
 await copyFile(
   "node_modules/@seed-design/css/LICENSE",
