@@ -1615,6 +1615,52 @@ dialog::backdrop {
   font-size: 14px;
   line-height: 1.7;
 }
+.duo-view-tabs {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 2px 0 4px;
+}
+.duo-view-tabs button {
+  min-height: 42px;
+  padding: 9px 15px;
+  border: 1px solid #dfe4ea;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #475467;
+  font-size: 14px;
+  font-weight: 700;
+}
+.duo-view-tabs button:hover,
+.duo-view-tabs button:focus-visible {
+  border-color: var(--gold);
+}
+.duo-view-tabs button[aria-pressed="true"] {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #ffffff;
+}
+.duo-group {
+  display: contents;
+}
+.duo-group-title {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 14px 0 -2px;
+  padding: 9px 2px 4px;
+  border-bottom: 1px solid var(--line);
+  color: var(--brand);
+  font-size: 18px;
+}
+.duo-group-title small {
+  color: #667085;
+  font-size: 12px;
+  font-weight: 500;
+}
 .duo-intro p,
 .duo-source-note p {
   margin: 0 0 5px;

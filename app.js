@@ -23,6 +23,7 @@ let glossaryEntries = [],
   selectedInitial = "전체";
 let selectedRole = "전체";
 let selectedRegion = null;
+let botDuoView = "tier";
 const REGIONS = [
   "데마시아",
   "녹서스",
@@ -480,6 +481,39 @@ function botDuoCard(duo) {
   card.append(counters);
   return card;
 }
+const botDuoViews = [
+  {
+    id: "tier",
+    label: "등급별 보기",
+    groupLabel: (duo) => `${duo.tier} 등급`,
+  },
+  {
+    id: "adc",
+    label: "원딜 챔피언 기준",
+    groupLabel: (duo) => `원딜 · ${championById(duo.adc)?.name || duo.adc}`,
+  },
+  {
+    id: "support",
+    label: "서폿 챔피언 기준",
+    groupLabel: (duo) => `서폿 · ${championById(duo.support)?.name || duo.support}`,
+  },
+];
+const botDuoTierRank = { "S+": 0, S: 1, A: 2, B: 3, C: 4 };
+function botDuoCompare(a, b) {
+  const byTier =
+    (botDuoTierRank[a.tier] ?? 9) - (botDuoTierRank[b.tier] ?? 9) ||
+    (b.score ?? 0) - (a.score ?? 0) ||
+    (b.games ?? 0) - (a.games ?? 0) ||
+    String(a.id).localeCompare(String(b.id));
+  if (botDuoView === "tier") return byTier;
+  const aEntry = championById(botDuoView === "adc" ? a.adc : a.support);
+  const bEntry = championById(botDuoView === "adc" ? b.adc : b.support);
+  return (
+    String(aEntry?.name || (botDuoView === "adc" ? a.adc : a.support)).localeCompare(
+      String(bEntry?.name || (botDuoView === "adc" ? b.adc : b.support)),
+    ) || byTier
+  );
+}
 function renderBotDuos(q) {
   const list = (botDuoData.duos || []).filter((duo) =>
     q
@@ -509,19 +543,13 @@ function renderBotDuos(q) {
         ).includes(term),
       ),
   );
-  list.sort((a, b) => {
-    const tierRank = { "S+": 0, S: 1, A: 2, B: 3, C: 4 };
-    return (
-      (tierRank[a.tier] ?? 9) - (tierRank[b.tier] ?? 9) ||
-      (b.score ?? 0) - (a.score ?? 0) ||
-      (b.games ?? 0) - (a.games ?? 0) ||
-      String(a.id).localeCompare(String(b.id))
-    );
-  });
+  list.sort(botDuoCompare);
+  const activeView =
+    botDuoViews.find((view) => view.id === botDuoView) || botDuoViews[0];
   const gameLabel = botDuoData.proGames
     ? `${botDuoData.proGames.toLocaleString("ko-KR")}경기 프로 기록`
     : "공개 통계";
-  $("#count").textContent = `${list.length}개 프로 조합 · ${gameLabel} · ${botDuoData.proPatchRange || botDuoData.patch || patch} 기준`;
+  $("#count").textContent = `${list.length}개 프로 조합 · ${activeView.label} · ${gameLabel} · ${botDuoData.proPatchRange || botDuoData.patch || patch} 기준`;
   $("#grid").replaceChildren();
   const intro = text("div", "", "duo-intro");
   intro.append(
@@ -545,7 +573,45 @@ function renderBotDuos(q) {
     );
   }
   $("#grid").append(intro);
-  for (const duo of list) $("#grid").append(botDuoCard(duo));
+  const viewTabs = text("div", "", "duo-view-tabs");
+  viewTabs.setAttribute("role", "group");
+  viewTabs.setAttribute("aria-label", "봇 듀오 보기 방식");
+  for (const view of botDuoViews) {
+    const button = text("button", view.label);
+    button.type = "button";
+    button.setAttribute("aria-pressed", String(view.id === botDuoView));
+    button.onclick = () => {
+      botDuoView = view.id;
+      render();
+    };
+    viewTabs.append(button);
+  }
+  $("#grid").append(viewTabs);
+  const groups = [];
+  const groupMap = new Map();
+  for (const duo of list) {
+    const key =
+      botDuoView === "tier"
+        ? duo.tier
+        : botDuoView === "adc"
+          ? duo.adc
+          : duo.support;
+    let group = groupMap.get(key);
+    if (!group) {
+      group = { key, label: activeView.groupLabel(duo), duos: [] };
+      groupMap.set(key, group);
+      groups.push(group);
+    }
+    group.duos.push(duo);
+  }
+  for (const group of groups) {
+    const section = text("section", "", "duo-group");
+    const heading = text("h3", "", "duo-group-title");
+    heading.append(text("span", group.label), text("small", `${group.duos.length}개 조합`));
+    section.append(heading);
+    for (const duo of group.duos) section.append(botDuoCard(duo));
+    $("#grid").append(section);
+  }
   if (!list.length)
     $("#grid").append(
       text("p", "찾는 조합이 없어요. 챔피언 이름이나 역할을 다시 검색해 보세요.", "empty"),
