@@ -1478,13 +1478,15 @@
   {
     "id": "Senna",
     "kind": "champion",
-    "summary": "아군은 돕고 적은 쏘는 원거리 전사예요.",
-    "analogy": "빛으로 아군을 돕고 그림자로 적을 쏘는 저격수예요.",
-    "tip": "Q는 아군을 맞히면 낫게 하고, 적을 맞히면 아프게 해요.",
-    "caution": "W는 안개가 붙고 나서 시간이 지나야 묶여요.",
-    "sourceType": "editorial",
+    "summary": "적을 죽인 영혼을 모아 무한 성장하는 원거리 서포터예요.",
+    "analogy": "쓰러진 적의 영혼을 저금통처럼 모으며 점점 강해지는, 성장형 원거리 서포터 같아요.",
+    "tip": "미니언은 세나가 직접 잡는 것보다 아군이 잡을 때 영혼이 나올 확률이 더 높으니, 아군 옆에서 떨어진 영혼을 부지런히 챙기세요.",
+    "caution": "세나는 패시브로 치명타 피해량이 줄어드는 페널티가 있으니, 치명타 위주 아이템 빌드에만 의존하지 마세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드 26.13 패치 노트 - League of Legends",
+    "explanationSourceUrl": "https://www.leagueoflegends.com/ko-kr/news/game-updates/league-of-legends-patch-26-13-notes/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Seraphine",
