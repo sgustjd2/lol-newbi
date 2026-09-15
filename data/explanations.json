@@ -1376,13 +1376,15 @@
   {
     "id": "Renata",
     "kind": "champion",
-    "summary": "아군을 살리고 적을 조종하는 서포터예요.",
-    "analogy": "화학 물질로 인형을 조종하는 사업가를 떠올려 보세요.",
-    "tip": "아군이 위험할 때 W를 쓰면 살 수 있어요.",
-    "caution": "Q는 처음 맞은 적 한 명만 묶여요.",
-    "sourceType": "editorial",
+    "summary": "아군에게 보호막과 부활 기회를 주는 화공 남작 서포터예요.",
+    "analogy": "쓰러진 아군에게 마지막 기회를 주고, 적을 자기 편끼리 싸우게 만드는 화학공학 사업가 같아요.",
+    "tip": "W(긴급 구제)로 죽어가는 아군을 강화하면, 그 사이 처치에 관여할 경우 체력 20%로 완전히 부활할 수 있어요.",
+    "caution": "궁극기(적대적 인수)는 주변에 다른 대상이 없으면 그냥 공격 속도 버프만 주는 꼴이니, 여러 명이 뭉쳐있을 때 쓰세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Renekton",
