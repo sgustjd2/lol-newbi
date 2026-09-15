@@ -355,6 +355,75 @@ function cardEl(e) {
   wrap.append(card, fav);
   return wrap;
 }
+
+// Keep the same visual rows aligned even when names, role labels, or summaries
+// wrap to different numbers of lines. Heights are scoped to each grid row so
+// responsive layouts stay roomy without forcing every card to be as tall as
+// the longest entry in the entire list.
+let alignmentFrame = 0;
+function cardsByVisualRow(selector) {
+  const groups = new Map();
+  document.querySelectorAll(selector).forEach((card) => {
+    const top = Math.round(card.getBoundingClientRect().top);
+    const group = groups.get(top) || [];
+    group.push(card);
+    groups.set(top, group);
+  });
+  return groups.values();
+}
+function equalizeCards() {
+  const cards = [...document.querySelectorAll("#grid > .card-wrap > .card")];
+  cards.forEach((card) => {
+    card.style.removeProperty("--card-top-height");
+    card.style.removeProperty("--card-summary-height");
+  });
+  for (const row of cardsByVisualRow("#grid > .card-wrap > .card")) {
+    let topHeight = 0;
+    let summaryHeight = 0;
+    for (const card of row) {
+      topHeight = Math.max(topHeight, card.querySelector(".card-top")?.getBoundingClientRect().height || 0);
+      summaryHeight = Math.max(summaryHeight, card.querySelector(":scope > p")?.getBoundingClientRect().height || 0);
+    }
+    for (const card of row) {
+      card.style.setProperty("--card-top-height", `${topHeight}px`);
+      card.style.setProperty("--card-summary-height", `${summaryHeight}px`);
+    }
+  }
+}
+function equalizeTermCards() {
+  const cards = [...document.querySelectorAll("#grid > .term-card")];
+  const vars = [
+    "--term-category-height",
+    "--term-title-height",
+    "--term-alias-height",
+    "--term-meaning-height",
+  ];
+  cards.forEach((card) => vars.forEach((name) => card.style.removeProperty(name)));
+  for (const row of cardsByVisualRow("#grid > .term-card")) {
+    const heights = [0, 0, 0, 0];
+    for (const card of row) {
+      const nodes = [
+        card.querySelector(":scope > .badge"),
+        card.querySelector(":scope > h3"),
+        card.querySelector(":scope > .subtitle"),
+        card.querySelector(":scope > p:not(.term-example)"),
+      ];
+      nodes.forEach((node, index) => {
+        heights[index] = Math.max(heights[index], node?.getBoundingClientRect().height || 0);
+      });
+    }
+    for (const card of row)
+      vars.forEach((name, index) => card.style.setProperty(name, `${heights[index]}px`));
+  }
+}
+function scheduleCardAlignment() {
+  if (alignmentFrame) cancelAnimationFrame(alignmentFrame);
+  alignmentFrame = requestAnimationFrame(() => {
+    alignmentFrame = 0;
+    equalizeCards();
+    equalizeTermCards();
+  });
+}
 function championById(id) {
   return entries.find((entry) => entry.kind === "champion" && entry.id === id);
 }
@@ -915,6 +984,7 @@ function render() {
           "empty",
         ),
       );
+    scheduleCardAlignment();
     return;
   }
   if (kind === "favorite") {
@@ -948,6 +1018,7 @@ function render() {
       empty.append(go);
       $("#grid").append(empty);
     }
+    scheduleCardAlignment();
     return;
   }
   const list = entries.filter(
@@ -983,6 +1054,7 @@ function render() {
     empty.append(reset);
     $("#grid").append(empty);
   }
+  scheduleCardAlignment();
 }
 function openDetail() {
   const [type, id] = location.hash.slice(1).split("/");
@@ -1474,9 +1546,15 @@ tabsNext?.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
-window.addEventListener("resize", updateTabsNext);
+window.addEventListener("resize", () => {
+  updateTabsNext();
+  scheduleCardAlignment();
+});
 requestAnimationFrame(updateTabsNext);
-document.fonts?.ready.then(updateTabsNext);
+document.fonts?.ready.then(() => {
+  updateTabsNext();
+  scheduleCardAlignment();
+});
 document.addEventListener("keydown", (e) => {
   if (
     e.key === "/" &&

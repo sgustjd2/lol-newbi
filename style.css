@@ -307,6 +307,7 @@ header {
   align-items: start;
   gap: 13px;
   margin-bottom: 18px;
+  min-height: var(--card-top-height, 0px);
 }
 .card-top > div {
   min-width: 0;
@@ -336,7 +337,7 @@ header {
 .card p {
   font-size: 16px;
   line-height: 1.7;
-  min-height: 54px;
+  min-height: max(54px, var(--card-summary-height, 0px));
   margin: 0 0 20px;
   word-break: keep-all;
 }
@@ -1494,9 +1495,17 @@ dialog::backdrop {
 }
 .term-card h3 {
   margin-top: 17px;
+  min-height: var(--term-title-height, 0px);
+}
+.term-card > .badge {
+  min-height: var(--term-category-height, 0px);
 }
 .term-card .subtitle {
   margin: 8px 0 16px;
+  min-height: var(--term-alias-height, 0px);
+}
+.term-card > p:not(.term-example) {
+  min-height: var(--term-meaning-height, 0px);
 }
 .term-card .term-example {
   font-size: 14px;
