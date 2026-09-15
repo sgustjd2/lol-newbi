@@ -1174,13 +1174,15 @@
   {
     "id": "Nidalee",
     "kind": "champion",
-    "summary": "인간과 쿠거를 오가며 싸우는 사냥꾼이에요.",
-    "analogy": "사람과 표범을 오가며 싸우는 변신술사예요.",
-    "tip": "사람 모습 Q는 멀리 던질수록 더 아파요.",
-    "caution": "R로 변신하면 스킬이 완전히 달라져요.",
-    "sourceType": "editorial",
+    "summary": "인간과 쿠거, 두 형태를 오가며 싸우는 폼 변환형 사냥꾼이에요.",
+    "analogy": "낮에는 창을 던지는 원거리 사냥꾼, 폼을 바꾸면 근접에서 덮치는 쿠거로 변하는 두 얼굴의 챔피언 같아요.",
+    "tip": "인간 폼 Q(창 투척)로 원거리 피해와 표식을 남긴 뒤, 쿠거 폼 Q(숨통 끊기)로 잃은 체력 비례 추가 피해를 줘 마무리하세요.",
+    "caution": "쿠거 폼 W(급습)는 표시된 사거리보다 얇은 벽만 넘을 수 있어, 다른 챔피언처럼 쓰면 벽 넘기 실수가 나오기 쉬우니 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/인게임 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%9D%B8%EA%B2%8C%EC%9E%84",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Nilah",
