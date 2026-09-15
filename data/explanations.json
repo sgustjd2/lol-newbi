@@ -1213,13 +1213,15 @@
   {
     "id": "Nunu",
     "kind": "champion",
-    "summary": "눈덩이를 굴려 커지는 귀여운 탱커예요.",
-    "analogy": "눈덩이를 굴릴수록 점점 커지는 눈사람 놀이를 떠올려 보세요.",
-    "tip": "W 눈덩이는 오래 굴릴수록 커져요. 크게 만든 뒤 던져 보세요.",
-    "caution": "R은 눈보라가 끝날 때 큰 피해를 줘요. 적이 그때까지 그 자리에 있어야 해요.",
-    "sourceType": "editorial",
+    "summary": "눈덩이를 굴려 키운 뒤 적을 띄워 올리는 정글 탱커예요.",
+    "analogy": "작은 눈덩이를 굴려 점점 크게 키우다가, 적에게 부딪혀 공중으로 띄워버리는 눈사람 같아요.",
+    "tip": "W(눈덩이)를 굴려 크게 키운 뒤 아군의 에어본 연계기와 타이밍을 맞추면 적을 확실히 띄워 올릴 수 있어요.",
+    "caution": "눈덩이를 굴리다 적 챔피언이나 벽에 부딪히면 누누 자신도 아주 잠깐 기절하니 조종에 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "야스오 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%BC%EC%8A%A4%EC%98%A4",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Olaf",
