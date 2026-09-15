@@ -1339,13 +1339,15 @@
   {
     "id": "Rammus",
     "kind": "champion",
-    "summary": "공처럼 굴러다니며 적을 약올리는 탱커예요.",
-    "analogy": "동그랗게 몸을 말고 굴러가는 아르마딜로예요.",
-    "tip": "Q로 굴러가 부딪히면 느려지고, E로 적을 약올릴 수 있어요.",
-    "caution": "R로 띄우려면 Q(대회전) 상태여야 해요.",
-    "sourceType": "editorial",
+    "summary": "공처럼 굴러다니며 적을 도발해 탱킹하는 아르마딜로예요.",
+    "analogy": "몸을 공처럼 말아 굴러다니다가, 방어 태세로 웅크려 반사 피해를 주고 적을 도발해 끌어들이는 갑옷 탱커 같아요.",
+    "tip": "W(몸 말아 웅크리기)로 방어력을 올린 뒤 E(광란의 도발)로 적 하나를 도발해 반사 피해로 지속 딜을 넣으세요.",
+    "caution": "Q(대회전)로 아무리 이속을 올려도 99% 둔화 같은 강력한 CC에 걸리면 순식간에 최소 이동 속도로 묶이니 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력/군중제어기 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5/%EA%B5%B0%EC%A4%91%EC%A0%9C%EC%96%B4%EA%B8%B0",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "RekSai",
