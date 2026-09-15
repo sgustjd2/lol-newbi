@@ -339,20 +339,6 @@ function cardEl(e) {
     location.hash = `${e.kind}/${e.id}`;
   });
   const wrap = text("div", "", "card-wrap");
-  const toggle = text("button", "＋ 펼치기", "card-toggle");
-  toggle.type = "button";
-  toggle.title = `${e.name} 설명 펼치기`;
-  toggle.setAttribute("aria-expanded", "false");
-  toggle.setAttribute("aria-controls", cardId);
-  toggle.setAttribute("aria-label", `${e.name} 설명 펼치기`);
-  toggle.onclick = (event) => {
-    event.stopPropagation();
-    const open = wrap.classList.toggle("is-open");
-    toggle.setAttribute("aria-expanded", String(open));
-    toggle.textContent = open ? "− 접기" : "＋ 펼치기";
-    toggle.title = `${e.name} 설명 ${open ? "접기" : "펼치기"}`;
-    toggle.setAttribute("aria-label", `${e.name} 설명 ${open ? "접기" : "펼치기"}`);
-  };
   const fav = text("button", isFav(e) ? "★" : "☆", `fav${isFav(e) ? " on" : ""}`);
   fav.type = "button";
   fav.title = "즐겨찾기";
@@ -366,7 +352,7 @@ function cardEl(e) {
     fav.setAttribute("aria-pressed", on);
     if (kind === "favorite") render();
   };
-  wrap.append(card, toggle, fav);
+  wrap.append(card, fav);
   return wrap;
 }
 function championById(id) {
