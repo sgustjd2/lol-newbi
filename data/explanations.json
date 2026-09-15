@@ -1226,13 +1226,15 @@
   {
     "id": "Olaf",
     "kind": "champion",
-    "summary": "체력이 낮을수록 더 사나워지는 도끼 전사예요.",
-    "analogy": "죽음을 두려워하지 않고 오히려 더 날뛰는 야수를 떠올려 보세요.",
-    "tip": "Q로 던진 도끼를 다시 주우면 또 던질 수 있어요.",
-    "caution": "R을 켜야 움직임을 막는 상대 효과가 안 통해요.",
-    "sourceType": "editorial",
+    "summary": "체력을 태워 싸우고 궁극기로 CC를 씻어내는 탑 파이터예요.",
+    "analogy": "이동기 없이 뚜벅뚜벅 걸어가 체력을 태우며 강하게 때리고, 궁극기로 방해 효과를 씻어내는 광전사 같아요.",
+    "tip": "Q(역류)의 둔화와 궁극기(라그나로크)의 군중제어 면역을 활용해 적을 끈질기게 추격하며 초반 강한 맞딜을 살리세요.",
+    "caution": "E(무모한 강타)는 마나가 아니라 체력을 소모하니, 체력 관리를 못 하면 스스로를 위험에 빠뜨릴 수 있어요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/능력치 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%EB%8A%A5%EB%A0%A5%EC%B9%98",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Orianna",
