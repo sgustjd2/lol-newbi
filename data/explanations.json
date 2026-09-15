@@ -1389,13 +1389,15 @@
   {
     "id": "Renekton",
     "kind": "champion",
-    "summary": "화가 날수록 강해지는 악어 전사예요.",
-    "analogy": "화가 날수록 더 세게 검을 휘두르는 악어 전사를 떠올려 보세요.",
-    "tip": "화가 많이 쌓이면 Q와 W가 더 강해져요.",
-    "caution": "화가 적으면 W가 짧게만 멈추게 해요.",
-    "sourceType": "editorial",
+    "summary": "분노를 채워 스킬을 강화하는 사막의 검투사예요.",
+    "analogy": "평타와 스킬로 분노를 채우다가, 가득 차면 스킬이 강화판으로 바뀌는 폭주 전사 같아요.",
+    "tip": "Q(양떼 도륙)로 적과 미니언을 때려 분노를 채운 뒤, 분노가 50 이상일 때 W(무자비한 포식자)를 쓰면 보호막까지 부수는 강화 기절을 넣을 수 있어요.",
+    "caution": "체력이 낮을수록 분노가 더 잘 쌓이지만, 그만큼 위험한 상태라는 뜻이니 분노만 믿고 무리하게 버티지 마세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "List of League of Legends Champions by Release Date (2026) - LoLTheory Blog",
+    "explanationSourceUrl": "https://blog.loltheory.gg/league-of-legends-champions-by-release-date/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Rengar",
