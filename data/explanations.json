@@ -1441,13 +1441,15 @@
   {
     "id": "Ryze",
     "kind": "champion",
-    "summary": "마법 표식을 남기며 싸우는 마법사예요.",
-    "analogy": "책장을 넘기듯 마법을 이어 쓰는 할아버지 마법사예요.",
-    "tip": "다른 스킬을 먼저 쓰고 Q를 쓰면 더 세게 튕겨요.",
-    "caution": "룬이 두 개 모여야 Q가 빨라지는 힘을 써요.",
-    "sourceType": "editorial",
+    "summary": "룬(마나)을 모아 스킬을 연계하는 배틀메이지예요.",
+    "analogy": "적에게 표식을 남기고 룬을 채워, 스킬을 연쇄로 터뜨리는 마나 자체가 무기인 마법사 같아요.",
+    "tip": "E(주문 전이)로 적에게 표식을 남긴 뒤 Q(과부하)로 연쇄 피해를 주거나 W(룬 감옥)로 속박하는 콤보를 활용하세요.",
+    "caution": "올라프처럼 상대하기 까다로운 상성의 챔피언을 만나면 힘들어지니, 그런 상대에게는 신중하게 플레이하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "STOP caring about tier lists! : r/summonerschool - Reddit",
+    "explanationSourceUrl": "https://www.reddit.com/r/summonerschool/comments/enwg04/stop_caring_about_tier_lists/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Samira",
