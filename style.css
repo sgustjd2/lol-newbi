@@ -1811,6 +1811,8 @@ dialog::backdrop {
   margin-top: 16px;
 }
 .character-card-counter {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   padding: 15px;
   border: 1px solid #e7b9b9;
@@ -1821,6 +1823,7 @@ dialog::backdrop {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-height: 46px;
   min-width: 0;
 }
 .character-card-counter-icon {
@@ -1847,11 +1850,15 @@ dialog::backdrop {
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
+.character-card-counter-reason {
+  min-height: calc(1.65em * 3);
+}
 .character-card-counter-tip {
   padding-top: 10px;
   border-top: 1px solid #eed6d6;
   color: #795e2d;
   font-size: 13px;
+  min-height: calc(1.65em * 3);
 }
 .character-card-mode-title {
   margin: 22px 0 0;
