@@ -1326,13 +1326,15 @@
   {
     "id": "Rakan",
     "kind": "champion",
-    "summary": "깃털을 던지며 아군을 돕는 서포터예요.",
-    "analogy": "깃털을 던지며 날아다니는 예쁜 새를 떠올려 보세요.",
-    "tip": "Q를 적 챔피언에게 맞히면 아군 체력을 채워줘요.",
-    "caution": "R은 지나간 길에 있는 적에게만 통해요.",
-    "sourceType": "editorial",
+    "summary": "깃털을 날리고 아군에게 도약해 보호막을 주는 매혹의 춤꾼이에요.",
+    "analogy": "축제의 춤꾼처럼 아군 곁을 오가며 보호막을 씌우고, 적에게 다가가 매혹으로 흔드는 서포터 같아요.",
+    "tip": "E(전투의 춤)로 아군에게 도약해 보호막을 준 뒤 5초 안에 무료로 재시전할 수 있으니 두 번 연달아 쓰세요.",
+    "caution": "W(화려한 등장)와 E(전투의 춤)로 돌진하는 중에 속박·매혹 등 이동불가 CC를 맞으면 돌진이 끊기니 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "Rakan (League of Legends) - League of Legends Wiki | Fandom",
+    "explanationSourceUrl": "https://leagueoflegends.fandom.com/wiki/Rakan/LoL",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Rammus",
