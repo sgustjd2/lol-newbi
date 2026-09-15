@@ -1187,13 +1187,15 @@
   {
     "id": "Nilah",
     "kind": "champion",
-    "summary": "채찍검으로 주변 적을 휩쓰는 전사예요.",
-    "analogy": "채찍검을 휘둘러 주변을 베는 검투사예요.",
-    "tip": "Q를 쓰면 잠깐 공격 거리가 늘어나요.",
-    "caution": "W 효과는 나와 닿은 아군에게만 같이 걸려요.",
-    "sourceType": "editorial",
+    "summary": "기본 공격에 흡혈이 붙고 회복을 아군과 나누는 근접 딜러예요.",
+    "analogy": "평타로 피를 빨아 몸을 지키고, 그 회복을 옆의 아군에게도 나눠주는 다정한 흡혈 검사 같아요.",
+    "tip": "Q(무형의 검)로 적을 맞히면 사거리와 공격 속도가 늘어 원뿔 범위를 때리니, 미니언 웨이브에 적중시켜 사거리 이점을 살려보세요.",
+    "caution": "궁극기 환희(R) 사용 중에는 이동만 가능하고 기본 공격과 다른 스킬을 전혀 쓸 수 없으니, 시전 타이밍과 진입 각도에 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "Nilah - League of Legends Wiki | Fandom",
+    "explanationSourceUrl": "https://leagueoflegends.fandom.com/wiki/Nilah/LoL",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Nocturne",
