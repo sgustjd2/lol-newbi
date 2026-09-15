@@ -1454,13 +1454,15 @@
   {
     "id": "Samira",
     "kind": "champion",
-    "summary": "총과 칼을 번갈아 쓰는 원거리 전사예요.",
-    "analogy": "총도 쏘고 칼도 휘두르는 멋진 전사예요.",
-    "tip": "E로 돌진할 때 Q를 쓰면 지나간 적을 모두 공격해요.",
-    "caution": "R은 가까이 있는 적만 맞아요. 멀리 있으면 안 닿아요.",
-    "sourceType": "editorial",
+    "summary": "콤보로 랭크를 올려 궁극기를 여는 원거리 딜러예요.",
+    "analogy": "적을 맞힐 때마다 콤보 등급이 오르다가, S랭크가 되면 화려한 궁극기를 쏟아붓는 총잡이 같아요.",
+    "tip": "E(거침없는 질주)는 적 처치 시 쿨타임이 초기화되니, 처치 가능한 적을 연속으로 노려 콤보를 이어가세요.",
+    "caution": "궁극기(지옥불 난사)를 멜의 W(반박)에 반사당하면 순식간에 죽을 수 있으니, 반사 스킬을 가진 상대에게는 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "멜(리그 오브 레전드) - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A9%9C(%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C)",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Sejuani",
