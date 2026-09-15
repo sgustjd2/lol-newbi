@@ -113,6 +113,7 @@ header {
 .intro h1 em {
   font-style: normal;
   color: var(--brand);
+  white-space: nowrap;
 }
 .intro-copy {
   line-height: 1.8;
@@ -1440,6 +1441,18 @@ dialog::backdrop {
   }
   .intro-copy br {
     display: none;
+  }
+}
+@media (max-width: 360px) {
+  header,
+  main,
+  footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .intro h1 {
+    font-size: 39px;
+    letter-spacing: -2.6px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
