@@ -4260,3 +4260,121 @@ body.character-card-mode .character-card-counter-tip {
     font-size: 7.5px;
   }
 }
+
+/* Taller desktop windows can spend the extra vertical room on readable type. */
+@media (min-width: 701px) and (min-height: 780px) {
+  body.character-card-mode .character-card {
+    padding: 20px;
+  }
+  body.character-card-mode .character-card-hero {
+    grid-template-columns: minmax(0, 1fr) 138px;
+    gap: 18px;
+    padding: 4px 10px 13px;
+  }
+  body.character-card-mode .character-card-kicker {
+    margin-bottom: 6px;
+    font-size: 10px;
+  }
+  body.character-card-mode .character-card-hero h2 {
+    font-size: clamp(46px, 5.2vw, 62px);
+  }
+  body.character-card-mode .character-card-subtitle {
+    margin-top: 8px;
+    font-size: 13px;
+  }
+  body.character-card-mode .character-card-faction-label {
+    margin-top: 6px;
+    font-size: 10px;
+  }
+  body.character-card-mode .character-card-roles {
+    margin-top: 9px;
+  }
+  body.character-card-mode .character-card-role {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+  body.character-card-mode .character-card-portrait {
+    width: 138px;
+    height: 138px;
+  }
+  body.character-card-mode .character-card-section {
+    padding: 12px 10px;
+  }
+  body.character-card-mode .character-card-section h3 {
+    font-size: 19px;
+  }
+  body.character-card-mode .character-card-quick {
+    gap: 7px;
+    margin-top: 8px;
+  }
+  body.character-card-mode .character-card-quick-box {
+    padding: 8px 9px;
+  }
+  body.character-card-mode .character-card-quick-box h4 {
+    margin-bottom: 4px;
+    font-size: 10px;
+  }
+  body.character-card-mode .character-card-quick-box p {
+    font-size: 12px;
+    line-height: 1.28;
+  }
+  body.character-card-mode .character-card-skill-grid,
+  body.character-card-mode .character-card-counter-grid {
+    margin-top: 8px;
+  }
+  body.character-card-mode .character-card-skill {
+    padding: 9px;
+  }
+  body.character-card-mode .character-card-skill-icon {
+    width: 30px;
+    height: 30px;
+  }
+  body.character-card-mode .character-card-skill-key {
+    width: 19px;
+    height: 19px;
+    font-size: 10px;
+  }
+  body.character-card-mode .character-card-skill-name,
+  body.character-card-mode .character-card-counter-name {
+    font-size: 10px;
+  }
+  body.character-card-mode .character-card-skill-copy {
+    margin-top: 6px;
+    font-size: 9px;
+    line-height: 1.22;
+  }
+  body.character-card-mode .character-card-counter {
+    padding: 9px;
+  }
+  body.character-card-mode .character-card-counter-icon {
+    width: 34px;
+    height: 34px;
+  }
+  body.character-card-mode .character-card-counter-reason,
+  body.character-card-mode .character-card-counter-tip {
+    margin-top: 6px;
+    font-size: 9px;
+    line-height: 1.22;
+  }
+  body.character-card-mode .character-card-mode-title {
+    margin-top: 8px;
+    font-size: 10px;
+  }
+  body.character-card-mode .character-card-build {
+    margin-top: 6px;
+  }
+  body.character-card-mode .character-card-build-label {
+    font-size: 9px;
+  }
+  body.character-card-mode .character-card-item-icon {
+    width: 42px;
+    height: 42px;
+  }
+  body.character-card-mode .character-card-item-name {
+    font-size: 8px;
+  }
+  body.character-card-mode .character-card-footer {
+    margin-top: 9px;
+    font-size: 8px;
+  }
+}

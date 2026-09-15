@@ -1,10 +1,10 @@
 # Character card design QA
 
 - source visual truth path: `C:\Users\admin\AppData\Local\Temp\codex-clipboard-73f61954-1544-4089-8163-80119afc30c3.png`
-- implementation screenshot path: CUA in-app browser capture of `http://127.0.0.1:4173/?qa=character-card-v11#card/champion/Garen` (inline browser evidence; the available browser capture API does not expose a filesystem path)
+- implementation screenshot path: CUA in-app browser capture of `http://127.0.0.1:4173/?qa=character-card-v12#card/champion/Garen` (inline browser evidence; the available browser capture API does not expose a filesystem path)
 - source pixels: 767 × 1024
-- implementation viewport: 1280 × 720 CSS px, browser device scale factor 1
-- density normalization: no raster comparison; the source is a portrait collectible-card mock while the implementation is a responsive web card page, so content regions and hierarchy were compared at their rendered size
+- implementation viewport: 1256 × 912 CSS px, browser device scale factor 1
+- density normalization: no raster comparison; the source is a 958 × 818 screenshot while the implementation is a responsive web card page, so content regions and hierarchy were compared at their rendered CSS size and the taller desktop breakpoint was verified separately
 - state: 가렌 캐릭터 카드 페이지, 데마시아 테마, desktop viewport, data loaded, no dialog open
 
 ## Comparison evidence
@@ -29,7 +29,7 @@
 - The back button restores the champion list; the original champion detail button still opens its dialog.
 - Card counts on the tested routes: 5 skill tiles, 3 counter tiles, and up to 5 representative item tiles.
 - Nidalee, Jayce, Kayn, Elise, and other transformation-capable cards retain their form-specific explanations; Nidalee and Jayce were explicitly checked for human/cougar and hammer/cannon text.
-- The card shell is wider than the first standalone iteration and uses readable desktop type sizes. At 1280 × 720, it automatically scales only when a champion's copy is taller than the viewport; the Garen capture renders at about 776px wide. The 173 champion routes were checked after load: every card reaches its footer without page scrolling or clipping, with no horizontal overflow. Responsive CSS provides one-column layouts below 700px.
+- The card shell is wider than the first standalone iteration and uses readable desktop type sizes. At 1256 × 912, the Garen capture renders at about 826px wide with a 0.96 fit scale, leaving the card readable while still showing the footer in one viewport. Taller desktop windows (780px and above) receive a larger typography pass so the extra space is used for readability. The 173 champion routes were checked after load: every card reaches its footer without page scrolling or clipping, with no horizontal overflow. Responsive CSS provides one-column layouts below 700px.
 - Browser console: no warning or error entries were reported during the tested flow.
 
 ## Comparison history
@@ -39,7 +39,8 @@
 3. Reworked the route as a standalone frosted collectible card and removed the global site chrome from card mode.
 4. Added the reusable frosted texture asset, fourteen faction themes, compact representative item rows, and automatic desktop viewport fitting.
 5. The first viewport-fit pass made the card too small. Increased the shell width from 780px to 860px, restored readable card typography, reduced unnecessary vertical density, and kept adaptive scaling only for genuinely tall content.
-6. Rechecked Garen, Bel'Veth, Nidalee, Jayce, Kayn, Gnar, and all 173 champion routes. No P0, P1, or P2 findings remain.
+6. The follow-up capture still showed small type at the user's desktop height. Added a 780px+ breakpoint with larger title, section, skill, counter, and item typography while preserving the one-viewport fit calculation.
+7. Rechecked Garen, Bel'Veth, Nidalee, Jayce, Kayn, Gnar, and all 173 champion routes after the readability pass. No P0, P1, or P2 findings remain.
 
 ## Implementation checklist
 
