@@ -1150,13 +1150,15 @@
   {
     "id": "Nautilus",
     "kind": "champion",
-    "summary": "닻으로 적을 끌어와 싸우는 탱커예요.",
-    "analogy": "큰 닻을 던져 적을 끌어당기는 뱃사람이에요.",
-    "tip": "Q는 벽에 맞아도 그쪽으로 끌려가요. 벽 너머 적에게 다가갈 때 써보세요.",
-    "caution": "R은 충격파가 적에게 닿아야 띄우고 못 움직이게 해요.",
-    "sourceType": "editorial",
+    "summary": "닻으로 적을 끌어당겨 붙잡는 걸어다니는 CC기 탱커예요.",
+    "analogy": "닻을 던져 적을 끌어당기고 계속 붙잡아두는, 걸어다니는 군중 제어기 같아요.",
+    "tip": "Q(닻줄 견인)는 벽에 닿으면 노틸러스가 지형 쪽으로 끌려가는데, 이때는 속박 상태를 무시하고 이동할 수 있으니 활용해보세요.",
+    "caution": "궁극기 R(폭뢰)은 투사체가 적에게 도달하는 순간 적이 대상 지정 불가 상태가 되면 무력화되니 타이밍에 주의하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드/챔피언/특수 능력 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%B1%94%ED%94%BC%EC%96%B8/%ED%8A%B9%EC%88%98%20%EB%8A%A5%EB%A0%A5",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Neeko",
