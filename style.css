@@ -3137,6 +3137,7 @@ dialog::backdrop {
   flex-direction: column;
   align-items: stretch;
   gap: 12px;
+  min-height: var(--rune-card-height, 0px);
   padding: 13px;
   border: 1px solid #e4e7ec;
   border-radius: 13px;

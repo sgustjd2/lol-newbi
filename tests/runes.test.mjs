@@ -30,7 +30,10 @@ test("특성 탭이 검색·마스터리 필터·상세 경로를 제공함", as
   assert.match(index, /data-kind="runes"/);
   assert.match(app, /data\/runes\.json/);
   assert.match(app, /function renderRunes/);
+  assert.match(app, /const runeEasySummaries/);
+  assert.match(app, /function equalizeRuneCards/);
   assert.match(app, /rune\/\$\{path\.key\}\/\$\{rune\.key\}/);
   assert.match(style, /\.rune-path/);
   assert.match(style, /\.rune-card/);
+  assert.match(style, /--rune-card-height/);
 });

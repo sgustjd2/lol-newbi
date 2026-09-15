@@ -142,6 +142,73 @@ const runeSlotTips = [
   "처치에 참여하거나 시간이 지나면서 조금씩 쌓이는 힘을 골라요.",
   "마지막 빈틈을 채우는 줄이에요. 더 세게 때릴지, 더 오래 버틸지 생각해 봐요.",
 ];
+const runeEasySummaries = {
+  PressTheAttack: "같은 적을 세 번 때리면 더 아프게 때려요.",
+  LethalTempo: "계속 때리면 공격이 빨라지고 더 세져요.",
+  FleetFootwork: "움직이고 때리면 힘이 차서 체력을 조금 채워요.",
+  Conqueror: "싸울수록 힘이 쌓이고 체력도 조금 회복해요.",
+  AbsorbLife: "적을 쓰러뜨리면 체력을 조금 채워요.",
+  Triumph: "적을 잡으면 체력을 조금 채우고 돈도 받아요.",
+  PresenceOfMind: "적을 때리거나 잡으면 스킬 자원이 조금 돌아와요.",
+  LegendAlacrity: "적을 잡는 데 참여할수록 공격이 빨라져요.",
+  LegendHaste: "적을 잡는 데 참여할수록 기본 스킬을 빨리 써요.",
+  LegendBloodline: "적을 잡을수록 피를 빨아 체력을 채우는 힘이 생겨요.",
+  CoupDeGrace: "피가 적은 적에게 더 큰 피해를 줘요.",
+  CutDown: "피가 많은 적에게 더 큰 피해를 줘요.",
+  LastStand: "내 피가 적을수록 공격이 더 세져요.",
+  Electrocute: "같은 적을 세 번 때리면 번개처럼 큰 피해를 줘요.",
+  DarkHarvest: "피가 적은 적을 때리면 영혼을 모으고 더 아파져요.",
+  HailOfBlades: "처음 세 번 빨리 때릴 때 공격 속도가 아주 빨라져요.",
+  CheapShot: "느려지거나 움직이지 못하는 적에게 더 아프게 때려요.",
+  TasteOfBlood: "적 챔피언을 때리면 내 체력을 조금 채워요.",
+  SuddenImpact: "점프나 돌진 뒤에 적을 때리면 추가 피해를 줘요.",
+  SixthSense: "안 보이는 와드를 찾아주는 눈이 생겨요.",
+  GrislyMementos: "적을 잡을수록 장신구를 더 빨리 쓸 수 있어요.",
+  DeepWard: "적 정글에 둔 와드가 더 튼튼하고 오래가요.",
+  TreasureHunter: "적을 잡는 데 참여하면 골드를 더 받아요.",
+  RelentlessHunter: "적을 잡을수록 전투 밖에서 더 빨리 달려요.",
+  UltimateHunter: "적을 잡을수록 궁극기를 더 빨리 다시 써요.",
+  SummonAery: "공격하면 콩콩이가 가서 때리거나 친구를 지켜줘요.",
+  ArcaneComet: "스킬로 때리면 하늘에서 유성이 떨어져요.",
+  PhaseRush: "적을 빠르게 여러 번 때리면 아주 빨라져요.",
+  DeathfireTouch: "스킬로 때리면 적이 불에 타요.",
+  NullifyingOrb: "궁극기가 더 세지고 적을 잡으면 더 빨리 돌아와요.",
+  ManaflowBand: "적에게 스킬을 맞히면 마나가 늘고 천천히 채워져요.",
+  NimbusCloak: "소환사 주문을 쓰면 잠깐 빨라지고 사람을 통과해요.",
+  Transcendence: "레벨이 오를수록 스킬을 더 자주 쓸 수 있어요.",
+  Celerity: "빨라지는 힘이 더 커져요.",
+  AbsoluteFocus: "내 체력이 많을 때 공격이 더 세져요.",
+  Scorch: "스킬로 때리면 적을 불태워요.",
+  Waterwalking: "강에 있으면 더 빨라지고 공격 힘도 커져요.",
+  GatheringStorm: "시간이 지날수록 공격이나 주문 힘이 커져요.",
+  GraspOfTheUndying: "가까이서 때리면 체력을 채우고 몸도 튼튼해져요.",
+  Aftershock: "적을 움직이지 못하게 하면 잠깐 단단해졌다가 폭발해요.",
+  Guardian: "친구를 지켜주고, 위험하면 둘 다 보호막을 얻어요.",
+  Demolish: "포탑을 몇 번 때리면 다음 공격이 아주 세져요.",
+  FontOfLife: "적을 느리게 하면 친구들이 체력을 채울 수 있어요.",
+  ShieldBash: "보호막을 얻은 뒤 다음 공격이 더 세져요.",
+  Conditioning: "시간이 지나면 방어력과 마법 저항력이 늘어요.",
+  SecondWind: "적에게 맞으면 잃은 체력을 천천히 되찾아요.",
+  BonePlating: "적에게 맞은 뒤 이어지는 세 번의 공격을 덜 아프게 맞아요.",
+  Overgrowth: "주변 미니언이나 몬스터가 죽으면 최대 체력이 늘어요.",
+  Revitalize: "회복과 보호막이 더 좋아지고, 피가 적으면 더 강해져요.",
+  Unflinching: "기절이나 느려짐을 맞으면 잠깐 더 단단해져요.",
+  GlacialAugment: "적을 묶으면 얼음 길이 생겨 주변 적이 느려져요.",
+  UnsealedSpellbook: "필요할 때 소환사 주문을 다른 주문으로 바꿔 써요.",
+  FirstStrike: "먼저 때리면 잠깐 더 세게 때리고 돈도 벌어요.",
+  HextechFlashtraption: "점멸이 없을 때 잠깐 충전해서 다른 곳으로 이동해요.",
+  MagicalFootwear: "조금 기다리면 공짜 신발을 받아요.",
+  CashBack: "비싼 아이템을 사면 돈을 조금 돌려받아요.",
+  PerfectTiming: "레벨이 오를 때마다 다른 영약을 하나씩 받아요.",
+  TimeWarpTonic: "물약을 먹으면 체력을 바로 조금 채워요.",
+  BiscuitDelivery: "시간마다 비스킷을 받아 먹고 체력을 늘려요.",
+  CosmicInsight: "소환사 주문과 아이템을 더 빨리 다시 쓸 수 있어요.",
+  ApproachVelocity: "느려진 적에게 다가갈 때 더 빨라져요.",
+  JackOfAllTrades: "여러 능력치 아이템을 사면 스킬을 더 자주 써요.",
+};
+function runeEasySummary(rune) {
+  return rune.easySummary || runeEasySummaries[rune.key] || rune.summary;
+}
 const runePathOrder = ["Precision", "Domination", "Sorcery", "Resolve", "Inspiration"];
 const orderedRunePaths = () =>
   [...(runesData.paths || [])].sort(
@@ -158,7 +225,7 @@ function runeCard(path, slot, slotIndex, rune) {
   card.setAttribute("aria-label", `${path.name} · ${rune.name} 특성 자세히 보기`);
   card.append(
     text("div", "", "rune-card-head"),
-    text("p", runeText(rune.summary), "rune-summary"),
+    text("p", runeText(runeEasySummary(rune)), "rune-summary"),
     text("span", "자세한 설명 보기 ↗", "rune-card-action"),
   );
   const head = card.firstElementChild;
@@ -276,6 +343,7 @@ function renderRunes(q) {
   source.rel = "noopener noreferrer";
   note.append(source);
   $("#grid").append(note);
+  scheduleCardAlignment();
 }
 function recipeCard(item, current = false) {
   const card = text(
@@ -597,12 +665,22 @@ function equalizeTermCards() {
       vars.forEach((name, index) => card.style.setProperty(name, `${heights[index]}px`));
   }
 }
+function equalizeRuneCards() {
+  document.querySelectorAll(".rune-choice-grid").forEach((grid) => {
+    const cards = [...grid.querySelectorAll(":scope > .rune-card")];
+    cards.forEach((card) => card.style.removeProperty("--rune-card-height"));
+    if (!cards.length) return;
+    const maxHeight = Math.max(...cards.map((card) => card.getBoundingClientRect().height));
+    cards.forEach((card) => card.style.setProperty("--rune-card-height", `${maxHeight}px`));
+  });
+}
 function scheduleCardAlignment() {
   if (alignmentFrame) cancelAnimationFrame(alignmentFrame);
   alignmentFrame = requestAnimationFrame(() => {
     alignmentFrame = 0;
     equalizeCards();
     equalizeTermCards();
+    equalizeRuneCards();
   });
 }
 function championById(id) {
@@ -1623,7 +1701,7 @@ function openRuneDetail(pathKey, runeKey) {
     text("span", `${slot.label} · ${path.subtitle}`),
   );
   head.append(profile, title);
-  content.append(head, text("p", rune.summary, "summary"));
+  content.append(head, text("p", runeText(runeEasySummary(rune)), "summary"));
 
   const pathBlock = text("section", "", "detail-block rune-detail-path");
   pathBlock.append(
