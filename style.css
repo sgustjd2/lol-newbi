@@ -406,6 +406,7 @@ header {
 .region-card h3 {
   font-size: 20px;
   margin: 0 0 4px;
+  overflow-wrap: anywhere;
 }
 .region-story {
   grid-column: 1/-1;
@@ -431,6 +432,7 @@ header {
 .region-title {
   font-size: 26px;
   margin: 0 0 26px;
+  overflow-wrap: anywhere;
 }
 .region-novel {
   margin-bottom: 40px;
@@ -478,6 +480,10 @@ header {
   border-radius: 50%;
   object-fit: cover;
 }
+.region-cast-card > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 .region-chapter {
   margin-bottom: 40px;
   padding-bottom: 32px;
@@ -493,8 +499,10 @@ header {
   margin-bottom: 14px;
 }
 .region-chapter-head h3 {
+  min-width: 0;
   font-size: 18px;
   margin: 0;
+  overflow-wrap: anywhere;
 }
 .region-chapter p {
   font-size: 17px;
@@ -613,6 +621,9 @@ dialog::backdrop {
   gap: 17px;
   margin: 9px 35px 24px 0;
 }
+.detail-head > div:last-child {
+  min-width: 0;
+}
 .detail-profile {
   display: flex;
   align-items: center;
@@ -673,6 +684,9 @@ dialog::backdrop {
 .detail-head h2 {
   font-size: 28px;
   margin: 4px 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
 }
 .detail-head span {
   font-size: 13px;
@@ -683,6 +697,7 @@ dialog::backdrop {
   line-height: 1.6;
   font-weight: 700;
   letter-spacing: -0.8px;
+  overflow-wrap: anywhere;
 }
 .detail-block {
   padding: 19px 21px;
@@ -703,6 +718,7 @@ dialog::backdrop {
   line-height: 1.7;
   margin: 0;
   word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 .champion-counters {
   margin-top: 22px;
@@ -850,6 +866,10 @@ dialog::backdrop {
   height: 42px;
   border-radius: 11px;
 }
+.relation-center-card > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 .relation-connector {
   position: relative;
   height: 20px;
@@ -995,6 +1015,7 @@ dialog::backdrop {
 }
 .original {
   white-space: pre-line;
+  overflow-wrap: anywhere;
 }
 .skip {
   position: fixed;
@@ -1155,6 +1176,24 @@ dialog::backdrop {
     --dialog-scroll-side-gap: 4px;
     padding: var(--dialog-padding);
   }
+  .detail-head {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 14px;
+    margin-right: 0;
+  }
+  .detail-profile {
+    align-items: center;
+    width: 100%;
+  }
+  .detail-head > div:last-child {
+    width: 100%;
+    text-align: center;
+  }
+  .detail-head h2 {
+    font-size: 26px;
+    line-height: 1.35;
+  }
   .to-top {
     right: 16px;
     bottom: 16px;
@@ -1266,6 +1305,10 @@ dialog::backdrop {
   font-size: 18px;
   margin: 0 0 12px;
 }
+.skill h4 > span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 .skill kbd {
   display: grid;
   place-items: center;
@@ -1281,6 +1324,7 @@ dialog::backdrop {
   line-height: 1.8;
   font-size: 16px;
   word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 .skill small {
   color: #667085;
@@ -1403,6 +1447,11 @@ dialog::backdrop {
   min-height: 44px;
   padding: 6px 9px;
   text-align: left;
+}
+.recipe-item > span:last-child,
+.recipe-current > span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .recipe-item {
   cursor: pointer;
@@ -1716,6 +1765,13 @@ dialog::backdrop {
   font-size: 12px;
   font-weight: 500;
 }
+.duo-group-title > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.duo-group-title > small {
+  flex-shrink: 0;
+}
 .duo-intro p,
 .duo-source-note p {
   margin: 0 0 5px;
@@ -1784,6 +1840,7 @@ dialog::backdrop {
   margin: 8px 0 0;
   font-size: 23px;
   letter-spacing: -0.8px;
+  overflow-wrap: anywhere;
 }
 .duo-tier {
   display: inline-block;
