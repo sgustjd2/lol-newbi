@@ -1352,13 +1352,15 @@
   {
     "id": "RekSai",
     "kind": "champion",
-    "summary": "땅 위와 땅속을 오가며 기습하는 전사예요.",
-    "analogy": "땅속에 숨어 있다가 갑자기 튀어나오는 두더지를 떠올려 보세요.",
-    "tip": "땅속에 있으면 빨라지니 이동할 때 써보세요.",
-    "caution": "땅속에서는 멀리 못 보고 공격도 못해요.",
-    "sourceType": "editorial",
+    "summary": "땅굴을 오가며 기습하고 오래 버티며 싸우는 괴물 정글러예요.",
+    "analogy": "매복 상태로 땅속을 오가다가 갑자기 튀어나와 덮치고, 오래 물고 늘어지며 싸우는 지하 포식자 같아요.",
+    "tip": "돌출 상태에서 W(매복)를 쓰면 새로운 스킬로 바뀌고 기동력이 오르니, 매복과 돌출을 오가며 전투를 이어가세요.",
+    "caution": "매복 상태에서는 기본 공격을 할 수 없으니, 평타 딜이 필요하면 돌출 상태로 전환한 뒤 싸워야 해요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "리그 오브 레전드 26.13 패치 노트 - League of Legends",
+    "explanationSourceUrl": "https://www.leagueoflegends.com/ko-kr/news/game-updates/league-of-legends-patch-26-13-notes/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Rell",
