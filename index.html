@@ -10,8 +10,8 @@
     <title>롤린이 백과사전 — 5살도 이해하는 쉬운 롤 설명</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./seed.css" />
-    <link rel="stylesheet" href="./style.css?v=champion-review-v3" />
-    <script src="./app.js?v=champion-review-v3" type="module"></script>
+    <link rel="stylesheet" href="./style.css?v=character-card-v2" />
+    <script src="./app.js?v=character-card-v2" type="module"></script>
   </head>
   <body>
     <a class="skip" href="#search">검색으로 건너뛰기</a>
@@ -29,14 +29,14 @@
       ><span class="edition">BEGINNER’S GUIDE <span>01</span></span>
     </header>
     <main>
-      <section class="intro">
+      <section id="intro" class="intro">
         <div>
           <p class="eyebrow">몰라도 괜찮아, 한입씩 알아가면 돼.</p>
           <h1>어려운 롤 <em>5살도 알아듣게</em></h1>
           <p class="intro-copy">챔피언도 아이템도, 어린아이에게 말하듯 쉽게 알려줄게요.</p>
         </div>
       </section>
-      <section class="dictionary" aria-label="롤 사전">
+      <section id="dictionary" class="dictionary" aria-label="롤 사전">
         <div class="toolbar">
           <div class="tabs-shell">
             <div id="kind-tabs" class="tabs" aria-label="종류 선택">
@@ -46,6 +46,9 @@
                 챔피언 <span>함께할 친구</span></button
               ><button data-kind="item" aria-pressed="false">
                 아이템 <span>든든한 준비물</span>
+              </button>
+              <button data-kind="runes" aria-pressed="false">
+                특성 <span>게임 방식을 고르는 힘</span>
               </button>
               <button data-kind="glossary" aria-pressed="false">
                 용어정리 <span>게임 속 말 사전</span>
@@ -110,13 +113,29 @@
           <p>사전을 펼치는 중이에요…</p>
         </div>
       </section>
-      <div class="data-note">
+      <div id="data-note" class="data-note">
         <span>알아두세요</span>
         <p>
           쉬운 설명은 공식 원문과 공개 자료를 바탕으로 정리해요. 검수된 항목은
           <b>자료 검수 완료</b>로 표시하고, 아직 검수 전인 항목도 공식 원문을 함께 확인할 수 있어요.
         </p>
       </div>
+      <section
+        id="character-card-page"
+        class="character-card-page"
+        aria-labelledby="character-card-title"
+        hidden
+      >
+        <div class="character-card-actions">
+          <button id="character-card-back" class="card-page-button" type="button">
+            ← 챔피언 목록
+          </button>
+          <button id="character-card-print" class="card-page-button card-page-button-primary" type="button">
+            카드 인쇄하기
+          </button>
+        </div>
+        <div id="character-card" class="character-card-mount"></div>
+      </section>
     </main>
     <footer>
       <a class="brand" href="./">롤린이 백과사전<span class="footer-dot">●</span></a>

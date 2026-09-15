@@ -17,6 +17,7 @@ function toggleFav(e) {
   } catch {}
 }
 let glossaryEntries = [],
+  runesData = { patch: "", sourceTitle: "", sourceUrl: "", notice: "", paths: [] },
   regionStories = {},
   regionTimeline = { updatedAt: "", notice: "", sources: [], events: [] },
   botDuoData = { patch: "", notice: "", sources: [], duos: [] },
@@ -28,6 +29,7 @@ let selectedRegion = null;
 let showTimeline = false;
 let timelineRegion = "전체";
 let botDuoView = "tier";
+let selectedRunePath = "all";
 const REGIONS = [
   "데마시아",
   "녹서스",
@@ -113,6 +115,167 @@ function portrait(e) {
 }
 function itemById(id) {
   return entries.find((entry) => entry.kind === "item" && entry.id === String(id));
+}
+const RUNE_IMAGE_BASE = "https://ddragon.leagueoflegends.com/cdn/img/";
+const runeText = (value) => String(value || "").replaceAll("\\n", "\n");
+function runePortrait(rune, className = "rune-icon") {
+  const img = portrait({
+    image: `${RUNE_IMAGE_BASE}${rune.icon}`,
+    name: rune.name,
+  });
+  img.className = className;
+  img.alt = rune.name;
+  return img;
+}
+function runeByKey(pathKey, runeKey) {
+  const path = (runesData.paths || []).find((item) => item.key === pathKey);
+  if (!path) return null;
+  for (const [slotIndex, slot] of path.slots.entries()) {
+    const rune = slot.runes.find((item) => item.key === runeKey);
+    if (rune) return { path, slot, slotIndex, rune };
+  }
+  return null;
+}
+const runeSlotTips = [
+  "게임에서 가장 크게 느껴지는 방향을 정해요. 내 챔피언이 이 효과를 자주 켤 수 있는지 먼저 봐요.",
+  "라인에서 자주 필요한 공격, 회복, 시야 같은 도움을 골라요.",
+  "처치에 참여하거나 시간이 지나면서 조금씩 쌓이는 힘을 골라요.",
+  "마지막 빈틈을 채우는 줄이에요. 더 세게 때릴지, 더 오래 버틸지 생각해 봐요.",
+];
+const runePathOrder = ["Precision", "Domination", "Sorcery", "Resolve", "Inspiration"];
+const orderedRunePaths = () =>
+  [...(runesData.paths || [])].sort(
+    (a, b) =>
+      (runePathOrder.indexOf(a.key) < 0 ? 99 : runePathOrder.indexOf(a.key)) -
+      (runePathOrder.indexOf(b.key) < 0 ? 99 : runePathOrder.indexOf(b.key)),
+  );
+function runePickTip(path, slotIndex) {
+  return `${path.name}의 ${path.slots[slotIndex]?.label || "특성"}이에요. ${runeSlotTips[slotIndex] || "내가 하려는 플레이와 효과가 잘 맞는지 살펴봐요."}`;
+}
+function runeCard(path, slot, slotIndex, rune) {
+  const card = text("button", "", "rune-card");
+  card.type = "button";
+  card.setAttribute("aria-label", `${path.name} · ${rune.name} 특성 자세히 보기`);
+  card.append(
+    text("div", "", "rune-card-head"),
+    text("p", runeText(rune.summary), "rune-summary"),
+    text("span", "자세한 설명 보기 ↗", "rune-card-action"),
+  );
+  const head = card.firstElementChild;
+  head.append(runePortrait(rune), text("span", rune.name));
+  card.onclick = () => {
+    lastFocus = card;
+    location.hash = `rune/${path.key}/${rune.key}`;
+  };
+  return card;
+}
+function renderRunes(q) {
+  const terms = q.split(/\s+/).filter(Boolean);
+  const availablePaths = orderedRunePaths().filter(
+    (path) => selectedRunePath === "all" || path.key === selectedRunePath,
+  );
+  const groups = availablePaths
+    .map((path) => ({
+      path,
+      slots: path.slots
+        .map((slot, slotIndex) => ({
+          ...slot,
+          slotIndex,
+          runes: slot.runes.filter((rune) =>
+            terms.every((term) =>
+              norm(
+                [
+                  path.name,
+                  path.key,
+                  path.subtitle,
+                  path.easy,
+                  rune.name,
+                  rune.key,
+                  rune.summary,
+                  rune.detail,
+                ].join(" "),
+              ).includes(term),
+            ),
+          ),
+        }))
+        .filter((slot) => slot.runes.length),
+    }))
+    .filter((group) => group.slots.length);
+  const runeCount = groups.reduce(
+    (count, group) =>
+      count + group.slots.reduce((slotCount, slot) => slotCount + slot.runes.length, 0),
+    0,
+  );
+  const pathLabel = `${groups.length}개 마스터리`;
+  $("#count").textContent = `${runeCount}개 특성 · ${pathLabel}`;
+  $("#grid").replaceChildren();
+
+  const intro = text("div", "", "rune-intro");
+  intro.append(
+    text(
+      "p",
+      "예전에는 마스터리라고도 불렀어요. 게임을 어떻게 풀어갈지 정하는 특성이에요.",
+    ),
+    text(
+      "p",
+      "처치 관여는 킬을 직접 하거나 도운 것, 적응형 피해는 공격력·주문력 중 더 잘 맞는 쪽으로 바뀌는 피해예요.",
+      "rune-intro-note",
+    ),
+  );
+  $("#grid").append(intro);
+  const pathTabs = text("div", "", "rune-path-tabs");
+  pathTabs.setAttribute("role", "group");
+  pathTabs.setAttribute("aria-label", "특성 마스터리 선택");
+  const allPaths = [{ key: "all", name: "전체", easy: "" }, ...orderedRunePaths()];
+  for (const path of allPaths) {
+    const button = text("button", path.name);
+    button.type = "button";
+    button.setAttribute("aria-pressed", String(selectedRunePath === path.key));
+    button.onclick = () => {
+      selectedRunePath = path.key;
+      render();
+    };
+    pathTabs.append(button);
+  }
+  $("#grid").append(pathTabs);
+
+  for (const { path, slots } of groups) {
+    const section = text("section", "", "rune-path");
+    const header = text("div", "", "rune-path-head");
+    header.append(
+      runePortrait({ name: path.name, icon: path.icon }, "rune-path-icon"),
+      text("div", "", "rune-path-heading"),
+    );
+    const heading = header.lastElementChild;
+    heading.append(text("h3", path.name), text("span", path.subtitle, "rune-path-subtitle"));
+    section.append(header, text("p", path.easy, "rune-path-copy"));
+    const slotGrid = text("div", "", "rune-slot-list");
+    for (const slot of slots) {
+      const slotBlock = text("div", "", "rune-slot");
+      slotBlock.append(
+        text("h4", slot.label),
+        text("p", runePickTip(path, slot.slotIndex), "rune-slot-help"),
+      );
+      const choices = text("div", "", "rune-choice-grid");
+      for (const rune of slot.runes) choices.append(runeCard(path, slot, slot.slotIndex, rune));
+      slotBlock.append(choices);
+      slotGrid.append(slotBlock);
+    }
+    section.append(slotGrid);
+    $("#grid").append(section);
+  }
+  if (!groups.length)
+    $("#grid").append(
+      text("p", "찾는 특성이 없어요. 다른 이름이나 마스터리로 검색해 보세요.", "empty"),
+    );
+  const note = text("div", "", "rune-source-note");
+  note.append(text("p", runesData.notice || "특성 효과는 패치에 따라 달라질 수 있어요."));
+  const source = text("a", `${runesData.sourceTitle || "Data Dragon 공식 데이터"} · ${runesData.patch || patch} ↗`);
+  source.href = runesData.sourceUrl;
+  source.target = "_blank";
+  source.rel = "noopener noreferrer";
+  note.append(source);
+  $("#grid").append(note);
 }
 function recipeCard(item, current = false) {
   const card = text(
@@ -342,6 +505,19 @@ function cardEl(e) {
     location.hash = `${e.kind}/${e.id}`;
   });
   const wrap = text("div", "", "card-wrap");
+  const cardView =
+    e.kind === "champion"
+      ? text("button", "캐릭터 카드 보기", "card-view-button")
+      : null;
+  if (cardView) {
+    cardView.type = "button";
+    cardView.setAttribute("aria-label", `${e.name} 캐릭터 카드 보기`);
+    cardView.onclick = (event) => {
+      event.stopPropagation();
+      lastFocus = cardView;
+      location.hash = `card/champion/${e.id}`;
+    };
+  }
   const fav = text("button", isFav(e) ? "★" : "☆", `fav${isFav(e) ? " on" : ""}`);
   fav.type = "button";
   fav.title = "즐겨찾기";
@@ -355,7 +531,9 @@ function cardEl(e) {
     fav.setAttribute("aria-pressed", on);
     if (kind === "favorite") render();
   };
-  wrap.append(card, fav);
+  wrap.append(card);
+  if (cardView) wrap.append(cardView);
+  wrap.append(fav);
   return wrap;
 }
 
@@ -529,6 +707,195 @@ function arenaAugmentSection(champion) {
   source.rel = "noopener noreferrer";
   section.append(source);
   return section;
+}
+function characterCardSection(title, className = "") {
+  const section = text("section", "", `character-card-section ${className}`.trim());
+  section.append(text("h3", title));
+  return section;
+}
+function characterCardSkillCopy(skill) {
+  return skill.easy || skill.original || "아직 쉽게 풀어 쓴 설명을 준비하고 있어요.";
+}
+function characterCardItem(item) {
+  const resolved = typeof item === "string" ? itemById(item) : item;
+  if (!resolved?.name) return null;
+  const itemCard = text("div", "", "character-card-item");
+  const icon = portrait(resolved);
+  icon.className = "character-card-item-icon";
+  icon.alt = resolved.name;
+  itemCard.append(icon, text("span", resolved.name, "character-card-item-name"));
+  return itemCard;
+}
+function renderCharacterCard(champion) {
+  const mount = $("#character-card");
+  mount.replaceChildren();
+  const article = text("article", "", "character-card");
+  article.setAttribute("aria-labelledby", "character-card-title");
+
+  const hero = text("header", "", "character-card-hero");
+  const identity = text("div", "", "character-card-identity");
+  identity.append(
+    text("p", "CHAMPION CARD · 5살도 알아듣게", "character-card-kicker"),
+    text("h2", champion.name),
+    text("p", champion.subtitle || "챔피언", "character-card-subtitle"),
+  );
+  identity.lastElementChild.previousElementSibling.id = "character-card-title";
+  if (champion.roles?.length) {
+    const roles = text("div", "", "character-card-roles");
+    champion.roles.forEach((role) => roles.append(text("span", role, "character-card-role")));
+    identity.append(roles);
+  }
+  const heroImage = portrait(champion);
+  heroImage.className = "character-card-portrait";
+  heroImage.alt = champion.name;
+  hero.append(identity, heroImage);
+
+  const quick = characterCardSection("한눈에 보기", "character-card-quick-section");
+  quick.append(
+    text("p", "이 친구는 무엇을 잘할까요? 아래 설명을 읽으면 바로 감이 와요.", "character-card-help"),
+  );
+  const quickGrid = text("div", "", "character-card-quick");
+  for (const [title, value] of [
+    ["어떤 친구인가요?", champion.summary],
+    ["어떻게 움직이나요?", champion.analogy || champion.tip],
+  ]) {
+    if (!value) continue;
+    const box = text("div", "", "character-card-quick-box");
+    box.append(text("h4", title), text("p", value));
+    quickGrid.append(box);
+  }
+  if (champion.tip && champion.analogy) {
+    const box = text("div", "", "character-card-quick-box");
+    box.append(text("h4", "처음 기억할 것", "character-card-tip-title"), text("p", champion.tip));
+    quickGrid.append(box);
+  }
+  if (champion.caution) {
+    const box = text("div", "", "character-card-quick-box character-card-caution");
+    box.append(text("h4", "조심할 것"), text("p", champion.caution));
+    quickGrid.append(box);
+  }
+  quick.append(quickGrid);
+
+  const skills = characterCardSection("스킬 설명", "character-card-skills");
+  skills.append(
+    text("p", "P는 자동으로 도와주는 힘이에요. Q W E R은 키를 눌러 써요.", "character-card-help"),
+  );
+  const skillGrid = text("div", "", "character-card-skill-grid");
+  const allSkills = [];
+  if (champion.passive) allSkills.push({ key: "P", name: champion.passive.name, image: champion.passive.image, easy: `평소에도 자동으로 도움을 주는 힘이에요. ${String(champion.passive.original || "").replace(/\s+/g, " ").trim()}` });
+  allSkills.push(...(champion.skills || []));
+  allSkills.forEach((skill) => {
+    const skillCard = text("article", "", "character-card-skill");
+    const head = text("div", "", "character-card-skill-head");
+    const icon = portrait(skill);
+    icon.className = "character-card-skill-icon";
+    icon.alt = `${skill.key} ${skill.name}`;
+    const key = text("span", skill.key, "character-card-skill-key");
+    const name = text("strong", skill.name, "character-card-skill-name");
+    head.append(icon, key, name);
+    skillCard.append(head, text("p", skill.key === "P" ? skill.easy : characterCardSkillCopy(skill), "character-card-skill-copy"));
+    skillGrid.append(skillCard);
+  });
+  skills.append(skillGrid);
+
+  const counterData = championCounterData.champions?.[champion.id];
+  const counters = characterCardSection("카운터 픽", "character-card-counters");
+  counters.append(
+    text("p", "이 챔피언을 만나면 힘들 수 있어요. 상대의 약점을 찌르는 친구들을 골라 봤어요.", "character-card-help"),
+  );
+  const counterGrid = text("div", "", "character-card-counter-grid");
+  for (const counter of counterData?.counters || []) {
+    const target = championById(counter.id);
+    if (!target) continue;
+    const counterCard = text("article", "", "character-card-counter");
+    const head = text("div", "", "character-card-counter-head");
+    const icon = portrait(target);
+    icon.className = "character-card-counter-icon";
+    icon.alt = target.name;
+    head.append(icon, text("strong", target.name, "character-card-counter-name"));
+    counterCard.append(
+      head,
+      text("p", counter.reason || "상대의 약점을 잘 찌를 수 있어요.", "character-card-counter-reason"),
+      text("p", `초보자 포인트 · ${counter.tip || "상대의 핵심 스킬이 빠진 순간을 노려 보세요."}`, "character-card-counter-tip"),
+    );
+    counterGrid.append(counterCard);
+  }
+  if (!counterGrid.children.length)
+    counterGrid.append(text("p", "아직 대표 카운터 자료를 준비하고 있어요.", "character-card-empty"));
+  counters.append(counterGrid);
+
+  const builds = characterCardSection("추천 아이템", "character-card-builds");
+  builds.append(
+    text("p", "처음에는 아래 아이템부터 살펴보면 좋아요. 게임 모드에 따라 조금 달라질 수 있어요.", "character-card-help"),
+  );
+  const buildLabels = {
+    start: "시작 아이템",
+    boots: "신발",
+    core: "핵심 아이템",
+    situational: "상황에 따라",
+  };
+  const buildModes = [
+    ["rift", "소환사의 협곡"],
+    ["aram", "칼바람 나락"],
+  ];
+  let buildCount = 0;
+  for (const [mode, modeLabel] of buildModes) {
+    const rows = champion.builds?.[mode];
+    if (!rows) continue;
+    const modeTitle = text("h4", modeLabel, "character-card-mode-title");
+    builds.append(modeTitle);
+    for (const [key, items] of Object.entries(rows)) {
+      if (!items?.length) continue;
+      const row = text("div", "", "character-card-build");
+      row.append(text("strong", buildLabels[key] || key, "character-card-build-label"));
+      const itemList = text("div", "", "character-card-item-list");
+      items.forEach((item) => {
+        const itemCard = characterCardItem(item);
+        if (itemCard) itemList.append(itemCard);
+      });
+      if (!itemList.children.length) continue;
+      row.append(itemList);
+      builds.append(row);
+      buildCount += itemList.children.length;
+    }
+  }
+  if (!buildCount)
+    builds.append(text("p", "아직 추천 아이템 자료를 준비하고 있어요.", "character-card-empty"));
+
+  article.append(hero, quick, skills, counters, builds);
+  article.append(text("p", `자료 버전 ${patch} · 쉬운 설명과 공개 데이터로 만든 카드`, "character-card-footer"));
+  mount.append(article);
+}
+function showDictionary() {
+  $("#intro").hidden = false;
+  $("#dictionary").hidden = false;
+  $("#data-note").hidden = false;
+  $("#character-card-page").hidden = true;
+  document.body.classList.remove("character-card-mode");
+  document.title = "롤린이 백과사전 — 5살도 이해하는 쉬운 롤 설명";
+}
+function showCharacterCard(champion) {
+  if ($("#detail").open) $("#detail").close();
+  $("#intro").hidden = true;
+  $("#dictionary").hidden = true;
+  $("#data-note").hidden = true;
+  $("#character-card-page").hidden = false;
+  document.body.classList.add("character-card-mode");
+  document.title = `${champion.name} 캐릭터 카드 · 롤린이 백과사전`;
+  renderCharacterCard(champion);
+  window.scrollTo({ top: 0, behavior: "auto" });
+}
+function syncRoute() {
+  const [type, scope, id] = location.hash.slice(1).split("/");
+  if (type === "card" && scope === "champion") {
+    const champion = championById(id);
+    if (champion) {
+      showCharacterCard(champion);
+      return;
+    }
+  }
+  showDictionary();
+  openDetail();
 }
 function duoChampionButton(id, role, compact = false) {
   const champion = championById(id);
@@ -1028,6 +1395,10 @@ function render() {
     renderBotDuos(q);
     return;
   }
+  if (kind === "runes") {
+    renderRunes(q);
+    return;
+  }
   if (kind === "easter") {
     renderEasterEggs(q);
     return;
@@ -1233,8 +1604,63 @@ function render() {
   }
   scheduleCardAlignment();
 }
+function openRuneDetail(pathKey, runeKey) {
+  const match = runeByKey(pathKey, runeKey);
+  if (!match) {
+    if ($("#detail").open) $("#detail").close();
+    return;
+  }
+  const { path, slot, slotIndex, rune } = match;
+  const content = $("#detail-content");
+  content.replaceChildren();
+  const head = text("div", "", "detail-head rune-detail-head");
+  const profile = text("div", "", "detail-profile");
+  profile.append(runePortrait(rune, "detail-rune-icon"));
+  const title = text("div", "");
+  title.append(
+    text("span", `특성 · ${path.name}`),
+    text("h2", rune.name),
+    text("span", `${slot.label} · ${path.subtitle}`),
+  );
+  head.append(profile, title);
+  content.append(head, text("p", rune.summary, "summary"));
+
+  const pathBlock = text("section", "", "detail-block rune-detail-path");
+  pathBlock.append(
+    text("h3", `${path.name} 마스터리`),
+    text("p", path.easy),
+  );
+  content.append(pathBlock);
+
+  const tipBlock = text("section", "", "detail-block");
+  tipBlock.append(text("h3", "이렇게 골라 보세요"), text("p", runePickTip(path, slotIndex)));
+  content.append(tipBlock);
+
+  const details = document.createElement("details");
+  details.className = "rune-original";
+  details.append(
+    text("summary", "공식 특성 설명"),
+    text("p", runeText(rune.detail)),
+  );
+  content.append(details);
+
+  const source = text("div", "", "source");
+  source.append(text("p", `Riot Games Data Dragon 공식 데이터 · 설명 기준 ${runesData.patch || patch}`));
+  const link = text("a", "특성 원문 데이터 보기 ↗");
+  link.href = runesData.sourceUrl;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  source.append(link);
+  content.append(source);
+  if (!$("#detail").open) $("#detail").showModal();
+  content.scrollTop = 0;
+}
 function openDetail() {
-  const [type, id] = location.hash.slice(1).split("/");
+  const [type, id, extra] = location.hash.slice(1).split("/");
+  if (type === "rune") {
+    openRuneDetail(id, extra);
+    return;
+  }
   const e = entries.find((e) => e.kind === type && e.id === id);
   if (!e) {
     if ($("#detail").open) $("#detail").close();
@@ -1670,13 +2096,14 @@ $("#detail").addEventListener("click", (e) => {
       close();
   }
 });
-window.addEventListener("hashchange", openDetail);
+window.addEventListener("hashchange", syncRoute);
 $("#search").addEventListener("input", render);
 $("#easy-only").addEventListener("change", render);
 const KIND_TITLE = {
   favorite: "내 즐겨찾기",
   champion: "챔피언 둘러보기",
   item: "아이템 둘러보기",
+  runes: "특성 둘러보기",
   glossary: "게임 속 말, 쉽게 알아보기",
   regions: "지역별 이야기",
   botduos: "프로 봇 듀오 전체 목록",
@@ -1686,6 +2113,7 @@ const KIND_PLACEHOLDER = {
   favorite: "즐겨찾기한 이름을 찾아보세요",
   champion: "궁금한 챔피언 이름을 찾아보세요",
   item: "궁금한 아이템 이름을 찾아보세요",
+  runes: "예: 감전, 콩콩이, 결의",
   glossary: "예: 갱, CS, 노플, 프리징",
   regions: "지역을 선택해 이야기를 읽어보세요",
   botduos: "예: 자야 라칸, S+, 포킹",
@@ -1693,6 +2121,10 @@ const KIND_PLACEHOLDER = {
 };
 document.querySelectorAll("[data-kind]").forEach((button) =>
   button.addEventListener("click", () => {
+    if (location.hash.startsWith("#card/")) {
+      history.replaceState(null, "", `${location.pathname}${location.search}`);
+      showDictionary();
+    }
     kind = button.dataset.kind;
     document.querySelectorAll("[data-kind]").forEach((b) => {
       const active = b === button;
@@ -1703,6 +2135,7 @@ document.querySelectorAll("[data-kind]").forEach((button) =>
     selectedInitial = "전체";
     selectedRole = "전체";
     selectedRegion = null;
+    selectedRunePath = "all";
     showTimeline = false;
     timelineRegion = "전체";
     $("#easy-only").checked = false;
@@ -1755,6 +2188,12 @@ toTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 updateToTop();
+$("#character-card-back").onclick = () => {
+  history.replaceState(null, "", `${location.pathname}${location.search}`);
+  showDictionary();
+  render();
+};
+$("#character-card-print").onclick = () => window.print();
 try {
   for (const value of ["전체", ...initials]) {
     const b = text("button", value);
@@ -1770,6 +2209,9 @@ try {
   const r = await fetch("./data/catalog.json?v=champion-review-v3");
   if (!r.ok) throw Error("load");
   const data = await r.json();
+  const runesResponse = await fetch("./data/runes.json");
+  if (!runesResponse.ok) throw Error("runes load");
+  runesData = await runesResponse.json();
   const glossaryResponse = await fetch("./data/glossary.json");
   if (!glossaryResponse.ok) throw Error("glossary load");
   glossaryEntries = await glossaryResponse.json();
@@ -1797,7 +2239,7 @@ try {
   patch = data.patch;
   $("#patch").textContent = `자료 버전 ${patch}`;
   render();
-  openDetail();
+  syncRoute();
 } catch {
   $("#patch").textContent = "자료를 불러오지 못했어요";
   $("#grid").replaceChildren(
