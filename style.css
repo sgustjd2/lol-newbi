@@ -2455,12 +2455,21 @@ dialog::backdrop {
 }
 @media (max-width: 560px) {
   .champion-counter-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 8px;
+  }
+  .champion-counter-item {
+    display: grid;
+    grid-template-columns: minmax(124px, 42%) minmax(0, 1fr);
+    align-items: start;
+    gap: 8px;
+    min-height: 54px;
   }
   .champion-counter-chip {
     gap: 7px;
     padding: 8px;
+    min-height: 54px;
   }
   .champion-counter-icon {
     width: 36px;
@@ -2468,6 +2477,11 @@ dialog::backdrop {
   }
   .champion-counter-name {
     font-size: 13px;
+  }
+  .champion-counter-reason {
+    margin: 7px 4px 0 !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
   }
   .duo-card {
     grid-column: span 1;
