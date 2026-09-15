@@ -2460,10 +2460,9 @@ dialog::backdrop {
     gap: 8px;
   }
   .champion-counter-item {
-    display: grid;
-    grid-template-columns: minmax(124px, 42%) minmax(0, 1fr);
-    align-items: start;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
     min-height: 54px;
   }
   .champion-counter-chip {
@@ -2479,7 +2478,7 @@ dialog::backdrop {
     font-size: 13px;
   }
   .champion-counter-reason {
-    margin: 7px 4px 0 !important;
+    margin: 7px 8px 10px !important;
     font-size: 13px !important;
     line-height: 1.5 !important;
   }
