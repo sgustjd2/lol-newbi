@@ -148,7 +148,7 @@ function recipeFlow(item, target, direction = "forward") {
   flow.append(text("span", "→", "recipe-arrow"), recipeCard(item, true));
   return flow;
 }
-const norm = (s) => s.normalize("NFKC").replace(/\s+/g, "").toLowerCase();
+const norm = (s) => String(s ?? "").normalize("NFKC").replace(/\s+/g, "").toLowerCase();
 const relationMeta = {
   hostile: { label: "적대", description: "서로 맞서거나 경계하는 관계" },
   friendly: { label: "친화", description: "서로 돕거나 가까운 관계" },
@@ -324,8 +324,8 @@ function cardEl(e) {
     text(
       "span",
       e.summary
-        ? e.sourceType === "notebooklm"
-          ? "NotebookLM · 검수 완료"
+        ? e.reviewed === true
+          ? "자료 검수 완료"
           : "쉬운 설명 · 편집 예시"
         : "쉬운 설명 준비 중",
       `badge ${e.summary ? "" : "pending"}`,
@@ -447,7 +447,7 @@ function championCounterSection(champion) {
   section.append(
     text(
       "p",
-      "상대할 때 자주 선택하는 챔피언이에요. 아이콘을 누르면 각 챔피언의 스킬 상호작용을 한 줄로 볼 수 있어요.",
+      "상대하기 좋은 챔피언을 세 명 보여줘요. 아이콘을 누르면 왜 좋은지와 초보자용 활용 포인트를 쉽게 볼 수 있어요.",
       "counter-help",
     ),
   );
@@ -466,20 +466,28 @@ function championCounterSection(champion) {
     icon.className = "champion-counter-icon";
     icon.alt = target.name;
     button.append(icon, text("span", target.name, "champion-counter-name"));
-    const reason = text("p", counter.reason, "champion-counter-reason");
-    reason.hidden = true;
+    const detail = text("div", "", "champion-counter-detail");
+    detail.hidden = true;
+    detail.append(
+      text("p", `카운터 이유 · ${counter.reason}`, "champion-counter-reason"),
+      text(
+        "p",
+        `초보자 포인트 · ${counter.tip || "핵심 스킬이 빠진 순간을 노리면 장점을 살리기 쉬워요."}`,
+        "champion-counter-tip",
+      ),
+    );
     button.onclick = () => {
-      if (openReason && openReason !== reason) {
+      if (openReason && openReason !== detail) {
         openReason.hidden = true;
         openButton?.setAttribute("aria-expanded", "false");
       }
-      const expanded = reason.hidden;
-      reason.hidden = !expanded;
+      const expanded = detail.hidden;
+      detail.hidden = !expanded;
       button.setAttribute("aria-expanded", String(expanded));
-      openReason = expanded ? reason : null;
+      openReason = expanded ? detail : null;
       openButton = expanded ? button : null;
     };
-    item.append(button, reason);
+    item.append(button, detail);
     list.append(item);
   }
   section.append(list);
@@ -490,6 +498,33 @@ function championCounterSection(champion) {
     "counter-source",
   );
   source.href = data.sourceUrl;
+  source.target = "_blank";
+  source.rel = "noopener noreferrer";
+  section.append(source);
+  return section;
+}
+function arenaAugmentSection(champion) {
+  if (champion.kind !== "champion" || !champion.arena?.recommendations?.length)
+    return null;
+
+  const section = text("section", "", "detail-block arena-augments");
+  section.append(text("h3", `${champion.arena.mode || "증바람"} 추천 증강 카드`));
+  section.append(text("p", champion.arena.notice, "arena-augment-help"));
+  section.append(text("p", champion.arena.summary, "arena-augment-summary"));
+  const list = text("div", "", "arena-augment-list");
+  for (const recommendation of champion.arena.recommendations) {
+    const card = text("article", "", "arena-augment-card");
+    const head = text("div", "", "arena-augment-head");
+    head.append(
+      text("span", recommendation.category || "대표 카드", "arena-augment-category"),
+      text("strong", recommendation.name, "arena-augment-name"),
+    );
+    card.append(head, text("p", recommendation.reason, "arena-augment-reason"));
+    list.append(card);
+  }
+  section.append(list);
+  const source = text("a", `${champion.arena.sourceTitle} ↗`, "arena-augment-source");
+  source.href = champion.arena.sourceUrl;
   source.target = "_blank";
   source.rel = "noopener noreferrer";
   section.append(source);
@@ -1259,6 +1294,8 @@ function openDetail() {
   }
   const counters = championCounterSection(e);
   if (counters) content.append(counters);
+  const arenaAugments = arenaAugmentSection(e);
+  if (arenaAugments) content.append(arenaAugments);
   if (e.gold !== undefined)
     content.append(
       text("p", `상점 가격 · ${e.gold.toLocaleString("ko-KR")} 골드`, "price"),
@@ -1416,7 +1453,7 @@ function openDetail() {
           more.append(
             text(
               "p",
-              `이 스킬은 이름(${skill.name})에 형태·조건이 두 가지 있어요. 위 계수는 그중 한 조건만 확인된 값일 수 있고, 다른 조건의 계수는 아직 확인되지 않았어요.`,
+              `이 스킬은 형태·강화·재사용 조건에 따라 효과가 달라져요${skill.name.includes(" / ") ? ` (${skill.name})` : ""}. 위 계수는 일부 조건만 확인된 값일 수 있으니, 위 쉬운 설명과 공식 설명에서 조건을 함께 확인하세요.`,
               "cc-condition",
             ),
           );
@@ -1579,7 +1616,7 @@ function openDetail() {
     text(
       "p",
       e.summary
-        ? `${e.sourceType === "notebooklm" ? "NotebookLM · 검수 완료" : "편집 예시 · NotebookLM 검수 전"} · 설명 기준 ${e.patch || patch}`
+        ? `${e.reviewed === true ? "자료 검수 완료" : "편집 예시 · 검수 전"} · 설명 기준 ${e.patch || patch}`
         : "Data Dragon 공식 원문 · 쉬운 설명 준비 중",
     ),
   );
@@ -1600,7 +1637,7 @@ function openDetail() {
   link.rel = "noopener noreferrer";
   details.append(link);
   source.append(details);
-  if (e.sourceType === "notebooklm") {
+  if (e.reviewed === true && e.explanationSourceUrl) {
     const citation = text("a", "설명 출처: " + e.sourceTitle);
     citation.href = e.explanationSourceUrl;
     citation.target = "_blank";
@@ -1730,7 +1767,7 @@ try {
     };
     $("#initials").append(b);
   }
-  const r = await fetch("./data/catalog.json");
+  const r = await fetch("./data/catalog.json?v=champion-review-v2");
   if (!r.ok) throw Error("load");
   const data = await r.json();
   const glossaryResponse = await fetch("./data/glossary.json");

@@ -15,6 +15,7 @@ const currentNote = (entry) => {
   const note = noteByKey.get(`${entry.kind}/${entry.id}`);
   if (!note || note.patch !== patch) return null;
   if (note.sourceType === "notebooklm" && note.reviewed === true) return note;
+  if (note.sourceType === "public" && note.reviewed === true) return note;
   if (note.sourceType === "editorial") return note;
   return null;
 };
@@ -23,6 +24,16 @@ const champions = entries.filter((entry) => entry.kind === "champion");
 const items = entries.filter((entry) => entry.kind === "item");
 const missingChampions = champions.filter((entry) => !currentNote(entry));
 const missingItems = items.filter((entry) => !currentNote(entry));
+const reviewedChampions = champions.filter((entry) => {
+  const note = noteByKey.get(`champion/${entry.id}`);
+  return note?.patch === patch && note.reviewed === true;
+});
+const notebookReviewedChampions = reviewedChampions.filter((entry) =>
+  noteByKey.get(`champion/${entry.id}`)?.sourceType === "notebooklm",
+).length;
+const publicReviewedChampions = reviewedChampions.filter((entry) =>
+  noteByKey.get(`champion/${entry.id}`)?.sourceType === "public",
+).length;
 const pendingReview = notes.filter(
   (note) =>
     note.patch === patch &&
@@ -75,6 +86,9 @@ const report = {
     items: items.length,
     currentEntityNotes:
       champions.length - missingChampions.length + items.length - missingItems.length,
+    reviewedChampions: reviewedChampions.length,
+    notebookReviewedChampions,
+    publicReviewedChampions,
     missingChampions: missingChampions.length,
     missingItems: missingItems.length,
     pendingNotebookReview: pendingReview.length,
@@ -117,11 +131,12 @@ const markdown = [
   "## 현황",
   "",
   `- 챔피언: ${report.counts.champions}개 중 쉬운 카드 설명 누락 ${report.counts.missingChampions}개`,
+  `- 챔피언 검수 완료: ${report.counts.reviewedChampions}개 (NotebookLM ${report.counts.notebookReviewedChampions}개 · 공개 자료 ${report.counts.publicReviewedChampions}개)`,
   `- 아이템: ${report.counts.items}개 중 쉬운 카드 설명 누락 ${report.counts.missingItems}개`,
   `- NotebookLM 검수 대기 항목: ${report.counts.pendingNotebookReview}개`,
   `- Q/W/E/R 편집 설명이 하나라도 없는 챔피언: ${report.counts.championsWithMissingSkillNotes}개 (${report.counts.missingSkillSlots}슬롯)`,
   "",
-  "Claude 세션은 이 보고서와 JSON을 읽고, 아래의 공개 프롬프트에 따라 작은 묶음으로 조사합니다.",
+  "챔피언은 공개 자료 전수 검증이 끝났으며, 아이템과 추가 계수 검수만 아래 작업 흐름으로 이어갑니다.",
   "",
   ...table("쉬운 설명이 없는 챔피언", report.missingChampions),
   ...table("쉬운 설명이 없는 아이템", report.missingItems),
@@ -139,10 +154,10 @@ const markdown = [
     : ["모든 챔피언에 Q/W/E/R 편집 설명이 있습니다.", ""]),
   "## 다음 실행",
   "",
-  "1. `docs/claude-easy-explanations.md`를 읽고 NotebookLM에서 챔피언 8개 또는 아이템 20개씩 수집합니다.",
-  "2. 근거 문장과 Riot 공식 페이지를 대조한 항목만 `reviewed: true`로 저장합니다.",
+  "1. `docs/claude-easy-explanations.md`를 읽고 NotebookLM에서 아이템 20개씩 수집합니다.",
+  "2. 근거 문장과 공개 공식 페이지를 대조한 항목만 `reviewed: true`로 저장합니다.",
   "3. `npm run import -- private/notebooklm-batch-XX.json` → `npm run build` → `npm test` 순서로 반영합니다.",
-  "4. 스킬 설명은 `data/skill-explanations.json`의 챔피언별 Q/W/E/R 배열에 같은 순서로 반영합니다.",
+  "4. 챔피언 공개 페이지 연결을 다시 확인할 때는 `npm run verify:public`을 실행합니다.",
   "",
 ].join("\n");
 

@@ -5,6 +5,56 @@ export function labelForCalcKey(key) {
   if (/heal/i.test(key)) return "회복";
   return null;
 }
+
+// Some skills change without putting both forms in the displayed skill name.
+// Keep this list explicit so a patch refresh cannot silently hide an alternate
+// form just because Riot renamed the visible spell label.
+export const variantSkillKeys = {
+  Aphelios: ["Q", "W", "E", "R"],
+  AurelionSol: ["R"],
+  Ambessa: ["Q"],
+  Alistar: ["E"],
+  Belveth: ["R"],
+  Briar: ["W"],
+  Elise: ["Q", "W", "E", "R"],
+  Fizz: ["E"],
+  Gnar: ["Q", "W", "E", "R"],
+  Heimerdinger: ["R"],
+  Hwei: ["Q", "W", "E"],
+  Jayce: ["Q", "W", "E", "R"],
+  Kaisa: ["Q", "W", "E"],
+  Karma: ["Q", "W", "E"],
+  Kennen: ["E"],
+  Kayn: ["Q", "W", "E", "R"],
+  Khazix: ["Q", "W", "E", "R"],
+  LeeSin: ["Q", "W"],
+  KSante: ["Q", "W", "E", "R"],
+  Neeko: ["R"],
+  Nidalee: ["Q", "W", "E", "R"],
+  Qiyana: ["Q", "W"],
+  RekSai: ["Q", "W", "E"],
+  Renekton: ["Q", "W", "E", "R"],
+  Rell: ["W"],
+  Rengar: ["Q", "W", "E"],
+  Riven: ["Q", "R"],
+  Rumble: ["Q", "W", "E"],
+  Shyvana: ["Q", "W", "E", "R"],
+  Smolder: ["Q"],
+  Sylas: ["E"],
+  Swain: ["R"],
+  Syndra: ["Q", "W", "E", "R"],
+  Udyr: ["Q", "W", "E", "R"],
+  Viktor: ["Q", "W", "E", "R"],
+  Vladimir: ["Q"],
+  Yunara: ["Q", "W", "E", "R"],
+};
+
+export function isVariantSkill(championId, skill) {
+  return (
+    skill.name.includes(" / ") ||
+    variantSkillKeys[championId]?.includes(skill.key) === true
+  );
+}
 export function parseFormula(calc, spell, ranks) {
   if (
     calc.__type !== "GameCalculation" ||
@@ -57,10 +107,11 @@ const ccDefinitions = [
   ["침묵", /침묵/, "스킬 사용을 막아요. 이동과 기본 공격은 가능해요."],
   [
     "둔화",
-    /둔화|이동 속도를 (?:느리|늦)|속도가 느려|속도를 늦|이동 속도를 훔/,
+    /둔화|이동 속도를 (?:느리|늦|감소)|속도가 느려|속도를 늦|이동 속도를 훔/,
     "걷는 속도를 느리게 해요.",
   ],
-  ["공중에 띄우기", /공중으로|공중에 띄/, "공중으로 띄워 잠깐 행동을 막아요."],
+  // "공중으로 도약/뛰어오름"은 시전자의 이동이므로 적 제어기로 세지 않는다.
+  ["공중에 띄우기", /공중(?:으로|에)\s*띄/, "공중으로 띄워 잠깐 행동을 막아요."],
   ["밀어내기", /밀쳐|밀어내|밀어냅/, "상대의 위치를 뒤로 밀어요."],
   ["끌어오기", /끌어당|끌어옵|끌어오/, "상대의 위치를 강제로 당겨요."],
   ["공포", /공포/, "겁에 질려 잠깐 도망가게 해요."],

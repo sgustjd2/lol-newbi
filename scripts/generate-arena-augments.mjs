@@ -1,0 +1,203 @@
+import { readFile, writeFile } from "node:fs/promises";
+
+const catalog = JSON.parse(await readFile("data/catalog.json", "utf8"));
+const champions = catalog.entries.filter((entry) => entry.kind === "champion");
+
+const presets = {
+  fighter: {
+    style: "근접 전투형",
+    focus: "붙어서 오래 싸우는 장점을 키우는 방향",
+    recommendations: [
+      { name: "거인 학살자", category: "기동·공격", reason: "접근에 필요한 기동력과 공격 압박을 함께 챙겨요." },
+      { name: "신비한 주먹", category: "스킬 회전", reason: "기본 공격을 맞힐 때 스킬을 더 자주 돌려 교환을 이어가요." },
+      { name: "강타자", category: "생존", reason: "근접 교환에서 한 번 더 버티며 다음 스킬을 쓸 시간을 벌어요." },
+    ],
+  },
+  assassin: {
+    style: "기습 암살형",
+    focus: "짧게 파고들어 핵심 대상을 빠르게 끊는 방향",
+    recommendations: [
+      { name: "검무", category: "기습", reason: "대상 지정 불가 상태로 파고들어 한 번에 접근할 기회를 만들어요." },
+      { name: "신비한 주먹", category: "스킬 회전", reason: "평타를 섞을 때 스킬 대기시간을 줄여 재진입이 쉬워져요." },
+      { name: "거인 학살자", category: "기동·공격", reason: "빠르게 거리를 좁히고 물몸 대상에게 압박을 이어가요." },
+    ],
+  },
+  mage: {
+    style: "스킬 포킹형",
+    focus: "스킬을 여러 번 맞히며 거리를 유지하는 방향",
+    recommendations: [
+      { name: "극악무도", category: "성장", reason: "스킬을 맞힐 때마다 능력치가 쌓여 긴 게임에서 화력이 커져요." },
+      { name: "보석 건틀릿", category: "폭발 피해", reason: "스킬 한 번의 큰 피해를 노리는 마법사에게 잘 맞아요." },
+      { name: "유레카", category: "주문력", reason: "주문력을 올릴수록 스킬 피해와 견제력이 함께 좋아져요." },
+    ],
+  },
+  marksman: {
+    style: "원거리 지속 화력형",
+    focus: "안전한 거리에서 평타와 스킬을 계속 맞히는 방향",
+    recommendations: [
+      { name: "양손잡이", category: "평타 강화", reason: "기본 공격을 중심으로 싸우는 원거리 딜러의 지속 화력을 키워요." },
+      { name: "신비한 주먹", category: "스킬 회전", reason: "평타를 많이 칠수록 이동기와 공격 스킬을 다시 쓰기 쉬워져요." },
+      { name: "거인 학살자", category: "기동·공격", reason: "거리를 벌리고 움직이면서 공격하는 운영을 도와줘요." },
+    ],
+  },
+  tank: {
+    style: "전방 탱킹형",
+    focus: "먼저 들어가 방해 효과를 넣고 아군 대신 맞는 방향",
+    recommendations: [
+      { name: "거석상의 용기", category: "CC·보호막", reason: "적을 움직이지 못하게 만들면 보호막을 얻어 진입 후 더 오래 버텨요." },
+      { name: "탱크 엔진", category: "체력 성장", reason: "처치 관여로 체력과 크기를 키워 앞줄에서 버티는 힘을 늘려요." },
+      { name: "거인", category: "체력", reason: "최대 체력을 크게 늘려 스킬을 한 번 더 쓰고 아군을 지킬 여유를 줘요." },
+    ],
+  },
+  support: {
+    style: "보호·군중 제어형",
+    focus: "아군을 살리고 상대의 진입을 끊는 방향",
+    recommendations: [
+      { name: "거석상의 용기", category: "CC·보호막", reason: "속박·기절 같은 방해 효과를 넣은 뒤 자신도 보호막을 얻어요." },
+      { name: "요정 마법", category: "보호·유틸", reason: "아군을 보조하는 스킬의 영향력을 키워 한타 기여도를 높여요." },
+      { name: "응급처치 키트", category: "회복·보호", reason: "회복과 보호막을 자주 쓰는 챔피언이 아군을 오래 살릴 수 있어요." },
+    ],
+  },
+};
+
+const overrides = {
+  Garen: {
+    style: "회전 전투형",
+    focus: "E 심판을 오래 돌리며 체력 교환을 이기는 방향",
+    recommendations: [
+      { name: "검무", category: "기습·무적", reason: "E 심판을 돌리는 동안 대상 지정 불가 상태로 적진을 휘저을 수 있어요." },
+      { name: "천천히, 꾸준히", category: "공격력 전환", reason: "공격 속도를 공격력으로 바꿔 E의 피해와 타수를 함께 노려요." },
+      { name: "승리를 위한 회전", category: "E 강화", reason: "회전 스킬인 E의 피해와 스킬 가속을 직접 키워요." },
+    ],
+  },
+  Galio: {
+    style: "CC 연계 탱커형",
+    focus: "도발과 광역 방해 효과로 적진 한가운데를 통제하는 방향",
+    recommendations: [
+      { name: "잔혹 행위", category: "CC 연계", reason: "도발이나 돌진으로 움직임을 막으면 추가 혜성이 떨어져요." },
+      { name: "찜솥", category: "체력 비례 피해", reason: "높은 체력으로 적 곁에 오래 머물며 주변 화상을 쌓아요." },
+      { name: "우당탕탕", category: "CC 성장", reason: "방해 효과를 넣을 때마다 능력치가 쌓여 긴 한타에서 더 단단해져요." },
+    ],
+  },
+  Gangplank: {
+    style: "화약통 폭발형",
+    focus: "화약통을 연결해 한 번에 큰 피해를 만드는 방향",
+    recommendations: [
+      { name: "기본으로 돌아가기", category: "스킬 강화", reason: "궁극기를 포기하는 대신 화약통 피해와 스킬 가속을 크게 올려요." },
+      { name: "속전속결", category: "이동 속도 피해", reason: "이동 속도 차이가 클수록 화약통 폭발 피해가 커져요." },
+      { name: "취약", category: "치명타", reason: "화약통 같은 지속 피해에도 치명타 기회를 만들어 폭발 고점을 높여요." },
+    ],
+  },
+  AurelionSol: {
+    style: "스킬 성장형 마법사",
+    focus: "별가루를 쌓으며 E와 R의 광역 영향력을 키우는 방향",
+    recommendations: [
+      { name: "극악무도", category: "주문력 성장", reason: "스킬을 계속 맞히는 아우렐리온 솔의 후반 주문력을 키워요." },
+      { name: "지옥의 전도체", category: "지속 피해", reason: "스킬을 반복해서 맞히며 적에게 지속적인 화상 압박을 줘요." },
+      { name: "마법 미사일", category: "표식 피해", reason: "표식을 남긴 적에게 비축한 피해를 터뜨려 마무리하기 쉬워요." },
+    ],
+  },
+  Irelia: {
+    style: "돌진 연계형",
+    focus: "미니언과 표식을 이용해 계속 이동하며 평타를 섞는 방향",
+    recommendations: [
+      { name: "능수능란", category: "기동력", reason: "연속 이동과 스킬 연계가 중요한 이렐리아가 교전 각도를 만들기 쉬워요." },
+      { name: "무법자의 투지", category: "근접 전투", reason: "붙어서 싸우는 동안 공격 압박을 높여 표식 연계를 마무리하기 좋아요." },
+      { name: "신비한 주먹", category: "스킬 회전", reason: "평타를 섞을 때 Q와 E를 더 자주 돌려 연속 돌진을 이어가요." },
+    ],
+  },
+  Rell: {
+    style: "탑승 전환형 탱커",
+    focus: "말을 타고 진입한 뒤 내려서 광역 CC를 넣는 방향",
+    recommendations: [
+      { name: "강타자", category: "근접 생존", reason: "몸을 던져 진입하는 렐이 CC를 넣은 뒤 버틸 시간을 벌어요." },
+      { name: "탱크 엔진", category: "체력 성장", reason: "처치 관여로 체력과 크기를 키워 탑승·보행 두 상태 모두를 보강해요." },
+      { name: "거석상의 용기", category: "CC·보호막", reason: "내려서 적을 띄우거나 묶은 뒤 보호막을 얻어 후속 CC를 이어가요." },
+    ],
+  },
+  Yunara: {
+    style: "초월 전환형 원거리 딜러",
+    focus: "초월 상태에서 바뀌는 QWER를 평타와 함께 활용하는 방향",
+    recommendations: [
+      { name: "퀘스트: 삼종신기", category: "성장·아이템", reason: "여러 핵심 아이템을 완성하며 초월 상태의 지속 화력을 키워요." },
+      { name: "양손잡이", category: "평타 강화", reason: "기본 공격과 스킬이 함께 강해지는 유나라의 긴 교전에 잘 맞아요." },
+      { name: "거석상의 용기", category: "CC·보호막", reason: "초월 상태의 방해 효과와 연계해 물몸인 원거리 딜러를 한 번 보호해요." },
+    ],
+  },
+  Nidalee: {
+    style: "폼 전환 기습형",
+    focus: "인간 폼 창과 쿠거 폼 급습을 번갈아 쓰는 방향",
+    recommendations: [
+      { name: "신비한 주먹", category: "스킬 회전", reason: "평타와 쿠거 폼 스킬을 섞어 인간·쿠거 폼의 재사용 대기시간을 줄여요." },
+      { name: "거인 학살자", category: "기동·공격", reason: "창으로 사냥 표식을 만든 뒤 쿠거 폼으로 빠르게 덮치는 흐름을 도와요." },
+      { name: "검무", category: "기습·무적", reason: "쿠거 폼으로 들어갈 때 대상 지정 불가 시간을 만들어 마무리 각을 만들어요." },
+    ],
+  },
+  Jayce: {
+    style: "무기 전환 포킹형",
+    focus: "캐논 폼으로 깎고 해머 폼으로 마무리하는 방향",
+    recommendations: [
+      { name: "양손잡이", category: "평타 강화", reason: "캐논 폼의 원거리 평타와 해머 폼의 근접 교환을 모두 활용해요." },
+      { name: "신비한 주먹", category: "스킬 회전", reason: "평타를 섞어 가속 관문과 변환 스킬을 더 자주 돌려요." },
+      { name: "거인 학살자", category: "기동·공격", reason: "캐논 폼에서 거리를 조절하고 해머 폼으로 전환해 마무리하기 좋아요." },
+    ],
+  },
+  KSante: {
+    style: "총공세 전환형 탱커",
+    focus: "기본 상태에서는 버티고 총공세에서는 공격적으로 마무리하는 방향",
+    recommendations: [
+      { name: "거석상의 용기", category: "CC·보호막", reason: "기본 상태의 이동 불가 CC를 보호막으로 바꿔 먼저 들어가기 좋아요." },
+      { name: "탱크 엔진", category: "체력 성장", reason: "총공세 전환 전의 최대 체력과 전방 탱킹을 함께 키워요." },
+      { name: "궁극기 대변혁", category: "궁극기 강화", reason: "총공세로 바뀌는 순간의 공격적인 궁극기 활용을 더 자주 노려요." },
+    ],
+  },
+  Hwei: {
+    style: "세 가지 주제 스킬형",
+    focus: "상황에 따라 파멸·평온·고통 스킬을 골라 지역을 통제하는 방향",
+    recommendations: [
+      { name: "극악무도", category: "주문력 성장", reason: "다양한 스킬을 계속 맞히는 흐웨이의 후반 주문력을 키워요." },
+      { name: "마법 미사일", category: "표식 피해", reason: "장거리 스킬로 표식을 쌓고 안전하게 추가 피해를 터뜨려요." },
+      { name: "보석 건틀릿", category: "폭발 피해", reason: "E로 묶은 뒤 Q나 W의 핵심 스킬을 크게 터뜨리는 조합이에요." },
+    ],
+  },
+};
+
+function topic(name) {
+  const last = [...name.replace(/\s/g, "")].at(-1)?.charCodeAt(0);
+  const hasFinal = last >= 0xac00 && last <= 0xd7a3 && (last - 0xac00) % 28 !== 0;
+  return `${name}${hasFinal ? "은" : "는"}`;
+}
+
+function presetFor(champion) {
+  if (overrides[champion.id]) return overrides[champion.id];
+  const tags = new Set(champion.tags);
+  if (tags.has("Tank") && tags.has("Support")) return presets.support;
+  if (tags.has("Tank")) return presets.tank;
+  if (tags.has("Support")) return presets.support;
+  if (tags.has("Assassin") && !tags.has("Marksman")) return presets.assassin;
+  if (tags.has("Marksman")) return presets.marksman;
+  if (tags.has("Mage")) return presets.mage;
+  return presets.fighter;
+}
+
+const output = {
+  mode: "증바람",
+  updatedAt: "2026-09-15",
+  sourceTitle: "나무위키 · 리그 오브 레전드/증강/챔피언별 추천 조합",
+  sourceUrl: "https://m.namu.moe/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C/%EC%A6%9D%EA%B0%95/%EC%B1%94%ED%94%BC%EB%B3%84%20%EC%B6%94%EC%B2%9C%20%EC%A1%B0%ED%95%A9",
+  notice: "증바람에서 생각해 볼 대표 증강 카드 예시예요. 매 판 제시되는 등급·카드와 아군 조합에 따라 선택이 달라지며, 승률 순위를 보장하는 고정 정답은 아니에요.",
+  methodology: "챔피언의 스킬 구조와 전투 역할을 기준으로 대표적인 증강 카드 3개를 골랐어요. 특수 폼·궁극기·스킬 연계 챔피언은 별도 조합으로 편집하고, 나머지는 역할별 대표 조합을 적용했어요.",
+  champions: Object.fromEntries(
+    champions.map((champion) => {
+      const preset = presetFor(champion);
+      return [champion.id, {
+        style: preset.style,
+        summary: `${topic(champion.name)} ${preset.focus}이 좋아요.`,
+        recommendations: preset.recommendations,
+      }];
+    }),
+  ),
+};
+
+await writeFile("data/arena-augments.json", `${JSON.stringify(output, null, 2)}\n`);
+console.log(`Generated ${Object.keys(output.champions).length} champion arena recommendations`);

@@ -915,7 +915,7 @@ dialog::backdrop {
 }
 .champion-counter-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
   margin-top: 14px;
 }
@@ -960,11 +960,27 @@ dialog::backdrop {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.champion-counter-detail {
+  min-width: 0;
+  padding: 8px 4px 0;
+}
 .champion-counter-reason {
-  margin: 7px 4px 0 !important;
+  margin: 0 !important;
   color: #51647a;
   font-size: 14px !important;
   line-height: 1.55 !important;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.champion-counter-tip {
+  margin: 8px 0 0 !important;
+  padding-top: 8px;
+  border-top: 1px solid #edf0f3;
+  color: #795e2d;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 .counter-source {
   display: block;
@@ -974,6 +990,77 @@ dialog::backdrop {
 }
 .counter-source:hover,
 .counter-source:focus-visible {
+  color: #006c87;
+}
+.arena-augments {
+  margin-top: 22px;
+}
+.arena-augment-help,
+.arena-augment-summary {
+  color: #667085;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+.arena-augment-summary {
+  margin-top: 5px !important;
+  color: #51647a;
+}
+.arena-augment-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+.arena-augment-card {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d9e1ea;
+  border-radius: 14px;
+  background: #fffdf8;
+}
+.arena-augment-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  min-width: 0;
+}
+.arena-augment-category {
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #f2ead8;
+  color: #795e2d;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.arena-augment-name {
+  min-width: 0;
+  color: #0b1c2e;
+  font-size: 15px;
+  line-height: 1.4;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.arena-augment-reason {
+  margin-top: 8px !important;
+  color: #51647a;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.arena-augment-source {
+  display: block;
+  margin-top: 14px;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.arena-augment-source:hover,
+.arena-augment-source:focus-visible {
   color: #006c87;
 }
 .lore p {
@@ -2491,9 +2578,23 @@ dialog::backdrop {
     font-size: 13px;
   }
   .champion-counter-reason {
-    margin: 7px 8px 10px !important;
+    margin: 0 !important;
     font-size: 13px !important;
     line-height: 1.5 !important;
+  }
+  .champion-counter-detail {
+    padding: 7px 8px 3px;
+  }
+  .champion-counter-tip {
+    margin-top: 7px !important;
+    padding-top: 7px;
+    font-size: 12px !important;
+  }
+  .arena-augment-list {
+    grid-template-columns: 1fr;
+  }
+  .arena-augment-card {
+    padding: 11px;
   }
   .duo-card {
     grid-column: span 1;

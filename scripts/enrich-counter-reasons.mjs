@@ -146,9 +146,38 @@ const mechanics = {
 };
 
 function topic(name) {
-  const last = [...name.replace(/\s/g, "")].at(-1)?.charCodeAt(0);
-  const hasFinal = last >= 0xac00 && last <= 0xd7a3 && (last - 0xac00) % 28 !== 0;
+  const hasFinal = hasFinalConsonant(name);
   return `${name}${hasFinal ? "은" : "는"}`;
+}
+
+function hasFinalConsonant(name) {
+  const last = [...name.replace(/\s/g, "")].at(-1)?.charCodeAt(0);
+  return last >= 0xac00 && last <= 0xd7a3 && (last - 0xac00) % 28 !== 0;
+}
+
+function subject(name) {
+  return `${name}${hasFinalConsonant(name) ? "이" : "가"}`;
+}
+
+function object(name) {
+  return `${name}${hasFinalConsonant(name) ? "과" : "와"}`;
+}
+
+// 한 문장짜리 스킬 설명만 보여주면 초보자는 "그래서 어떻게 좋은가요?"를
+// 다시 물어보게 됩니다. 카운터 챔피언의 실제 스킬 문장에서 전투 방식도
+// 분류해, 설명을 읽고 바로 기억할 수 있는 두 번째 포인트를 함께 만듭니다.
+function adviceFor(mechanic, targetName) {
+  if (/띄|기절|속박|둔화|도발|공포|침묵|매혹|밀쳐|제압|실명|수면|묶어/.test(mechanic))
+    return `${subject(targetName)} 들어오는 순간 방해 기술을 맞히면 공격 흐름을 끊을 수 있어요.`;
+  if (/사거리|포킹|포격|멀리서|화살|폭탄/.test(mechanic))
+    return `${object(targetName)} 바로 맞붙지 말고 거리를 유지하며 체력을 깎은 뒤, 빈틈이 보일 때 마무리하면 돼요.`;
+  if (/무적|보호막|회복|죽지|부활|재생/.test(mechanic))
+    return `${targetName}의 큰 공격을 한 번 버틴 뒤 회복·보호막·무적으로 다시 싸우는 긴 교환에 강해요.`;
+  if (/은신|그림자|돌진|도약|벽|이동/.test(mechanic))
+    return `${targetName}의 스킬을 기다리기보다 이동기로 각도를 바꾸며 짧게 치고 빠지는 운영이 쉬워요.`;
+  if (/중첩|레벨|쌓|긴 싸움|오래/.test(mechanic))
+    return `${subject(targetName)} 원하는 짧은 순간 화력 싸움을 피하고, 시간이 지날수록 유리해지는 교전을 만들어요.`;
+  return `${targetName}의 핵심 스킬이 빠진 순간을 노리면 이 챔피언의 장점을 더 안전하게 살릴 수 있어요.`;
 }
 
 const used = new Set();
@@ -159,15 +188,16 @@ for (const [targetId, target] of Object.entries(counters.champions)) {
     if (!mechanic) throw new Error(`카운터 설명이 없는 챔피언: ${counter.id}`);
     const counterName = names.get(counter.id) || counter.id;
     counter.reason = `${topic(counterName)} ${mechanic.replaceAll("{target}", targetName)}`;
+    counter.tip = adviceFor(mechanic, targetName);
     used.add(counter.id);
   }
 }
 
 const expected = new Set(Object.values(counters.champions).flatMap((entry) => entry.counters.map((counter) => counter.id)));
 if (used.size !== expected.size) throw new Error("카운터 설명 적용 수가 맞지 않습니다.");
-counters.reasonVersion = "champion-mechanics-v2";
-counters.methodology = "LoLalytics 챔피언별 카운터 페이지의 ‘countered most by’ 상위 3명을 유지하고, 각 카운터 챔피언의 실제 스킬 상호작용을 초보자용 한 줄 설명으로 정리했습니다.";
-counters.notice = "카운터는 패치·역할·티어·표본에 따라 달라질 수 있는 참고 정보예요. 이유 문장은 공식 통계 문장을 그대로 옮기지 않고, 챔피언 스킬과 전투 방식의 상호작용을 쉽게 풀어쓴 설명이에요.";
+counters.reasonVersion = "champion-mechanics-v3";
+counters.methodology = "LoLalytics 챔피언별 카운터 페이지의 ‘countered most by’ 상위 3명을 유지하고, 각 카운터 챔피언의 실제 스킬 상호작용과 초보자용 활용 포인트를 함께 정리했습니다.";
+counters.notice = "카운터는 패치·역할·티어·표본에 따라 달라질 수 있는 참고 정보예요. 이유와 활용 포인트는 공식 통계 문장을 그대로 옮기지 않고, 챔피언 스킬과 전투 방식의 상호작용을 쉽게 풀어쓴 설명이에요.";
 await writeFile(
   countersPath,
   `${JSON.stringify(counters, null, 2).replaceAll("\n", eol)}${eol}`,

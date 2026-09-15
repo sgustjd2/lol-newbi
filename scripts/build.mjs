@@ -17,6 +17,9 @@ const lore = await readFile("data/lore.json", "utf8")
 const regions = await readFile("data/regions.json", "utf8")
   .then(JSON.parse)
   .catch(() => ({ champions: {} }));
+const arenaAugments = await readFile("data/arena-augments.json", "utf8")
+  .then(JSON.parse)
+  .catch(() => ({ champions: {} }));
 const itemById = new Map(
   catalog.entries.filter((e) => e.kind === "item").map((e) => [e.id, e]),
 );
@@ -71,6 +74,15 @@ const entries = catalog.entries.map((e) => {
       );
     }
   }
+  if (e.kind === "champion" && arenaAugments.champions[e.id]) {
+    enhanced.arena = {
+      ...arenaAugments.champions[e.id],
+      mode: arenaAugments.mode,
+      sourceTitle: arenaAugments.sourceTitle,
+      sourceUrl: arenaAugments.sourceUrl,
+      notice: arenaAugments.notice,
+    };
+  }
   if (e.kind === "champion" && lore.champions[e.id]) {
     enhanced.lore = lore.champions[e.id];
   }
@@ -83,6 +95,7 @@ const entries = catalog.entries.map((e) => {
       n.kind === e.kind &&
       n.patch === catalog.patch &&
       (n.sourceType === "editorial" ||
+        (n.sourceType === "public" && n.reviewed === true) ||
         (n.sourceType === "notebooklm" && n.reviewed === true)),
   );
   return {

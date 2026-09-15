@@ -519,7 +519,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "기절",
@@ -1242,7 +1242,7 @@
         "key": "Q",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "속박",
@@ -1263,7 +1263,7 @@
         "key": "W",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/aphelios/aphelios.bin.json",
         "matched": true,
@@ -1273,7 +1273,7 @@
         "key": "E",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/aphelios/aphelios.bin.json",
         "matched": true,
@@ -1309,7 +1309,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/aphelios/aphelios.bin.json",
         "matched": true,
@@ -2202,7 +2202,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/belveth/belveth.bin.json",
         "matched": true,
@@ -3888,11 +3888,6 @@
             "name": "기절",
             "meaning": "이동·공격·스킬 사용을 잠깐 막아요.",
             "condition": "인간 형태: 처음 적중한 적 유닛을 기절시키고 은신 상태가 아닐 경우 모습을 드러내 줍니다."
-          },
-          {
-            "name": "공중에 띄우기",
-            "meaning": "공중으로 띄워 잠깐 행동을 막아요.",
-            "condition": "거미 형태: 엘리스와 새끼 거미들이 공중으로 올라간 다음 적에게 하강해 덮칩니다."
           }
         ],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/elise/elise.bin.json",
@@ -3903,7 +3898,7 @@
         "key": "R",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/elise/elise.bin.json",
         "matched": true,
@@ -5065,7 +5060,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "기절",
@@ -5873,7 +5868,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/heimerdinger/heimerdinger.bin.json",
         "matched": true,
@@ -6032,7 +6027,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/hwei/hwei.bin.json",
         "matched": true,
@@ -6085,7 +6080,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/hwei/hwei.bin.json",
         "matched": true,
@@ -6159,7 +6154,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/hwei/hwei.bin.json",
         "matched": true,
@@ -7016,8 +7011,8 @@
         "formVariant": true,
         "cc": [
           {
-            "name": "공중에 띄우기",
-            "meaning": "공중으로 띄워 잠깐 행동을 막아요.",
+            "name": "둔화",
+            "meaning": "걷는 속도를 느리게 해요.",
             "condition": "해머 사용 시: 공중으로 도약해 적들에게 물리 피해를 입히고 이동 속도를 감소시킵니다."
           }
         ],
@@ -7447,7 +7442,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/kaisa/kaisa.bin.json",
         "matched": true,
@@ -7457,7 +7452,7 @@
         "key": "W",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/kaisa/kaisa.bin.json",
         "matched": true,
@@ -7467,7 +7462,7 @@
         "key": "E",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/kaisa/kaisa.bin.json",
         "matched": true,
@@ -7674,7 +7669,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/karma/karma.bin.json",
         "matched": true,
@@ -7706,7 +7701,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "속박",
@@ -7744,7 +7739,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/karma/karma.bin.json",
         "matched": true,
@@ -8407,7 +8402,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/kennen/kennen.bin.json",
         "matched": true,
@@ -8482,7 +8477,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/kayn/kayn.bin.json",
         "matched": true,
@@ -8514,7 +8509,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "둔화",
@@ -8552,7 +8547,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/kayn/kayn.bin.json",
         "matched": true,
@@ -8599,7 +8594,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/kayn/kayn.bin.json",
         "matched": true,
@@ -8611,7 +8606,7 @@
         "key": "Q",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "공포",
@@ -8649,7 +8644,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "둔화",
@@ -8665,7 +8660,7 @@
         "key": "E",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/khazix/khazix.bin.json",
         "matched": true,
@@ -8675,7 +8670,7 @@
         "key": "R",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/khazix/khazix.bin.json",
         "matched": true,
@@ -9017,7 +9012,7 @@
         "key": "Q",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "둔화",
@@ -9038,7 +9033,7 @@
         "key": "W",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "기절",
@@ -9059,7 +9054,7 @@
         "key": "E",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/ksante/ksante.bin.json",
         "matched": true,
@@ -9069,7 +9064,7 @@
         "key": "R",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "밀어내기",
@@ -12587,7 +12582,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "기절",
@@ -12706,7 +12701,7 @@
         "key": "R",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/nidalee/nidalee.bin.json",
         "matched": true,
@@ -13107,7 +13102,13 @@
         ],
         "partial": true,
         "formVariant": false,
-        "cc": [],
+        "cc": [
+          {
+            "name": "둔화",
+            "meaning": "걷는 속도를 느리게 해요.",
+            "condition": "올라프가 지정한 곳에 도끼를 던져 맞은 적에게 피해를 입히고 방어력과 이동 속도를 감소시킵니다."
+          }
+        ],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/olaf/olaf.bin.json",
         "matched": true,
         "unresolvedCount": 1
@@ -13583,13 +13584,7 @@
         ],
         "partial": true,
         "formVariant": false,
-        "cc": [
-          {
-            "name": "공중에 띄우기",
-            "meaning": "공중으로 띄워 잠깐 행동을 막아요.",
-            "condition": "판테온이 태세를 갖추고 공중으로 뛰어올랐다가 지정한 위치에 유성이 되어 떨어집니다."
-          }
-        ],
+        "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/pantheon/pantheon.bin.json",
         "matched": true,
         "unresolvedCount": 0
@@ -14159,7 +14154,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/qiyana/qiyana.bin.json",
         "matched": true,
@@ -14366,7 +14361,7 @@
           {
             "name": "공중에 띄우기",
             "meaning": "공중으로 띄워 잠깐 행동을 막아요.",
-            "condition": "람머스가 공중으로 뛰어오른 후 대상 지점에 착지하여 마법 피해를 입히고 적을 둔화시킵니다."
+            "condition": "대회전 상태에서 사용하면 범위 중앙 근처에 있는 적을 공중으로 띄워 올립니다."
           }
         ],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/rammus/rammus.bin.json",
@@ -14439,7 +14434,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "공중에 띄우기",
@@ -14815,7 +14810,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/renekton/renekton.bin.json",
         "matched": true,
@@ -14825,7 +14820,7 @@
         "key": "W",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "기절",
@@ -14884,7 +14879,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/renekton/renekton.bin.json",
         "matched": true,
@@ -14920,7 +14915,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/renekton/renekton.bin.json",
         "matched": true,
@@ -14960,7 +14955,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/rengar/rengar.bin.json",
         "matched": true,
@@ -14992,7 +14987,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/rengar/rengar.bin.json",
         "matched": true,
@@ -15024,7 +15019,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "속박",
@@ -15091,7 +15086,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/rumble/rumble.bin.json",
         "matched": true,
@@ -15101,7 +15096,7 @@
         "key": "W",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/rumble/rumble.bin.json",
         "matched": true,
@@ -15133,7 +15128,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "둔화",
@@ -15213,7 +15208,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "밀어내기",
@@ -15338,7 +15333,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/riven/riven.bin.json",
         "matched": true,
@@ -16107,11 +16102,6 @@
             "name": "둔화",
             "meaning": "걷는 속도를 느리게 해요.",
             "condition": "세트가 적 하나를 붙잡아 공중으로 도약한 후 바닥에 내리꽂아 피해를 입히고 착지 지점 근처에 있는 모든 적을 둔화시킵니다."
-          },
-          {
-            "name": "공중에 띄우기",
-            "meaning": "공중으로 띄워 잠깐 행동을 막아요.",
-            "condition": "세트가 적 하나를 붙잡아 공중으로 도약한 후 바닥에 내리꽂아 피해를 입히고 착지 지점 근처에 있는 모든 적을 둔화시킵니다."
           }
         ],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/sett/sett.bin.json",
@@ -16428,7 +16418,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/shyvana/shyvana.bin.json",
         "matched": true,
@@ -16460,7 +16450,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/shyvana/shyvana.bin.json",
         "matched": true,
@@ -16507,7 +16497,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "둔화",
@@ -16556,7 +16546,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/shyvana/shyvana.bin.json",
         "matched": true,
@@ -17041,7 +17031,7 @@
         "key": "Q",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/smolder/smolder.bin.json",
         "matched": true,
@@ -17786,7 +17776,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "둔화",
@@ -17826,7 +17816,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/syndra/syndra.bin.json",
         "matched": true,
@@ -17858,8 +17848,14 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
-        "cc": [],
+        "formVariant": true,
+        "cc": [
+          {
+            "name": "둔화",
+            "meaning": "걷는 속도를 느리게 해요.",
+            "condition": "신드라가 적 미니언 혹은 어둠 구체를 잡아서 던져 마법 피해를 입히고, 적의 이동 속도를 감소시킵니다."
+          }
+        ],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/syndra/syndra.bin.json",
         "matched": true,
         "unresolvedCount": 1
@@ -17890,7 +17886,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "기절",
@@ -17931,7 +17927,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/syndra/syndra.bin.json",
         "matched": true,
@@ -19146,7 +19142,7 @@
         "key": "Q",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/udyr/udyr.bin.json",
         "matched": true,
@@ -19156,7 +19152,7 @@
         "key": "W",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/udyr/udyr.bin.json",
         "matched": true,
@@ -19166,7 +19162,7 @@
         "key": "E",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "기절",
@@ -19205,7 +19201,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "둔화",
@@ -20301,7 +20297,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/viktor/viktor.bin.json",
         "matched": true,
@@ -20311,7 +20307,7 @@
         "key": "W",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "기절",
@@ -20375,7 +20371,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/viktor/viktor.bin.json",
         "matched": true,
@@ -20424,7 +20420,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/viktor/viktor.bin.json",
         "matched": true,
@@ -20479,7 +20475,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/vladimir/vladimir.bin.json",
         "matched": true,
@@ -20900,13 +20896,7 @@
         ],
         "partial": true,
         "formVariant": false,
-        "cc": [
-          {
-            "name": "공중에 띄우기",
-            "meaning": "공중으로 띄워 잠깐 행동을 막아요.",
-            "condition": "자야가 공중으로 도약해 잠시 동안 대상으로 지정할 수 없게 되고, 잠시 후 원뿔 모양으로 깃털을 발사합니다."
-          }
-        ],
+        "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/xayah/xayah.bin.json",
         "matched": true,
         "unresolvedCount": 0
@@ -21592,7 +21582,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/yunara/yunara.bin.json",
         "matched": true,
@@ -21630,7 +21620,7 @@
           }
         ],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [
           {
             "name": "둔화",
@@ -21646,7 +21636,7 @@
         "key": "E",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/yunara/yunara.bin.json",
         "matched": true,
@@ -21656,7 +21646,7 @@
         "key": "R",
         "formulas": [],
         "partial": true,
-        "formVariant": false,
+        "formVariant": true,
         "cc": [],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/yunara/yunara.bin.json",
         "matched": true,
@@ -22815,6 +22805,11 @@
             "name": "속박",
             "meaning": "이동을 막아요. 기본 공격과 일부 스킬은 가능해요.",
             "condition": "자이라가 일직선상으로 지면을 뚫는 가시 덩굴을 발사하여, 덩굴이 마주치는 적에게 피해를 입히며 발을 묶습니다."
+          },
+          {
+            "name": "둔화",
+            "meaning": "걷는 속도를 느리게 해요.",
+            "condition": "씨앗 근처에 휘감는 뿌리를 사용하면 덩굴 채찍손이 피어나, 근거리 공격을 펼치며 적의 이동 속도를 감소시킵니다."
           }
         ],
         "sourceUrl": "https://raw.communitydragon.org/16.18/game/data/characters/zyra/zyra.bin.json",

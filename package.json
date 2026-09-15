@@ -8,6 +8,7 @@
     "sync:recipes": "node scripts/sync-item-recipes.mjs",
     "build": "node scripts/build.mjs",
     "report:missing": "node scripts/report-missing.mjs",
+    "verify:public": "node scripts/verify-public-champions.mjs",
     "start": "node scripts/serve.mjs",
     "import": "node scripts/import.mjs",
     "merge:editorial": "node scripts/merge-editorial.mjs",

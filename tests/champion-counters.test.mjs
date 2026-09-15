@@ -35,7 +35,7 @@ test("카운터 이유가 반복 문구 대신 챔피언 고유 스킬을 설명
   const reasons = Object.values(counters.champions).flatMap((entry) =>
     entry.counters.map((counter) => counter.reason),
   );
-  assert.equal(counters.reasonVersion, "champion-mechanics-v2");
+  assert.equal(counters.reasonVersion, "champion-mechanics-v3");
   assert.ok(
     reasons.every(
       (reason) =>
@@ -43,6 +43,10 @@ test("카운터 이유가 반복 문구 대신 챔피언 고유 스킬을 설명
         !reason.includes("속박·기절 같은 방해 기술"),
     ),
   );
+  const allCounters = Object.values(counters.champions).flatMap(
+    (entry) => entry.counters,
+  );
+  assert.ok(allCounters.every((counter) => counter.tip?.length >= 20));
   const garenReasons = counters.champions.Garen.counters.map(
     (counter) => counter.reason,
   );

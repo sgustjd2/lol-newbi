@@ -1,9 +1,19 @@
 import { readFile, writeFile, mkdir, rename } from "node:fs/promises";
-import { parseFormula, extractCC, labelForCalcKey } from "./skill-details.mjs";
+import {
+  parseFormula,
+  extractCC,
+  labelForCalcKey,
+  isVariantSkill,
+} from "./skill-details.mjs";
 const catalog = JSON.parse(await readFile("data/catalog.json", "utf8"));
 const version = catalog.patch.split(".").slice(0, 2).join(".");
 const champions = catalog.entries.filter((e) => e.kind === "champion");
-const result = { patch: catalog.patch, champions: {} };
+// Workers finish in different orders; pre-seed keys so generated JSON keeps
+// the catalog order and does not create noisy reorder-only diffs.
+const result = {
+  patch: catalog.patch,
+  champions: Object.fromEntries(champions.map((champion) => [champion.id, null])),
+};
 let next = 0;
 await mkdir(`private/calculations-${version}`, { recursive: true });
 await Promise.all(
@@ -64,7 +74,7 @@ await Promise.all(
           key: skill.key,
           formulas,
           partial: true,
-          formVariant: skill.name.includes(" / "),
+          formVariant: isVariantSkill(c.id, skill),
           cc: extractCC(skill, c),
           sourceUrl: url,
           matched: Boolean(spell),
