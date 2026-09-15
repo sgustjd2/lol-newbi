@@ -19,6 +19,7 @@ function toggleFav(e) {
 let glossaryEntries = [],
   regionStories = {},
   botDuoData = { patch: "", notice: "", sources: [], duos: [] },
+  championCounterData = { patch: "", notice: "", champions: {} },
   selectedInitial = "전체";
 let selectedRole = "전체";
 let selectedRegion = null;
@@ -352,6 +353,71 @@ function cardEl(e) {
 }
 function championById(id) {
   return entries.find((entry) => entry.kind === "champion" && entry.id === id);
+}
+const counterLaneLabels = {
+  top: "탑",
+  middle: "미드",
+  bottom: "봇",
+  jungle: "정글",
+  support: "서포터",
+};
+function championCounterSection(champion) {
+  if (champion.kind !== "champion") return null;
+  const data = championCounterData.champions?.[champion.id];
+  if (!data?.counters?.length) return null;
+
+  const section = text("section", "", "detail-block champion-counters");
+  section.append(text("h3", "대표 카운터 픽"));
+  section.append(
+    text(
+      "p",
+      "상대할 때 자주 선택하는 챔피언이에요. 아이콘을 누르면 왜 카운터인지 한 줄로 볼 수 있어요.",
+      "counter-help",
+    ),
+  );
+  const list = text("div", "", "champion-counter-list");
+  let openReason = null;
+  let openButton = null;
+  for (const counter of data.counters) {
+    const target = championById(counter.id);
+    if (!target) continue;
+    const item = text("div", "", "champion-counter-item");
+    const button = text("button", "", "champion-counter-chip");
+    button.type = "button";
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", `${target.name} 카운터 이유 보기`);
+    const icon = portrait(target);
+    icon.className = "champion-counter-icon";
+    icon.alt = target.name;
+    button.append(icon, text("span", target.name, "champion-counter-name"));
+    const reason = text("p", counter.reason, "champion-counter-reason");
+    reason.hidden = true;
+    button.onclick = () => {
+      if (openReason && openReason !== reason) {
+        openReason.hidden = true;
+        openButton?.setAttribute("aria-expanded", "false");
+      }
+      const expanded = reason.hidden;
+      reason.hidden = !expanded;
+      button.setAttribute("aria-expanded", String(expanded));
+      openReason = expanded ? reason : null;
+      openButton = expanded ? button : null;
+    };
+    item.append(button, reason);
+    list.append(item);
+  }
+  section.append(list);
+  const lane = counterLaneLabels[data.lane] || "전체 역할";
+  const source = text(
+    "a",
+    `LoLalytics ${lane} 카운터 참고 · 패치 ${championCounterData.patch || patch} ↗`,
+    "counter-source",
+  );
+  source.href = data.sourceUrl;
+  source.target = "_blank";
+  source.rel = "noopener noreferrer";
+  section.append(source);
+  return section;
 }
 function duoChampionButton(id, role, compact = false) {
   const champion = championById(id);
@@ -757,6 +823,8 @@ function openDetail() {
       content.append(block);
     }
   }
+  const counters = championCounterSection(e);
+  if (counters) content.append(counters);
   if (e.gold !== undefined)
     content.append(
       text("p", `상점 가격 · ${e.gold.toLocaleString("ko-KR")} 골드`, "price"),
@@ -1231,6 +1299,9 @@ try {
   botDuoData = await fetch("./data/bot-duos.json")
     .then((r) => (r.ok ? r.json() : { duos: [] }))
     .catch(() => ({ duos: [] }));
+  championCounterData = await fetch("./data/champion-counters.json")
+    .then((r) => (r.ok ? r.json() : { champions: {} }))
+    .catch(() => ({ champions: {} }));
   entries = data.entries;
   patch = data.patch;
   $("#patch").textContent = `자료 버전 ${patch}`;

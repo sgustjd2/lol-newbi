@@ -660,6 +660,77 @@ dialog::backdrop {
   margin: 0;
   word-break: keep-all;
 }
+.champion-counters {
+  margin-top: 22px;
+}
+.counter-help {
+  color: #667085;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+.champion-counter-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+.champion-counter-item {
+  min-width: 0;
+}
+.champion-counter-chip {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #d9e1ea;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #0b1c2e;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 140ms ease, background 140ms ease, transform 140ms ease;
+}
+.champion-counter-chip:hover,
+.champion-counter-chip:focus-visible,
+.champion-counter-chip[aria-expanded="true"] {
+  border-color: #c8aa6e;
+  background: #fbf8f0;
+}
+.champion-counter-chip:active {
+  transform: translateY(1px);
+}
+.champion-counter-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  object-fit: cover;
+  border-radius: 11px;
+  background: #f2f4f7;
+}
+.champion-counter-name {
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.champion-counter-reason {
+  margin: 7px 4px 0 !important;
+  color: #51647a;
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+}
+.counter-source {
+  display: block;
+  margin-top: 14px;
+  color: #667085;
+  line-height: 1.6;
+}
+.counter-source:hover,
+.counter-source:focus-visible {
+  color: #006c87;
+}
 .lore p {
   margin: 0 0 14px;
 }
@@ -1754,6 +1825,21 @@ dialog::backdrop {
   color: #006c87;
 }
 @media (max-width: 560px) {
+  .champion-counter-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .champion-counter-chip {
+    gap: 7px;
+    padding: 8px;
+  }
+  .champion-counter-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .champion-counter-name {
+    font-size: 13px;
+  }
   .duo-card {
     grid-column: span 1;
     padding: 20px;

@@ -1,0 +1,3470 @@
+{
+  "patch": "16.18",
+  "updatedAt": "2026-09-15",
+  "scope": "LoLalytics 16.18 챔피언별 기본 역할 카운터",
+  "source": "https://lolalytics.com/lol/{champion}/counters/",
+  "methodology": "LoLalytics 챔피언별 카운터 페이지의 “countered most by” 상위 3명을 가져오고, 초보자가 읽기 쉬운 한 줄 이유를 덧붙였습니다.",
+  "notice": "카운터는 패치·역할·티어·표본에 따라 달라질 수 있는 참고 정보예요. 한 줄 이유는 공식 통계 문장을 그대로 옮기지 않고 게임 상호작용을 쉽게 풀어쓴 설명이에요.",
+  "champions": {
+    "Aatrox": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Anivia",
+          "reason": "애니비아는 멀리서 계속 때려 아트록스가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "MasterYi",
+          "reason": "마스터 이는 속박·기절 같은 방해 기술로 아트록스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Singed",
+          "reason": "신지드는 속박·기절 같은 방해 기술로 아트록스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/aatrox/counters/",
+      "sourceOk": true
+    },
+    "Ahri": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Smolder",
+          "reason": "스몰더는 멀리서 계속 때려 아리가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Tryndamere",
+          "reason": "트린다미어는 속박·기절 같은 방해 기술로 아리가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Singed",
+          "reason": "신지드는 속박·기절 같은 방해 기술로 아리가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/ahri/counters/",
+      "sourceOk": true
+    },
+    "Akali": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Jayce",
+          "reason": "제이스는 속박·기절 같은 방해 기술로 아칼리가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Velkoz",
+          "reason": "벨코즈는 속박·기절 같은 방해 기술로 아칼리가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Vex",
+          "reason": "벡스는 속박·기절 같은 방해 기술로 아칼리가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/akali/counters/",
+      "sourceOk": true
+    },
+    "Akshan": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Kayle",
+          "reason": "케일은 속박·기절 같은 방해 기술로 아크샨이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Pantheon",
+          "reason": "판테온은 속박·기절 같은 방해 기술로 아크샨이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "TwistedFate",
+          "reason": "트위스티드 페이트는 속박·기절 같은 방해 기술로 아크샨이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/akshan/counters/",
+      "sourceOk": true
+    },
+    "Alistar": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Neeko",
+          "reason": "니코는 속박·기절 같은 방해 기술로 알리스타가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Janna",
+          "reason": "잔나는 속박·기절 같은 방해 기술로 알리스타가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zilean",
+          "reason": "질리언은 속박·기절 같은 방해 기술로 알리스타가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/alistar/counters/",
+      "sourceOk": true
+    },
+    "Ambessa": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Kennen",
+          "reason": "케넨은 사거리와 방해 기술로 암베사의 약점을 찌르기 쉬워요."
+        },
+        {
+          "id": "Pantheon",
+          "reason": "판테온은 속박·기절 같은 방해 기술로 암베사가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Irelia",
+          "reason": "이렐리아는 속박·기절 같은 방해 기술로 암베사가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/ambessa/counters/",
+      "sourceOk": true
+    },
+    "Amumu": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Jayce",
+          "reason": "제이스는 멀리서 계속 때려 아무무가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Volibear",
+          "reason": "볼리베어는 멀리서 계속 때려 아무무가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Shyvana",
+          "reason": "쉬바나는 멀리서 계속 때려 아무무가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/amumu/counters/",
+      "sourceOk": true
+    },
+    "Anivia": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Xerath",
+          "reason": "제라스는 속박·기절 같은 방해 기술로 애니비아가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Talon",
+          "reason": "탈론은 속박·기절 같은 방해 기술로 애니비아가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Kassadin",
+          "reason": "카사딘은 속박·기절 같은 방해 기술로 애니비아가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/anivia/counters/",
+      "sourceOk": true
+    },
+    "Annie": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Talon",
+          "reason": "탈론은 속박·기절 같은 방해 기술로 애니가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Fizz",
+          "reason": "피즈는 속박·기절 같은 방해 기술로 애니가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Nasus",
+          "reason": "나서스는 속박·기절 같은 방해 기술로 애니가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/annie/counters/",
+      "sourceOk": true
+    },
+    "Aphelios": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Viktor",
+          "reason": "빅토르는 속박·기절 같은 방해 기술로 아펠리오스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Lux",
+          "reason": "럭스는 속박·기절 같은 방해 기술로 아펠리오스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Swain",
+          "reason": "스웨인은 속박·기절 같은 방해 기술로 아펠리오스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/aphelios/counters/",
+      "sourceOk": true
+    },
+    "Ashe": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Katarina",
+          "reason": "카타리나는 빠르게 접근해 애쉬의 사거리 장점을 무너뜨리기 쉬워요."
+        },
+        {
+          "id": "AurelionSol",
+          "reason": "아우렐리온 솔은 사거리와 방해 기술로 애쉬의 약점을 찌르기 쉬워요."
+        },
+        {
+          "id": "Lux",
+          "reason": "럭스는 사거리와 방해 기술로 애쉬의 약점을 찌르기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/ashe/counters/",
+      "sourceOk": true
+    },
+    "AurelionSol": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Yone",
+          "reason": "요네는 빠르게 파고들어 아우렐리온 솔이 기술을 쓰기 전에 압박해요."
+        },
+        {
+          "id": "Zed",
+          "reason": "제드는 빠르게 파고들어 아우렐리온 솔이 기술을 쓰기 전에 압박해요."
+        },
+        {
+          "id": "Cassiopeia",
+          "reason": "카시오페아는 빠르게 파고들어 아우렐리온 솔이 기술을 쓰기 전에 압박해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/aurelionsol/counters/",
+      "sourceOk": true
+    },
+    "Aurora": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Vex",
+          "reason": "벡스는 멀리서 계속 때려 오로라가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Diana",
+          "reason": "다이애나는 속박·기절 같은 방해 기술로 오로라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Akshan",
+          "reason": "아크샨은 멀리서 계속 때려 오로라가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/aurora/counters/",
+      "sourceOk": true
+    },
+    "Azir": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Xerath",
+          "reason": "제라스는 속박·기절 같은 방해 기술로 아지르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Annie",
+          "reason": "애니는 속박·기절 같은 방해 기술로 아지르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "TwistedFate",
+          "reason": "트위스티드 페이트는 속박·기절 같은 방해 기술로 아지르가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/azir/counters/",
+      "sourceOk": true
+    },
+    "Bard": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Galio",
+          "reason": "갈리오는 멀리서 계속 때려 바드가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Maokai",
+          "reason": "마오카이는 속박·기절 같은 방해 기술로 바드가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Taric",
+          "reason": "타릭은 속박·기절 같은 방해 기술로 바드가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/bard/counters/",
+      "sourceOk": true
+    },
+    "Belveth": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Quinn",
+          "reason": "퀸은 속박·기절 같은 방해 기술로 벨베스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Lillia",
+          "reason": "릴리아는 속박·기절 같은 방해 기술로 벨베스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Chogath",
+          "reason": "초가스는 속박·기절 같은 방해 기술로 벨베스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/belveth/counters/",
+      "sourceOk": true
+    },
+    "Blitzcrank": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Taric",
+          "reason": "타릭은 속박·기절 같은 방해 기술로 블리츠크랭크가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Braum",
+          "reason": "브라움은 속박·기절 같은 방해 기술로 블리츠크랭크가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Leona",
+          "reason": "레오나는 속박·기절 같은 방해 기술로 블리츠크랭크가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/blitzcrank/counters/",
+      "sourceOk": true
+    },
+    "Brand": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Zilean",
+          "reason": "질리언은 속박·기절 같은 방해 기술로 브랜드가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Shaco",
+          "reason": "샤코는 속박·기절 같은 방해 기술로 브랜드가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sona",
+          "reason": "소나는 속박·기절 같은 방해 기술로 브랜드가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/brand/counters/",
+      "sourceOk": true
+    },
+    "Braum": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Velkoz",
+          "reason": "벨코즈는 멀리서 계속 때려 브라움이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Zilean",
+          "reason": "질리언은 속박·기절 같은 방해 기술로 브라움이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Rell",
+          "reason": "렐은 멀리서 계속 때려 브라움이 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/braum/counters/",
+      "sourceOk": true
+    },
+    "Briar": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Taliyah",
+          "reason": "탈리야는 속박·기절 같은 방해 기술로 브라이어가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sejuani",
+          "reason": "세주아니는 멀리서 계속 때려 브라이어가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Olaf",
+          "reason": "올라프는 속박·기절 같은 방해 기술로 브라이어가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/briar/counters/",
+      "sourceOk": true
+    },
+    "Caitlyn": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Velkoz",
+          "reason": "벨코즈는 속박·기절 같은 방해 기술로 케이틀린이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Xerath",
+          "reason": "제라스는 속박·기절 같은 방해 기술로 케이틀린이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Irelia",
+          "reason": "이렐리아는 속박·기절 같은 방해 기술로 케이틀린이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/caitlyn/counters/",
+      "sourceOk": true
+    },
+    "Camille": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Teemo",
+          "reason": "티모는 멀리서 계속 때려 카밀이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Illaoi",
+          "reason": "일라오이는 속박·기절 같은 방해 기술로 카밀이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Udyr",
+          "reason": "우디르는 멀리서 계속 때려 카밀이 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/camille/counters/",
+      "sourceOk": true
+    },
+    "Cassiopeia": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Taliyah",
+          "reason": "탈리야는 속박·기절 같은 방해 기술로 카시오페아가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Galio",
+          "reason": "갈리오는 멀리서 계속 때려 카시오페아가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Xerath",
+          "reason": "제라스는 멀리서 계속 때려 카시오페아가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/cassiopeia/counters/",
+      "sourceOk": true
+    },
+    "Chogath": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "DrMundo",
+          "reason": "문도 박사는 속박·기절 같은 방해 기술로 초가스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Ivern",
+          "reason": "아이번은 멀리서 계속 때려 초가스가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Trundle",
+          "reason": "트런들은 속박·기절 같은 방해 기술로 초가스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/chogath/counters/",
+      "sourceOk": true
+    },
+    "Corki": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "KogMaw",
+          "reason": "코그모는 빠르게 파고들어 코르키가 기술을 쓰기 전에 압박해요."
+        },
+        {
+          "id": "Viktor",
+          "reason": "빅토르는 빠르게 파고들어 코르키가 기술을 쓰기 전에 압박해요."
+        },
+        {
+          "id": "Yasuo",
+          "reason": "야스오는 빠르게 파고들어 코르키가 기술을 쓰기 전에 압박해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/corki/counters/",
+      "sourceOk": true
+    },
+    "Darius": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Ryze",
+          "reason": "라이즈는 속박·기절 같은 방해 기술로 다리우스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Varus",
+          "reason": "바루스는 멀리서 계속 때려 다리우스가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Kayle",
+          "reason": "케일은 멀리서 계속 때려 다리우스가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/darius/counters/",
+      "sourceOk": true
+    },
+    "Diana": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Velkoz",
+          "reason": "벨코즈는 멀리서 계속 때려 다이애나가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Vex",
+          "reason": "벡스는 멀리서 계속 때려 다이애나가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Nasus",
+          "reason": "나서스는 속박·기절 같은 방해 기술로 다이애나가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/diana/counters/",
+      "sourceOk": true
+    },
+    "DrMundo": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Anivia",
+          "reason": "애니비아는 멀리서 계속 때려 문도 박사가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Zed",
+          "reason": "제드는 속박·기절 같은 방해 기술로 문도 박사가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Aatrox",
+          "reason": "아트록스는 속박·기절 같은 방해 기술로 문도 박사가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/drmundo/counters/",
+      "sourceOk": true
+    },
+    "Draven": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Seraphine",
+          "reason": "세라핀은 속박·기절 같은 방해 기술로 드레이븐이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Vladimir",
+          "reason": "블라디미르는 속박·기절 같은 방해 기술로 드레이븐이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Velkoz",
+          "reason": "벨코즈는 속박·기절 같은 방해 기술로 드레이븐이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/draven/counters/",
+      "sourceOk": true
+    },
+    "Ekko": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Poppy",
+          "reason": "뽀삐는 속박·기절 같은 방해 기술로 에코가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "RekSai",
+          "reason": "렉사이는 속박·기절 같은 방해 기술로 에코가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zyra",
+          "reason": "자이라는 속박·기절 같은 방해 기술로 에코가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/ekko/counters/",
+      "sourceOk": true
+    },
+    "Elise": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Fiddlesticks",
+          "reason": "피들스틱은 속박·기절 같은 방해 기술로 엘리스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Warwick",
+          "reason": "워윅은 속박·기절 같은 방해 기술로 엘리스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Qiyana",
+          "reason": "키아나는 속박·기절 같은 방해 기술로 엘리스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/elise/counters/",
+      "sourceOk": true
+    },
+    "Evelynn": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "RekSai",
+          "reason": "렉사이는 속박·기절 같은 방해 기술로 이블린이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zac",
+          "reason": "자크는 멀리서 계속 때려 이블린이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Ivern",
+          "reason": "아이번은 멀리서 계속 때려 이블린이 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/evelynn/counters/",
+      "sourceOk": true
+    },
+    "Ezreal": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Malzahar",
+          "reason": "말자하는 속박·기절 같은 방해 기술로 이즈리얼이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Karthus",
+          "reason": "카서스는 속박·기절 같은 방해 기술로 이즈리얼이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "KogMaw",
+          "reason": "코그모는 속박·기절 같은 방해 기술로 이즈리얼이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/ezreal/counters/",
+      "sourceOk": true
+    },
+    "Fiddlesticks": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Aatrox",
+          "reason": "아트록스는 속박·기절 같은 방해 기술로 피들스틱이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Olaf",
+          "reason": "올라프는 속박·기절 같은 방해 기술로 피들스틱이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "RekSai",
+          "reason": "렉사이는 속박·기절 같은 방해 기술로 피들스틱이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/fiddlesticks/counters/",
+      "sourceOk": true
+    },
+    "Fiora": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Quinn",
+          "reason": "퀸은 멀리서 계속 때려 피오라가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Heimerdinger",
+          "reason": "하이머딩거는 속박·기절 같은 방해 기술로 피오라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "TahmKench",
+          "reason": "탐 켄치는 속박·기절 같은 방해 기술로 피오라가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/fiora/counters/",
+      "sourceOk": true
+    },
+    "Fizz": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 피즈가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Riven",
+          "reason": "리븐은 멀리서 계속 때려 피즈가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Garen",
+          "reason": "가렌은 속박·기절 같은 방해 기술로 피즈가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/fizz/counters/",
+      "sourceOk": true
+    },
+    "Galio": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Garen",
+          "reason": "가렌은 속박·기절 같은 방해 기술로 갈리오가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Smolder",
+          "reason": "스몰더는 속박·기절 같은 방해 기술로 갈리오가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Lux",
+          "reason": "럭스는 속박·기절 같은 방해 기술로 갈리오가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/galio/counters/",
+      "sourceOk": true
+    },
+    "Gangplank": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Swain",
+          "reason": "스웨인은 속박·기절 같은 방해 기술로 갱플랭크가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Fiddlesticks",
+          "reason": "피들스틱은 속박·기절 같은 방해 기술로 갱플랭크가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gwen",
+          "reason": "그웬은 속박·기절 같은 방해 기술로 갱플랭크가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/gangplank/counters/",
+      "sourceOk": true
+    },
+    "Garen": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "TwistedFate",
+          "reason": "트위스티드 페이트는 멀리서 계속 때려 가렌이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Kayle",
+          "reason": "케일은 멀리서 계속 때려 가렌이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Tryndamere",
+          "reason": "트린다미어는 속박·기절 같은 방해 기술로 가렌이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/garen/counters/",
+      "sourceOk": true
+    },
+    "Gnar": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "MonkeyKing",
+          "reason": "오공은 멀리서 계속 때려 나르가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Malphite",
+          "reason": "말파이트는 속박·기절 같은 방해 기술로 나르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Kled",
+          "reason": "클레드는 멀리서 계속 때려 나르가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/gnar/counters/",
+      "sourceOk": true
+    },
+    "Gragas": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Warwick",
+          "reason": "워윅은 속박·기절 같은 방해 기술로 그라가스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Vladimir",
+          "reason": "블라디미르는 속박·기절 같은 방해 기술로 그라가스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Ornn",
+          "reason": "오른은 속박·기절 같은 방해 기술로 그라가스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/gragas/counters/",
+      "sourceOk": true
+    },
+    "Graves": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Darius",
+          "reason": "다리우스는 속박·기절 같은 방해 기술로 그레이브즈가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 그레이브즈가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Evelynn",
+          "reason": "이블린은 속박·기절 같은 방해 기술로 그레이브즈가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/graves/counters/",
+      "sourceOk": true
+    },
+    "Gwen": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Warwick",
+          "reason": "워윅은 속박·기절 같은 방해 기술로 그웬이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Akali",
+          "reason": "아칼리는 속박·기절 같은 방해 기술로 그웬이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Singed",
+          "reason": "신지드는 속박·기절 같은 방해 기술로 그웬이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/gwen/counters/",
+      "sourceOk": true
+    },
+    "Hecarim": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Aatrox",
+          "reason": "아트록스는 속박·기절 같은 방해 기술로 헤카림이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zaahen",
+          "reason": "자헨은 속박·기절 같은 방해 기술로 헤카림이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Darius",
+          "reason": "다리우스는 속박·기절 같은 방해 기술로 헤카림이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/hecarim/counters/",
+      "sourceOk": true
+    },
+    "Heimerdinger": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Riven",
+          "reason": "리븐은 멀리서 계속 때려 하이머딩거가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Chogath",
+          "reason": "초가스는 속박·기절 같은 방해 기술로 하이머딩거가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sett",
+          "reason": "세트는 속박·기절 같은 방해 기술로 하이머딩거가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/heimerdinger/counters/",
+      "sourceOk": true
+    },
+    "Hwei": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Gwen",
+          "reason": "그웬은 속박·기절 같은 방해 기술로 흐웨이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Katarina",
+          "reason": "카타리나는 속박·기절 같은 방해 기술로 흐웨이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Ekko",
+          "reason": "에코는 속박·기절 같은 방해 기술로 흐웨이가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/hwei/counters/",
+      "sourceOk": true
+    },
+    "Illaoi": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Varus",
+          "reason": "바루스는 멀리서 계속 때려 일라오이가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Heimerdinger",
+          "reason": "하이머딩거는 속박·기절 같은 방해 기술로 일라오이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Kayle",
+          "reason": "케일은 멀리서 계속 때려 일라오이가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/illaoi/counters/",
+      "sourceOk": true
+    },
+    "Irelia": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Warwick",
+          "reason": "워윅은 속박·기절 같은 방해 기술로 이렐리아가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Poppy",
+          "reason": "뽀삐는 속박·기절 같은 방해 기술로 이렐리아가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "MasterYi",
+          "reason": "마스터 이는 속박·기절 같은 방해 기술로 이렐리아가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/irelia/counters/",
+      "sourceOk": true
+    },
+    "Ivern": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Nunu",
+          "reason": "누누와 윌럼프는 속박·기절 같은 방해 기술로 아이번이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Naafiri",
+          "reason": "나피리는 속박·기절 같은 방해 기술로 아이번이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Amumu",
+          "reason": "아무무는 속박·기절 같은 방해 기술로 아이번이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/ivern/counters/",
+      "sourceOk": true
+    },
+    "Janna": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Thresh",
+          "reason": "쓰레쉬는 속박·기절 같은 방해 기술로 잔나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Nami",
+          "reason": "나미는 속박·기절 같은 방해 기술로 잔나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Seraphine",
+          "reason": "세라핀은 멀리서 계속 때려 잔나가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/janna/counters/",
+      "sourceOk": true
+    },
+    "JarvanIV": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Olaf",
+          "reason": "올라프는 속박·기절 같은 방해 기술로 자르반 4세가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zaahen",
+          "reason": "자헨은 속박·기절 같은 방해 기술로 자르반 4세가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Trundle",
+          "reason": "트런들은 속박·기절 같은 방해 기술로 자르반 4세가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/jarvaniv/counters/",
+      "sourceOk": true
+    },
+    "Jax": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Zac",
+          "reason": "자크는 멀리서 계속 때려 잭스가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Malzahar",
+          "reason": "말자하는 속박·기절 같은 방해 기술로 잭스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Pantheon",
+          "reason": "판테온은 속박·기절 같은 방해 기술로 잭스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/jax/counters/",
+      "sourceOk": true
+    },
+    "Jayce": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Ahri",
+          "reason": "아리는 속박·기절 같은 방해 기술로 제이스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Poppy",
+          "reason": "뽀삐는 속박·기절 같은 방해 기술로 제이스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 제이스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/jayce/counters/",
+      "sourceOk": true
+    },
+    "Jhin": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Katarina",
+          "reason": "카타리나는 속박·기절 같은 방해 기술로 진이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Karthus",
+          "reason": "카서스는 속박·기절 같은 방해 기술로 진이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Yasuo",
+          "reason": "야스오는 속박·기절 같은 방해 기술로 진이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/jhin/counters/",
+      "sourceOk": true
+    },
+    "Jinx": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "TahmKench",
+          "reason": "탐 켄치는 빠르게 접근해 징크스의 사거리 장점을 무너뜨리기 쉬워요."
+        },
+        {
+          "id": "AurelionSol",
+          "reason": "아우렐리온 솔은 사거리와 방해 기술로 징크스의 약점을 찌르기 쉬워요."
+        },
+        {
+          "id": "Karthus",
+          "reason": "카서스는 빠르게 접근해 징크스의 사거리 장점을 무너뜨리기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/jinx/counters/",
+      "sourceOk": true
+    },
+    "KSante": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Kayle",
+          "reason": "케일은 속박·기절 같은 방해 기술로 크산테가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Singed",
+          "reason": "신지드는 속박·기절 같은 방해 기술로 크산테가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Fiora",
+          "reason": "피오라는 속박·기절 같은 방해 기술로 크산테가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/ksante/counters/",
+      "sourceOk": true
+    },
+    "Kaisa": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Karthus",
+          "reason": "카서스는 속박·기절 같은 방해 기술로 카이사가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "KogMaw",
+          "reason": "코그모는 속박·기절 같은 방해 기술로 카이사가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Teemo",
+          "reason": "티모는 속박·기절 같은 방해 기술로 카이사가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/kaisa/counters/",
+      "sourceOk": true
+    },
+    "Kalista": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "KogMaw",
+          "reason": "코그모는 속박·기절 같은 방해 기술로 칼리스타가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Corki",
+          "reason": "코르키는 사거리와 방해 기술로 칼리스타의 약점을 찌르기 쉬워요."
+        },
+        {
+          "id": "Ziggs",
+          "reason": "직스는 속박·기절 같은 방해 기술로 칼리스타가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/kalista/counters/",
+      "sourceOk": true
+    },
+    "Karma": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "JarvanIV",
+          "reason": "자르반 4세는 속박·기절 같은 방해 기술로 카르마가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Poppy",
+          "reason": "뽀삐는 속박·기절 같은 방해 기술로 카르마가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sona",
+          "reason": "소나는 속박·기절 같은 방해 기술로 카르마가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/karma/counters/",
+      "sourceOk": true
+    },
+    "Karthus": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Nunu",
+          "reason": "누누와 윌럼프는 속박·기절 같은 방해 기술로 카서스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Belveth",
+          "reason": "벨베스는 멀리서 계속 때려 카서스가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Nidalee",
+          "reason": "니달리는 멀리서 계속 때려 카서스가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/karthus/counters/",
+      "sourceOk": true
+    },
+    "Kassadin": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Zed",
+          "reason": "제드는 속박·기절 같은 방해 기술로 카사딘이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Talon",
+          "reason": "탈론은 속박·기절 같은 방해 기술로 카사딘이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Jayce",
+          "reason": "제이스는 멀리서 계속 때려 카사딘이 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/kassadin/counters/",
+      "sourceOk": true
+    },
+    "Katarina": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Kayle",
+          "reason": "케일은 속박·기절 같은 방해 기술로 카타리나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Garen",
+          "reason": "가렌은 속박·기절 같은 방해 기술로 카타리나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Brand",
+          "reason": "브랜드는 속박·기절 같은 방해 기술로 카타리나가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/katarina/counters/",
+      "sourceOk": true
+    },
+    "Kayle": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Malphite",
+          "reason": "말파이트는 속박·기절 같은 방해 기술로 케일이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 케일이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Irelia",
+          "reason": "이렐리아는 속박·기절 같은 방해 기술로 케일이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/kayle/counters/",
+      "sourceOk": true
+    },
+    "Kayn": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Maokai",
+          "reason": "마오카이는 속박·기절 같은 방해 기술로 케인이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "RekSai",
+          "reason": "렉사이는 속박·기절 같은 방해 기술로 케인이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Ivern",
+          "reason": "아이번은 속박·기절 같은 방해 기술로 케인이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/kayn/counters/",
+      "sourceOk": true
+    },
+    "Kennen": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Ryze",
+          "reason": "라이즈는 속박·기절 같은 방해 기술로 케넨이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "DrMundo",
+          "reason": "문도 박사는 속박·기절 같은 방해 기술로 케넨이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sylas",
+          "reason": "사일러스는 속박·기절 같은 방해 기술로 케넨이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/kennen/counters/",
+      "sourceOk": true
+    },
+    "Khazix": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Maokai",
+          "reason": "마오카이는 속박·기절 같은 방해 기술로 카직스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Rammus",
+          "reason": "람머스는 속박·기절 같은 방해 기술로 카직스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Naafiri",
+          "reason": "나피리는 속박·기절 같은 방해 기술로 카직스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/khazix/counters/",
+      "sourceOk": true
+    },
+    "Kindred": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Evelynn",
+          "reason": "이블린은 속박·기절 같은 방해 기술로 킨드레드가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Ekko",
+          "reason": "에코는 속박·기절 같은 방해 기술로 킨드레드가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zyra",
+          "reason": "자이라는 속박·기절 같은 방해 기술로 킨드레드가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/kindred/counters/",
+      "sourceOk": true
+    },
+    "Kled": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 클레드가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gwen",
+          "reason": "그웬은 속박·기절 같은 방해 기술로 클레드가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Trundle",
+          "reason": "트런들은 속박·기절 같은 방해 기술로 클레드가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/kled/counters/",
+      "sourceOk": true
+    },
+    "KogMaw": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Yasuo",
+          "reason": "야스오는 속박·기절 같은 방해 기술로 코그모가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Veigar",
+          "reason": "베이가는 속박·기절 같은 방해 기술로 코그모가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Seraphine",
+          "reason": "세라핀은 속박·기절 같은 방해 기술로 코그모가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/kogmaw/counters/",
+      "sourceOk": true
+    },
+    "Leblanc": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Pantheon",
+          "reason": "판테온은 속박·기절 같은 방해 기술로 르블랑이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sion",
+          "reason": "사이온은 속박·기절 같은 방해 기술로 르블랑이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Vex",
+          "reason": "벡스는 멀리서 계속 때려 르블랑이 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/leblanc/counters/",
+      "sourceOk": true
+    },
+    "LeeSin": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Sion",
+          "reason": "사이온은 속박·기절 같은 방해 기술로 리 신이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Skarner",
+          "reason": "스카너는 속박·기절 같은 방해 기술로 리 신이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "RekSai",
+          "reason": "렉사이는 속박·기절 같은 방해 기술로 리 신이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/leesin/counters/",
+      "sourceOk": true
+    },
+    "Leona": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Janna",
+          "reason": "잔나는 속박·기절 같은 방해 기술로 레오나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zoe",
+          "reason": "조이는 멀리서 계속 때려 레오나가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Sona",
+          "reason": "소나는 속박·기절 같은 방해 기술로 레오나가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/leona/counters/",
+      "sourceOk": true
+    },
+    "Lillia": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Darius",
+          "reason": "다리우스는 속박·기절 같은 방해 기술로 릴리아가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "RekSai",
+          "reason": "렉사이는 속박·기절 같은 방해 기술로 릴리아가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Evelynn",
+          "reason": "이블린은 속박·기절 같은 방해 기술로 릴리아가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/lillia/counters/",
+      "sourceOk": true
+    },
+    "Lissandra": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Swain",
+          "reason": "스웨인은 속박·기절 같은 방해 기술로 리산드라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Anivia",
+          "reason": "애니비아는 멀리서 계속 때려 리산드라가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Xerath",
+          "reason": "제라스는 멀리서 계속 때려 리산드라가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/lissandra/counters/",
+      "sourceOk": true
+    },
+    "Locke": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Kennen",
+          "reason": "케넨은 빠르게 파고들어 로크가 기술을 쓰기 전에 압박해요."
+        },
+        {
+          "id": "Kayle",
+          "reason": "케일은 멀리서 계속 때려 로크가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Tryndamere",
+          "reason": "트린다미어는 속박·기절 같은 방해 기술로 로크가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/locke/counters/",
+      "sourceOk": true
+    },
+    "Lucian": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Cassiopeia",
+          "reason": "카시오페아는 속박·기절 같은 방해 기술로 루시안이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Seraphine",
+          "reason": "세라핀은 속박·기절 같은 방해 기술로 루시안이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Nilah",
+          "reason": "닐라는 속박·기절 같은 방해 기술로 루시안이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/lucian/counters/",
+      "sourceOk": true
+    },
+    "Lulu": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Zac",
+          "reason": "자크는 속박·기절 같은 방해 기술로 룰루가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Amumu",
+          "reason": "아무무는 속박·기절 같은 방해 기술로 룰루가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Fiddlesticks",
+          "reason": "피들스틱은 속박·기절 같은 방해 기술로 룰루가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/lulu/counters/",
+      "sourceOk": true
+    },
+    "Lux": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Elise",
+          "reason": "엘리스는 멀리서 계속 때려 럭스가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Taric",
+          "reason": "타릭은 속박·기절 같은 방해 기술로 럭스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Fiddlesticks",
+          "reason": "피들스틱은 속박·기절 같은 방해 기술로 럭스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/lux/counters/",
+      "sourceOk": true
+    },
+    "Malphite": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Aurora",
+          "reason": "오로라는 속박·기절 같은 방해 기술로 말파이트가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Ahri",
+          "reason": "아리는 속박·기절 같은 방해 기술로 말파이트가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Galio",
+          "reason": "갈리오는 멀리서 계속 때려 말파이트가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/malphite/counters/",
+      "sourceOk": true
+    },
+    "Malzahar": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Riven",
+          "reason": "리븐은 멀리서 계속 때려 말자하가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Kayle",
+          "reason": "케일은 멀리서 계속 때려 말자하가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Gangplank",
+          "reason": "갱플랭크는 멀리서 계속 때려 말자하가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/malzahar/counters/",
+      "sourceOk": true
+    },
+    "Maokai": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Zilean",
+          "reason": "질리언은 속박·기절 같은 방해 기술로 마오카이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Braum",
+          "reason": "브라움은 속박·기절 같은 방해 기술로 마오카이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Morgana",
+          "reason": "모르가나는 속박·기절 같은 방해 기술로 마오카이가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/maokai/counters/",
+      "sourceOk": true
+    },
+    "MasterYi": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Teemo",
+          "reason": "티모는 멀리서 계속 때려 마스터 이가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "RekSai",
+          "reason": "렉사이는 속박·기절 같은 방해 기술로 마스터 이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Fizz",
+          "reason": "피즈는 속박·기절 같은 방해 기술로 마스터 이가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/masteryi/counters/",
+      "sourceOk": true
+    },
+    "Mel": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Diana",
+          "reason": "다이애나는 속박·기절 같은 방해 기술로 멜이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "AurelionSol",
+          "reason": "아우렐리온 솔은 멀리서 계속 때려 멜이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Aurora",
+          "reason": "오로라는 속박·기절 같은 방해 기술로 멜이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/mel/counters/",
+      "sourceOk": true
+    },
+    "Milio": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Amumu",
+          "reason": "아무무는 속박·기절 같은 방해 기술로 밀리오가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sona",
+          "reason": "소나는 속박·기절 같은 방해 기술로 밀리오가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Braum",
+          "reason": "브라움은 속박·기절 같은 방해 기술로 밀리오가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/milio/counters/",
+      "sourceOk": true
+    },
+    "MissFortune": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Karthus",
+          "reason": "카서스는 속박·기절 같은 방해 기술로 미스 포츈이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Vladimir",
+          "reason": "블라디미르는 속박·기절 같은 방해 기술로 미스 포츈이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Velkoz",
+          "reason": "벨코즈는 속박·기절 같은 방해 기술로 미스 포츈이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/missfortune/counters/",
+      "sourceOk": true
+    },
+    "MonkeyKing": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Zaahen",
+          "reason": "자헨은 속박·기절 같은 방해 기술로 오공이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "DrMundo",
+          "reason": "문도 박사는 속박·기절 같은 방해 기술로 오공이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Evelynn",
+          "reason": "이블린은 속박·기절 같은 방해 기술로 오공이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/wukong/counters/",
+      "sourceOk": true
+    },
+    "Mordekaiser": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Malzahar",
+          "reason": "말자하는 속박·기절 같은 방해 기술로 모데카이저가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zed",
+          "reason": "제드는 속박·기절 같은 방해 기술로 모데카이저가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sylas",
+          "reason": "사일러스는 속박·기절 같은 방해 기술로 모데카이저가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/mordekaiser/counters/",
+      "sourceOk": true
+    },
+    "Morgana": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Leblanc",
+          "reason": "르블랑은 속박·기절 같은 방해 기술로 모르가나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Shaco",
+          "reason": "샤코는 속박·기절 같은 방해 기술로 모르가나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Amumu",
+          "reason": "아무무는 속박·기절 같은 방해 기술로 모르가나가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/morgana/counters/",
+      "sourceOk": true
+    },
+    "Naafiri": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Taliyah",
+          "reason": "탈리야는 속박·기절 같은 방해 기술로 나피리가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 나피리가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Nocturne",
+          "reason": "녹턴은 멀리서 계속 때려 나피리가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/naafiri/counters/",
+      "sourceOk": true
+    },
+    "Nami": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Ivern",
+          "reason": "아이번은 멀리서 계속 때려 나미가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Teemo",
+          "reason": "티모는 멀리서 계속 때려 나미가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Braum",
+          "reason": "브라움은 속박·기절 같은 방해 기술로 나미가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/nami/counters/",
+      "sourceOk": true
+    },
+    "Nasus": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Anivia",
+          "reason": "애니비아는 멀리서 계속 때려 나서스가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Ahri",
+          "reason": "아리는 속박·기절 같은 방해 기술로 나서스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sejuani",
+          "reason": "세주아니는 멀리서 계속 때려 나서스가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/nasus/counters/",
+      "sourceOk": true
+    },
+    "Nautilus": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Sion",
+          "reason": "사이온은 속박·기절 같은 방해 기술로 노틸러스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Rell",
+          "reason": "렐은 멀리서 계속 때려 노틸러스가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Taric",
+          "reason": "타릭은 속박·기절 같은 방해 기술로 노틸러스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/nautilus/counters/",
+      "sourceOk": true
+    },
+    "Neeko": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Zilean",
+          "reason": "질리언은 속박·기절 같은 방해 기술로 니코가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Karma",
+          "reason": "카르마는 속박·기절 같은 방해 기술로 니코가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zyra",
+          "reason": "자이라는 멀리서 계속 때려 니코가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/neeko/counters/",
+      "sourceOk": true
+    },
+    "Nidalee": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Fiddlesticks",
+          "reason": "피들스틱은 회복하거나 단단하게 버텨 니달리의 짧은 공격을 견뎌요."
+        },
+        {
+          "id": "Skarner",
+          "reason": "스카너는 회복하거나 단단하게 버텨 니달리의 짧은 공격을 견뎌요."
+        },
+        {
+          "id": "Nunu",
+          "reason": "누누와 윌럼프는 회복하거나 단단하게 버텨 니달리의 짧은 공격을 견뎌요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/nidalee/counters/",
+      "sourceOk": true
+    },
+    "Nilah": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Xayah",
+          "reason": "자야는 속박·기절 같은 방해 기술로 닐라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Ziggs",
+          "reason": "직스는 속박·기절 같은 방해 기술로 닐라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Jinx",
+          "reason": "징크스는 속박·기절 같은 방해 기술로 닐라가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/nilah/counters/",
+      "sourceOk": true
+    },
+    "Nocturne": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Udyr",
+          "reason": "우디르는 속박·기절 같은 방해 기술로 녹턴이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Olaf",
+          "reason": "올라프는 속박·기절 같은 방해 기술로 녹턴이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Nunu",
+          "reason": "누누와 윌럼프는 속박·기절 같은 방해 기술로 녹턴이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/nocturne/counters/",
+      "sourceOk": true
+    },
+    "Nunu": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Quinn",
+          "reason": "퀸은 멀리서 계속 때려 누누와 윌럼프가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Briar",
+          "reason": "브라이어는 속박·기절 같은 방해 기술로 누누와 윌럼프가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Rammus",
+          "reason": "람머스는 속박·기절 같은 방해 기술로 누누와 윌럼프가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/nunu/counters/",
+      "sourceOk": true
+    },
+    "Olaf": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Kayle",
+          "reason": "케일은 멀리서 계속 때려 올라프가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Kled",
+          "reason": "클레드는 멀리서 계속 때려 올라프가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Quinn",
+          "reason": "퀸은 멀리서 계속 때려 올라프가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/olaf/counters/",
+      "sourceOk": true
+    },
+    "Orianna": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Brand",
+          "reason": "브랜드는 속박·기절 같은 방해 기술로 오리아나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Velkoz",
+          "reason": "벨코즈는 멀리서 계속 때려 오리아나가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Kassadin",
+          "reason": "카사딘은 속박·기절 같은 방해 기술로 오리아나가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/orianna/counters/",
+      "sourceOk": true
+    },
+    "Ornn": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Singed",
+          "reason": "신지드는 속박·기절 같은 방해 기술로 오른이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Shen",
+          "reason": "쉔은 속박·기절 같은 방해 기술로 오른이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zaahen",
+          "reason": "자헨은 속박·기절 같은 방해 기술로 오른이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/ornn/counters/",
+      "sourceOk": true
+    },
+    "Pantheon": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Taric",
+          "reason": "타릭은 속박·기절 같은 방해 기술로 판테온이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Alistar",
+          "reason": "알리스타는 속박·기절 같은 방해 기술로 판테온이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Rell",
+          "reason": "렐은 멀리서 계속 때려 판테온이 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/pantheon/counters/",
+      "sourceOk": true
+    },
+    "Poppy": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Sona",
+          "reason": "소나는 속박·기절 같은 방해 기술로 뽀삐가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zilean",
+          "reason": "질리언은 속박·기절 같은 방해 기술로 뽀삐가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Maokai",
+          "reason": "마오카이는 속박·기절 같은 방해 기술로 뽀삐가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/poppy/counters/",
+      "sourceOk": true
+    },
+    "Pyke": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Fiddlesticks",
+          "reason": "피들스틱은 속박·기절 같은 방해 기술로 파이크가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Maokai",
+          "reason": "마오카이는 속박·기절 같은 방해 기술로 파이크가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Renata",
+          "reason": "레나타 글라스크는 속박·기절 같은 방해 기술로 파이크가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/pyke/counters/",
+      "sourceOk": true
+    },
+    "Qiyana": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Malphite",
+          "reason": "말파이트는 속박·기절 같은 방해 기술로 키아나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Poppy",
+          "reason": "뽀삐는 속박·기절 같은 방해 기술로 키아나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Trundle",
+          "reason": "트런들은 속박·기절 같은 방해 기술로 키아나가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/qiyana/counters/",
+      "sourceOk": true
+    },
+    "Quinn": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Rammus",
+          "reason": "람머스는 속박·기절 같은 방해 기술로 퀸이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sejuani",
+          "reason": "세주아니는 속박·기절 같은 방해 기술로 퀸이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Kindred",
+          "reason": "킨드레드는 속박·기절 같은 방해 기술로 퀸이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/quinn/counters/",
+      "sourceOk": true
+    },
+    "Rakan": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Hwei",
+          "reason": "흐웨이는 멀리서 계속 때려 라칸이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Braum",
+          "reason": "브라움은 속박·기절 같은 방해 기술로 라칸이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Leona",
+          "reason": "레오나는 속박·기절 같은 방해 기술로 라칸이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/rakan/counters/",
+      "sourceOk": true
+    },
+    "Rammus": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Chogath",
+          "reason": "초가스는 속박·기절 같은 방해 기술로 람머스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Lillia",
+          "reason": "릴리아는 속박·기절 같은 방해 기술로 람머스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Trundle",
+          "reason": "트런들은 속박·기절 같은 방해 기술로 람머스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/rammus/counters/",
+      "sourceOk": true
+    },
+    "RekSai": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Zac",
+          "reason": "자크는 멀리서 계속 때려 렉사이가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Vi",
+          "reason": "바이는 속박·기절 같은 방해 기술로 렉사이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Belveth",
+          "reason": "벨베스는 멀리서 계속 때려 렉사이가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/reksai/counters/",
+      "sourceOk": true
+    },
+    "Rell": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Senna",
+          "reason": "세나는 속박·기절 같은 방해 기술로 렐이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Janna",
+          "reason": "잔나는 속박·기절 같은 방해 기술로 렐이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Velkoz",
+          "reason": "벨코즈는 속박·기절 같은 방해 기술로 렐이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/rell/counters/",
+      "sourceOk": true
+    },
+    "Renata": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Velkoz",
+          "reason": "벨코즈는 멀리서 계속 때려 레나타 글라스크가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Sona",
+          "reason": "소나는 속박·기절 같은 방해 기술로 레나타 글라스크가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Lulu",
+          "reason": "룰루는 멀리서 계속 때려 레나타 글라스크가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/renata/counters/",
+      "sourceOk": true
+    },
+    "Renekton": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Lissandra",
+          "reason": "리산드라는 속박·기절 같은 방해 기술로 레넥톤이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Aurora",
+          "reason": "오로라는 속박·기절 같은 방해 기술로 레넥톤이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Kayle",
+          "reason": "케일은 멀리서 계속 때려 레넥톤이 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/renekton/counters/",
+      "sourceOk": true
+    },
+    "Rengar": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "RekSai",
+          "reason": "렉사이는 속박·기절 같은 방해 기술로 렝가가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sejuani",
+          "reason": "세주아니는 멀리서 계속 때려 렝가가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Aatrox",
+          "reason": "아트록스는 속박·기절 같은 방해 기술로 렝가가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/rengar/counters/",
+      "sourceOk": true
+    },
+    "Riven": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Kennen",
+          "reason": "케넨은 빠르게 접근해 리븐의 사거리 장점을 무너뜨리기 쉬워요."
+        },
+        {
+          "id": "MonkeyKing",
+          "reason": "오공은 속박·기절 같은 방해 기술로 리븐이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Singed",
+          "reason": "신지드는 속박·기절 같은 방해 기술로 리븐이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/riven/counters/",
+      "sourceOk": true
+    },
+    "Rumble": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Warwick",
+          "reason": "워윅은 속박·기절 같은 방해 기술로 럼블이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Kayle",
+          "reason": "케일은 멀리서 계속 때려 럼블이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Yorick",
+          "reason": "요릭은 속박·기절 같은 방해 기술로 럼블이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/rumble/counters/",
+      "sourceOk": true
+    },
+    "Ryze": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Brand",
+          "reason": "브랜드는 속박·기절 같은 방해 기술로 라이즈가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Annie",
+          "reason": "애니는 속박·기절 같은 방해 기술로 라이즈가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zed",
+          "reason": "제드는 속박·기절 같은 방해 기술로 라이즈가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/ryze/counters/",
+      "sourceOk": true
+    },
+    "Samira": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Vladimir",
+          "reason": "블라디미르는 속박·기절 같은 방해 기술로 사미라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "AurelionSol",
+          "reason": "아우렐리온 솔은 속박·기절 같은 방해 기술로 사미라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Viktor",
+          "reason": "빅토르는 속박·기절 같은 방해 기술로 사미라가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/samira/counters/",
+      "sourceOk": true
+    },
+    "Sejuani": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Trundle",
+          "reason": "트런들은 속박·기절 같은 방해 기술로 세주아니가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Nunu",
+          "reason": "누누와 윌럼프는 속박·기절 같은 방해 기술로 세주아니가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gwen",
+          "reason": "그웬은 속박·기절 같은 방해 기술로 세주아니가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/sejuani/counters/",
+      "sourceOk": true
+    },
+    "Senna": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Elise",
+          "reason": "엘리스는 속박·기절 같은 방해 기술로 세나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Amumu",
+          "reason": "아무무는 속박·기절 같은 방해 기술로 세나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Renata",
+          "reason": "레나타 글라스크는 속박·기절 같은 방해 기술로 세나가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/senna/counters/",
+      "sourceOk": true
+    },
+    "Seraphine": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Amumu",
+          "reason": "아무무는 속박·기절 같은 방해 기술로 세라핀이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Hwei",
+          "reason": "흐웨이는 속박·기절 같은 방해 기술로 세라핀이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Fiddlesticks",
+          "reason": "피들스틱은 속박·기절 같은 방해 기술로 세라핀이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/seraphine/counters/",
+      "sourceOk": true
+    },
+    "Sett": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Riven",
+          "reason": "리븐은 멀리서 계속 때려 세트가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Swain",
+          "reason": "스웨인은 속박·기절 같은 방해 기술로 세트가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Aurora",
+          "reason": "오로라는 속박·기절 같은 방해 기술로 세트가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/sett/counters/",
+      "sourceOk": true
+    },
+    "Shaco": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Zaahen",
+          "reason": "자헨은 속박·기절 같은 방해 기술로 샤코가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sejuani",
+          "reason": "세주아니는 멀리서 계속 때려 샤코가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Nunu",
+          "reason": "누누와 윌럼프는 속박·기절 같은 방해 기술로 샤코가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/shaco/counters/",
+      "sourceOk": true
+    },
+    "Shen": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Zed",
+          "reason": "제드는 속박·기절 같은 방해 기술로 쉔이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Quinn",
+          "reason": "퀸은 멀리서 계속 때려 쉔이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Heimerdinger",
+          "reason": "하이머딩거는 속박·기절 같은 방해 기술로 쉔이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/shen/counters/",
+      "sourceOk": true
+    },
+    "Shyvana": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Olaf",
+          "reason": "올라프는 속박·기절 같은 방해 기술로 쉬바나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sylas",
+          "reason": "사일러스는 속박·기절 같은 방해 기술로 쉬바나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "RekSai",
+          "reason": "렉사이는 속박·기절 같은 방해 기술로 쉬바나가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/shyvana/counters/",
+      "sourceOk": true
+    },
+    "Singed": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Gangplank",
+          "reason": "갱플랭크는 멀리서 계속 때려 신지드가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Kennen",
+          "reason": "케넨은 빠르게 파고들어 신지드가 기술을 쓰기 전에 압박해요."
+        },
+        {
+          "id": "Kled",
+          "reason": "클레드는 멀리서 계속 때려 신지드가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/singed/counters/",
+      "sourceOk": true
+    },
+    "Sion": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Riven",
+          "reason": "리븐은 멀리서 계속 때려 사이온이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Olaf",
+          "reason": "올라프는 속박·기절 같은 방해 기술로 사이온이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Ornn",
+          "reason": "오른은 속박·기절 같은 방해 기술로 사이온이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/sion/counters/",
+      "sourceOk": true
+    },
+    "Sivir": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "AurelionSol",
+          "reason": "아우렐리온 솔은 속박·기절 같은 방해 기술로 시비르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "KogMaw",
+          "reason": "코그모는 속박·기절 같은 방해 기술로 시비르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Yasuo",
+          "reason": "야스오는 속박·기절 같은 방해 기술로 시비르가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/sivir/counters/",
+      "sourceOk": true
+    },
+    "Skarner": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Udyr",
+          "reason": "우디르는 멀리서 계속 때려 스카너가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Fiddlesticks",
+          "reason": "피들스틱은 속박·기절 같은 방해 기술로 스카너가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sejuani",
+          "reason": "세주아니는 멀리서 계속 때려 스카너가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/skarner/counters/",
+      "sourceOk": true
+    },
+    "Smolder": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "KogMaw",
+          "reason": "코그모는 속박·기절 같은 방해 기술로 스몰더가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Katarina",
+          "reason": "카타리나는 속박·기절 같은 방해 기술로 스몰더가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Lux",
+          "reason": "럭스는 속박·기절 같은 방해 기술로 스몰더가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/smolder/counters/",
+      "sourceOk": true
+    },
+    "Sona": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Maokai",
+          "reason": "마오카이는 속박·기절 같은 방해 기술로 소나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Shen",
+          "reason": "쉔은 속박·기절 같은 방해 기술로 소나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sylas",
+          "reason": "사일러스는 속박·기절 같은 방해 기술로 소나가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/sona/counters/",
+      "sourceOk": true
+    },
+    "Soraka": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Leblanc",
+          "reason": "르블랑은 속박·기절 같은 방해 기술로 소라카가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Yuumi",
+          "reason": "유미는 속박·기절 같은 방해 기술로 소라카가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zilean",
+          "reason": "질리언은 속박·기절 같은 방해 기술로 소라카가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/soraka/counters/",
+      "sourceOk": true
+    },
+    "Swain": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Milio",
+          "reason": "밀리오는 멀리서 계속 때려 스웨인이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Hwei",
+          "reason": "흐웨이는 멀리서 계속 때려 스웨인이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Soraka",
+          "reason": "소라카는 속박·기절 같은 방해 기술로 스웨인이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/swain/counters/",
+      "sourceOk": true
+    },
+    "Sylas": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Gwen",
+          "reason": "그웬은 멀리서 계속 때려 사일러스가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Skarner",
+          "reason": "스카너는 속박·기절 같은 방해 기술로 사일러스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Darius",
+          "reason": "다리우스는 속박·기절 같은 방해 기술로 사일러스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/sylas/counters/",
+      "sourceOk": true
+    },
+    "Syndra": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Gwen",
+          "reason": "그웬은 멀리서 계속 때려 신드라가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Morgana",
+          "reason": "모르가나는 속박·기절 같은 방해 기술로 신드라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Ekko",
+          "reason": "에코는 멀리서 계속 때려 신드라가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/syndra/counters/",
+      "sourceOk": true
+    },
+    "TahmKench": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Shaco",
+          "reason": "샤코는 속박·기절 같은 방해 기술로 탐 켄치가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Maokai",
+          "reason": "마오카이는 속박·기절 같은 방해 기술로 탐 켄치가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sona",
+          "reason": "소나는 속박·기절 같은 방해 기술로 탐 켄치가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/tahmkench/counters/",
+      "sourceOk": true
+    },
+    "Taliyah": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Leblanc",
+          "reason": "르블랑은 속박·기절 같은 방해 기술로 탈리야가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zoe",
+          "reason": "조이는 멀리서 계속 때려 탈리야가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Katarina",
+          "reason": "카타리나는 멀리서 계속 때려 탈리야가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/taliyah/counters/",
+      "sourceOk": true
+    },
+    "Talon": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Fizz",
+          "reason": "피즈는 속박·기절 같은 방해 기술로 탈론이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "RekSai",
+          "reason": "렉사이는 속박·기절 같은 방해 기술로 탈론이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Rammus",
+          "reason": "람머스는 속박·기절 같은 방해 기술로 탈론이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/talon/counters/",
+      "sourceOk": true
+    },
+    "Taric": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Poppy",
+          "reason": "뽀삐는 속박·기절 같은 방해 기술로 타릭이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Renata",
+          "reason": "레나타 글라스크는 속박·기절 같은 방해 기술로 타릭이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Milio",
+          "reason": "밀리오는 멀리서 계속 때려 타릭이 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/taric/counters/",
+      "sourceOk": true
+    },
+    "Teemo": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Sylas",
+          "reason": "사일러스는 속박·기절 같은 방해 기술로 티모가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zed",
+          "reason": "제드는 속박·기절 같은 방해 기술로 티모가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Ryze",
+          "reason": "라이즈는 속박·기절 같은 방해 기술로 티모가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/teemo/counters/",
+      "sourceOk": true
+    },
+    "Thresh": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Heimerdinger",
+          "reason": "하이머딩거는 속박·기절 같은 방해 기술로 쓰레쉬가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 쓰레쉬가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Braum",
+          "reason": "브라움은 속박·기절 같은 방해 기술로 쓰레쉬가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/thresh/counters/",
+      "sourceOk": true
+    },
+    "Tristana": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Cassiopeia",
+          "reason": "카시오페아는 속박·기절 같은 방해 기술로 트리스타나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Vladimir",
+          "reason": "블라디미르는 속박·기절 같은 방해 기술로 트리스타나가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Yasuo",
+          "reason": "야스오는 속박·기절 같은 방해 기술로 트리스타나가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/tristana/counters/",
+      "sourceOk": true
+    },
+    "Trundle": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Kennen",
+          "reason": "케넨은 사거리와 방해 기술로 트런들의 약점을 찌르기 쉬워요."
+        },
+        {
+          "id": "Singed",
+          "reason": "신지드는 속박·기절 같은 방해 기술로 트런들이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Akali",
+          "reason": "아칼리는 멀리서 계속 때려 트런들이 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/trundle/counters/",
+      "sourceOk": true
+    },
+    "Tryndamere": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Poppy",
+          "reason": "뽀삐는 속박·기절 같은 방해 기술로 트린다미어가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Malphite",
+          "reason": "말파이트는 속박·기절 같은 방해 기술로 트린다미어가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zaahen",
+          "reason": "자헨은 속박·기절 같은 방해 기술로 트린다미어가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/tryndamere/counters/",
+      "sourceOk": true
+    },
+    "TwistedFate": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Brand",
+          "reason": "브랜드는 속박·기절 같은 방해 기술로 트위스티드 페이트가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Annie",
+          "reason": "애니는 속박·기절 같은 방해 기술로 트위스티드 페이트가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 트위스티드 페이트가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/twistedfate/counters/",
+      "sourceOk": true
+    },
+    "Twitch": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Nilah",
+          "reason": "닐라는 속박·기절 같은 방해 기술로 트위치가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Vladimir",
+          "reason": "블라디미르는 속박·기절 같은 방해 기술로 트위치가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Brand",
+          "reason": "브랜드는 속박·기절 같은 방해 기술로 트위치가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/twitch/counters/",
+      "sourceOk": true
+    },
+    "Udyr": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Trundle",
+          "reason": "트런들은 속박·기절 같은 방해 기술로 우디르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Amumu",
+          "reason": "아무무는 속박·기절 같은 방해 기술로 우디르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sejuani",
+          "reason": "세주아니는 속박·기절 같은 방해 기술로 우디르가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/udyr/counters/",
+      "sourceOk": true
+    },
+    "Urgot": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Malphite",
+          "reason": "말파이트는 속박·기절 같은 방해 기술로 우르곳이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Trundle",
+          "reason": "트런들은 속박·기절 같은 방해 기술로 우르곳이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Kayle",
+          "reason": "케일은 멀리서 계속 때려 우르곳이 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/urgot/counters/",
+      "sourceOk": true
+    },
+    "Varus": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Ziggs",
+          "reason": "직스는 속박·기절 같은 방해 기술로 바루스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Xerath",
+          "reason": "제라스는 속박·기절 같은 방해 기술로 바루스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Yasuo",
+          "reason": "야스오는 속박·기절 같은 방해 기술로 바루스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/varus/counters/",
+      "sourceOk": true
+    },
+    "Vayne": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Hwei",
+          "reason": "흐웨이는 속박·기절 같은 방해 기술로 베인이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Xerath",
+          "reason": "제라스는 속박·기절 같은 방해 기술로 베인이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Xayah",
+          "reason": "자야는 속박·기절 같은 방해 기술로 베인이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/vayne/counters/",
+      "sourceOk": true
+    },
+    "Veigar": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Pantheon",
+          "reason": "판테온은 속박·기절 같은 방해 기술로 베이가가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Talon",
+          "reason": "탈론은 속박·기절 같은 방해 기술로 베이가가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gwen",
+          "reason": "그웬은 멀리서 계속 때려 베이가가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/veigar/counters/",
+      "sourceOk": true
+    },
+    "Velkoz": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Taric",
+          "reason": "타릭은 사거리와 방해 기술로 벨코즈의 약점을 찌르기 쉬워요."
+        },
+        {
+          "id": "Poppy",
+          "reason": "뽀삐는 빠르게 파고들어 벨코즈가 기술을 쓰기 전에 압박해요."
+        },
+        {
+          "id": "Leblanc",
+          "reason": "르블랑은 빠르게 파고들어 벨코즈가 기술을 쓰기 전에 압박해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/velkoz/counters/",
+      "sourceOk": true
+    },
+    "Vex": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Mel",
+          "reason": "멜은 속박·기절 같은 방해 기술로 벡스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Hwei",
+          "reason": "흐웨이는 속박·기절 같은 방해 기술로 벡스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Nasus",
+          "reason": "나서스는 속박·기절 같은 방해 기술로 벡스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/vex/counters/",
+      "sourceOk": true
+    },
+    "Vi": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Zaahen",
+          "reason": "자헨은 속박·기절 같은 방해 기술로 바이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Taliyah",
+          "reason": "탈리야는 속박·기절 같은 방해 기술로 바이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Skarner",
+          "reason": "스카너는 속박·기절 같은 방해 기술로 바이가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/vi/counters/",
+      "sourceOk": true
+    },
+    "Viego": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Sion",
+          "reason": "사이온은 속박·기절 같은 방해 기술로 비에고가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Tryndamere",
+          "reason": "트린다미어는 속박·기절 같은 방해 기술로 비에고가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Nidalee",
+          "reason": "니달리는 멀리서 계속 때려 비에고가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/viego/counters/",
+      "sourceOk": true
+    },
+    "Viktor": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Singed",
+          "reason": "신지드는 속박·기절 같은 방해 기술로 빅토르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Tryndamere",
+          "reason": "트린다미어는 속박·기절 같은 방해 기술로 빅토르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zilean",
+          "reason": "질리언은 속박·기절 같은 방해 기술로 빅토르가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/viktor/counters/",
+      "sourceOk": true
+    },
+    "Vladimir": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Lux",
+          "reason": "럭스는 속박·기절 같은 방해 기술로 블라디미르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Malzahar",
+          "reason": "말자하는 속박·기절 같은 방해 기술로 블라디미르가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Swain",
+          "reason": "스웨인은 속박·기절 같은 방해 기술로 블라디미르가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/vladimir/counters/",
+      "sourceOk": true
+    },
+    "Volibear": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Teemo",
+          "reason": "티모는 속박·기절 같은 방해 기술로 볼리베어가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Vladimir",
+          "reason": "블라디미르는 속박·기절 같은 방해 기술로 볼리베어가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 볼리베어가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/volibear/counters/",
+      "sourceOk": true
+    },
+    "Warwick": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Rammus",
+          "reason": "람머스는 속박·기절 같은 방해 기술로 워윅이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 워윅이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Aatrox",
+          "reason": "아트록스는 속박·기절 같은 방해 기술로 워윅이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/warwick/counters/",
+      "sourceOk": true
+    },
+    "Xayah": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Lux",
+          "reason": "럭스는 속박·기절 같은 방해 기술로 자야가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "AurelionSol",
+          "reason": "아우렐리온 솔은 속박·기절 같은 방해 기술로 자야가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Karthus",
+          "reason": "카서스는 속박·기절 같은 방해 기술로 자야가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/xayah/counters/",
+      "sourceOk": true
+    },
+    "Xerath": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Irelia",
+          "reason": "이렐리아는 속박·기절 같은 방해 기술로 제라스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zoe",
+          "reason": "조이는 빠르게 파고들어 제라스가 기술을 쓰기 전에 압박해요."
+        },
+        {
+          "id": "Ekko",
+          "reason": "에코는 속박·기절 같은 방해 기술로 제라스가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/xerath/counters/",
+      "sourceOk": true
+    },
+    "XinZhao": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Elise",
+          "reason": "엘리스는 회복하거나 단단하게 버텨 신 짜오의 짧은 공격을 견뎌요."
+        },
+        {
+          "id": "Evelynn",
+          "reason": "이블린은 회복하거나 단단하게 버텨 신 짜오의 짧은 공격을 견뎌요."
+        },
+        {
+          "id": "Udyr",
+          "reason": "우디르는 회복하거나 단단하게 버텨 신 짜오의 짧은 공격을 견뎌요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/xinzhao/counters/",
+      "sourceOk": true
+    },
+    "Yasuo": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Morgana",
+          "reason": "모르가나는 속박·기절 같은 방해 기술로 야스오가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Riven",
+          "reason": "리븐은 멀리서 계속 때려 야스오가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Singed",
+          "reason": "신지드는 속박·기절 같은 방해 기술로 야스오가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/yasuo/counters/",
+      "sourceOk": true
+    },
+    "Yone": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Qiyana",
+          "reason": "키아나는 멀리서 계속 때려 요네가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Ahri",
+          "reason": "아리는 속박·기절 같은 방해 기술로 요네가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Viktor",
+          "reason": "빅토르는 속박·기절 같은 방해 기술로 요네가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/yone/counters/",
+      "sourceOk": true
+    },
+    "Yorick": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Yone",
+          "reason": "요네는 속박·기절 같은 방해 기술로 요릭이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Warwick",
+          "reason": "워윅은 속박·기절 같은 방해 기술로 요릭이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Trundle",
+          "reason": "트런들은 속박·기절 같은 방해 기술로 요릭이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/yorick/counters/",
+      "sourceOk": true
+    },
+    "Yunara": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Cassiopeia",
+          "reason": "카시오페아는 속박·기절 같은 방해 기술로 유나라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Brand",
+          "reason": "브랜드는 속박·기절 같은 방해 기술로 유나라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "KogMaw",
+          "reason": "코그모는 속박·기절 같은 방해 기술로 유나라가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/yunara/counters/",
+      "sourceOk": true
+    },
+    "Yuumi": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Rell",
+          "reason": "렐은 멀리서 계속 때려 유미가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Alistar",
+          "reason": "알리스타는 속박·기절 같은 방해 기술로 유미가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Braum",
+          "reason": "브라움은 속박·기절 같은 방해 기술로 유미가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/yuumi/counters/",
+      "sourceOk": true
+    },
+    "Zaahen": {
+      "lane": "top",
+      "laneLabel": "탑",
+      "counters": [
+        {
+          "id": "Teemo",
+          "reason": "티모는 멀리서 계속 때려 자헨이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Varus",
+          "reason": "바루스는 멀리서 계속 때려 자헨이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Heimerdinger",
+          "reason": "하이머딩거는 속박·기절 같은 방해 기술로 자헨이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/zaahen/counters/",
+      "sourceOk": true
+    },
+    "Zac": {
+      "lane": "jungle",
+      "laneLabel": "정글",
+      "counters": [
+        {
+          "id": "Zyra",
+          "reason": "자이라는 속박·기절 같은 방해 기술로 자크가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Skarner",
+          "reason": "스카너는 속박·기절 같은 방해 기술로 자크가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Gragas",
+          "reason": "그라가스는 속박·기절 같은 방해 기술로 자크가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/zac/counters/",
+      "sourceOk": true
+    },
+    "Zed": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Quinn",
+          "reason": "퀸은 멀리서 계속 때려 제드가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Garen",
+          "reason": "가렌은 속박·기절 같은 방해 기술로 제드가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Tryndamere",
+          "reason": "트린다미어는 속박·기절 같은 방해 기술로 제드가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/zed/counters/",
+      "sourceOk": true
+    },
+    "Zeri": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Lux",
+          "reason": "럭스는 속박·기절 같은 방해 기술로 제리가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Katarina",
+          "reason": "카타리나는 속박·기절 같은 방해 기술로 제리가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Karthus",
+          "reason": "카서스는 속박·기절 같은 방해 기술로 제리가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/zeri/counters/",
+      "sourceOk": true
+    },
+    "Ziggs": {
+      "lane": "bottom",
+      "laneLabel": "봇",
+      "counters": [
+        {
+          "id": "Samira",
+          "reason": "사미라는 멀리서 계속 때려 직스가 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Yasuo",
+          "reason": "야스오는 속박·기절 같은 방해 기술로 직스가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Zeri",
+          "reason": "제리는 멀리서 계속 때려 직스가 가까이 오기 어렵게 해요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/ziggs/counters/",
+      "sourceOk": true
+    },
+    "Zilean": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Zoe",
+          "reason": "조이는 멀리서 계속 때려 질리언이 가까이 오기 어렵게 해요."
+        },
+        {
+          "id": "Sona",
+          "reason": "소나는 속박·기절 같은 방해 기술로 질리언이 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Yuumi",
+          "reason": "유미는 속박·기절 같은 방해 기술로 질리언이 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/zilean/counters/",
+      "sourceOk": true
+    },
+    "Zoe": {
+      "lane": "middle",
+      "laneLabel": "미드",
+      "counters": [
+        {
+          "id": "Malzahar",
+          "reason": "말자하는 속박·기절 같은 방해 기술로 조이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Annie",
+          "reason": "애니는 속박·기절 같은 방해 기술로 조이가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "TwistedFate",
+          "reason": "트위스티드 페이트는 속박·기절 같은 방해 기술로 조이가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/zoe/counters/",
+      "sourceOk": true
+    },
+    "Zyra": {
+      "lane": "support",
+      "laneLabel": "서포터",
+      "counters": [
+        {
+          "id": "Shen",
+          "reason": "쉔은 속박·기절 같은 방해 기술로 자이라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Sona",
+          "reason": "소나는 속박·기절 같은 방해 기술로 자이라가 붙기 전에 막기 쉬워요."
+        },
+        {
+          "id": "Rell",
+          "reason": "렐은 속박·기절 같은 방해 기술로 자이라가 붙기 전에 막기 쉬워요."
+        }
+      ],
+      "sourceUrl": "https://lolalytics.com/lol/zyra/counters/",
+      "sourceOk": true
+    }
+  }
+}
