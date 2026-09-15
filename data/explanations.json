@@ -1402,13 +1402,15 @@
   {
     "id": "Rengar",
     "kind": "champion",
-    "summary": "숨어 있다가 기습하는 사나운 암살자예요.",
-    "analogy": "수풀에 숨어 있다가 먹잇감에게 덮치는 맹수를 떠올려 보세요.",
-    "tip": "야성이 쌓였을 때 E를 쓰면 적을 묶어요.",
-    "caution": "R을 켜야 수풀 밖 적에게도 뛰어갈 수 있어요.",
-    "sourceType": "editorial",
+    "summary": "야성을 쌓아 스킬을 강화하는 은신 도약 암살자예요.",
+    "analogy": "수풀에 숨어 있다가 뛰쳐나와 덮치고, 스킬 3개를 다 쓰면 마지막 한 방이 강화되는 사냥꾼 같아요.",
+    "tip": "Q/W/E를 번갈아 써서 야성을 3번 쌓으면 다음 스킬이 강화되니, 궁극기(위장)로 접근한 뒤 강화 스킬로 마무리하세요.",
+    "caution": "체력이 높고 방어력이 단단한 탱커에게는 한방 암살 각이 잘 안 나오니, 탱커가 많은 조합에서는 신중하게 플레이하세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "STOP caring about tier lists! : r/summonerschool - Reddit",
+    "explanationSourceUrl": "https://www.reddit.com/r/summonerschool/comments/enwg04/stop_caring_about_tier_lists/",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Riven",
