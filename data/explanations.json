@@ -1415,13 +1415,15 @@
   {
     "id": "Riven",
     "kind": "champion",
-    "summary": "칼로 세 번 베고 돌진하는 전사예요.",
-    "analogy": "부러진 칼로도 강하게 싸우는 용감한 기사예요.",
-    "tip": "Q를 세 번 누르면 마지막에 적을 밀쳐내요.",
-    "caution": "R의 강한 공격은 딱 한 번만 쓸 수 있어요.",
-    "sourceType": "editorial",
+    "summary": "검을 세 번 휘둘러 돌진하는 근접 데미지 딜러예요.",
+    "analogy": "검을 연달아 세 번 휘두르며 돌진하다가, 마지막엔 적을 공중에 띄우는 검사 같아요.",
+    "tip": "Q(부러진 날개)는 세 번 재사용할 수 있고 세 번째 타격에 적을 띄우니, 세 번 다 맞춰 콤보를 이어가세요.",
+    "caution": "Q/W/E는 모두 소모값이 없지만 스킬을 쓸수록 룬 검(패시브) 충전이 쌓이니, 평타로 충전을 소모하지 않으면 피해를 손해봐요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "암베사 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%94%EB%B2%A0%EC%82%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Rumble",
