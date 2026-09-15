@@ -108,6 +108,7 @@ await writeFile(
 await writeFile("dist/.nojekyll", "");
 await copyFile("data/glossary.json", "dist/data/glossary.json");
 await copyFile("data/bot-duos.json", "dist/data/bot-duos.json");
+await copyFile("data/easter-eggs.json", "dist/data/easter-eggs.json");
 await copyFile("data/champion-counters.json", "dist/data/champion-counters.json");
 await copyFile(
   "data/region-stories.json",

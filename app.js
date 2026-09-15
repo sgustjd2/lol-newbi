@@ -20,6 +20,7 @@ let glossaryEntries = [],
   regionStories = {},
   botDuoData = { patch: "", notice: "", sources: [], duos: [] },
   championCounterData = { patch: "", notice: "", champions: {} },
+  easterEggData = { updatedAt: "", notice: "", sources: [], eggs: [] },
   selectedInitial = "전체";
 let selectedRole = "전체";
 let selectedRegion = null;
@@ -670,6 +671,131 @@ function renderBotDuos(q) {
   note.append(sources);
   $("#grid").append(note);
 }
+function easterEggCard(egg) {
+  const card = text("article", "", "easter-card");
+  const head = text("div", "", "easter-card-top");
+  const title = text("div", "", "easter-card-heading");
+  title.append(
+    text("span", egg.category || "숨은 이야기", "badge easter-category"),
+    text("h3", egg.title),
+  );
+  head.append(title);
+  if (egg.status) head.append(text("span", egg.status, "easter-status"));
+  card.append(head, text("p", egg.summary, "easter-summary"));
+
+  const relatedIds = Array.isArray(egg.relatedChampions)
+    ? egg.relatedChampions
+    : [];
+  if (relatedIds.length) {
+    const related = text("div", "", "easter-related");
+    related.append(text("span", "관련 챔피언", "easter-related-label"));
+    const chips = text("div", "", "easter-related-chips");
+    for (const id of relatedIds) {
+      const champion = championById(id);
+      if (!champion) continue;
+      const chip = text("button", "", "easter-champion");
+      chip.type = "button";
+      chip.title = `${champion.name} 설명 보기`;
+      chip.append(portrait(champion), text("span", champion.name));
+      chip.onclick = () => {
+        lastFocus = chip;
+        location.hash = `champion/${champion.id}`;
+      };
+      chips.append(chip);
+    }
+    if (chips.childElementCount) {
+      related.append(chips);
+      card.append(related);
+    }
+  }
+
+  const details = document.createElement("details");
+  details.className = "easter-details";
+  details.append(text("summary", "발동 조건과 결과 보기"));
+  const detailFields = [
+    ["언제 나타나요?", egg.trigger],
+    ["무슨 일이 생기나요?", egg.effect],
+    ["초보자 메모", egg.tip],
+  ];
+  for (const [label, value] of detailFields) {
+    if (!value) continue;
+    const block = text("div", "", "easter-detail-block");
+    block.append(text("h4", label), text("p", value));
+    details.append(block);
+  }
+  card.append(details);
+
+  if (egg.sourceUrl) {
+    const source = text("p", "", "easter-source");
+    source.append(text("span", "자료 출처 · "));
+    const link = text("a", `${egg.sourceLabel || "출처"} ↗`);
+    link.href = egg.sourceUrl;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    source.append(link);
+    card.append(source);
+  }
+  return card;
+}
+function renderEasterEggs(q) {
+  const query = norm(q || "");
+  const list = (easterEggData.eggs || [])
+    .filter((egg) => {
+      if (!query) return true;
+      const relatedNames = (egg.relatedChampions || [])
+        .map((id) => championById(id)?.name || id)
+        .join(" ");
+      return norm(
+        [
+          egg.category,
+          egg.title,
+          egg.status,
+          egg.difficulty,
+          egg.summary,
+          egg.trigger,
+          egg.effect,
+          egg.tip,
+          ...(egg.tags || []),
+          relatedNames,
+        ].join(" "),
+      ).includes(query);
+    })
+    .sort(
+      (a, b) =>
+        String(a.category || "").localeCompare(String(b.category || ""), "ko") ||
+        String(a.title || "").localeCompare(String(b.title || ""), "ko"),
+    );
+  $("#count").textContent = `${list.length}개 숨은 이야기`;
+  $("#grid").replaceChildren();
+  const intro = text("div", "", "easter-intro");
+  intro.append(
+    text("p", "게임 속에 살짝 숨겨진 상호작용과 재미있는 장면을 모았어요."),
+    text(
+      "p",
+      easterEggData.notice ||
+        "패치와 게임 모드에 따라 달라질 수 있으니 재미있는 참고용으로 봐주세요.",
+    ),
+  );
+  $("#grid").append(intro);
+  for (const egg of list) $("#grid").append(easterEggCard(egg));
+  if (!list.length)
+    $("#grid").append(
+      text("p", "찾는 이스터 에그가 없어요. 챔피언이나 조건을 다시 검색해 보세요.", "empty"),
+    );
+  const note = text("div", "", "easter-source-note");
+  note.append(text("p", "출처와 확인 조건을 함께 적어 두었어요. 오래된 연출은 상태를 따로 표시했어요."));
+  const sources = text("p", "참고 자료 · ");
+  for (const [index, source] of (easterEggData.sources || []).entries()) {
+    if (index) sources.append(document.createTextNode(" · "));
+    const link = text("a", `${source.label} ↗`);
+    link.href = source.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    sources.append(link);
+  }
+  note.append(sources);
+  $("#grid").append(note);
+}
 function render() {
   roleFilters();
   const q =
@@ -687,6 +813,10 @@ function render() {
   });
   if (kind === "botduos") {
     renderBotDuos(q);
+    return;
+  }
+  if (kind === "easter") {
+    renderEasterEggs(q);
     return;
   }
   if (kind === "regions") {
@@ -1313,6 +1443,7 @@ const KIND_TITLE = {
   glossary: "게임 속 말, 쉽게 알아보기",
   regions: "지역별 이야기",
   botduos: "프로 봇 듀오 전체 목록",
+  easter: "숨은 이스터 에그",
 };
 const KIND_PLACEHOLDER = {
   favorite: "즐겨찾기한 이름을 찾아보세요",
@@ -1321,6 +1452,7 @@ const KIND_PLACEHOLDER = {
   glossary: "예: 갱, CS, 노플, 프리징",
   regions: "지역을 선택해 이야기를 읽어보세요",
   botduos: "예: 자야 라칸, S+, 포킹",
+  easter: "예: 렝가, 포로, 춤, 숨은 퀘스트",
 };
 document.querySelectorAll("[data-kind]").forEach((button) =>
   button.addEventListener("click", () => {
@@ -1403,6 +1535,11 @@ try {
   botDuoData = await fetch("./data/bot-duos.json")
     .then((r) => (r.ok ? r.json() : { duos: [] }))
     .catch(() => ({ duos: [] }));
+  easterEggData = await fetch("./data/easter-eggs.json")
+    .then((r) =>
+      r.ok ? r.json() : { updatedAt: "", notice: "", sources: [], eggs: [] },
+    )
+    .catch(() => ({ updatedAt: "", notice: "", sources: [], eggs: [] }));
   championCounterData = await fetch("./data/champion-counters.json?v=counter-reasons")
     .then((r) => (r.ok ? r.json() : { champions: {} }))
     .catch(() => ({ champions: {} }));
