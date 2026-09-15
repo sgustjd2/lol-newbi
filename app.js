@@ -701,9 +701,30 @@ function renderBotDuos(q) {
   for (const group of groups) {
     const section = text("section", "", "duo-group");
     const heading = text("h3", "", "duo-group-title");
-    heading.append(text("span", group.label), text("small", `${group.duos.length}개 조합`));
-    section.append(heading);
-    for (const duo of group.duos) section.append(botDuoCard(duo));
+    const groupId = `duo-group-${String(botDuoView)}-${String(group.key).replace(/[^a-z0-9_-]/gi, "-")}`;
+    const cards = text("div", "", "duo-group-cards");
+    cards.id = `${groupId}-cards`;
+    cards.hidden = true;
+    const groupToggle = text("button", "＋ 조합 펼치기", "duo-group-toggle");
+    groupToggle.type = "button";
+    groupToggle.setAttribute("aria-expanded", "false");
+    groupToggle.setAttribute("aria-controls", cards.id);
+    groupToggle.setAttribute("aria-label", `${group.label} 조합 펼치기`);
+    groupToggle.onclick = () => {
+      const open = !cards.hidden;
+      cards.hidden = open;
+      groupToggle.textContent = open ? "＋ 조합 펼치기" : "− 조합 접기";
+      groupToggle.setAttribute("aria-expanded", String(!open));
+      groupToggle.setAttribute("aria-label", `${group.label} 조합 ${open ? "펼치기" : "접기"}`);
+      section.classList.toggle("is-open", !open);
+    };
+    heading.append(
+      text("span", group.label),
+      text("small", `${group.duos.length}개 조합`),
+      groupToggle,
+    );
+    for (const duo of group.duos) cards.append(botDuoCard(duo));
+    section.append(heading, cards);
     $("#grid").append(section);
   }
   if (!list.length)

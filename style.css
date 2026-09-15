@@ -1928,7 +1928,7 @@ dialog::backdrop {
 .duo-group-title {
   grid-column: 1 / -1;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 12px;
   margin: 14px 0 -2px;
@@ -1948,6 +1948,39 @@ dialog::backdrop {
 }
 .duo-group-title > small {
   flex-shrink: 0;
+}
+.duo-group-toggle {
+  flex: 0 0 auto;
+  min-height: 34px;
+  margin-left: auto;
+  padding: 6px 12px;
+  border: 1px solid #dfe4ea;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #006c87;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: border-color 0.18s, background 0.18s, color 0.18s;
+}
+.duo-group-toggle:hover,
+.duo-group-toggle:focus-visible,
+.duo-group.is-open .duo-group-toggle {
+  border-color: var(--gold);
+  background: #fffaf0;
+  color: #8b682d;
+}
+.duo-group-cards {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.duo-group-cards[hidden] {
+  display: none;
+}
+.duo-group-cards > .duo-card {
+  grid-column: span 1;
 }
 .duo-intro p,
 .duo-source-note p {
@@ -2216,6 +2249,9 @@ dialog::backdrop {
   .duo-card {
     grid-column: span 1;
     padding: 20px;
+  }
+  .duo-group-cards {
+    grid-template-columns: 1fr;
   }
   .duo-card-head {
     flex-direction: column;
