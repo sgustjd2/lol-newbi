@@ -19,8 +19,14 @@ test("캐릭터 카드 화면의 목록 버튼과 필수 섹션이 연결되어 
   assert.match(app, /character-card-skill/);
   assert.match(app, /character-card-counter/);
   assert.match(app, /character-card-item/);
+  assert.match(app, /const characterCardFactionKeys/);
+  assert.match(app, /character-card-theme-\$\{characterCardFactionKey\(champion\)\}/);
+  assert.match(app, /function fitCharacterCardViewport/);
   assert.match(app, /window\.print\(\)/);
   assert.match(css, /\.character-card/);
+  assert.match(css, /character-card-theme-demacia/);
+  assert.match(css, /character-card-theme-void/);
+  assert.match(css, /--card-fit-scale/);
   assert.match(css, /@media print/);
 });
 
@@ -43,4 +49,3 @@ test("173개 챔피언 모두 카드용 스킬·아이템·카운터 자료를 �
     assert.ok(counters.champions[champion.id]?.counters?.length >= 3, champion.id);
   }
 });
-

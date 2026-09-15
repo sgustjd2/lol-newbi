@@ -3346,3 +3346,923 @@ dialog::backdrop {
     justify-content: flex-start;
   }
 }
+
+/* Standalone collectible-card treatment for the champion card route. */
+body.character-card-mode {
+  min-height: 100vh;
+  background-color: #aebfc8;
+  background-image: url("./assets/character-card-frosted-texture.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body.character-card-mode > header,
+body.character-card-mode > footer {
+  display: none;
+}
+body.character-card-mode main {
+  max-width: none;
+  padding: 0 24px;
+}
+body.character-card-mode .character-card-page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 28px 0 70px;
+}
+body.character-card-mode .character-card-actions {
+  max-width: 780px;
+  margin: 0 auto 14px;
+}
+body.character-card-mode .card-page-button {
+  min-height: 36px;
+  padding: 7px 12px;
+  border-color: #6caebe;
+  border-radius: 5px;
+  background: #f1f9fbd9;
+  color: #0b526d;
+  font-size: 11px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+body.character-card-mode .card-page-button-primary {
+  border-color: #071a28;
+  background: #071a28e8;
+  color: #ffffff;
+}
+body.character-card-mode .card-page-button:hover,
+body.character-card-mode .card-page-button:focus-visible {
+  border-color: #087e9d;
+  background: #ffffff;
+  color: #071a28;
+}
+body.character-card-mode .card-page-button-primary:hover,
+body.character-card-mode .card-page-button-primary:focus-visible {
+  border-color: #071a28;
+  background: #0d3347;
+  color: #ffffff;
+}
+body.character-card-mode .character-card {
+  position: relative;
+  padding: 30px;
+  border: 1px solid #5aaac1;
+  border-radius: 24px;
+  background-color: #eaf5f7ed;
+  background-image:
+    linear-gradient(135deg, #ffffffc7, #e6f3f5c2 55%, #fffdf5bf),
+    url("./assets/character-card-frosted-texture.png");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 22px 52px #24404d52, 0 2px 10px #ffffffaa inset;
+  color: #090f13;
+}
+body.character-card-mode .character-card::before {
+  position: absolute;
+  inset: 10px;
+  width: auto;
+  height: auto;
+  border: 1px solid #3aabc3b5;
+  border-radius: 16px;
+  background: none;
+  content: "";
+  pointer-events: none;
+}
+body.character-card-mode .character-card::after {
+  position: absolute;
+  top: 19px;
+  right: 30px;
+  width: 88px;
+  height: 3px;
+  background: #12b5cb;
+  box-shadow: -13px 0 #12b5cb66, -26px 0 #12b5cb2e;
+  content: "";
+  pointer-events: none;
+}
+body.character-card-mode .character-card-hero {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 194px;
+  gap: 24px;
+  align-items: end;
+  max-width: none;
+  height: auto;
+  margin: 0;
+  padding: 8px 14px 24px;
+  border-bottom: 2px solid #218aa5;
+}
+body.character-card-mode .character-card-kicker {
+  margin: 0 0 8px;
+  color: #101820;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+}
+body.character-card-mode .character-card-hero h2 {
+  margin: 0;
+  color: #05090c;
+  font-size: clamp(42px, 7vw, 66px);
+  font-weight: 950;
+  line-height: 0.98;
+  letter-spacing: -3.2px;
+}
+body.character-card-mode .character-card-subtitle {
+  margin: 10px 0 0;
+  color: #1b2730;
+  font-size: 14px;
+  font-weight: 700;
+}
+body.character-card-mode .character-card-roles {
+  gap: 4px;
+  margin-top: 13px;
+}
+body.character-card-mode .character-card-role {
+  padding: 4px 8px;
+  border: 1px solid #218aa5;
+  border-radius: 2px;
+  background: #f5fbfcd9;
+  color: #071a28;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+body.character-card-mode .character-card-portrait {
+  width: 194px;
+  height: 194px;
+  justify-self: end;
+  padding: 5px;
+  border: 1px solid #2089a7;
+  border-radius: 3px;
+  outline: 1px solid #ffffff;
+  outline-offset: -7px;
+  background: #d9eef2;
+  box-shadow: 0 10px 18px #163d4c3b;
+}
+body.character-card-mode .character-card-section {
+  z-index: 1;
+  padding: 22px 14px;
+  border-bottom: 1px solid #4aa4b9;
+}
+body.character-card-mode .character-card-section h3 {
+  margin: 0;
+  color: #080f13;
+  font-size: 21px;
+  font-weight: 950;
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+}
+body.character-card-mode .character-card-help {
+  margin: 6px 0 0;
+  color: #3e5864;
+  font-size: 12px;
+  line-height: 1.55;
+}
+body.character-card-mode .character-card-quick {
+  gap: 9px;
+  margin-top: 13px;
+}
+body.character-card-mode .character-card-quick-box {
+  padding: 12px 14px;
+  border: 1px solid #7bbaca;
+  border-radius: 2px;
+  background: #ffffffa8;
+}
+body.character-card-mode .character-card-quick-box h4 {
+  margin: 0 0 5px;
+  color: #116d86;
+  font-size: 10px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+body.character-card-mode .character-card-quick-box p {
+  color: #101820;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.55;
+}
+body.character-card-mode .character-card-caution {
+  border-color: #c5a55e;
+  background: #fffaf0b8;
+}
+body.character-card-mode .character-card-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 13px;
+  border: 1px solid #4aa4b9;
+}
+body.character-card-mode .character-card-skill {
+  min-height: 112px;
+  padding: 12px;
+  border: 0;
+  border-right: 1px solid #7bbaca;
+  border-bottom: 1px solid #7bbaca;
+  border-radius: 0;
+  background: #ffffffa8;
+}
+body.character-card-mode .character-card-skill:nth-child(2n) {
+  border-right: 0;
+}
+body.character-card-mode .character-card-skill:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+body.character-card-mode .character-card-skill:last-child:nth-child(odd) {
+  border-bottom: 0;
+}
+body.character-card-mode .character-card-skill-head {
+  gap: 7px;
+}
+body.character-card-mode .character-card-skill-icon {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #2089a7;
+  border-radius: 2px;
+}
+body.character-card-mode .character-card-skill-key {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  background: #071a28;
+  font-size: 11px;
+}
+body.character-card-mode .character-card-skill-name {
+  color: #090f13;
+  font-size: 13px;
+  font-weight: 950;
+}
+body.character-card-mode .character-card-skill-copy {
+  margin: 9px 0 0;
+  color: #1d2e37;
+  font-size: 12px;
+  line-height: 1.55;
+}
+body.character-card-mode .character-card-counter-grid {
+  gap: 0;
+  margin-top: 13px;
+  border: 1px solid #4aa4b9;
+}
+body.character-card-mode .character-card-counter {
+  padding: 12px;
+  border: 0;
+  border-right: 1px solid #e0aaaa;
+  border-radius: 0;
+  background: #fffafae0;
+}
+body.character-card-mode .character-card-counter:last-child {
+  border-right: 0;
+}
+body.character-card-mode .character-card-counter-head {
+  gap: 8px;
+}
+body.character-card-mode .character-card-counter-icon {
+  width: 39px;
+  height: 39px;
+  border: 1px solid #bd7777;
+  border-radius: 50%;
+}
+body.character-card-mode .character-card-counter-name {
+  color: #090f13;
+  font-size: 13px;
+  font-weight: 950;
+}
+body.character-card-mode .character-card-counter-reason,
+body.character-card-mode .character-card-counter-tip {
+  margin: 9px 0 0;
+  color: #263b45;
+  font-size: 11px;
+  line-height: 1.55;
+}
+body.character-card-mode .character-card-counter-tip {
+  padding-top: 8px;
+  border-top: 1px solid #edcccc;
+  color: #72511f;
+}
+body.character-card-mode .character-card-mode-title {
+  margin: 14px 0 0;
+  color: #116d86;
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+body.character-card-mode .character-card-build {
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 11px;
+  margin-top: 10px;
+}
+body.character-card-mode .character-card-build-label {
+  padding-top: 11px;
+  color: #116d86;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+body.character-card-mode .character-card-item-list {
+  gap: 10px;
+}
+body.character-card-mode .character-card-item {
+  width: 68px;
+  gap: 4px;
+}
+body.character-card-mode .character-card-item-icon {
+  width: 48px;
+  height: 48px;
+  padding: 2px;
+  border: 1px solid #2089a7;
+  border-radius: 2px;
+  box-shadow: none;
+}
+body.character-card-mode .character-card-item-name {
+  color: #182b34;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+body.character-card-mode .character-card-footer {
+  z-index: 1;
+  margin: 15px 14px 0;
+  color: #44616d;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 700px) {
+  body.character-card-mode main {
+    padding: 0 12px;
+  }
+  body.character-card-mode .character-card-page {
+    padding-top: 16px;
+  }
+  body.character-card-mode .character-card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+  body.character-card-mode .character-card-hero {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 8px 8px 18px;
+  }
+  body.character-card-mode .character-card-portrait {
+    width: 142px;
+    height: 142px;
+    justify-self: start;
+  }
+  body.character-card-mode .character-card-section {
+    padding: 18px 8px;
+  }
+  body.character-card-mode .character-card-quick,
+  body.character-card-mode .character-card-skill-grid,
+  body.character-card-mode .character-card-counter-grid {
+    grid-template-columns: 1fr;
+  }
+  body.character-card-mode .character-card-skill,
+  body.character-card-mode .character-card-counter {
+    border-right: 0;
+  }
+  body.character-card-mode .character-card-skill:not(:last-child),
+  body.character-card-mode .character-card-counter:not(:last-child) {
+    border-bottom: 1px solid #7bbaca;
+  }
+  body.character-card-mode .character-card-counter:last-child {
+    border-bottom: 0;
+  }
+  body.character-card-mode .character-card-build {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  body.character-card-mode .character-card-build-label {
+    padding-top: 0;
+  }
+}
+@media print {
+  body.character-card-mode {
+    background: #ffffff;
+  }
+  body.character-card-mode main {
+    padding: 0;
+  }
+  body.character-card-mode .character-card {
+    border-color: #4aa4b9;
+    box-shadow: none;
+  }
+}
+
+/* Each champion keeps the collectible-card layout, while its faction supplies the visual identity. */
+body.character-card-mode {
+  --card-page-bg: #aebfc8;
+  --card-accent: #4aa4b9;
+  --card-accent-strong: #12b5cb;
+  --card-accent-soft: #7bbaca;
+  --card-ink: #090f13;
+  --card-muted: #3e5864;
+  --card-surface: #eaf5f7ed;
+  --card-surface-strong: #ffffffa8;
+  --card-warm: #fffaf0b8;
+  --card-warm-border: #c5a55e;
+  --card-counter: #fffafae0;
+  --card-counter-border: #e0aaaa;
+  background-color: var(--card-page-bg);
+}
+body.character-card-mode.character-card-theme-demacia {
+  --card-page-bg: #b9c9d2;
+  --card-accent: #427eae;
+  --card-accent-strong: #d39c32;
+  --card-accent-soft: #87abc8;
+  --card-ink: #10283d;
+  --card-muted: #40596b;
+  --card-surface: #f1f5f7ed;
+  --card-surface-strong: #ffffffb8;
+  --card-warm: #fff7e3c7;
+  --card-warm-border: #c69437;
+  --card-counter: #fffaf7e8;
+  --card-counter-border: #d6aaa0;
+}
+body.character-card-mode.character-card-theme-noxus {
+  --card-page-bg: #8e777b;
+  --card-accent: #9e3947;
+  --card-accent-strong: #d36a43;
+  --card-accent-soft: #c27b7e;
+  --card-ink: #261318;
+  --card-muted: #65464a;
+  --card-surface: #f3e8e6ef;
+  --card-surface-strong: #fffaf9b8;
+  --card-warm: #fff0e7c7;
+  --card-warm-border: #b65e40;
+  --card-counter: #fff4f2eb;
+  --card-counter-border: #ca8b88;
+}
+body.character-card-mode.character-card-theme-ionia {
+  --card-page-bg: #b9a7a3;
+  --card-accent: #a85b66;
+  --card-accent-strong: #2d8f86;
+  --card-accent-soft: #c99696;
+  --card-ink: #2a1b23;
+  --card-muted: #67505b;
+  --card-surface: #f4edebef;
+  --card-surface-strong: #fffdf9b8;
+  --card-warm: #fff3e9c7;
+  --card-warm-border: #bd8950;
+  --card-counter: #fff8f6eb;
+  --card-counter-border: #d19e9b;
+}
+body.character-card-mode.character-card-theme-freljord {
+  --card-page-bg: #aebfc8;
+  --card-accent: #4aa4b9;
+  --card-accent-strong: #12b5cb;
+  --card-accent-soft: #7bbaca;
+  --card-ink: #090f13;
+  --card-muted: #3e5864;
+  --card-surface: #eaf5f7ed;
+  --card-surface-strong: #ffffffa8;
+  --card-warm: #fffaf0b8;
+  --card-warm-border: #c5a55e;
+  --card-counter: #fffafae0;
+  --card-counter-border: #e0aaaa;
+}
+body.character-card-mode.character-card-theme-piltover {
+  --card-page-bg: #b7b9ad;
+  --card-accent: #a77831;
+  --card-accent-strong: #258da0;
+  --card-accent-soft: #c4a76e;
+  --card-ink: #1e211c;
+  --card-muted: #5d604e;
+  --card-surface: #f4f2e7ef;
+  --card-surface-strong: #fffff5b8;
+  --card-warm: #fff4d8c7;
+  --card-warm-border: #b1873d;
+  --card-counter: #fffaf1eb;
+  --card-counter-border: #d0b27c;
+}
+body.character-card-mode.character-card-theme-zaun {
+  --card-page-bg: #879f94;
+  --card-accent: #438b78;
+  --card-accent-strong: #8455a7;
+  --card-accent-soft: #73b09a;
+  --card-ink: #13221d;
+  --card-muted: #476056;
+  --card-surface: #e7f1eaeF;
+  --card-surface-strong: #f6fff8b8;
+  --card-warm: #f8f1ffc7;
+  --card-warm-border: #8a62a8;
+  --card-counter: #fff9fceb;
+  --card-counter-border: #c19fc4;
+}
+body.character-card-mode.character-card-theme-shurima {
+  --card-page-bg: #c6ac79;
+  --card-accent: #a9782e;
+  --card-accent-strong: #188b94;
+  --card-accent-soft: #d2b468;
+  --card-ink: #2c2416;
+  --card-muted: #6d5b39;
+  --card-surface: #f7efd9ef;
+  --card-surface-strong: #fffbeab8;
+  --card-warm: #fff1c7c7;
+  --card-warm-border: #b58230;
+  --card-counter: #fff8e9eb;
+  --card-counter-border: #d7b97a;
+}
+body.character-card-mode.character-card-theme-targon {
+  --card-page-bg: #8c829e;
+  --card-accent: #735caa;
+  --card-accent-strong: #d2a94e;
+  --card-accent-soft: #aa99c8;
+  --card-ink: #211a31;
+  --card-muted: #594c6e;
+  --card-surface: #f0ebf8ef;
+  --card-surface-strong: #fffaffb8;
+  --card-warm: #fff6d8c7;
+  --card-warm-border: #bf9541;
+  --card-counter: #fff8f9eb;
+  --card-counter-border: #c6abc8;
+}
+body.character-card-mode.character-card-theme-bilgewater {
+  --card-page-bg: #718c91;
+  --card-accent: #287a87;
+  --card-accent-strong: #d18a38;
+  --card-accent-soft: #6babb0;
+  --card-ink: #10262d;
+  --card-muted: #44636a;
+  --card-surface: #e6f0efef;
+  --card-surface-strong: #f8ffffb8;
+  --card-warm: #fff2dac7;
+  --card-warm-border: #c3863a;
+  --card-counter: #fff9f5eb;
+  --card-counter-border: #cda58a;
+}
+body.character-card-mode.character-card-theme-ixtal {
+  --card-page-bg: #709686;
+  --card-accent: #277d6a;
+  --card-accent-strong: #c99737;
+  --card-accent-soft: #6fb59e;
+  --card-ink: #11251e;
+  --card-muted: #46695a;
+  --card-surface: #e8f3e9ef;
+  --card-surface-strong: #fafff5b8;
+  --card-warm: #fff5d8c7;
+  --card-warm-border: #bc8d36;
+  --card-counter: #fffaf5eb;
+  --card-counter-border: #c6ac7d;
+}
+body.character-card-mode.character-card-theme-shadow-isles {
+  --card-page-bg: #526e70;
+  --card-accent: #368b87;
+  --card-accent-strong: #a4d35c;
+  --card-accent-soft: #6cae9e;
+  --card-ink: #0c1b1b;
+  --card-muted: #3c5f5e;
+  --card-surface: #dcebeaef;
+  --card-surface-strong: #f3fffbad;
+  --card-warm: #f2f7d8c7;
+  --card-warm-border: #91b45c;
+  --card-counter: #f5fcf8eb;
+  --card-counter-border: #93bbb1;
+}
+body.character-card-mode.character-card-theme-bandle-city {
+  --card-page-bg: #aa9bb5;
+  --card-accent: #8050a3;
+  --card-accent-strong: #4cae9a;
+  --card-accent-soft: #b38bc2;
+  --card-ink: #241b2c;
+  --card-muted: #614f6d;
+  --card-surface: #f4edf7ef;
+  --card-surface-strong: #fffaffb8;
+  --card-warm: #fff8d8c7;
+  --card-warm-border: #c89b42;
+  --card-counter: #fff8fceb;
+  --card-counter-border: #c8a6cc;
+}
+body.character-card-mode.character-card-theme-void {
+  --card-page-bg: #716680;
+  --card-accent: #7c4ba2;
+  --card-accent-strong: #c442a5;
+  --card-accent-soft: #a06bbc;
+  --card-ink: #21152b;
+  --card-muted: #5b466a;
+  --card-surface: #f1e9f5ef;
+  --card-surface-strong: #fff9ffb8;
+  --card-warm: #f3ffd8c7;
+  --card-warm-border: #8caf50;
+  --card-counter: #fff5fceb;
+  --card-counter-border: #d09ac4;
+}
+body.character-card-mode.character-card-theme-runeterra {
+  --card-page-bg: #9ba7ad;
+  --card-accent: #55798c;
+  --card-accent-strong: #b27f3f;
+  --card-accent-soft: #87a7b5;
+  --card-ink: #18242a;
+  --card-muted: #52636b;
+  --card-surface: #eaf0f1ef;
+  --card-surface-strong: #ffffffb8;
+  --card-warm: #fff4dfc7;
+  --card-warm-border: #af8246;
+  --card-counter: #fff9f6eb;
+  --card-counter-border: #c5a89a;
+}
+body.character-card-mode .character-card {
+  border-color: var(--card-accent);
+  background-color: var(--card-surface);
+  background-image:
+    linear-gradient(135deg, #ffffffc7, var(--card-surface) 55%, #fffdf5bf),
+    url("./assets/character-card-frosted-texture.png");
+  color: var(--card-ink);
+}
+body.character-card-mode .character-card::before {
+  border-color: color-mix(in srgb, var(--card-accent) 72%, transparent);
+}
+body.character-card-mode .character-card::after {
+  background: var(--card-accent-strong);
+  box-shadow: -13px 0 color-mix(in srgb, var(--card-accent-strong) 42%, transparent),
+    -26px 0 color-mix(in srgb, var(--card-accent-strong) 18%, transparent);
+}
+body.character-card-mode .character-card-hero {
+  border-bottom-color: var(--card-accent);
+}
+body.character-card-mode .character-card-kicker,
+body.character-card-mode .character-card-hero h2,
+body.character-card-mode .character-card-subtitle,
+body.character-card-mode .character-card-section h3,
+body.character-card-mode .character-card-quick-box p,
+body.character-card-mode .character-card-skill-name,
+body.character-card-mode .character-card-counter-name {
+  color: var(--card-ink);
+}
+body.character-card-mode .character-card-faction-label,
+body.character-card-mode .character-card-quick-box h4,
+body.character-card-mode .character-card-mode-title,
+body.character-card-mode .character-card-build-label {
+  color: var(--card-accent-strong);
+}
+body.character-card-mode .character-card-faction-label {
+  margin: 7px 0 0;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+}
+body.character-card-mode .character-card-role,
+body.character-card-mode .character-card-portrait,
+body.character-card-mode .character-card-skill-icon,
+body.character-card-mode .character-card-item-icon {
+  border-color: var(--card-accent);
+}
+body.character-card-mode .character-card-role {
+  background: var(--card-surface-strong);
+  color: var(--card-ink);
+}
+body.character-card-mode .character-card-section {
+  border-bottom-color: var(--card-accent-soft);
+}
+body.character-card-mode .character-card-help,
+body.character-card-mode .character-card-footer {
+  color: var(--card-muted);
+}
+body.character-card-mode .character-card-quick-box {
+  border-color: var(--card-accent-soft);
+  background: var(--card-surface-strong);
+}
+body.character-card-mode .character-card-caution {
+  border-color: var(--card-warm-border);
+  background: var(--card-warm);
+}
+body.character-card-mode .character-card-skill-grid,
+body.character-card-mode .character-card-counter-grid {
+  border-color: var(--card-accent);
+}
+body.character-card-mode .character-card-skill {
+  border-right-color: var(--card-accent-soft);
+  border-bottom-color: var(--card-accent-soft);
+  background: var(--card-surface-strong);
+}
+body.character-card-mode .character-card-skill-key {
+  background: var(--card-ink);
+}
+body.character-card-mode .character-card-skill-copy,
+body.character-card-mode .character-card-counter-reason {
+  color: var(--card-ink);
+}
+body.character-card-mode .character-card-counter {
+  border-right-color: var(--card-counter-border);
+  background: var(--card-counter);
+}
+body.character-card-mode .character-card-counter-icon {
+  border-color: var(--card-counter-border);
+}
+body.character-card-mode .character-card-counter-tip {
+  border-top-color: var(--card-counter-border);
+  color: var(--card-accent-strong);
+}
+
+/* Keep the desktop card legible but contained in a single browser viewport. */
+@media (min-width: 701px) and (min-height: 620px) {
+  body.character-card-mode {
+    overflow: hidden;
+  }
+  body.character-card-mode main {
+    height: 100vh;
+    padding: 0 18px;
+  }
+  body.character-card-mode .character-card-page {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 10px 0 12px;
+  }
+  body.character-card-mode .character-card-actions {
+    height: 28px;
+    margin-bottom: 7px;
+  }
+  body.character-card-mode .card-page-button {
+    min-height: 28px;
+    padding: 4px 9px;
+    font-size: 9px;
+  }
+  body.character-card-mode .character-card {
+    height: auto;
+    min-height: calc(100vh - 45px);
+    box-sizing: border-box;
+    overflow: visible;
+    padding: 14px;
+    border-radius: 14px;
+    transform: scale(var(--card-fit-scale, 1));
+    transform-origin: top center;
+  }
+  body.character-card-mode .character-card::before {
+    inset: 6px;
+    border-radius: 9px;
+  }
+  body.character-card-mode .character-card::after {
+    top: 12px;
+    right: 18px;
+    width: 60px;
+    height: 2px;
+    box-shadow: -9px 0 color-mix(in srgb, var(--card-accent-strong) 42%, transparent),
+      -18px 0 color-mix(in srgb, var(--card-accent-strong) 18%, transparent);
+  }
+  body.character-card-mode .character-card-hero {
+    grid-template-columns: minmax(0, 1fr) 82px;
+    gap: 12px;
+    padding: 2px 6px 8px;
+  }
+  body.character-card-mode .character-card-kicker {
+    margin-bottom: 3px;
+    font-size: 7px;
+    letter-spacing: 0.8px;
+  }
+  body.character-card-mode .character-card-hero h2 {
+    font-size: clamp(30px, 4.6vw, 44px);
+    letter-spacing: -1.8px;
+  }
+  body.character-card-mode .character-card-subtitle {
+    margin-top: 4px;
+    font-size: 9px;
+  }
+  body.character-card-mode .character-card-faction-label {
+    margin-top: 3px;
+    font-size: 7px;
+  }
+  body.character-card-mode .character-card-roles {
+    gap: 3px;
+    margin-top: 5px;
+  }
+  body.character-card-mode .character-card-role {
+    padding: 2px 5px;
+    font-size: 7px;
+  }
+  body.character-card-mode .character-card-portrait {
+    width: 82px;
+    height: 82px;
+    padding: 3px;
+    outline-offset: -5px;
+  }
+  body.character-card-mode .character-card-section {
+    padding: 5px 6px;
+  }
+  body.character-card-mode .character-card-section h3 {
+    font-size: 13px;
+    letter-spacing: -0.2px;
+  }
+  body.character-card-mode .character-card-help {
+    margin-top: 2px;
+    font-size: 8px;
+    line-height: 1.25;
+  }
+  body.character-card-mode .character-card-section > .character-card-help {
+    display: none;
+  }
+  body.character-card-mode .character-card-quick {
+    gap: 4px;
+    margin-top: 5px;
+  }
+  body.character-card-mode .character-card-quick-box {
+    padding: 5px 7px;
+  }
+  body.character-card-mode .character-card-quick-box h4 {
+    margin-bottom: 2px;
+    font-size: 7px;
+  }
+  body.character-card-mode .character-card-quick-box p {
+    font-size: 9px;
+    line-height: 1.28;
+  }
+  body.character-card-mode .character-card-skill-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 5px;
+  }
+  body.character-card-mode .character-card-skill {
+    min-height: 0;
+    padding: 6px;
+  }
+  body.character-card-mode .character-card-skill:nth-child(2n) {
+    border-right: 1px solid var(--card-accent-soft);
+  }
+  body.character-card-mode .character-card-skill:nth-child(3n) {
+    border-right: 0;
+  }
+  body.character-card-mode .character-card-skill:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--card-accent-soft);
+  }
+  body.character-card-mode .character-card-skill:nth-last-child(-n + 3) {
+    border-bottom: 0;
+  }
+  body.character-card-mode .character-card-skill-head {
+    gap: 4px;
+  }
+  body.character-card-mode .character-card-skill-icon {
+    width: 22px;
+    height: 22px;
+  }
+  body.character-card-mode .character-card-skill-key {
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+  }
+  body.character-card-mode .character-card-skill-name {
+    font-size: 8px;
+  }
+  body.character-card-mode .character-card-skill-copy {
+    margin-top: 4px;
+    font-size: 7px;
+    line-height: 1.18;
+  }
+  body.character-card-mode .character-card-counter-grid {
+    margin-top: 5px;
+  }
+  body.character-card-mode .character-card-counter {
+    padding: 6px;
+  }
+  body.character-card-mode .character-card-counter-head {
+    gap: 5px;
+  }
+  body.character-card-mode .character-card-counter-icon {
+    width: 25px;
+    height: 25px;
+  }
+  body.character-card-mode .character-card-counter-name {
+    font-size: 8px;
+  }
+  body.character-card-mode .character-card-counter-reason,
+  body.character-card-mode .character-card-counter-tip {
+    margin-top: 4px;
+    font-size: 7px;
+    line-height: 1.28;
+    min-height: 0;
+  }
+  body.character-card-mode .character-card-counter-tip {
+    padding-top: 3px;
+  }
+  body.character-card-mode .character-card-mode-title {
+    margin-top: 5px;
+    font-size: 8px;
+  }
+  body.character-card-mode .character-card-build {
+    display: inline-flex;
+    width: 32.5%;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 4px;
+    vertical-align: top;
+  }
+  body.character-card-mode .character-card-build-label {
+    padding-top: 0;
+    font-size: 7px;
+  }
+  body.character-card-mode .character-card-item-list {
+    gap: 6px;
+  }
+  body.character-card-mode .character-card-item {
+    width: 42px;
+    gap: 2px;
+  }
+  body.character-card-mode .character-card-item-icon {
+    width: 28px;
+    height: 28px;
+    padding: 1px;
+  }
+  body.character-card-mode .character-card-item-name {
+    font-size: 7px;
+    line-height: 1.15;
+  }
+  body.character-card-mode .character-card-footer {
+    margin: 5px 6px 0;
+    font-size: 7px;
+  }
+}

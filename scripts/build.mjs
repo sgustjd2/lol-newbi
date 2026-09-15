@@ -106,6 +106,7 @@ const entries = catalog.entries.map((e) => {
   };
 });
 await mkdir("dist/data", { recursive: true });
+await mkdir("dist/assets", { recursive: true });
 for (const file of [
   "index.html",
   "style.css",
@@ -114,6 +115,10 @@ for (const file of [
   "favicon.svg",
 ])
   await copyFile(file, `dist/${file}`);
+await copyFile(
+  "assets/character-card-frosted-texture.png",
+  "dist/assets/character-card-frosted-texture.png",
+);
 await writeFile(
   "dist/data/catalog.json",
   JSON.stringify({ ...catalog, entries }),

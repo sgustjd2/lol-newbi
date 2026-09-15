@@ -804,10 +804,58 @@ function characterCardItem(item) {
   itemCard.append(icon, text("span", resolved.name, "character-card-item-name"));
   return itemCard;
 }
+const characterCardFactionKeys = {
+  데마시아: "demacia",
+  녹서스: "noxus",
+  아이오니아: "ionia",
+  프렐요드: "freljord",
+  필트오버: "piltover",
+  자운: "zaun",
+  슈리마: "shurima",
+  타곤: "targon",
+  빌지워터: "bilgewater",
+  이쉬탈: "ixtal",
+  "그림자 군도": "shadow-isles",
+  "밴들 시티": "bandle-city",
+  공허: "void",
+  룬테라: "runeterra",
+};
+const characterCardThemeClasses = Object.values(characterCardFactionKeys).map(
+  (key) => `character-card-theme-${key}`,
+);
+function characterCardFactions(champion) {
+  const regions = champion.regions?.filter((region) => characterCardFactionKeys[region]) || [];
+  return regions.length ? regions : ["룬테라"];
+}
+function characterCardFactionKey(champion) {
+  return characterCardFactionKeys[characterCardFactions(champion)[0]] || "runeterra";
+}
+function fitCharacterCardViewport() {
+  const card = $("#character-card .character-card");
+  if (!card || !document.body.classList.contains("character-card-mode")) return;
+  if (window.innerWidth <= 700) {
+    card.style.removeProperty("--card-fit-scale");
+    return;
+  }
+  card.style.setProperty("--card-fit-scale", "1");
+  const availableHeight = Math.max(280, window.innerHeight - card.getBoundingClientRect().top - 2);
+  const scale = Math.min(1, availableHeight / Math.max(card.scrollHeight, 1));
+  card.style.setProperty("--card-fit-scale", scale.toFixed(3));
+}
+function scheduleCharacterCardFit() {
+  requestAnimationFrame(() => {
+    fitCharacterCardViewport();
+    requestAnimationFrame(fitCharacterCardViewport);
+  });
+}
 function renderCharacterCard(champion) {
   const mount = $("#character-card");
   mount.replaceChildren();
-  const article = text("article", "", "character-card");
+  const factions = characterCardFactions(champion);
+  const factionKey = characterCardFactionKey(champion);
+  const article = text("article", "", `character-card character-card-faction-${factionKey}`);
+  article.dataset.faction = factions[0];
+  article.dataset.factions = factions.join(", ");
   article.setAttribute("aria-labelledby", "character-card-title");
 
   const hero = text("header", "", "character-card-hero");
@@ -817,6 +865,7 @@ function renderCharacterCard(champion) {
     text("h2", champion.name),
     text("p", champion.subtitle || "챔피언", "character-card-subtitle"),
   );
+  identity.append(text("p", `소속 · ${factions.join(" · ")}`, "character-card-faction-label"));
   identity.lastElementChild.previousElementSibling.id = "character-card-title";
   if (champion.roles?.length) {
     const roles = text("div", "", "character-card-roles");
@@ -912,22 +961,22 @@ function renderCharacterCard(champion) {
     core: "핵심 아이템",
     situational: "상황에 따라",
   };
-  const buildModes = [
-    ["rift", "소환사의 협곡"],
-    ["aram", "칼바람 나락"],
-  ];
+  const mode = champion.builds?.rift
+    ? ["rift", "소환사의 협곡"]
+    : champion.builds?.aram
+      ? ["aram", "칼바람 나락"]
+      : null;
   let buildCount = 0;
-  for (const [mode, modeLabel] of buildModes) {
-    const rows = champion.builds?.[mode];
-    if (!rows) continue;
-    const modeTitle = text("h4", modeLabel, "character-card-mode-title");
-    builds.append(modeTitle);
-    for (const [key, items] of Object.entries(rows)) {
-      if (!items?.length) continue;
+  if (mode) {
+    const rows = champion.builds[mode[0]];
+    builds.append(text("h4", `${mode[1]} 대표 추천`, "character-card-mode-title"));
+    for (const key of ["core", "boots", "situational"]) {
+      const items = rows[key] || [];
+      if (!items.length) continue;
       const row = text("div", "", "character-card-build");
       row.append(text("strong", buildLabels[key] || key, "character-card-build-label"));
       const itemList = text("div", "", "character-card-item-list");
-      items.forEach((item) => {
+      items.slice(0, key === "core" ? 3 : 1).forEach((item) => {
         const itemCard = characterCardItem(item);
         if (itemCard) itemList.append(itemCard);
       });
@@ -950,6 +999,7 @@ function showDictionary() {
   $("#data-note").hidden = false;
   $("#character-card-page").hidden = true;
   document.body.classList.remove("character-card-mode");
+  document.body.classList.remove(...characterCardThemeClasses);
   document.title = "롤린이 백과사전 — 5살도 이해하는 쉬운 롤 설명";
 }
 function showCharacterCard(champion) {
@@ -958,9 +1008,11 @@ function showCharacterCard(champion) {
   $("#dictionary").hidden = true;
   $("#data-note").hidden = true;
   $("#character-card-page").hidden = false;
-  document.body.classList.add("character-card-mode");
+  document.body.classList.remove(...characterCardThemeClasses);
+  document.body.classList.add("character-card-mode", `character-card-theme-${characterCardFactionKey(champion)}`);
   document.title = `${champion.name} 캐릭터 카드 · 롤린이 백과사전`;
   renderCharacterCard(champion);
+  scheduleCharacterCardFit();
   window.scrollTo({ top: 0, behavior: "auto" });
 }
 function syncRoute() {
@@ -2241,6 +2293,7 @@ tabsNext?.addEventListener("click", () => {
 window.addEventListener("resize", () => {
   updateTabsNext();
   scheduleCardAlignment();
+  scheduleCharacterCardFit();
 });
 requestAnimationFrame(updateTabsNext);
 document.fonts?.ready.then(() => {
