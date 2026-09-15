@@ -1302,13 +1302,15 @@
   {
     "id": "Qiyana",
     "kind": "champion",
-    "summary": "땅의 힘을 빌려 무기를 바꾸는 암살자예요.",
-    "analogy": "밟고 있는 땅의 기운을 빌려 무기를 바꾸는 전사를 떠올려 보세요.",
-    "tip": "W로 무기를 강하게 만든 뒤 공격하면 더 아프게 때릴 수 있어요.",
-    "caution": "R은 강, 수풀, 벽에 부딪혀야 터지면서 적이 못 움직이게 돼요.",
-    "sourceType": "editorial",
+    "summary": "지형의 원소 힘을 흡수해 강화된 스킬로 싸우는 암살자예요.",
+    "analogy": "덤불·강·벽의 기운을 몸에 둘러 무기를 강화하고, 지형을 이용해 적을 몰아붙이는 원소술사 암살자 같아요.",
+    "tip": "W(대지창조)로 지형에 돌진해 원소의 힘을 얻으면 Q 쿨타임이 초기화되니, 지형을 오가며 강화된 Q를 자주 꽂으세요.",
+    "caution": "궁극기(여왕의 진가)가 벽에 닿아 만드는 충격파는 야스오의 바람 장막으로 막을 수 없으니 과신하면 안 돼요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "야스오 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%BC%EC%8A%A4%EC%98%A4",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Quinn",
