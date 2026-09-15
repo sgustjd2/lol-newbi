@@ -1265,13 +1265,15 @@
   {
     "id": "Pantheon",
     "kind": "champion",
-    "summary": "창을 던지고 찌르며 하늘에서 내리꽂는 전사예요.",
-    "analogy": "유성처럼 하늘에서 떨어져 내리는 전사를 떠올려 보세요.",
-    "tip": "적이 앞에서 공격할 때 E를 쓰면 안 다치고 막아낼 수 있어요.",
-    "caution": "E는 앞에서 오는 공격만 막아요. 뒤나 옆 공격은 못 막아요.",
-    "sourceType": "editorial",
+    "summary": "짧은 쿨타임 스킬로 몰아쳐 순간 화력을 뽑는 근접 전사예요.",
+    "analogy": "창을 던지고 방패로 막다가, 스킬 3번째마다 강화된 일격을 꽂는 전사 같아요.",
+    "tip": "W(방호의 도약)는 즉발 확정 기절이라 피하기 어려우니, 강화 효과를 받은 상태로 진입해 짧은 순간에 폭딜을 몰아넣으세요.",
+    "caution": "E(방패 돌격)는 바라보는 방향의 '피해'만 막아줄 뿐 기절 같은 CC 효과는 막지 못하니, 무적이라고 방심하지 마세요.",
+    "sourceType": "notebooklm",
+    "sourceTitle": "아칼리 - 나무위키",
+    "explanationSourceUrl": "https://namu.wiki/w/%EC%95%84%EC%B9%BC%EB%A6%AC",
     "patch": "16.18.1",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "id": "Poppy",
