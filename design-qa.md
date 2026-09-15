@@ -1,7 +1,7 @@
 # Character card design QA
 
 - source visual truth path: `C:\Users\admin\AppData\Local\Temp\codex-clipboard-73f61954-1544-4089-8163-80119afc30c3.png`
-- implementation screenshot path: CUA in-app browser capture of `http://127.0.0.1:4173/?qa=character-card-v12#card/champion/Garen` (inline browser evidence; the available browser capture API does not expose a filesystem path)
+- implementation screenshot path: CUA in-app browser capture of `http://127.0.0.1:4173/?qa=character-card-v13#card/champion/Garen` (inline browser evidence; the available browser capture API does not expose a filesystem path)
 - source pixels: 767 × 1024
 - implementation viewport: 1256 × 912 CSS px, browser device scale factor 1
 - density normalization: no raster comparison; the source is a 958 × 818 screenshot while the implementation is a responsive web card page, so content regions and hierarchy were compared at their rendered CSS size and the taller desktop breakpoint was verified separately
@@ -29,7 +29,7 @@
 - The back button restores the champion list; the original champion detail button still opens its dialog.
 - Card counts on the tested routes: 5 skill tiles, 3 counter tiles, and up to 5 representative item tiles.
 - Nidalee, Jayce, Kayn, Elise, and other transformation-capable cards retain their form-specific explanations; Nidalee and Jayce were explicitly checked for human/cougar and hammer/cannon text.
-- The card shell is wider than the first standalone iteration and uses readable desktop type sizes. At 1256 × 912, the Garen capture renders at about 826px wide with a 0.96 fit scale, leaving the card readable while still showing the footer in one viewport. Taller desktop windows (780px and above) receive a larger typography pass so the extra space is used for readability. The 173 champion routes were checked after load: every card reaches its footer without page scrolling or clipping, with no horizontal overflow. Responsive CSS provides one-column layouts below 700px.
+- The card shell now prioritizes readability over fitting one viewport. At 1256 × 912, the Garen capture renders at about 1040px wide with no transform scaling; the larger title, 2×2 summary tiles, 2-column skill tiles, 3-column counter tiles, and larger item icons are read by scrolling vertically. The card footer remains reachable at the document end and there is no horizontal overflow. Responsive CSS provides one-column layouts below 700px.
 - Browser console: no warning or error entries were reported during the tested flow.
 
 ## Comparison history
@@ -41,6 +41,7 @@
 5. The first viewport-fit pass made the card too small. Increased the shell width from 780px to 860px, restored readable card typography, reduced unnecessary vertical density, and kept adaptive scaling only for genuinely tall content.
 6. The follow-up capture still showed small type at the user's desktop height. Added a 780px+ breakpoint with larger title, section, skill, counter, and item typography while preserving the one-viewport fit calculation.
 7. Rechecked Garen, Bel'Veth, Nidalee, Jayce, Kayn, Gnar, and all 173 champion routes after the readability pass. No P0, P1, or P2 findings remain.
+8. The user still found the compact copy too small. Removed desktop viewport fitting, widened the card, increased typography and icon sizes, changed the summary to 2×2 and skills to 2 columns, and intentionally allowed vertical scrolling. Rechecked all 173 routes plus Nidalee, Jayce, Kayn, Gnar, and Elise; no horizontal overflow or console errors remain.
 
 ## Implementation checklist
 
@@ -50,6 +51,7 @@
 - [x] Add back and print actions.
 - [x] Add faction themes, responsive and print styles, and viewport fitting.
 - [x] Validate the 173-champion source data set and browser interactions.
+- [x] Allow readable desktop cards to scroll vertically without shrinking or clipping content.
 
 ## Follow-up polish
 
