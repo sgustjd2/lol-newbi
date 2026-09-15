@@ -1365,7 +1365,7 @@ try {
   botDuoData = await fetch("./data/bot-duos.json")
     .then((r) => (r.ok ? r.json() : { duos: [] }))
     .catch(() => ({ duos: [] }));
-  championCounterData = await fetch("./data/champion-counters.json")
+  championCounterData = await fetch("./data/champion-counters.json?v=counter-reasons")
     .then((r) => (r.ok ? r.json() : { champions: {} }))
     .catch(() => ({ champions: {} }));
   entries = data.entries;
